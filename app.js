@@ -67,7 +67,7 @@ function budgetText(b){
 function stationText(item){
  const stations=[...(item.transport?.stations||[])].sort((a,b)=>(a.walkMinutes??99)-(b.walkMinutes??99)).slice(0,3);
  if(!stations.length)return '最近车站：待补充';
- return `最近车站：${stations.map(s=>`${s.name}（${s.lines.join(' / ')}，步行${s.walkMinutes}分钟）`).join('；')}`;
+ return `最近车站：${stations.map(s=>`${s.name} 步行${s.walkMinutes}分钟（${s.lines.join(' / ')}）`).join('；')}`;
 }
 function makeCard(item){
  const f=els.template.content.cloneNode(true),head=f.querySelector('.card-head'),detail=f.querySelector('.detail');
