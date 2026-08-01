@@ -1,5 +1,5 @@
 {
-  "version": "4.1-50",
+  "version": "4.2-starred-batch",
   "modules": [
     "overview",
     "lunch",
@@ -16,11 +16,11 @@
     "sync"
   ],
   "note": "未核验字段使用 null 或 verified=false，不以推测值代替。",
-  "recordCount": 50,
+  "recordCount": 160,
   "breakdown": {
     "threeStar": 12,
     "twoStar": 26,
-    "oneStar": 12
+    "oneStar": 122
   },
-  "dataScope": "基础资料扩充至50家；菜单、价格和政策字段仅在逐店核验后填写。"
+  "dataScope": "东京 Michelin Guide 2026 星级餐厅基础资料扩充中；详情字段仅在逐店核验后填写。"
 }
