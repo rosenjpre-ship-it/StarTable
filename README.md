@@ -1,20 +1,21 @@
-# StarTable v2
+# StarTable v3 Integrated
 
-A mobile-first fine dining discovery website.
+本版本把 Batch 1 数据与网站前端重新合并。
 
-## Features
-- Global city-ready structure
-- Restaurant search
-- Filters by city, stars, cuisine, area and reservation difficulty
-- Lunch / Dinner global filter
-- Lunch / Dinner tabs inside every restaurant card
-- Official reservation jump links
-- Message Plate / anniversary information
-- Verified / pending-verification status for each course
-- Light / dark theme
+## 当前数据
+- 18 家东京星级餐厅
+- 12 家三星基础资料
+- 5 家二星记录
+- 1 家一星记录
 
-## Current data
-11 Tokyo restaurants. Dinner data that has not yet been checked restaurant-by-restaurant is explicitly marked as pending verification.
+## 功能
+- 搜索
+- 星级 / 菜系 / 地区 / 数据状态筛选
+- Lunch / Dinner 全局筛选
+- 餐厅卡片展开
+- 基础资料、预约、Message Plate
+- 数据核验状态
+- 未核验菜单明确显示为空，不使用占位套餐
 
-## Deployment
-Upload all files to the root of the GitHub repository and enable GitHub Pages from `main / (root)`.
+## 上传
+将 ZIP 解压后的全部文件覆盖上传到 GitHub 仓库根目录。

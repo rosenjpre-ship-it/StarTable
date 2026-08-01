@@ -3,68 +3,63 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>StarTable — Fine Dining Discovery</title>
-<meta name="description" content="Discover, compare and reserve the world's finest restaurants.">
+<title>StarTable Tokyo</title>
+<meta name="description" content="Discover Tokyo's Michelin-starred and fine dining restaurants.">
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <header class="topbar">
   <div class="shell nav">
-    <a class="brand" href="#"><span class="brand-star">★</span><span>StarTable</span></a>
-    <div class="nav-actions">
-      <button id="themeButton" class="ghost">Theme</button>
-    </div>
+    <a class="brand" href="#"><span>★</span>StarTable</a>
+    <button id="themeButton" class="ghost">深色模式</button>
   </div>
 </header>
 
 <section class="hero">
   <div class="shell hero-grid">
     <div>
-      <p class="eyebrow">FINE DINING DISCOVERY</p>
-      <h1>Discover the world’s<br>finest restaurants.</h1>
-      <p class="sub">Search Michelin-starred and fine dining restaurants, compare lunch and dinner courses, then jump to the official reservation page.</p>
+      <p class="eyebrow">TOKYO FINE DINING DATABASE</p>
+      <h1>Discover Tokyo’s<br>finest restaurants.</h1>
+      <p class="sub">搜索东京星级餐厅，查看基础信息、Lunch / Dinner、预约与纪念日信息，并跳转官方预约页面。</p>
     </div>
-    <div class="hero-card">
-      <div><strong id="totalRestaurants">11</strong><span>restaurants</span></div>
-      <div><strong id="totalCourses">0</strong><span>courses</span></div>
-      <div><strong>Tokyo</strong><span>current city</span></div>
+    <div class="hero-stats">
+      <div><strong id="totalRestaurants">0</strong><span>Restaurants</span></div>
+      <div><strong id="threeStarCount">0</strong><span>Three-star</span></div>
+      <div><strong id="verifiedCount">0</strong><span>Basic verified</span></div>
     </div>
   </div>
 </section>
 
 <main class="shell">
   <section class="controls">
-    <div class="search-wrap">
-      <input id="searchInput" type="search" placeholder="Search restaurant, cuisine, area or course">
+    <input id="searchInput" type="search" placeholder="搜索餐厅、日文名、地区、菜系">
+    <div class="filters">
+      <select id="starFilter"><option value="">全部星级</option><option value="3">三星</option><option value="2">二星</option><option value="1">一星</option></select>
+      <select id="cuisineFilter"><option value="">全部菜系</option></select>
+      <select id="areaFilter"><option value="">全部地区</option></select>
+      <select id="statusFilter"><option value="">全部数据状态</option><option value="basic_verified">基础资料已核验</option><option value="star_verified">星级已核验</option><option value="star_pending_recheck">待复核</option></select>
     </div>
-    <div class="filter-grid">
-      <select id="cityFilter"><option value="">All cities</option></select>
-      <select id="starFilter"><option value="">All stars</option><option value="3">★★★</option><option value="2">★★</option><option value="1">★</option></select>
-      <select id="cuisineFilter"><option value="">All cuisines</option></select>
-      <select id="areaFilter"><option value="">All areas</option></select>
-      <select id="difficultyFilter"><option value="">All difficulty</option><option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option></select>
-    </div>
-    <div class="meal-toggle" role="tablist">
-      <button class="meal-btn active" data-meal="all">All</button>
+    <div class="meal-toggle">
+      <button class="meal-btn active" data-meal="all">全部</button>
       <button class="meal-btn" data-meal="lunch">Lunch</button>
       <button class="meal-btn" data-meal="dinner">Dinner</button>
     </div>
   </section>
 
   <section class="result-bar">
-    <div><strong id="visibleCount">0</strong> restaurants</div>
-    <button id="resetButton" class="ghost">Reset</button>
+    <div>显示 <strong id="visibleCount">0</strong> 家</div>
+    <button id="resetButton" class="ghost">重置筛选</button>
   </section>
 
-  <section id="restaurantGrid" class="grid"></section>
-  <div id="emptyState" class="empty" hidden>No matching restaurants.</div>
+  <section id="grid" class="grid"></section>
+  <div id="empty" class="empty" hidden>没有符合条件的餐厅。</div>
 </main>
 
-<template id="restaurantTemplate">
+<template id="cardTemplate">
 <article class="card">
   <button class="card-head" aria-expanded="false">
     <div>
-      <div class="meta-line"><span class="city"></span><span class="dot">•</span><span class="area"></span></div>
+      <div class="meta"><span class="area"></span><span>•</span><span class="cuisine"></span></div>
       <h2 class="name"></h2>
       <div class="name-ja"></div>
       <div class="chips"></div>
@@ -74,21 +69,28 @@
   <div class="detail" hidden>
     <div class="info-grid">
       <section class="panel">
+        <h3>Basic information</h3>
+        <p class="address"></p>
+        <p class="phone"></p>
+        <div class="status"></div>
+      </section>
+      <section class="panel">
         <h3>Reservation</h3>
         <div class="difficulty"></div>
         <p class="booking"></p>
-        <a class="reserve" target="_blank" rel="noopener">Official reservation</a>
+        <a class="reserve" target="_blank" rel="noopener">Official / reservation page</a>
       </section>
       <section class="panel">
-        <h3>Anniversary</h3>
+        <h3>Message Plate / Anniversary</h3>
         <p class="plate"></p>
       </section>
     </div>
-    <div class="meal-tabs">
-      <button class="local-meal active" data-localmeal="lunch">Lunch</button>
-      <button class="local-meal" data-localmeal="dinner">Dinner</button>
+
+    <div class="local-tabs">
+      <button class="local-btn active" data-localmeal="lunch">Lunch</button>
+      <button class="local-btn" data-localmeal="dinner">Dinner</button>
     </div>
-    <div class="course-table"></div>
+    <div class="course-area"></div>
   </div>
 </article>
 </template>
