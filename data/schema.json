@@ -1,0 +1,10 @@
+{
+  "version": "3.0-batch1",
+  "record_count": 18,
+  "status_values": {
+    "basic_verified": "星级、名称、菜系、地址、电话或官网等基础字段已核验",
+    "star_verified": "星级已通过米其林官方页面核验，其他基础字段待补充",
+    "star_pending_recheck": "沿用旧数据，需在后续批次重新核验"
+  },
+  "course_policy": "lunch/dinner 只有在逐店核验后才填入；本批次不以占位套餐冒充真实菜单。"
+}
