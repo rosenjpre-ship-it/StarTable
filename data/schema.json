@@ -1,5 +1,5 @@
 {
-  "version": "4.0",
+  "version": "4.1-50",
   "modules": [
     "overview",
     "lunch",
@@ -15,5 +15,12 @@
     "links",
     "sync"
   ],
-  "note": "未核验字段使用 null 或 verified=false，不以推测值代替。"
+  "note": "未核验字段使用 null 或 verified=false，不以推测值代替。",
+  "recordCount": 50,
+  "breakdown": {
+    "threeStar": 12,
+    "twoStar": 26,
+    "oneStar": 12
+  },
+  "dataScope": "基础资料扩充至50家；菜单、价格和政策字段仅在逐店核验后填写。"
 }
