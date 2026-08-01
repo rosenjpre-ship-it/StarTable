@@ -98,8 +98,6 @@
     "links": {
       "official": "https://azabukadowaki.com/",
       "reservation": "https://azabukadowaki.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/azabu-kadowaki",
       "tabelog": "",
       "instagram": ""
     },
@@ -238,8 +236,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/harutaka",
       "tabelog": "",
       "instagram": ""
     },
@@ -461,8 +457,6 @@
     "links": {
       "official": "https://www.robuchon.jp/en/shop-list/joelrobuchon",
       "reservation": "https://www.robuchon.jp/en/shop-list/joelrobuchon",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/joel-robuchon-1193981",
       "tabelog": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=Jo%C3%ABl%20Robuchon",
       "instagram": ""
     },
@@ -476,9 +470,7 @@
     "ratings": {
       "tabelogScore": null,
       "tabelogUrl": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=Jo%C3%ABl%20Robuchon",
-      "googleMapsScore": 4.5,
-      "lastChecked": "2026-08-01",
-      "googleMapsSource": "Wanderlog Google reviews summary"
+      "lastChecked": "2026-08-01"
     },
     "transport": {
       "stations": [
@@ -605,8 +597,6 @@
     "links": {
       "official": "http://www.kagurazaka-ishikawa.co.jp/",
       "reservation": "http://www.kagurazaka-ishikawa.co.jp/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/kagurazaka-ishikawa",
       "tabelog": "",
       "instagram": ""
     },
@@ -747,8 +737,6 @@
     "links": {
       "official": "http://www.nihonryori-kanda.com/",
       "reservation": "http://www.nihonryori-kanda.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/kanda",
       "tabelog": "",
       "instagram": ""
     },
@@ -915,8 +903,6 @@
     "links": {
       "official": "https://www.leffervescence.jp/",
       "reservation": "https://www.leffervescence.jp/en/address.html",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/l-effervescence",
       "tabelog": "https://tabelog.com/en/tokyo/A1306/A130602/13116356/",
       "instagram": ""
     },
@@ -930,9 +916,7 @@
     "ratings": {
       "tabelogScore": 4.47,
       "tabelogUrl": "https://tabelog.com/en/tokyo/A1306/A130602/13116356/",
-      "googleMapsScore": 4.6,
-      "lastChecked": "2026-08-01",
-      "googleMapsSource": "Postcard Google Maps summary"
+      "lastChecked": "2026-08-01"
     },
     "transport": {
       "stations": [
@@ -1104,8 +1088,6 @@
     "links": {
       "official": "https://losier.shiseido.co.jp/e/",
       "reservation": "https://losier.shiseido.co.jp/e/",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "https://tabelog.com/tw/tokyo/A1301/A130101/13002607/",
       "instagram": ""
     },
@@ -1119,9 +1101,7 @@
     "ratings": {
       "tabelogScore": 4.4,
       "tabelogUrl": "https://tabelog.com/tw/tokyo/A1301/A130101/13002607/",
-      "googleMapsScore": 4.7,
-      "lastChecked": "2026-08-01",
-      "googleMapsSource": "Postcard Google Maps summary"
+      "lastChecked": "2026-08-01"
     },
     "transport": {
       "stations": [
@@ -1259,8 +1239,6 @@
     "links": {
       "official": "https://myoujyaku.com/",
       "reservation": "https://myoujyaku.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/myojaku",
       "tabelog": "",
       "instagram": ""
     },
@@ -1403,8 +1381,6 @@
     "links": {
       "official": "https://www.quintessence.jp/",
       "reservation": "https://www.quintessence.jp/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/quintessence",
       "tabelog": "",
       "instagram": ""
     },
@@ -1565,8 +1541,6 @@
     "links": {
       "official": "https://www.nihonryori-ryugin.com/",
       "reservation": "https://www.nihonryori-ryugin.com/en/about/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/nihonryori-ryugin",
       "tabelog": "https://tabelog.com/cn/tokyo/A1301/A130102/13001457/",
       "instagram": ""
     },
@@ -1580,9 +1554,7 @@
     "ratings": {
       "tabelogScore": 4.13,
       "tabelogUrl": "https://tabelog.com/cn/tokyo/A1301/A130102/13001457/",
-      "googleMapsScore": 4,
-      "lastChecked": "2026-08-01",
-      "googleMapsSource": "Wanderlog Google reviews summary"
+      "lastChecked": "2026-08-01"
     },
     "transport": {
       "stations": [
@@ -1719,8 +1691,6 @@
     "links": {
       "official": "https://sazenka.com/",
       "reservation": "https://sazenka.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/sazenka",
       "tabelog": "",
       "instagram": ""
     },
@@ -1898,8 +1868,6 @@
     "links": {
       "official": "https://www.sezanne.tokyo/",
       "reservation": "https://www.sezanne.tokyo/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/sezanne",
       "tabelog": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=S%C3%89ZANNE",
       "instagram": ""
     },
@@ -1913,9 +1881,7 @@
     "ratings": {
       "tabelogScore": null,
       "tabelogUrl": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=S%C3%89ZANNE",
-      "googleMapsScore": 4.4,
-      "lastChecked": "2026-08-01",
-      "googleMapsSource": "Google hotels restaurant listing"
+      "lastChecked": "2026-08-01"
     },
     "transport": {
       "stations": [
@@ -2045,8 +2011,6 @@
     "links": {
       "official": "https://asahinagastronome.com/",
       "reservation": "https://asahinagastronome.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/asahina-gastronome",
       "tabelog": "",
       "instagram": ""
     },
@@ -2186,8 +2150,6 @@
     "links": {
       "official": "https://www.crony.co.jp/",
       "reservation": "https://www.crony.co.jp/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/crony-1194937",
       "tabelog": "",
       "instagram": ""
     },
@@ -2324,8 +2286,6 @@
     "links": {
       "official": "https://www.jimbochoden.com/",
       "reservation": "https://www.jimbochoden.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/den",
       "tabelog": "",
       "instagram": ""
     },
@@ -2463,8 +2423,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/ensui",
       "tabelog": "",
       "instagram": ""
     },
@@ -2603,8 +2561,6 @@
     "links": {
       "official": "https://www.esquissetokyo.com/",
       "reservation": "https://www.esquissetokyo.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/esquisse",
       "tabelog": "",
       "instagram": ""
     },
@@ -2746,8 +2702,6 @@
     "links": {
       "official": "https://www.aoyama-florilege.jp/",
       "reservation": "https://www.aoyama-florilege.jp/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/florilege",
       "tabelog": "",
       "instagram": ""
     },
@@ -2884,8 +2838,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/ginza-fukuju",
       "tabelog": "",
       "instagram": ""
     },
@@ -3028,8 +2980,6 @@
     "links": {
       "official": "https://ginzaokuda.com/kojyu/",
       "reservation": "https://ginzaokuda.com/kojyu/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/ginza-koju",
       "tabelog": "",
       "instagram": ""
     },
@@ -3170,8 +3120,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/ginza-shinohara",
       "tabelog": "",
       "instagram": ""
     },
@@ -3311,8 +3259,6 @@
     "links": {
       "official": "https://hakuun.jp/",
       "reservation": "https://hakuun.jp/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/hakuun",
       "tabelog": "",
       "instagram": ""
     },
@@ -3451,8 +3397,6 @@
     "links": {
       "official": "https://www.hommage-arai.com/",
       "reservation": "https://www.hommage-arai.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/hommage",
       "tabelog": "",
       "instagram": ""
     },
@@ -3591,8 +3535,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/jingumae-higuchi",
       "tabelog": "",
       "instagram": ""
     },
@@ -3730,8 +3672,6 @@
     "links": {
       "official": "https://www.kioicho-fukudaya.jp/",
       "reservation": "https://www.kioicho-fukudaya.jp/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/kioicho-fukudaya",
       "tabelog": "",
       "instagram": ""
     },
@@ -3871,8 +3811,6 @@
     "links": {
       "official": "https://kagurazaka-kohaku.jp/",
       "reservation": "https://kagurazaka-kohaku.jp/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/kohaku",
       "tabelog": "",
       "instagram": ""
     },
@@ -4013,8 +3951,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/kutan",
       "tabelog": "",
       "instagram": ""
     },
@@ -4152,8 +4088,6 @@
     "links": {
       "official": "https://maztokyo.jp/",
       "reservation": "https://maztokyo.jp/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/maz",
       "tabelog": "",
       "instagram": ""
     },
@@ -4293,8 +4227,6 @@
     "links": {
       "official": "https://www.narisawa-yoshihiro.com/",
       "reservation": "https://www.narisawa-yoshihiro.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/narisawa",
       "tabelog": "",
       "instagram": ""
     },
@@ -4433,8 +4365,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/nishiazabu-sushi-shin",
       "tabelog": "",
       "instagram": ""
     },
@@ -4572,8 +4502,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/prisma-1194160",
       "tabelog": "",
       "instagram": ""
     },
@@ -4712,8 +4640,6 @@
     "links": {
       "official": "https://restaurant-ryuzu.com/",
       "reservation": "https://restaurant-ryuzu.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/ryuzu",
       "tabelog": "",
       "instagram": ""
     },
@@ -4851,8 +4777,6 @@
     "links": {
       "official": "https://www.nihonryori-seizan.com/",
       "reservation": "https://www.nihonryori-seizan.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/seizan",
       "tabelog": "",
       "instagram": ""
     },
@@ -4990,8 +4914,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/sukiyabashi-jiro-roppongiten",
       "tabelog": "",
       "instagram": ""
     },
@@ -5130,8 +5052,6 @@
     "links": {
       "official": "https://ginza-sushi-kanesaka.com/",
       "reservation": "https://ginza-sushi-kanesaka.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/sushi-kanesaka",
       "tabelog": "",
       "instagram": ""
     },
@@ -5274,8 +5194,6 @@
     "links": {
       "official": "https://tempura-ginya.com/",
       "reservation": "https://tempura-ginya.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/tempura-ginya",
       "tabelog": "",
       "instagram": ""
     },
@@ -5409,8 +5327,6 @@
     "links": {
       "official": "https://tempura-kondo.com/",
       "reservation": "https://tempura-kondo.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/tempura-kondo",
       "tabelog": "",
       "instagram": ""
     },
@@ -5551,8 +5467,6 @@
     "links": {
       "official": "https://motoyoshi-1120.com/",
       "reservation": "https://motoyoshi-1120.com/",
-      "googleMaps": "",
-      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/tempura-motoyoshi",
       "tabelog": "",
       "instagram": ""
     },
@@ -5599,8 +5513,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都渋谷区恵比寿西1-30-12 ebisu hills 1F",
+    "phone": "03-6804-3846",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -5609,7 +5523,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -5681,19 +5595,47 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
-      "tabelog": "",
+      "official": "https://abysse.jp/",
+      "reservation": "https://abysse.jp/",
+      "tabelog": "https://tabelog.com/en/tokyo/A1303/A130302/13232482/",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "代官山",
+          "lines": [
+            "东急东横线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "惠比寿",
+          "lines": [
+            "JR线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 7
+        },
+        {
+          "name": "中目黑",
+          "lines": [
+            "东京Metro日比谷线",
+            "东急东横线"
+          ],
+          "walkMinutes": 9
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -5709,8 +5651,8 @@
     "cuisineZh": "日本料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区赤坂6-13-8",
+    "phone": "03-3568-6055",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -5719,7 +5661,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -5791,19 +5733,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://kikunoi.jp/en/",
+      "reservation": "https://kikunoi.jp/reserve/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "赤坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "六本木一丁目",
+          "lines": [
+            "东京Metro南北线"
+          ],
+          "walkMinutes": 9
+        },
+        {
+          "name": "溜池山王",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro南北线"
+          ],
+          "walkMinutes": 10
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -5819,8 +5788,8 @@
     "cuisineZh": "日本料理",
     "area": "Akasaka",
     "areaZh": "赤坂",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区赤坂3-21-8 久保ビル 3F",
+    "phone": "03-6277-7290",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -5902,10 +5871,8 @@
     },
     "links": {
       "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
-      "tabelog": "",
+      "reservation": "https://omakase.in/ja/r/mt888774",
+      "tabelog": "https://tabelog.com/en/tokyo/A1308/A130801/13300943/",
       "instagram": ""
     },
     "sync": {
@@ -5914,6 +5881,37 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "赤坂见附",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线"
+          ],
+          "walkMinutes": 1
+        },
+        {
+          "name": "永田町",
+          "lines": [
+            "东京Metro半藏门线",
+            "东京Metro南北线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "赤坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -5929,8 +5927,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区白金台5-17-10",
+    "phone": "03-5422-7358",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -5939,7 +5937,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -6011,19 +6009,42 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://alchimiste.jp/english.html",
+      "reservation": "https://alchimiste.jp/english.html",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "白金台",
+          "lines": [
+            "东京Metro南北线",
+            "都营三田线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "目黑",
+          "lines": [
+            "JR线",
+            "东京Metro南北线",
+            "都营三田线",
+            "东急目黑线"
+          ],
+          "walkMinutes": 15
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -6039,8 +6060,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座5-6-7 SANWAすずらんビル 9F",
+    "phone": "03-6228-5041",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -6049,7 +6070,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -6121,19 +6142,49 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.amarantos2021.com/english/",
+      "reservation": "https://www.amarantos2021.com/english/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "有乐町",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "东银座",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -6149,8 +6200,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区虎ノ門2-6-2 虎ノ門ヒルズ ステーションタワー 49F",
+    "phone": "03-6811-2573",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -6159,7 +6210,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -6231,19 +6282,47 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://apotheose.jp/en/",
+      "reservation": "https://apotheose.jp/en/reservation/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "虎之门Hills",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 1
+        },
+        {
+          "name": "虎之门",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "霞关",
+          "lines": [
+            "东京Metro丸之内线",
+            "东京Metro日比谷线",
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 10
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -6259,8 +6338,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都渋谷区恵比寿2-23-3",
+    "phone": "03-6721-9218",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -6269,7 +6348,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -6343,17 +6422,45 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "惠比寿",
+          "lines": [
+            "JR线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 12
+        },
+        {
+          "name": "白金台",
+          "lines": [
+            "东京Metro南北线",
+            "都营三田线"
+          ],
+          "walkMinutes": 16
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -6369,8 +6476,8 @@
     "cuisineZh": "日本料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区麻布十番3-7-5",
+    "phone": "03-6453-7256",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -6379,7 +6486,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -6453,17 +6560,45 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "麻布十番",
+          "lines": [
+            "东京Metro南北线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "赤羽桥",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 13
+        },
+        {
+          "name": "白金高轮",
+          "lines": [
+            "东京Metro南北线",
+            "都营三田线"
+          ],
+          "walkMinutes": 14
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -6479,8 +6614,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座3-5-3 シャネル銀座ビルディング 10F",
+    "phone": "03-5159-5500",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -6489,7 +6624,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -6561,19 +6696,48 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://beige-tokyo.com/en/information",
+      "reservation": "https://beige-tokyo.com/en/faq",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "银座一丁目",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "有乐町",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 5
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -6589,8 +6753,8 @@
     "cuisineZh": "意大利料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都渋谷区広尾5-17-8 アプリシエ広尾 B1F",
+    "phone": "03-6450-3933",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -6599,7 +6763,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -6671,19 +6835,39 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.bottega-cucina.com/",
+      "reservation": "https://www.bottega-cucina.com/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "惠比寿",
+          "lines": [
+            "JR线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 15
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -6699,8 +6883,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都目黒区青葉台1-16-11 2F",
+    "phone": "03-6277-5813",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -6709,7 +6893,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -6781,19 +6965,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://craftale-nakameguro.jp/",
+      "reservation": "https://craftale-nakameguro.jp/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "中目黑",
+          "lines": [
+            "东京Metro日比谷线",
+            "东急东横线"
+          ],
+          "walkMinutes": 7
+        },
+        {
+          "name": "代官山",
+          "lines": [
+            "东急东横线"
+          ],
+          "walkMinutes": 11
+        },
+        {
+          "name": "池尻大桥",
+          "lines": [
+            "东急田园都市线"
+          ],
+          "walkMinutes": 15
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -6809,8 +7020,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都千代田区大手町1-2-1 Otemachi One 1F",
+    "phone": "03-6551-2885",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -6819,7 +7030,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -6891,19 +7102,43 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://cyclerestaurant.com/?lang=en",
+      "reservation": "https://cyclerestaurant.com/?lang=en",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "大手町",
+          "lines": [
+            "东京Metro丸之内线",
+            "东京Metro东西线",
+            "东京Metro千代田线",
+            "东京Metro半藏门线",
+            "都营三田线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "东京",
+          "lines": [
+            "JR线",
+            "东京Metro丸之内线"
+          ],
+          "walkMinutes": 10
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -6919,8 +7154,8 @@
     "cuisineZh": "精进料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区愛宕2-3-1 フォレストタワー 2F",
+    "phone": "03-3431-0811",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -6929,7 +7164,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -7003,17 +7238,43 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "神谷町",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "御成门",
+          "lines": [
+            "都营三田线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "虎之门Hills",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -7029,8 +7290,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座1-5-6 銀座レンガ通り福神ビル 2F",
+    "phone": "03-6264-4477",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -7039,7 +7300,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -7111,19 +7372,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.dominique-bouchet.jp/",
+      "reservation": "https://www.dominique-bouchet.jp/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座一丁目",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "京桥",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "有乐町",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -7139,8 +7427,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区六本木3-1-1 六本木ティーキューブ 1F",
+    "phone": "03-5549-4562",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -7149,7 +7437,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -7221,19 +7509,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.koji-shimomura.jp/en",
+      "reservation": "https://www.koji-shimomura.jp/en",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "六本木一丁目",
+          "lines": [
+            "东京Metro南北线"
+          ],
+          "walkMinutes": 1
+        },
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 9
+        },
+        {
+          "name": "神谷町",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 10
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -7249,8 +7564,8 @@
     "cuisineZh": "寿司",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区日本橋人形町2-10-11 KYOE PLAZA 日本橋人形町 6F",
+    "phone": "03-5615-8728",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -7259,7 +7574,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -7331,19 +7646,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
-      "tabelog": "",
+      "official": "https://www.shinsaku.tokyo/",
+      "reservation": "https://omakase.in/r/oj274267",
+      "tabelog": "https://tabelog.com/tokyo/A1302/A130204/13270572/",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "人形町",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "水天宫前",
+          "lines": [
+            "东京Metro半藏门线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "滨町",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -7359,8 +7701,8 @@
     "cuisineZh": "寿司",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区赤坂9-1-7 赤坂レジデンシャルホテル 102",
+    "phone": "03-3478-1010",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -7369,7 +7711,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -7441,19 +7783,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.akasaka-hanabusa.com/en",
+      "reservation": "https://www.akasaka-hanabusa.com/en",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "赤坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -7469,8 +7838,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都千代田区大手町1-2-1 フォーシーズンズホテル東京大手町 39F",
+    "phone": "03-6810-0655",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -7479,7 +7848,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -7551,19 +7920,43 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.est-tokyo.com/",
+      "reservation": "https://www.fourseasons.com/otemachi/dining/restaurants/est/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "大手町",
+          "lines": [
+            "东京Metro丸之内线",
+            "东京Metro东西线",
+            "东京Metro千代田线",
+            "东京Metro半藏门线",
+            "都营三田线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "东京",
+          "lines": [
+            "JR线",
+            "东京Metro丸之内线"
+          ],
+          "walkMinutes": 10
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -7579,8 +7972,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都千代田区丸の内1-1-1 パレスホテル東京 6F",
+    "phone": "03-3211-5317",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -7589,7 +7982,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -7661,19 +8054,50 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.palacehoteltokyo.com/restaurant/esterre/",
+      "reservation": "https://www.palacehoteltokyo.com/restaurant/esterre/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "大手町",
+          "lines": [
+            "东京Metro丸之内线",
+            "东京Metro东西线",
+            "东京Metro千代田线",
+            "东京Metro半藏门线",
+            "都营三田线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "二重桥前",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "东京",
+          "lines": [
+            "JR线",
+            "东京Metro丸之内线"
+          ],
+          "walkMinutes": 9
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -7689,8 +8113,8 @@
     "cuisineZh": "法餐",
     "area": "Ginza",
     "areaZh": "银座",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区南青山4-3-23 2F",
+    "phone": "03-6804-5942",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -7773,8 +8197,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
@@ -7784,6 +8206,36 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "外苑前",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 7
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 9
+        },
+        {
+          "name": "表参道",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro千代田线",
+            "东京Metro半藏门线"
+          ],
+          "walkMinutes": 12
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -7799,8 +8251,8 @@
     "cuisineZh": "意大利料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座8-8-3 東京銀座資生堂ビル 10F",
+    "phone": "03-3572-3911",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -7809,7 +8261,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -7881,19 +8333,51 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://faro.shiseido.co.jp/en/access/",
+      "reservation": "https://faro.shiseido.co.jp/en/access/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "新桥",
+          "lines": [
+            "JR线",
+            "东京Metro银座线",
+            "都营浅草线",
+            "百合海鸥线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 7
+        },
+        {
+          "name": "汐留",
+          "lines": [
+            "都营大江户线",
+            "百合海鸥线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -7909,8 +8393,8 @@
     "cuisineZh": "日本料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都新宿区神楽坂4-3-11 神楽坂つなしょうテラス 2F",
+    "phone": "03-3269-4556",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -7919,7 +8403,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -7991,19 +8475,49 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://fushikino.com/",
+      "reservation": "https://yoyaku.toreta.in/fushikino/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "牛込神乐坂",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "饭田桥",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线",
+            "东京Metro南北线",
+            "东京Metro东西线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "神乐坂",
+          "lines": [
+            "东京Metro东西线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "official/Michelin/Tabelog access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -8019,8 +8533,8 @@
     "cuisineZh": "日本料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座2-10-11 3F",
+    "phone": "03-6264-2872",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -8029,7 +8543,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -8103,17 +8617,46 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "东银座",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "银座一丁目",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -8129,8 +8672,8 @@
     "cuisineZh": "日本料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座6-12-14 松岡銀緑館 8F",
+    "phone": "03-5962-8053",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -8139,7 +8682,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -8211,19 +8754,51 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://ginza-kousui.jp/en/",
+      "reservation": "https://ginza-kousui.jp/en/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "东银座",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "新桥",
+          "lines": [
+            "JR线",
+            "东京Metro银座线",
+            "都营浅草线",
+            "百合海鸥线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -8239,8 +8814,8 @@
     "cuisineZh": "意大利料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座6-6-12 4F",
+    "phone": "03-6264-6606",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -8249,7 +8824,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -8321,19 +8896,49 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.gucciosteria.com/en/tokyo",
+      "reservation": "https://www.gucciosteria.com/en/tokyo",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "东银座",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 7
+        },
+        {
+          "name": "有乐町",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -8349,8 +8954,8 @@
     "cuisineZh": "日本料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都新宿区神楽坂4-3 4F",
+    "phone": "050-3138-5225",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -8359,7 +8964,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -8433,17 +9038,47 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "牛込神乐坂",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "饭田桥",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线",
+            "东京Metro南北线",
+            "东京Metro东西线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "神乐坂",
+          "lines": [
+            "东京Metro东西线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -8459,8 +9094,8 @@
     "cuisineZh": "现代料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区西麻布4-9-11",
+    "phone": "090-8946-3919",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -8469,7 +9104,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -8541,19 +9176,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://hakunei.com/en",
+      "reservation": "https://hakunei.com/en",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 14
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 15
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -8569,8 +9231,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区赤坂9-7-1 ザ・リッツ・カールトン東京 45F",
+    "phone": "03-6434-8711",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -8579,7 +9241,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -8651,19 +9313,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.ritz-carlton.com/en/hotels/tyorz-the-ritz-carlton-tokyo/dining/heritage-by-kei-kobayashi/",
+      "reservation": "https://www.ritz-carlton.com/en/hotels/tyorz-the-ritz-carlton-tokyo/dining/heritage-by-kei-kobayashi/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "六本木一丁目",
+          "lines": [
+            "东京Metro南北线"
+          ],
+          "walkMinutes": 12
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -8679,8 +9368,8 @@
     "cuisineZh": "日本料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都目黒区東山1-15-5 静宏荘 1F",
+    "phone": "070-3149-4112",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -8689,7 +9378,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -8761,19 +9450,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://higashiyama-muku.jp/",
+      "reservation": "https://higashiyama-muku.jp/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "中目黑",
+          "lines": [
+            "东京Metro日比谷线",
+            "东急东横线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "池尻大桥",
+          "lines": [
+            "东急田园都市线"
+          ],
+          "walkMinutes": 10
+        },
+        {
+          "name": "代官山",
+          "lines": [
+            "东急东横线"
+          ],
+          "walkMinutes": 14
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -8789,8 +9505,8 @@
     "cuisineZh": "寿司",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都渋谷区広尾5-19-1 2F",
+    "phone": "080-2392-7910",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -8799,7 +9515,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -8873,17 +9589,37 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "惠比寿",
+          "lines": [
+            "JR线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 15
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -8899,8 +9635,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区新富1-5-12 2F",
+    "phone": "03-6262-8987",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -8909,7 +9645,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -8983,17 +9719,44 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "新富町",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "宝町",
+          "lines": [
+            "都营浅草线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "八丁堀",
+          "lines": [
+            "东京Metro日比谷线",
+            "JR线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -9009,8 +9772,8 @@
     "cuisineZh": "日本料理",
     "area": "Ginza",
     "areaZh": "银座",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座4-4-2 銀座松屋通り安田ビル 9F",
+    "phone": "03-5579-9760",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -9091,11 +9854,9 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
-      "tabelog": "",
+      "official": "https://salt-group.jp/shop/hyakuyaku/",
+      "reservation": "https://japan-food.guide/en/restaurants/1656",
+      "tabelog": "https://tabelog.com/cn/tokyo/A1301/A130101/13302825/",
       "instagram": ""
     },
     "sync": {
@@ -9104,6 +9865,37 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "银座一丁目",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "有乐町",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -9119,8 +9911,8 @@
     "cuisineZh": "意大利料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区八重洲2-2-1 ブルガリホテル東京 40F",
+    "phone": "03-6262-6624",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -9129,7 +9921,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -9201,19 +9993,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.bulgarihotels.com/en_US/tokyo/dining/il-ristorante-niko-romito",
+      "reservation": "https://www.bulgarihotels.com/en_US/tokyo/dining/il-ristorante-niko-romito",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "东京",
+          "lines": [
+            "JR线",
+            "东京Metro丸之内线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "京桥",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "银座一丁目",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -9229,8 +10048,8 @@
     "cuisineZh": "中餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区元麻布3-12-41",
+    "phone": "050-3033-3946",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -9239,7 +10058,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -9311,19 +10130,47 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://ippei-hanten.com/en",
+      "reservation": "https://ippei-hanten.com/en",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "麻布十番",
+          "lines": [
+            "东京Metro南北线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 12
+        },
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 16
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -9349,7 +10196,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -9423,15 +10270,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -9449,8 +10294,8 @@
     "cuisineZh": "寿司",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区白金台3-18-5 2F",
+    "phone": "03-3445-5301",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -9459,7 +10304,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -9533,17 +10378,40 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "白金台",
+          "lines": [
+            "东京Metro南北线",
+            "都营三田线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "目黑",
+          "lines": [
+            "JR线",
+            "东京Metro南北线",
+            "都营三田线",
+            "东急目黑线"
+          ],
+          "walkMinutes": 9
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -9559,8 +10427,8 @@
     "cuisineZh": "牛肉料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区西麻布2-24-14 B1F",
+    "phone": "03-3486-2929",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -9569,7 +10437,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -9643,17 +10511,44 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 10
+        },
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 12
+        },
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 13
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -9669,8 +10564,8 @@
     "cuisineZh": "日本料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区西麻布2-16-1",
+    "phone": "03-6427-5167",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -9679,7 +10574,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -9751,19 +10646,48 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.jushu.jp/",
+      "reservation": "https://www.jushu.jp/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 9
+        },
+        {
+          "name": "表参道",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro千代田线",
+            "东京Metro半藏门线"
+          ],
+          "walkMinutes": 12
+        },
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 13
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -9779,8 +10703,8 @@
     "cuisineZh": "创新料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都目黒区目黒4-10-8",
+    "phone": "03-6451-2413",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -9789,7 +10713,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -9861,19 +10785,41 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://kabi.tokyo/",
+      "reservation": "https://kabi.tokyo/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "目黑",
+          "lines": [
+            "JR线",
+            "东京Metro南北线",
+            "都营三田线",
+            "东急目黑线"
+          ],
+          "walkMinutes": 14
+        },
+        {
+          "name": "不动前",
+          "lines": [
+            "东急目黑线"
+          ],
+          "walkMinutes": 18
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -9899,7 +10845,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -9973,15 +10919,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -9999,8 +10943,8 @@
     "cuisineZh": "泰国菜",
     "area": "Ginza",
     "areaZh": "银座",
-    "address": "",
-    "phone": "",
+    "address": "東京都千代田区神田神保町2-12-7",
+    "phone": "050-5536-9856",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -10081,10 +11025,8 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://khao-tokyo.com/",
+      "reservation": "https://khao-tokyo.com/",
       "tabelog": "",
       "instagram": ""
     },
@@ -10094,6 +11036,39 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "神保町",
+          "lines": [
+            "东京Metro半藏门线",
+            "都营三田线",
+            "都营新宿线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "九段下",
+          "lines": [
+            "东京Metro东西线",
+            "东京Metro半藏门线",
+            "都营新宿线"
+          ],
+          "walkMinutes": 7
+        },
+        {
+          "name": "水道桥",
+          "lines": [
+            "JR线",
+            "都营三田线"
+          ],
+          "walkMinutes": 9
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -10109,8 +11084,8 @@
     "cuisineZh": "法餐",
     "area": "Ginza",
     "areaZh": "银座",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区西麻布4-11-28 2F",
+    "phone": "03-6433-5063",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -10191,10 +11166,8 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://kibun-restaurant.com/",
+      "reservation": "https://kibun-restaurant.com/",
       "tabelog": "",
       "instagram": ""
     },
@@ -10204,6 +11177,35 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 9
+        },
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 14
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 15
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -10229,7 +11231,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -10303,15 +11305,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -10329,8 +11329,8 @@
     "cuisineZh": "天妇罗",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区京橋2-5-2",
+    "phone": "03-5250-8777",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -10339,7 +11339,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -10413,17 +11413,44 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "京桥",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 1
+        },
+        {
+          "name": "宝町",
+          "lines": [
+            "都营浅草线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "东京",
+          "lines": [
+            "JR线",
+            "东京Metro丸之内线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -10439,8 +11466,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座5-9-16 2F",
+    "phone": "03-6274-6541",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -10449,7 +11476,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -10521,19 +11548,48 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.laffinage.jp/",
+      "reservation": "https://www.laffinage.jp/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "东银座",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "银座一丁目",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -10549,8 +11605,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都千代田区霞が関3-2-6 東京倶楽部ビルディング 2F",
+    "phone": "03-6268-8427",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -10559,7 +11615,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -10631,19 +11687,48 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://largent.tokyo/",
+      "reservation": "https://largent.tokyo/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "虎之门",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "霞关",
+          "lines": [
+            "东京Metro丸之内线",
+            "东京Metro日比谷线",
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "国会议事堂前",
+          "lines": [
+            "东京Metro丸之内线",
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -10659,8 +11744,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区六本木6-10-1 六本木ヒルズ ヒルサイド 2F",
+    "phone": "03-5772-7500",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -10669,7 +11754,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -10741,19 +11826,47 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.robuchon.jp/en/shop-list/latelier",
+      "reservation": "https://www.robuchon.jp/en/shop-list/latelier",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "麻布十番",
+          "lines": [
+            "东京Metro南北线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 12
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 12
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -10769,8 +11882,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都渋谷区神宮前5-10-1 GYRE 4F",
+    "phone": "03-6803-8670",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -10779,7 +11892,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -10851,19 +11964,48 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://lelan.jp/",
+      "reservation": "https://lelan.jp/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "明治神宫前",
+          "lines": [
+            "东京Metro千代田线",
+            "东京Metro副都心线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "表参道",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro千代田线",
+            "东京Metro半藏门线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "原宿",
+          "lines": [
+            "JR线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -10889,7 +12031,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -10963,15 +12105,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -11073,8 +12213,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
@@ -11109,7 +12247,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -11183,15 +12321,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -11209,8 +12345,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都目黒区三田1-13-1 恵比寿ガーデンプレイス内",
+    "phone": "03-5424-1338",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -11219,7 +12355,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -11291,19 +12427,42 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.robuchon.jp/en/shop-list/la-table",
+      "reservation": "https://www.robuchon.jp/en/shop-list/la-table",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "惠比寿",
+          "lines": [
+            "JR线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 10
+        },
+        {
+          "name": "目黑",
+          "lines": [
+            "JR线",
+            "东京Metro南北线",
+            "都营三田线",
+            "东急目黑线"
+          ],
+          "walkMinutes": 12
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -11319,8 +12478,8 @@
     "cuisineZh": "法餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都渋谷区渋谷2-2-2 B1F",
+    "phone": "03-6450-5297",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -11329,7 +12488,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -11401,19 +12560,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://www.lature.jp/",
+      "reservation": "https://www.lature.jp/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "表参道",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro千代田线",
+            "东京Metro半藏门线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "涩谷",
+          "lines": [
+            "JR线",
+            "东京Metro银座线",
+            "东京Metro半藏门线",
+            "东京Metro副都心线",
+            "东急东横线",
+            "东急田园都市线",
+            "京王井之头线"
+          ],
+          "walkMinutes": 10
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -11439,7 +12625,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -11513,15 +12699,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -11549,7 +12733,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -11623,15 +12807,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -11659,7 +12841,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -11733,15 +12915,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -11769,7 +12949,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -11843,15 +13023,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -11953,8 +13131,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
@@ -11989,7 +13165,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -12063,15 +13239,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -12089,8 +13263,8 @@
     "cuisineZh": "日本料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区南青山5-4-30",
+    "phone": "03-3499-3877",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -12099,7 +13273,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -12173,17 +13347,38 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "表参道",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro千代田线",
+            "东京Metro半藏门线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "外苑前",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 14
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -12209,7 +13404,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -12283,15 +13478,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -12319,7 +13512,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -12393,15 +13586,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -12429,7 +13620,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -12503,15 +13694,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -12539,7 +13728,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -12613,15 +13802,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -12649,7 +13836,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -12723,15 +13910,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -12759,7 +13944,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -12833,15 +14018,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -12869,7 +14052,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -12943,15 +14126,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -12979,7 +14160,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -13053,15 +14234,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -13089,7 +14268,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -13163,15 +14342,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -13199,7 +14376,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -13273,15 +14450,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -13309,7 +14484,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -13383,15 +14558,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -13419,7 +14592,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -13493,15 +14666,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -13529,7 +14700,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -13603,15 +14774,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -13639,7 +14808,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -13713,15 +14882,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -13749,7 +14916,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -13823,15 +14990,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -13859,7 +15024,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -13933,15 +15098,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -13969,7 +15132,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -14043,15 +15206,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -14153,8 +15314,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
@@ -14189,7 +15348,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -14263,15 +15422,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -14289,8 +15446,8 @@
     "cuisineZh": "天妇罗",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区築地3-16-9 B1F",
+    "phone": "03-3546-2622",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -14299,7 +15456,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -14371,19 +15528,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://tempura-seiju.com/",
+      "reservation": "https://tempura-seiju.com/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "筑地",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "筑地市场",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "东银座",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -14409,7 +15593,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -14483,15 +15667,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -14509,8 +15691,8 @@
     "cuisineZh": "中餐",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区麻布台3-4-11",
+    "phone": "03-5545-5857",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -14519,7 +15701,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -14591,19 +15773,46 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://series-azabudai.com/",
+      "reservation": "https://series-azabudai.com/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "六本木一丁目",
+          "lines": [
+            "东京Metro南北线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "麻布十番",
+          "lines": [
+            "东京Metro南北线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "神谷町",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 9
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -14629,7 +15838,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -14703,15 +15912,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -14739,7 +15946,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -14813,15 +16020,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -14849,7 +16054,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -14923,15 +16128,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -14959,7 +16162,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -15033,15 +16236,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -15069,7 +16270,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -15143,15 +16344,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -15179,7 +16378,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -15253,15 +16452,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -15289,7 +16486,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -15363,15 +16560,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -15399,7 +16594,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -15473,15 +16668,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -15509,7 +16702,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -15583,15 +16776,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -15619,7 +16810,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -15693,15 +16884,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -15729,7 +16918,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -15803,15 +16992,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -15839,7 +17026,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -15913,15 +17100,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -15949,7 +17134,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -16023,15 +17208,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -16059,7 +17242,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -16133,15 +17316,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -16243,8 +17424,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
@@ -16353,8 +17532,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
@@ -16389,7 +17566,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -16463,15 +17640,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -16499,7 +17674,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -16573,15 +17748,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -16683,8 +17856,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
@@ -16719,7 +17890,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -16793,15 +17964,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -16903,8 +18072,6 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
@@ -16939,7 +18106,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -17013,15 +18180,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -17049,7 +18214,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -17123,15 +18288,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -17159,7 +18322,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -17233,15 +18396,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -17269,7 +18430,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -17343,15 +18504,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -17379,7 +18538,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -17453,15 +18612,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -17489,7 +18646,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -17563,15 +18720,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -17599,7 +18754,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -17673,15 +18828,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -17709,7 +18862,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -17783,15 +18936,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -17819,7 +18970,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -17893,15 +19044,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -17929,7 +19078,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -18003,15 +19152,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -18039,7 +19186,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -18113,15 +19260,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -18149,7 +19294,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -18223,15 +19368,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -18249,8 +19392,8 @@
     "cuisineZh": "蟹料理",
     "area": "Tokyo",
     "areaZh": "东京",
-    "address": "",
-    "phone": "",
+    "address": "東京都新宿区荒木町2-14",
+    "phone": "03-3356-7270",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -18259,7 +19402,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -18331,19 +19474,47 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
+      "official": "https://ubuka.jp/",
+      "reservation": "https://ubuka.jp/",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "四谷三丁目",
+          "lines": [
+            "东京Metro丸之内线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "曙桥",
+          "lines": [
+            "都营新宿线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "四谷",
+          "lines": [
+            "JR线",
+            "东京Metro丸之内线",
+            "东京Metro南北线"
+          ],
+          "walkMinutes": 10
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Japan / official access information cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -18369,7 +19540,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -18443,15 +19614,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -18479,7 +19648,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -18553,15 +19722,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -18589,7 +19756,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -18663,15 +19830,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -18699,7 +19864,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -18773,15 +19938,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -18809,7 +19972,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -18883,15 +20046,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }
@@ -18919,7 +20080,7 @@
     "dinner": [],
     "pairings": [],
     "url": "",
-    "dataStatus": "michelin_starred_basic",
+    "dataStatus": "starred_basic",
     "dressCode": {
       "level": "待核验",
       "required": null,
@@ -18993,15 +20154,13 @@
     "links": {
       "official": "",
       "reservation": "",
-      "googleMaps": "",
-      "michelin": "",
       "tabelog": "",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "MICHELIN Guide Tokyo 2026 official restaurant index",
+      "source": "Tokyo 2026 starred restaurant index",
       "changeSummary": "星级餐厅基础资料批量补充；详情字段待逐店核验",
       "autoCheckEnabled": false
     }

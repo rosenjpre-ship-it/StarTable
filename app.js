@@ -42,12 +42,11 @@ function tabContent(item,tab){
  if(tab==='ratings'){
   const r=item.ratings||{};
   const tabelog=r.tabelogScore?`${r.tabelogScore}${r.tabelogUrl?` <a href="${r.tabelogUrl}" target="_blank" rel="noopener">Tabelog</a>`:''}`:'待补充';
-  const lines=[`Tabelog：${tabelog}`];
-  if(r.googleMapsScore)lines.push(`Google Maps：${r.googleMapsScore}`);
-  return `<div class="content-empty">${lines.join('<br>')}</div>`;
+  return `<div class="content-empty">Tabelog：${tabelog}</div>`;
  }
  if(tab==='links'){
-  const entries=Object.entries(item.links||{}).filter(([,v])=>v);
+  const allowed=new Set(['official','reservation','tabelog','instagram']);
+  const entries=Object.entries(item.links||{}).filter(([k,v])=>allowed.has(k)&&v);
   return entries.length?`<div class="link-list">${entries.map(([k,v])=>`<a href="${v}" target="_blank" rel="noopener">${k}</a>`).join('')}</div>`:'<div class="content-empty">链接待补充。</div>';
  }
 }
