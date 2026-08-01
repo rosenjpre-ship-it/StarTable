@@ -15,28 +15,34 @@
 <section class="hero"><div class="shell hero-grid">
 <div><p class="eyebrow">TOKYO FINE DINING DATABASE</p>
 <h1>Find your next<br>beautiful table.</h1>
-<p class="sub">搜索和筛选东京星级餐厅，比较 Lunch / Dinner Course、价格、预约难度、着装要求、儿童政策与纪念日服务。</p></div>
+<p class="sub">已收录东京 2026 全部星级米其林餐厅，搜索和筛选三星、二星、一星餐厅，比较 Lunch / Dinner Course、价格区间、着装要求、儿童政策与评分信息。</p></div>
 <div class="hero-stats">
-<div><strong id="totalRestaurants">0</strong><span>餐厅</span></div>
+<div><strong id="totalRestaurants">0</strong><span>星级餐厅合计</span></div>
 <div><strong id="threeStarCount">0</strong><span>三星</span></div>
-<div><strong id="checkedCount">0</strong><span>已检查官网</span></div>
+<div><strong id="twoStarCount">0</strong><span>二星</span></div>
+<div><strong id="oneStarCount">0</strong><span>一星</span></div>
 </div></div></section>
 
 <main class="shell">
 <section class="controls">
+<div class="controls-head">
 <input id="searchInput" type="search" placeholder="搜索餐厅、日文名、英文名、地区、菜系或 Course">
+<button id="toggleFiltersButton" class="ghost" type="button">收起筛选</button>
+</div>
+<div id="filterBody">
 <div class="filters">
 <select id="starFilter"><option value="">全部星级</option><option value="3">三星</option><option value="2">二星</option><option value="1">一星</option></select>
 <select id="cuisineFilter"><option value="">全部菜系</option></select>
 <select id="areaFilter"><option value="">全部地区</option></select>
+<select id="priceFilter"><option value="">全部价格</option><option value="under-10000">1万日元以下</option><option value="10000-20000">1~2万日元</option><option value="20000-30000">2~3万日元</option><option value="30000-40000">3~4万日元</option><option value="40000-50000">4~5万日元</option><option value="50000-plus">5万日元以上</option></select>
 <select id="dressFilter"><option value="">着装要求</option><option value="required">需要 Dress Code</option><option value="none">无明确要求</option><option value="pending">待核验</option></select>
 <select id="childFilter"><option value="">儿童政策</option><option value="yes">可带儿童</option><option value="private">仅包厢可</option><option value="no">不可带儿童</option><option value="pending">待核验</option></select>
-<select id="difficultyFilter"><option value="">预约难度</option><option value="5">★★★★★ 极难</option><option value="4">★★★★ 困难</option><option value="3">★★★ 中等</option></select>
 </div>
 <div class="meal-toggle">
 <button class="meal-btn active" data-meal="all">全部</button>
 <button class="meal-btn" data-meal="lunch">Lunch</button>
 <button class="meal-btn" data-meal="dinner">Dinner</button>
+</div>
 </div>
 </section>
 
@@ -50,19 +56,17 @@
 <button class="card-head" aria-expanded="false">
 <div>
 <div class="meta"><span class="area"></span><span>•</span><span class="cuisine"></span></div>
-<h2 class="name-zh"></h2>
+<div class="name-line"><h2 class="name-zh"></h2><div class="stars"></div></div>
 <div class="names-secondary"></div>
 <div class="chips"></div>
 </div>
-<div class="stars"></div>
 </button>
 <div class="detail" hidden>
 <div class="quick-grid">
-<section class="panel"><h3>基本信息</h3><p class="address"></p><p class="phone"></p><p class="checked"></p></section>
+<section class="panel"><h3>基本信息</h3><p class="address"></p><p class="phone"></p></section>
 <section class="panel"><h3>预约</h3><div class="difficulty"></div><p class="booking"></p><a class="reserve" target="_blank" rel="noopener">前往预约</a></section>
 <section class="panel"><h3>Dress Code</h3><p class="dress"></p></section>
 <section class="panel"><h3>儿童政策</h3><p class="children"></p></section>
-<section class="panel"><h3>纪念日</h3><p class="anniversary"></p></section>
 <section class="panel"><h3>预算</h3><p class="budget"></p></section>
 </div>
 
@@ -70,7 +74,7 @@
 <button class="local-btn active" data-tab="lunch">Lunch</button>
 <button class="local-btn" data-tab="dinner">Dinner</button>
 <button class="local-btn" data-tab="pairings">Pairing</button>
-<button class="local-btn" data-tab="experience">用餐体验</button>
+<button class="local-btn" data-tab="ratings">评分</button>
 <button class="local-btn" data-tab="links">链接</button>
 </div>
 <div class="content-area"></div>

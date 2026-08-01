@@ -23,21 +23,23 @@
     "nameEn": "Azabu Kadowaki",
     "areaZh": "麻布十番",
     "dressCode": {
-      "level": "待核验",
-      "required": null,
-      "notes": [],
-      "verified": false
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "男性は半裤、背心、运动凉鞋及过于休闲服装不可入店"
+      ],
+      "verified": true
     },
     "childPolicy": {
-      "diningRoomAllowed": null,
+      "diningRoomAllowed": true,
       "privateRoomAllowed": null,
-      "minimumAge": null,
-      "babyAllowed": null,
+      "minimumAge": 13,
+      "babyAllowed": false,
       "strollerAllowed": null,
-      "fullCourseRequired": null,
+      "fullCourseRequired": true,
       "advanceNoticeRequired": null,
-      "notes": "待官网或预约页核验",
-      "verified": false
+      "notes": "13岁以上，且需享用与成人相同的 course",
+      "verified": true
     },
     "anniversary": {
       "messagePlate": null,
@@ -104,8 +106,8 @@
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "餐厅官网 / 预约页",
-      "changeSummary": "初始录入",
+      "source": "Azabu Kadowaki official reservation notes",
+      "changeSummary": "着装要求与儿童政策官网核验",
       "autoCheckEnabled": false
     }
   },
@@ -235,29 +237,69 @@
     "difficulty": 4,
     "booking": "官网或电话预约；详细放位规则待核验。",
     "plate": "通常可提出纪念日甜点或蛋糕需求，具体以预约页为准。",
-    "lunch": [],
-    "dinner": [],
+    "lunch": [
+      {
+        "name": "MENU PRIX FIXE",
+        "price": "¥28,000",
+        "note": "午餐限定 prix fixe 低价菜单。季节性内容会调整，价格含税，另收12%服务费。"
+      },
+      {
+        "name": "MENU PRIX FIXE",
+        "price": "¥33,000 / ¥38,000",
+        "note": "可选式 prix fixe 菜单。季节性内容会调整，价格含税，另收12%服务费。"
+      },
+      {
+        "name": "MENU DÉGUSTATION",
+        "price": "¥58,000",
+        "note": "推荐整桌同点的 degustation tasting menu；数量有限。价格含税，另收12%服务费。"
+      },
+      {
+        "name": "MENU VÉGÉTARIEN",
+        "price": "¥38,000",
+        "note": "素食 tasting menu，需3天前预约；非 vegan。价格含税，另收12%服务费。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "MENU PRIX FIXE",
+        "price": "¥33,000 / ¥38,000",
+        "note": "晚餐 prix fixe 菜单。季节性内容会调整，价格含税，另收12%服务费。"
+      },
+      {
+        "name": "MENU DÉGUSTATION",
+        "price": "¥58,000",
+        "note": "推荐整桌同点的 degustation tasting menu；数量有限。价格含税，另收12%服务费。"
+      },
+      {
+        "name": "MENU VÉGÉTARIEN",
+        "price": "¥38,000",
+        "note": "素食 tasting menu，需3天前预约；非 vegan。价格含税，另收12%服务费。"
+      }
+    ],
     "url": "https://www.robuchon.jp/",
     "dataStatus": "basic_verified",
     "nameZh": "Joël Robuchon",
     "nameEn": "Joël Robuchon",
     "areaZh": "惠比寿",
     "dressCode": {
-      "level": "待核验",
-      "required": null,
-      "notes": [],
-      "verified": false
+      "level": "Dress code required",
+      "required": true,
+      "notes": [
+        "男性不可穿T恤、短裤、运动服、凉鞋",
+        "男性需夹克或有领衬衫；领带非必须"
+      ],
+      "verified": true
     },
     "childPolicy": {
-      "diningRoomAllowed": null,
-      "privateRoomAllowed": null,
-      "minimumAge": null,
-      "babyAllowed": null,
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": 10,
+      "babyAllowed": true,
       "strollerAllowed": null,
       "fullCourseRequired": null,
-      "advanceNoticeRequired": null,
-      "notes": "待官网或预约页核验",
-      "verified": false
+      "advanceNoticeRequired": true,
+      "notes": "主餐厅不接受10岁以下；0-9岁可使用包厢，需确认包厢空位",
+      "verified": true
     },
     "anniversary": {
       "messagePlate": null,
@@ -274,26 +316,29 @@
     "reservation": {
       "difficulty": 4,
       "difficultyLabel": "困难",
-      "bookingRule": "官网或电话预约；详细放位规则待核验。",
+      "bookingRule": "官网预约。5人以上需电话联系餐厅安排。取消费：7-4日前60%，3日前80%，当日100%。",
       "releaseTime": null,
       "releaseWindow": null,
-      "platforms": [],
+      "platforms": [
+        "official",
+        "phone"
+      ],
       "waitlist": null,
       "cancelSlotLikelihood": null,
       "advanceDaysLunch": null,
       "advanceDaysDinner": null,
-      "conciergeRecommended": null,
-      "overseasBooking": null,
-      "verified": false
+      "conciergeRecommended": true,
+      "overseasBooking": true,
+      "verified": true
     },
     "pairings": [],
     "budget": {
-      "lunchFrom": null,
-      "dinnerFrom": null,
-      "serviceCharge": null,
+      "lunchFrom": 28000,
+      "dinnerFrom": 33000,
+      "serviceCharge": "12%",
       "estimatedLunchAllIn": null,
       "estimatedDinnerAllIn": null,
-      "verified": false
+      "verified": true
     },
     "experience": {
       "counter": null,
@@ -314,19 +359,26 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "https://www.robuchon.jp/",
-      "reservation": "https://www.robuchon.jp/",
-      "googleMaps": "",
-      "michelin": "",
-      "tabelog": "",
+      "official": "https://www.robuchon.jp/en/shop-list/joelrobuchon",
+      "reservation": "https://www.robuchon.jp/en/shop-list/joelrobuchon",
+      "googleMaps": "https://www.google.com/maps/search/?api=1&query=Joel%20Robuchon%20Tokyo%20Ebisu",
+      "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/joel-robuchon-1193981",
+      "tabelog": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=Jo%C3%ABl%20Robuchon",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "餐厅官网 / 预约页",
-      "changeSummary": "初始录入",
+      "source": "Joël Robuchon official shop page",
+      "changeSummary": "地址电话、预约规则、course、评分链接批量核验",
       "autoCheckEnabled": false
+    },
+    "ratings": {
+      "tabelogScore": null,
+      "tabelogUrl": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=Jo%C3%ABl%20Robuchon",
+      "googleMapsScore": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Joel%20Robuchon%20Tokyo%20Ebisu",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -565,29 +617,45 @@
     "difficulty": 5,
     "booking": "官网在线预约；详细滚动开放周期待进一步核验。",
     "plate": "纪念日需求可在预约备注中提出；具体安排以餐厅确认为准。",
-    "lunch": [],
-    "dinner": [],
+    "lunch": [
+      {
+        "name": "Omakase course",
+        "price": "¥45,000",
+        "note": "午餐统一 omakase course；Tabelog 店铺信息标注午餐/晚餐为45,000日元，另计税与服务费。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "Omakase course",
+        "price": "¥45,000",
+        "note": "晚餐统一 omakase course；主打时令食材与“Artisanal Vegetables”等代表性料理。另计税与服务费。"
+      }
+    ],
     "url": "https://www.leffervescence.jp/en/reservation.html",
     "dataStatus": "basic_verified",
     "nameZh": "L’Effervescence",
     "nameEn": "L’Effervescence",
     "areaZh": "西麻布",
     "dressCode": {
-      "level": "待核验",
-      "required": null,
-      "notes": [],
-      "verified": false
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "短裤、运动服、帽衫、凉鞋、帽子、外套不可入餐厅",
+        "男性需穿商务夹克或有领衬衫",
+        "请勿使用香水或古龙水"
+      ],
+      "verified": true
     },
     "childPolicy": {
-      "diningRoomAllowed": null,
-      "privateRoomAllowed": null,
-      "minimumAge": null,
-      "babyAllowed": null,
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": 12,
+      "babyAllowed": true,
       "strollerAllowed": null,
       "fullCourseRequired": null,
-      "advanceNoticeRequired": null,
-      "notes": "待官网或预约页核验",
-      "verified": false
+      "advanceNoticeRequired": true,
+      "notes": "主餐厅仅12岁以上；包厢欢迎所有年龄儿童，需咨询餐厅",
+      "verified": true
     },
     "anniversary": {
       "messagePlate": null,
@@ -604,26 +672,28 @@
     "reservation": {
       "difficulty": 5,
       "difficultyLabel": "极难",
-      "bookingRule": "官网在线预约；详细滚动开放周期待进一步核验。",
+      "bookingRule": "官网预约；餐厅会在预约日前约1周通过电话或邮件再次确认，若预约日前3天仍无法确认，餐厅可能取消预约。2-4人预约前日~3日前取消收50%，当日/未到收100%。",
       "releaseTime": null,
       "releaseWindow": null,
-      "platforms": [],
+      "platforms": [
+        "official"
+      ],
       "waitlist": null,
       "cancelSlotLikelihood": null,
       "advanceDaysLunch": null,
       "advanceDaysDinner": null,
-      "conciergeRecommended": null,
-      "overseasBooking": null,
-      "verified": false
+      "conciergeRecommended": true,
+      "overseasBooking": true,
+      "verified": true
     },
     "pairings": [],
     "budget": {
-      "lunchFrom": null,
-      "dinnerFrom": null,
-      "serviceCharge": null,
+      "lunchFrom": 45000,
+      "dinnerFrom": 45000,
+      "serviceCharge": "15%",
       "estimatedLunchAllIn": null,
       "estimatedDinnerAllIn": null,
-      "verified": false
+      "verified": true
     },
     "experience": {
       "counter": null,
@@ -645,18 +715,25 @@
     },
     "links": {
       "official": "https://www.leffervescence.jp/",
-      "reservation": "https://www.leffervescence.jp/en/reservation.html",
-      "googleMaps": "",
-      "michelin": "",
-      "tabelog": "",
+      "reservation": "https://www.leffervescence.jp/en/address.html",
+      "googleMaps": "https://www.google.com/maps/search/?api=1&query=L%27Effervescence%20Tokyo",
+      "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/l-effervescence",
+      "tabelog": "https://tabelog.com/en/tokyo/A1306/A130602/13116356/",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "餐厅官网 / 预约页",
-      "changeSummary": "初始录入",
+      "source": "L'Effervescence official address/reservation page; Tabelog page",
+      "changeSummary": "地址电话、预约规则、course、评分链接批量核验",
       "autoCheckEnabled": false
+    },
+    "ratings": {
+      "tabelogScore": 4.47,
+      "tabelogUrl": "https://tabelog.com/en/tokyo/A1306/A130602/13116356/",
+      "googleMapsScore": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27Effervescence%20Tokyo",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -675,7 +752,23 @@
     "difficulty": 5,
     "booking": "官网 / TableCheck / 电话。官方说明可预约当月起至未来第3个月月底。",
     "plate": "可申请免费 Message Plate；预约页通常注明20字以内，可用日语、英语或法语。",
-    "lunch": [],
+    "lunch": [
+      {
+        "name": "MENU DÉJEUNER",
+        "price": "¥20,000",
+        "note": "午餐 course。官方菜单示例含开胃小点、贝类组合、鸟取夏鹿、预甜点、甜品车与咖啡。含税，另收15%服务费。"
+      },
+      {
+        "name": "MENU LES BELLES GOURMANDES",
+        "price": "¥25,000",
+        "note": "午餐 course。官方菜单示例含牡丹虾/白虾、鱼料理、青森银鸭、红莓甜品、甜品车与咖啡。含税，另收15%服务费。"
+      },
+      {
+        "name": "LUNCH A WINK TO SUMMER 2026",
+        "price": "¥50,000",
+        "note": "夏季特别午餐菜单，需整桌同点。含时令玉米、千叶天然黑鲍、蓝龙虾、熊本赤牛等。含税，另收15%服务费。"
+      }
+    ],
     "dinner": [],
     "url": "https://www.tablecheck.com/ja/shops/shiseido-losier/reserve",
     "dataStatus": "basic_verified",
@@ -683,12 +776,13 @@
     "nameEn": "L’OSIER",
     "areaZh": "银座",
     "dressCode": {
-      "level": "Smart Casual",
+      "level": "Dress code required",
       "required": true,
       "notes": [
-        "避免短裤、凉鞋及过于休闲的服装"
+        "通常要求男性穿夹克；夏季可夹克或有领衬衫",
+        "T恤、短裤、凉鞋等休闲服装不可"
       ],
-      "verified": false
+      "verified": true
     },
     "childPolicy": {
       "diningRoomAllowed": null,
@@ -698,7 +792,7 @@
       "strollerAllowed": null,
       "fullCourseRequired": null,
       "advanceNoticeRequired": null,
-      "notes": "待官网或预约页核验",
+      "notes": "官网公开页面未确认儿童政策",
       "verified": false
     },
     "anniversary": {
@@ -718,32 +812,31 @@
       "verified": true
     },
     "reservation": {
-      "difficulty": 5,
-      "difficultyLabel": "极难",
-      "bookingRule": "官网 / TableCheck / 电话。官方说明可预约当月起至未来第3个月月底。",
+      "difficulty": 4,
+      "difficultyLabel": "困难",
+      "bookingRule": "官网或电话预约。取消政策：到店48小时前起取消会收取取消费；full-course 预约按所订 course 金额人数计，席位预约按该时段最低价菜单人数计。",
       "releaseTime": null,
-      "releaseWindow": "可预约当月起至未来第3个月月底",
+      "releaseWindow": null,
       "platforms": [
-        "官网",
-        "TableCheck",
-        "电话"
+        "official",
+        "phone"
       ],
       "waitlist": null,
       "cancelSlotLikelihood": null,
       "advanceDaysLunch": null,
       "advanceDaysDinner": null,
-      "conciergeRecommended": null,
-      "overseasBooking": null,
+      "conciergeRecommended": true,
+      "overseasBooking": true,
       "verified": true
     },
     "pairings": [],
     "budget": {
-      "lunchFrom": null,
+      "lunchFrom": 20000,
       "dinnerFrom": null,
-      "serviceCharge": null,
+      "serviceCharge": "15%",
       "estimatedLunchAllIn": null,
       "estimatedDinnerAllIn": null,
-      "verified": false
+      "verified": true
     },
     "experience": {
       "counter": null,
@@ -764,19 +857,26 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "https://losier.shiseido.co.jp/",
-      "reservation": "https://www.tablecheck.com/ja/shops/shiseido-losier/reserve",
-      "googleMaps": "",
+      "official": "https://losier.shiseido.co.jp/e/",
+      "reservation": "https://losier.shiseido.co.jp/e/",
+      "googleMaps": "https://www.google.com/maps/search/?api=1&query=L%27OSIER%20Tokyo",
       "michelin": "",
-      "tabelog": "",
+      "tabelog": "https://tabelog.com/tw/tokyo/A1301/A130101/13002607/",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "餐厅官网 / 预约页",
-      "changeSummary": "初始录入",
+      "source": "L'OSIER official access/lunch pages; Tabelog page",
+      "changeSummary": "地址电话、预约规则、course、评分链接批量核验",
       "autoCheckEnabled": false
+    },
+    "ratings": {
+      "tabelogScore": 4.4,
+      "tabelogUrl": "https://tabelog.com/tw/tokyo/A1301/A130101/13002607/",
+      "googleMapsScore": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27OSIER%20Tokyo",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -803,21 +903,24 @@
     "nameEn": "Myojaku",
     "areaZh": "西麻布",
     "dressCode": {
-      "level": "待核验",
-      "required": null,
-      "notes": [],
-      "verified": false
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "男性请避免短裤、无袖上衣、运动凉鞋及类似服装",
+        "请勿使用香水或浓重香氛"
+      ],
+      "verified": true
     },
     "childPolicy": {
-      "diningRoomAllowed": null,
-      "privateRoomAllowed": null,
-      "minimumAge": null,
-      "babyAllowed": null,
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": 12,
+      "babyAllowed": false,
       "strollerAllowed": null,
-      "fullCourseRequired": null,
+      "fullCourseRequired": true,
       "advanceNoticeRequired": null,
-      "notes": "待官网或预约页核验",
-      "verified": false
+      "notes": "仅接受中学生以上，且能享用成人相同 course 的儿童",
+      "verified": true
     },
     "anniversary": {
       "messagePlate": null,
@@ -884,8 +987,8 @@
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "餐厅官网 / 预约页",
-      "changeSummary": "初始录入",
+      "source": "Myojaku official reservation notes",
+      "changeSummary": "着装要求与儿童政策官网核验",
       "autoCheckEnabled": false
     }
   },
@@ -913,23 +1016,25 @@
     "nameEn": "Quintessence",
     "areaZh": "品川",
     "dressCode": {
-      "level": "Smart Casual",
+      "level": "Elegant casual",
       "required": true,
       "notes": [
-        "具体要求待官网复核"
+        "男性建议夹克或有领衬衫",
+        "短裤、运动服、凉鞋、背心、T恤请避免",
+        "请避免过强香水"
       ],
-      "verified": false
+      "verified": true
     },
     "childPolicy": {
-      "diningRoomAllowed": null,
-      "privateRoomAllowed": null,
-      "minimumAge": null,
-      "babyAllowed": null,
+      "diningRoomAllowed": false,
+      "privateRoomAllowed": false,
+      "minimumAge": 16,
+      "babyAllowed": false,
       "strollerAllowed": null,
       "fullCourseRequired": null,
       "advanceNoticeRequired": null,
-      "notes": "待官网或预约页核验",
-      "verified": false
+      "notes": "不接受16岁未满儿童",
+      "verified": true
     },
     "anniversary": {
       "messagePlate": null,
@@ -996,8 +1101,8 @@
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "餐厅官网 / 预约页",
-      "changeSummary": "初始录入",
+      "source": "Quintessence official reservation page",
+      "changeSummary": "着装要求与儿童政策官网核验",
       "autoCheckEnabled": false
     }
   },
@@ -1018,28 +1123,37 @@
     "booking": "预约规则待核验。",
     "plate": "Message Plate 信息待核验。",
     "lunch": [],
-    "dinner": [],
+    "dinner": [
+      {
+        "name": "日本の豊かさを皿の上に",
+        "price": "¥77,000",
+        "note": "晚餐季节性日本料理 course。内容随当日入荷调整，官方示例包括前菜、椀物、刺身、炭火烤鱼、炊合、肉料理、米饭、甜点与薄茶。含税，另收服务费。"
+      }
+    ],
     "url": "https://www.nihonryori-ryugin.com/",
     "dataStatus": "basic_verified",
     "nameZh": "龙吟",
     "nameEn": "RyuGin",
     "areaZh": "日比谷",
     "dressCode": {
-      "level": "待核验",
-      "required": null,
-      "notes": [],
-      "verified": false
+      "level": "Semi-formal",
+      "required": true,
+      "notes": [
+        "T恤、男士短裤或凉鞋不可入店",
+        "禁止香水及古龙水"
+      ],
+      "verified": true
     },
     "childPolicy": {
-      "diningRoomAllowed": null,
-      "privateRoomAllowed": null,
-      "minimumAge": null,
-      "babyAllowed": null,
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": 10,
+      "babyAllowed": false,
       "strollerAllowed": null,
-      "fullCourseRequired": null,
+      "fullCourseRequired": true,
       "advanceNoticeRequired": null,
-      "notes": "待官网或预约页核验",
-      "verified": false
+      "notes": "仅10岁以上儿童；需享用与成人相同 course",
+      "verified": true
     },
     "anniversary": {
       "messagePlate": null,
@@ -1056,26 +1170,28 @@
     "reservation": {
       "difficulty": 5,
       "difficultyLabel": "极难",
-      "bookingRule": "预约规则待核验。",
-      "releaseTime": null,
-      "releaseWindow": null,
-      "platforms": [],
+      "bookingRule": "每月1日中午开放之后约3个月内预约。例如4月1日中午开始接受至6月底预约；5月1日中午开始接受至7月底预约。电话预约时间12:00-17:00；当日有空位时可至19:00电话咨询。",
+      "releaseTime": "每月1日 12:00",
+      "releaseWindow": "约3个月内",
+      "platforms": [
+        "official"
+      ],
       "waitlist": null,
       "cancelSlotLikelihood": null,
       "advanceDaysLunch": null,
-      "advanceDaysDinner": null,
-      "conciergeRecommended": null,
-      "overseasBooking": null,
-      "verified": false
+      "advanceDaysDinner": 90,
+      "conciergeRecommended": true,
+      "overseasBooking": true,
+      "verified": true
     },
     "pairings": [],
     "budget": {
       "lunchFrom": null,
-      "dinnerFrom": null,
-      "serviceCharge": null,
+      "dinnerFrom": 77000,
+      "serviceCharge": "桌席10%；半包厢/包厢15%",
       "estimatedLunchAllIn": null,
       "estimatedDinnerAllIn": null,
-      "verified": false
+      "verified": true
     },
     "experience": {
       "counter": null,
@@ -1097,18 +1213,25 @@
     },
     "links": {
       "official": "https://www.nihonryori-ryugin.com/",
-      "reservation": "https://www.nihonryori-ryugin.com/",
-      "googleMaps": "",
-      "michelin": "",
-      "tabelog": "",
+      "reservation": "https://www.nihonryori-ryugin.com/en/about/",
+      "googleMaps": "https://www.google.com/maps/search/?api=1&query=Nihonryori%20RyuGin%20Tokyo",
+      "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/nihonryori-ryugin",
+      "tabelog": "https://tabelog.com/cn/tokyo/A1301/A130102/13001457/",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "餐厅官网 / 预约页",
-      "changeSummary": "初始录入",
+      "source": "RyuGin official menu/about pages; Tabelog page",
+      "changeSummary": "地址电话、预约规则、course、评分链接批量核验",
       "autoCheckEnabled": false
+    },
+    "ratings": {
+      "tabelogScore": 4.13,
+      "tabelogUrl": "https://tabelog.com/cn/tokyo/A1301/A130102/13001457/",
+      "googleMapsScore": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nihonryori%20RyuGin%20Tokyo",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -1135,21 +1258,24 @@
     "nameEn": "Sazenka",
     "areaZh": "南麻布",
     "dressCode": {
-      "level": "待核验",
-      "required": null,
-      "notes": [],
-      "verified": false
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "男性半裤、凉鞋不可",
+        "请勿使用香水或古龙水"
+      ],
+      "verified": true
     },
     "childPolicy": {
-      "diningRoomAllowed": null,
-      "privateRoomAllowed": null,
-      "minimumAge": null,
-      "babyAllowed": null,
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": 12,
+      "babyAllowed": true,
       "strollerAllowed": null,
-      "fullCourseRequired": null,
-      "advanceNoticeRequired": null,
-      "notes": "待官网或预约页核验",
-      "verified": false
+      "fullCourseRequired": true,
+      "advanceNoticeRequired": true,
+      "notes": "1F主餐厅为12岁以上且能享用成人 course；小龄儿童仅包厢可咨询",
+      "verified": true
     },
     "anniversary": {
       "messagePlate": null,
@@ -1216,8 +1342,8 @@
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "餐厅官网 / 预约页",
-      "changeSummary": "初始录入",
+      "source": "Sazenka official information page",
+      "changeSummary": "着装要求与儿童政策官网核验",
       "autoCheckEnabled": false
     }
   },
@@ -1237,31 +1363,49 @@
     "difficulty": 5,
     "booking": "通过官方页面或酒店预约系统预约；详细放位规则待核验。",
     "plate": "纪念日安排需以餐厅确认为准。",
-    "lunch": [],
-    "dinner": [],
+    "lunch": [
+      {
+        "name": "MENU SÉZANNE",
+        "price": "¥56,925",
+        "note": "午餐/晚餐均可预约的季节性法餐 tasting menu。菜单随季节、食材与偏好调整。"
+      },
+      {
+        "name": "MENU DU JOUR",
+        "price": "¥27,830",
+        "note": "周三至周六午餐限定；2026年5月1日起提供。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "MENU SÉZANNE",
+        "price": "¥56,925",
+        "note": "晚餐季节性法餐 tasting menu。菜单会随当季日本食材与供应情况变化。"
+      }
+    ],
     "url": "https://www.sezanne.tokyo/",
     "dataStatus": "basic_verified",
     "nameZh": "SÉZANNE",
     "nameEn": "SÉZANNE",
     "areaZh": "丸之内",
     "dressCode": {
-      "level": "Smart Casual",
+      "level": "Smart casual",
       "required": true,
       "notes": [
-        "具体要求待官网复核"
+        "男士需夹克或长袖有领衬衫、长裤、包头鞋",
+        "棒球帽、运动服、短裤、休闲凉鞋不可入店"
       ],
-      "verified": false
+      "verified": true
     },
     "childPolicy": {
-      "diningRoomAllowed": null,
+      "diningRoomAllowed": true,
       "privateRoomAllowed": null,
-      "minimumAge": null,
-      "babyAllowed": null,
+      "minimumAge": 13,
+      "babyAllowed": false,
       "strollerAllowed": null,
-      "fullCourseRequired": null,
+      "fullCourseRequired": true,
       "advanceNoticeRequired": null,
-      "notes": "待官网或预约页核验",
-      "verified": false
+      "notes": "欢迎13岁以上儿童；不提供儿童菜单",
+      "verified": true
     },
     "anniversary": {
       "messagePlate": null,
@@ -1278,26 +1422,28 @@
     "reservation": {
       "difficulty": 5,
       "difficultyLabel": "极难",
-      "bookingRule": "通过官方页面或酒店预约系统预约；详细放位规则待核验。",
+      "bookingRule": "官网预约。午餐周三至周六，晚餐周三至周日；官网提示部分饮食限制无法对应。",
       "releaseTime": null,
       "releaseWindow": null,
-      "platforms": [],
+      "platforms": [
+        "official"
+      ],
       "waitlist": null,
       "cancelSlotLikelihood": null,
       "advanceDaysLunch": null,
       "advanceDaysDinner": null,
-      "conciergeRecommended": null,
-      "overseasBooking": null,
-      "verified": false
+      "conciergeRecommended": true,
+      "overseasBooking": true,
+      "verified": true
     },
     "pairings": [],
     "budget": {
-      "lunchFrom": null,
-      "dinnerFrom": null,
+      "lunchFrom": 27830,
+      "dinnerFrom": 56925,
       "serviceCharge": null,
       "estimatedLunchAllIn": null,
       "estimatedDinnerAllIn": null,
-      "verified": false
+      "verified": true
     },
     "experience": {
       "counter": null,
@@ -1320,17 +1466,24 @@
     "links": {
       "official": "https://www.sezanne.tokyo/",
       "reservation": "https://www.sezanne.tokyo/",
-      "googleMaps": "",
-      "michelin": "",
-      "tabelog": "",
+      "googleMaps": "https://www.google.com/maps/search/?api=1&query=SEZANNE%20Tokyo",
+      "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/sezanne",
+      "tabelog": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=S%C3%89ZANNE",
       "instagram": ""
     },
     "sync": {
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
-      "source": "餐厅官网 / 预约页",
-      "changeSummary": "初始录入",
+      "source": "SÉZANNE official menu/basic information pages",
+      "changeSummary": "地址电话、预约规则、course、评分链接批量核验",
       "autoCheckEnabled": false
+    },
+    "ratings": {
+      "tabelogScore": null,
+      "tabelogUrl": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=S%C3%89ZANNE",
+      "googleMapsScore": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SEZANNE%20Tokyo",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -4309,8 +4462,8 @@
     "country": "Japan",
     "name": "Akasaka Kikunoi",
     "nameEn": "Akasaka Kikunoi",
-    "nameJa": "",
-    "nameZh": "Akasaka Kikunoi",
+    "nameJa": "赤坂 菊乃井",
+    "nameZh": "赤坂 菊乃井",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -4969,8 +5122,8 @@
     "country": "Japan",
     "name": "Azabujuban Fukuda",
     "nameEn": "Azabujuban Fukuda",
-    "nameJa": "",
-    "nameZh": "Azabujuban Fukuda",
+    "nameJa": "麻布十番 ふくだ",
+    "nameZh": "麻布十番 ふくだ",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -5519,8 +5672,8 @@
     "country": "Japan",
     "name": "Daigo",
     "nameEn": "Daigo",
-    "nameJa": "",
-    "nameZh": "Daigo",
+    "nameJa": "醍醐",
+    "nameZh": "醍醐",
     "stars": 1,
     "cuisine": "Shojin",
     "cuisineZh": "精进料理",
@@ -5849,8 +6002,8 @@
     "country": "Japan",
     "name": "Edomae Shinsaku",
     "nameEn": "Edomae Shinsaku",
-    "nameJa": "",
-    "nameZh": "Edomae Shinsaku",
+    "nameJa": "江戸前 晋作",
+    "nameZh": "江户前 晋作",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -6619,8 +6772,8 @@
     "country": "Japan",
     "name": "Ginza Kitagawa",
     "nameEn": "Ginza Kitagawa",
-    "nameJa": "",
-    "nameZh": "Ginza Kitagawa",
+    "nameJa": "銀座 きた川",
+    "nameZh": "银座 きた川",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -6729,8 +6882,8 @@
     "country": "Japan",
     "name": "Ginza Kousui",
     "nameEn": "Ginza Kousui",
-    "nameJa": "",
-    "nameZh": "Ginza Kousui",
+    "nameJa": "銀座 志翠",
+    "nameZh": "银座 志翠",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -6949,8 +7102,8 @@
     "country": "Japan",
     "name": "Guchokuni",
     "nameEn": "Guchokuni",
-    "nameJa": "",
-    "nameZh": "Guchokuni",
+    "nameJa": "愚直に",
+    "nameZh": "愚直に",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -7059,8 +7212,8 @@
     "country": "Japan",
     "name": "hakunei",
     "nameEn": "hakunei",
-    "nameJa": "",
-    "nameZh": "hakunei",
+    "nameJa": "白寧",
+    "nameZh": "白宁",
     "stars": 1,
     "cuisine": "Contemporary",
     "cuisineZh": "现代料理",
@@ -7279,8 +7432,8 @@
     "country": "Japan",
     "name": "Higashiyama Muku",
     "nameEn": "Higashiyama Muku",
-    "nameJa": "",
-    "nameZh": "Higashiyama Muku",
+    "nameJa": "東山 無垢",
+    "nameZh": "东山 无垢",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -7389,8 +7542,8 @@
     "country": "Japan",
     "name": "Hiroo Ishizaka",
     "nameEn": "Hiroo Ishizaka",
-    "nameJa": "",
-    "nameZh": "Hiroo Ishizaka",
+    "nameJa": "広尾 石阪",
+    "nameZh": "广尾 石阪",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -7829,8 +7982,8 @@
     "country": "Japan",
     "name": "Ippei Hanten",
     "nameEn": "Ippei Hanten",
-    "nameJa": "",
-    "nameZh": "Ippei Hanten",
+    "nameJa": "一平飯店",
+    "nameZh": "一平饭店",
     "stars": 1,
     "cuisine": "Chinese",
     "cuisineZh": "中餐",
@@ -7939,8 +8092,8 @@
     "country": "Japan",
     "name": "itsuka",
     "nameEn": "itsuka",
-    "nameJa": "",
-    "nameZh": "itsuka",
+    "nameJa": "慈華",
+    "nameZh": "慈华",
     "stars": 1,
     "cuisine": "Chinese",
     "cuisineZh": "中餐",
@@ -8049,8 +8202,8 @@
     "country": "Japan",
     "name": "Jizozushi",
     "nameEn": "Jizozushi",
-    "nameJa": "",
-    "nameZh": "Jizozushi",
+    "nameJa": "地蔵鮓",
+    "nameZh": "地藏鮓",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -8159,8 +8312,8 @@
     "country": "Japan",
     "name": "JO",
     "nameEn": "JO",
-    "nameJa": "",
-    "nameZh": "JO",
+    "nameJa": "上",
+    "nameZh": "上",
     "stars": 1,
     "cuisine": "Beef",
     "cuisineZh": "牛肉料理",
@@ -8269,8 +8422,8 @@
     "country": "Japan",
     "name": "Jushu",
     "nameEn": "Jushu",
-    "nameJa": "",
-    "nameZh": "Jushu",
+    "nameJa": "壽修",
+    "nameZh": "寿修",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -8489,8 +8642,8 @@
     "country": "Japan",
     "name": "Kappo Muroi",
     "nameEn": "Kappo Muroi",
-    "nameJa": "",
-    "nameZh": "Kappo Muroi",
+    "nameJa": "割烹 室井",
+    "nameZh": "割烹 室井",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -8929,8 +9082,8 @@
     "country": "Japan",
     "name": "Kyobashi Tempura Fukamachi",
     "nameEn": "Kyobashi Tempura Fukamachi",
-    "nameJa": "",
-    "nameZh": "Kyobashi Tempura Fukamachi",
+    "nameJa": "京橋 天ぷら 深町",
+    "nameZh": "京桥 天妇罗 深町",
     "stars": 1,
     "cuisine": "Tempura",
     "cuisineZh": "天妇罗",
@@ -10689,8 +10842,8 @@
     "country": "Japan",
     "name": "Miyasaka",
     "nameEn": "Miyasaka",
-    "nameJa": "",
-    "nameZh": "Miyasaka",
+    "nameJa": "宮坂",
+    "nameZh": "宫坂",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -10909,8 +11062,8 @@
     "country": "Japan",
     "name": "Mutsukari",
     "nameEn": "Mutsukari",
-    "nameJa": "",
-    "nameZh": "Mutsukari",
+    "nameJa": "六雁",
+    "nameZh": "六雁",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -11349,8 +11502,8 @@
     "country": "Japan",
     "name": "Nishiazabu Taku",
     "nameEn": "Nishiazabu Taku",
-    "nameJa": "",
-    "nameZh": "Nishiazabu Taku",
+    "nameJa": "西麻布 拓",
+    "nameZh": "西麻布 拓",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -11459,8 +11612,8 @@
     "country": "Japan",
     "name": "Nodaiwa Azabu Iikura Honten",
     "nameEn": "Nodaiwa Azabu Iikura Honten",
-    "nameJa": "",
-    "nameZh": "Nodaiwa Azabu Iikura Honten",
+    "nameJa": "野田岩 麻布飯倉本店",
+    "nameZh": "野田岩 麻布饭仓本店",
     "stars": 1,
     "cuisine": "Unagi / Freshwater Eel",
     "cuisineZh": "鳗鱼料理",
@@ -11569,8 +11722,8 @@
     "country": "Japan",
     "name": "Nogizaka Shin",
     "nameEn": "Nogizaka Shin",
-    "nameJa": "",
-    "nameZh": "Nogizaka Shin",
+    "nameJa": "乃木坂 しん",
+    "nameZh": "乃木坂 しん",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -12009,8 +12162,8 @@
     "country": "Japan",
     "name": "Oryori Tsuji",
     "nameEn": "Oryori Tsuji",
-    "nameJa": "",
-    "nameZh": "Oryori Tsuji",
+    "nameJa": "御料理 辻",
+    "nameZh": "御料理 辻",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -12119,8 +12272,8 @@
     "country": "Japan",
     "name": "Piao-Xiang",
     "nameEn": "Piao-Xiang",
-    "nameJa": "",
-    "nameZh": "Piao-Xiang",
+    "nameJa": "飄香",
+    "nameZh": "飘香",
     "stars": 1,
     "cuisine": "Chinese",
     "cuisineZh": "中餐",
@@ -12889,8 +13042,8 @@
     "country": "Japan",
     "name": "Seiju",
     "nameEn": "Seiju",
-    "nameJa": "",
-    "nameZh": "Seiju",
+    "nameJa": "天ぷら 清壽",
+    "nameZh": "天妇罗 清寿",
     "stars": 1,
     "cuisine": "Tempura",
     "cuisineZh": "天妇罗",
@@ -12999,8 +13152,8 @@
     "country": "Japan",
     "name": "Seisoka",
     "nameEn": "Seisoka",
-    "nameJa": "",
-    "nameZh": "Seisoka",
+    "nameJa": "青草窠",
+    "nameZh": "青草窠",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -13219,8 +13372,8 @@
     "country": "Japan",
     "name": "Sharikimon Onozawa",
     "nameEn": "Sharikimon Onozawa",
-    "nameJa": "",
-    "nameZh": "Sharikimon Onozawa",
+    "nameJa": "車力門 おの澤",
+    "nameZh": "车力门 おの泽",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -13329,8 +13482,8 @@
     "country": "Japan",
     "name": "Shigeyuki",
     "nameEn": "Shigeyuki",
-    "nameJa": "",
-    "nameZh": "Shigeyuki",
+    "nameJa": "茂幸",
+    "nameZh": "茂幸",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -13439,8 +13592,8 @@
     "country": "Japan",
     "name": "Shimbashi Sasada",
     "nameEn": "Shimbashi Sasada",
-    "nameJa": "",
-    "nameZh": "Shimbashi Sasada",
+    "nameJa": "新ばし 笹田",
+    "nameZh": "新ばし 笹田",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -13659,8 +13812,8 @@
     "country": "Japan",
     "name": "Shokuzen Abe",
     "nameEn": "Shokuzen Abe",
-    "nameJa": "",
-    "nameZh": "Shokuzen Abe",
+    "nameJa": "食善 あべ",
+    "nameZh": "食善 あべ",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -13989,8 +14142,8 @@
     "country": "Japan",
     "name": "Sumibikappo SHIROSAKA",
     "nameEn": "Sumibikappo SHIROSAKA",
-    "nameJa": "",
-    "nameZh": "Sumibikappo SHIROSAKA",
+    "nameJa": "炭火割烹 白坂",
+    "nameZh": "炭火割烹 白坂",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -14099,8 +14252,8 @@
     "country": "Japan",
     "name": "Sushi Hashimoto",
     "nameEn": "Sushi Hashimoto",
-    "nameJa": "",
-    "nameZh": "Sushi Hashimoto",
+    "nameJa": "鮨 はしもと",
+    "nameZh": "鮨 はしもと",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -14209,8 +14362,8 @@
     "country": "Japan",
     "name": "Sushi Ichijo",
     "nameEn": "Sushi Ichijo",
-    "nameJa": "",
-    "nameZh": "Sushi Ichijo",
+    "nameJa": "鮨 一條",
+    "nameZh": "鮨 一条",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -14319,8 +14472,8 @@
     "country": "Japan",
     "name": "Sushi Keita",
     "nameEn": "Sushi Keita",
-    "nameJa": "",
-    "nameZh": "Sushi Keita",
+    "nameJa": "鮨 桂太",
+    "nameZh": "鮨 桂太",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -14429,8 +14582,8 @@
     "country": "Japan",
     "name": "Sushi Kojima",
     "nameEn": "Sushi Kojima",
-    "nameJa": "",
-    "nameZh": "Sushi Kojima",
+    "nameJa": "鮨 こじま",
+    "nameZh": "鮨 こじま",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -14539,8 +14692,8 @@
     "country": "Japan",
     "name": "Sushi Masashi",
     "nameEn": "Sushi Masashi",
-    "nameJa": "",
-    "nameZh": "Sushi Masashi",
+    "nameJa": "鮨 将司",
+    "nameZh": "鮨 将司",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -14649,8 +14802,8 @@
     "country": "Japan",
     "name": "Sushi Matsuura",
     "nameEn": "Sushi Matsuura",
-    "nameJa": "",
-    "nameZh": "Sushi Matsuura",
+    "nameJa": "鮨 まつうら",
+    "nameZh": "鮨 まつうら",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -14979,8 +15132,8 @@
     "country": "Japan",
     "name": "Sushi Ryujiro",
     "nameEn": "Sushi Ryujiro",
-    "nameJa": "",
-    "nameZh": "Sushi Ryujiro",
+    "nameJa": "鮨 龍次郎",
+    "nameZh": "鮨 龙次郎",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -15089,8 +15242,8 @@
     "country": "Japan",
     "name": "Sushi Tanaka",
     "nameEn": "Sushi Tanaka",
-    "nameJa": "",
-    "nameZh": "Sushi Tanaka",
+    "nameJa": "鮨 たなか",
+    "nameZh": "鮨 たなか",
     "stars": 1,
     "cuisine": "Sushi",
     "cuisineZh": "寿司",
@@ -15529,8 +15682,8 @@
     "country": "Japan",
     "name": "Tanimoto",
     "nameEn": "Tanimoto",
-    "nameJa": "",
-    "nameZh": "Tanimoto",
+    "nameJa": "たにもと",
+    "nameZh": "たにもと",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -15639,8 +15792,8 @@
     "country": "Japan",
     "name": "Tempura Maehira",
     "nameEn": "Tempura Maehira",
-    "nameJa": "",
-    "nameZh": "Tempura Maehira",
+    "nameJa": "天ぷら 前平",
+    "nameZh": "天妇罗 前平",
     "stars": 1,
     "cuisine": "Tempura",
     "cuisineZh": "天妇罗",
@@ -15749,8 +15902,8 @@
     "country": "Japan",
     "name": "Tempura Miyashiro",
     "nameEn": "Tempura Miyashiro",
-    "nameJa": "",
-    "nameZh": "Tempura Miyashiro",
+    "nameJa": "天ぷら みやしろ",
+    "nameZh": "天妇罗 みやしろ",
     "stars": 1,
     "cuisine": "Tempura",
     "cuisineZh": "天妇罗",
@@ -15859,8 +16012,8 @@
     "country": "Japan",
     "name": "Tempura Yaguchi",
     "nameEn": "Tempura Yaguchi",
-    "nameJa": "",
-    "nameZh": "Tempura Yaguchi",
+    "nameJa": "天ぷら 矢口",
+    "nameZh": "天妇罗 矢口",
     "stars": 1,
     "cuisine": "Tempura",
     "cuisineZh": "天妇罗",
@@ -15969,8 +16122,8 @@
     "country": "Japan",
     "name": "Ten Yokota",
     "nameEn": "Ten Yokota",
-    "nameJa": "",
-    "nameZh": "Ten Yokota",
+    "nameJa": "天 よこた",
+    "nameZh": "天 よこた",
     "stars": 1,
     "cuisine": "Tempura",
     "cuisineZh": "天妇罗",
@@ -16079,8 +16232,8 @@
     "country": "Japan",
     "name": "TEN-MASA",
     "nameEn": "TEN-MASA",
-    "nameJa": "",
-    "nameZh": "TEN-MASA",
+    "nameJa": "天雅",
+    "nameZh": "天雅",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -16189,8 +16342,8 @@
     "country": "Japan",
     "name": "Tenoshima",
     "nameEn": "Tenoshima",
-    "nameJa": "",
-    "nameZh": "Tenoshima",
+    "nameJa": "てのしま",
+    "nameZh": "てのしま",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -16849,8 +17002,8 @@
     "country": "Japan",
     "name": "Ubuka",
     "nameEn": "Ubuka",
-    "nameJa": "",
-    "nameZh": "Ubuka",
+    "nameJa": "うぶか",
+    "nameZh": "うぶか",
     "stars": 1,
     "cuisine": "Crab Specialities",
     "cuisineZh": "蟹料理",
@@ -16959,8 +17112,8 @@
     "country": "Japan",
     "name": "Waketokuyama",
     "nameEn": "Waketokuyama",
-    "nameJa": "",
-    "nameZh": "Waketokuyama",
+    "nameJa": "分とく山",
+    "nameZh": "分とく山",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -17069,8 +17222,8 @@
     "country": "Japan",
     "name": "Yakitori Takahashi",
     "nameEn": "Yakitori Takahashi",
-    "nameJa": "",
-    "nameZh": "Yakitori Takahashi",
+    "nameJa": "焼鳥 高はし",
+    "nameZh": "烧鸟 高はし",
     "stars": 1,
     "cuisine": "Yakitori",
     "cuisineZh": "烧鸟",
@@ -17179,8 +17332,8 @@
     "country": "Japan",
     "name": "Yakumo Uezu",
     "nameEn": "Yakumo Uezu",
-    "nameJa": "",
-    "nameZh": "Yakumo Uezu",
+    "nameJa": "八雲 うえず",
+    "nameZh": "八云 うえず",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
@@ -17399,8 +17552,8 @@
     "country": "Japan",
     "name": "Yotsuya Minemura",
     "nameEn": "Yotsuya Minemura",
-    "nameJa": "",
-    "nameZh": "Yotsuya Minemura",
+    "nameJa": "四谷 みね村",
+    "nameZh": "四谷 みね村",
     "stars": 1,
     "cuisine": "Japanese",
     "cuisineZh": "日本料理",
