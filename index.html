@@ -1,100 +1,81 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>StarTable Tokyo</title>
-<meta name="description" content="Discover Tokyo's Michelin-starred and fine dining restaurants.">
+<meta name="description" content="东京星级餐厅信息浏览与筛选平台">
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<header class="topbar">
-  <div class="shell nav">
-    <a class="brand" href="#"><span>★</span>StarTable</a>
-    <button id="themeButton" class="ghost">深色模式</button>
-  </div>
-</header>
+<header class="topbar"><div class="shell nav">
+<a class="brand" href="#"><span>★</span>StarTable</a>
+<button id="themeButton" class="ghost">深色模式</button>
+</div></header>
 
-<section class="hero">
-  <div class="shell hero-grid">
-    <div>
-      <p class="eyebrow">TOKYO FINE DINING DATABASE</p>
-      <h1>Discover Tokyo’s<br>finest restaurants.</h1>
-      <p class="sub">搜索东京星级餐厅，查看基础信息、Lunch / Dinner、预约与纪念日信息，并跳转官方预约页面。</p>
-    </div>
-    <div class="hero-stats">
-      <div><strong id="totalRestaurants">0</strong><span>Restaurants</span></div>
-      <div><strong id="threeStarCount">0</strong><span>Three-star</span></div>
-      <div><strong id="verifiedCount">0</strong><span>Basic verified</span></div>
-    </div>
-  </div>
-</section>
+<section class="hero"><div class="shell hero-grid">
+<div><p class="eyebrow">TOKYO FINE DINING DATABASE</p>
+<h1>Find your next<br>beautiful table.</h1>
+<p class="sub">搜索和筛选东京星级餐厅，比较 Lunch / Dinner Course、价格、预约难度、着装要求、儿童政策与纪念日服务。</p></div>
+<div class="hero-stats">
+<div><strong id="totalRestaurants">0</strong><span>餐厅</span></div>
+<div><strong id="threeStarCount">0</strong><span>三星</span></div>
+<div><strong id="checkedCount">0</strong><span>已检查官网</span></div>
+</div></div></section>
 
 <main class="shell">
-  <section class="controls">
-    <input id="searchInput" type="search" placeholder="搜索餐厅、日文名、地区、菜系">
-    <div class="filters">
-      <select id="starFilter"><option value="">全部星级</option><option value="3">三星</option><option value="2">二星</option><option value="1">一星</option></select>
-      <select id="cuisineFilter"><option value="">全部菜系</option></select>
-      <select id="areaFilter"><option value="">全部地区</option></select>
-      <select id="statusFilter"><option value="">全部数据状态</option><option value="basic_verified">基础资料已核验</option><option value="star_verified">星级已核验</option><option value="star_pending_recheck">待复核</option></select>
-    </div>
-    <div class="meal-toggle">
-      <button class="meal-btn active" data-meal="all">全部</button>
-      <button class="meal-btn" data-meal="lunch">Lunch</button>
-      <button class="meal-btn" data-meal="dinner">Dinner</button>
-    </div>
-  </section>
+<section class="controls">
+<input id="searchInput" type="search" placeholder="搜索餐厅、日文名、英文名、地区、菜系或 Course">
+<div class="filters">
+<select id="starFilter"><option value="">全部星级</option><option value="3">三星</option><option value="2">二星</option><option value="1">一星</option></select>
+<select id="cuisineFilter"><option value="">全部菜系</option></select>
+<select id="areaFilter"><option value="">全部地区</option></select>
+<select id="dressFilter"><option value="">着装要求</option><option value="required">需要 Dress Code</option><option value="none">无明确要求</option><option value="pending">待核验</option></select>
+<select id="childFilter"><option value="">儿童政策</option><option value="yes">可带儿童</option><option value="private">仅包厢可</option><option value="no">不可带儿童</option><option value="pending">待核验</option></select>
+<select id="difficultyFilter"><option value="">预约难度</option><option value="5">★★★★★ 极难</option><option value="4">★★★★ 困难</option><option value="3">★★★ 中等</option></select>
+</div>
+<div class="meal-toggle">
+<button class="meal-btn active" data-meal="all">全部</button>
+<button class="meal-btn" data-meal="lunch">Lunch</button>
+<button class="meal-btn" data-meal="dinner">Dinner</button>
+</div>
+</section>
 
-  <section class="result-bar">
-    <div>显示 <strong id="visibleCount">0</strong> 家</div>
-    <button id="resetButton" class="ghost">重置筛选</button>
-  </section>
-
-  <section id="grid" class="grid"></section>
-  <div id="empty" class="empty" hidden>没有符合条件的餐厅。</div>
+<section class="result-bar"><div>显示 <strong id="visibleCount">0</strong> 家</div><button id="resetButton" class="ghost">重置</button></section>
+<section id="grid" class="grid"></section>
+<div id="empty" class="empty" hidden>没有符合条件的餐厅。</div>
 </main>
 
 <template id="cardTemplate">
 <article class="card">
-  <button class="card-head" aria-expanded="false">
-    <div>
-      <div class="meta"><span class="area"></span><span>•</span><span class="cuisine"></span></div>
-      <h2 class="name"></h2>
-      <div class="name-ja"></div>
-      <div class="chips"></div>
-    </div>
-    <div class="stars"></div>
-  </button>
-  <div class="detail" hidden>
-    <div class="info-grid">
-      <section class="panel">
-        <h3>Basic information</h3>
-        <p class="address"></p>
-        <p class="phone"></p>
-        <div class="status"></div>
-      </section>
-      <section class="panel">
-        <h3>Reservation</h3>
-        <div class="difficulty"></div>
-        <p class="booking"></p>
-        <a class="reserve" target="_blank" rel="noopener">Official / reservation page</a>
-      </section>
-      <section class="panel">
-        <h3>Message Plate / Anniversary</h3>
-        <p class="plate"></p>
-      </section>
-    </div>
+<button class="card-head" aria-expanded="false">
+<div>
+<div class="meta"><span class="area"></span><span>•</span><span class="cuisine"></span></div>
+<h2 class="name-zh"></h2>
+<div class="names-secondary"></div>
+<div class="chips"></div>
+</div>
+<div class="stars"></div>
+</button>
+<div class="detail" hidden>
+<div class="quick-grid">
+<section class="panel"><h3>基本信息</h3><p class="address"></p><p class="phone"></p><p class="checked"></p></section>
+<section class="panel"><h3>预约</h3><div class="difficulty"></div><p class="booking"></p><a class="reserve" target="_blank" rel="noopener">前往预约</a></section>
+<section class="panel"><h3>Dress Code</h3><p class="dress"></p></section>
+<section class="panel"><h3>儿童政策</h3><p class="children"></p></section>
+<section class="panel"><h3>纪念日</h3><p class="anniversary"></p></section>
+<section class="panel"><h3>预算</h3><p class="budget"></p></section>
+</div>
 
-    <div class="local-tabs">
-      <button class="local-btn active" data-localmeal="lunch">Lunch</button>
-      <button class="local-btn" data-localmeal="dinner">Dinner</button>
-    </div>
-    <div class="course-area"></div>
-  </div>
+<div class="local-tabs">
+<button class="local-btn active" data-tab="lunch">Lunch</button>
+<button class="local-btn" data-tab="dinner">Dinner</button>
+<button class="local-btn" data-tab="pairings">Pairing</button>
+<button class="local-btn" data-tab="experience">用餐体验</button>
+<button class="local-btn" data-tab="links">链接</button>
+</div>
+<div class="content-area"></div>
+</div>
 </article>
 </template>
-
 <script src="./app.js"></script>
-</body>
-</html>
+</body></html>

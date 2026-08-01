@@ -18,7 +18,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://www.nihonryori-ryugin.com/",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "龙吟",
+    "nameEn": "RyuGin",
+    "areaZh": "日比谷",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "Message Plate 信息待核验。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "预约规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.nihonryori-ryugin.com/",
+      "reservation": "https://www.nihonryori-ryugin.com/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "sezanne",
@@ -39,7 +128,98 @@
     "lunch": [],
     "dinner": [],
     "url": "https://www.sezanne.tokyo/",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "SÉZANNE",
+    "nameEn": "SÉZANNE",
+    "areaZh": "丸之内",
+    "dressCode": {
+      "level": "Smart Casual",
+      "required": true,
+      "notes": [
+        "具体要求待官网复核"
+      ],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "纪念日安排需以餐厅确认为准。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "通过官方页面或酒店预约系统预约；详细放位规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.sezanne.tokyo/",
+      "reservation": "https://www.sezanne.tokyo/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "harutaka",
@@ -60,7 +240,96 @@
     "lunch": [],
     "dinner": [],
     "url": "",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "青空",
+    "nameEn": "Harutaka",
+    "areaZh": "银座",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "Message Plate 信息待核验。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "预约规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "losier",
@@ -81,7 +350,106 @@
     "lunch": [],
     "dinner": [],
     "url": "https://www.tablecheck.com/ja/shops/shiseido-losier/reserve",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "L’OSIER",
+    "nameEn": "L’OSIER",
+    "areaZh": "银座",
+    "dressCode": {
+      "level": "Smart Casual",
+      "required": true,
+      "notes": [
+        "避免短裤、凉鞋及过于休闲的服装"
+      ],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": true,
+      "free": true,
+      "languages": [
+        "日语",
+        "英语",
+        "法语"
+      ],
+      "characterLimit": 20,
+      "wholeCake": true,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "可申请免费 Message Plate；整只蛋糕需另行选择。",
+      "verified": true
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "官网 / TableCheck / 电话。官方说明可预约当月起至未来第3个月月底。",
+      "releaseTime": null,
+      "releaseWindow": "可预约当月起至未来第3个月月底",
+      "platforms": [
+        "官网",
+        "TableCheck",
+        "电话"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://losier.shiseido.co.jp/",
+      "reservation": "https://www.tablecheck.com/ja/shops/shiseido-losier/reserve",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "kanda",
@@ -102,7 +470,96 @@
     "lunch": [],
     "dinner": [],
     "url": "http://www.nihonryori-kanda.com/",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "かんだ",
+    "nameEn": "Kanda",
+    "areaZh": "爱宕",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "Message Plate 信息待核验。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "预约规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "http://www.nihonryori-kanda.com/",
+      "reservation": "http://www.nihonryori-kanda.com/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "azabu-kadowaki",
@@ -123,7 +580,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://azabukadowaki.com/",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "麻布 かどわき",
+    "nameEn": "Azabu Kadowaki",
+    "areaZh": "麻布十番",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "Message Plate 信息待核验。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "预约规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://azabukadowaki.com/",
+      "reservation": "https://azabukadowaki.com/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "leffervescence",
@@ -144,7 +690,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://www.leffervescence.jp/en/reservation.html",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "L’Effervescence",
+    "nameEn": "L’Effervescence",
+    "areaZh": "西麻布",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "纪念日需求可在预约备注中提出；具体安排以餐厅确认为准。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "官网在线预约；详细滚动开放周期待进一步核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.leffervescence.jp/",
+      "reservation": "https://www.leffervescence.jp/en/reservation.html",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "sazenka",
@@ -165,7 +800,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://sazenka.com/",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "茶禅华",
+    "nameEn": "Sazenka",
+    "areaZh": "南麻布",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "Message Plate 信息待核验。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "预约规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://sazenka.com/",
+      "reservation": "https://sazenka.com/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "myojaku",
@@ -186,7 +910,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://myoujyaku.com/",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "明寂",
+    "nameEn": "Myojaku",
+    "areaZh": "西麻布",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "Message Plate 信息待核验。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "预约规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://myoujyaku.com/",
+      "reservation": "https://myoujyaku.com/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "kagurazaka-ishikawa",
@@ -207,7 +1020,96 @@
     "lunch": [],
     "dinner": [],
     "url": "http://www.kagurazaka-ishikawa.co.jp/",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "神乐坂 石かわ",
+    "nameEn": "Kagurazaka Ishikawa",
+    "areaZh": "神乐坂",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "Message Plate 信息待核验。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "预约规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "http://www.kagurazaka-ishikawa.co.jp/",
+      "reservation": "http://www.kagurazaka-ishikawa.co.jp/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "quintessence",
@@ -228,7 +1130,98 @@
     "lunch": [],
     "dinner": [],
     "url": "https://www.quintessence.jp/",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "Quintessence",
+    "nameEn": "Quintessence",
+    "areaZh": "品川",
+    "dressCode": {
+      "level": "Smart Casual",
+      "required": true,
+      "notes": [
+        "具体要求待官网复核"
+      ],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "纪念日安排需直接咨询。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "以官网公布的预约窗口为准。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.quintessence.jp/",
+      "reservation": "https://www.quintessence.jp/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "joel-robuchon",
@@ -249,7 +1242,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://www.robuchon.jp/",
-    "dataStatus": "basic_verified"
+    "dataStatus": "basic_verified",
+    "nameZh": "Joël Robuchon",
+    "nameEn": "Joël Robuchon",
+    "areaZh": "惠比寿",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "通常可提出纪念日甜点或蛋糕需求，具体以预约页为准。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "困难",
+      "bookingRule": "官网或电话预约；详细放位规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.robuchon.jp/",
+      "reservation": "https://www.robuchon.jp/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": "2026-08-01",
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "narisawa",
@@ -270,7 +1352,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://www.narisawa-yoshihiro-en.com/",
-    "dataStatus": "star_verified"
+    "dataStatus": "star_verified",
+    "nameZh": "NARISAWA",
+    "nameEn": "NARISAWA",
+    "areaZh": "南青山",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "纪念日需求可在预约备注中提出；具体安排以餐厅确认为准。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "困难",
+      "bookingRule": "通过官网预约系统预约；详细规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.narisawa-yoshihiro-en.com/",
+      "reservation": "https://www.narisawa-yoshihiro-en.com/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": null,
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "tempura-kondo",
@@ -291,7 +1462,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://tempura-kondo.com/",
-    "dataStatus": "star_pending_recheck"
+    "dataStatus": "star_pending_recheck",
+    "nameZh": "天妇罗 近藤",
+    "nameEn": "Tempura Kondo",
+    "areaZh": "银座",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "纪念日服务需提前确认。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "困难",
+      "bookingRule": "官网或电话预约；详细规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://tempura-kondo.com/",
+      "reservation": "https://tempura-kondo.com/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": null,
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "esquisse",
@@ -312,7 +1572,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://www.esquissetokyo.com/",
-    "dataStatus": "star_pending_recheck"
+    "dataStatus": "star_pending_recheck",
+    "nameZh": "ESqUISSE",
+    "nameEn": "ESqUISSE",
+    "areaZh": "银座",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "纪念日服务需以预约页为准。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "困难",
+      "bookingRule": "官网或预约系统预约；详细规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.esquissetokyo.com/",
+      "reservation": "https://www.esquissetokyo.com/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": null,
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "hommage",
@@ -333,7 +1682,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://hommagetokyo.com/",
-    "dataStatus": "star_pending_recheck"
+    "dataStatus": "star_pending_recheck",
+    "nameZh": "HOMMAGE",
+    "nameEn": "HOMMAGE",
+    "areaZh": "浅草",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "纪念日服务需以预约页为准。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "困难",
+      "bookingRule": "官网或预约系统预约；详细规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://hommagetokyo.com/",
+      "reservation": "https://hommagetokyo.com/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": null,
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "nabeno-ism",
@@ -354,7 +1792,96 @@
     "lunch": [],
     "dinner": [],
     "url": "https://www.nabeno-ism.tokyo/",
-    "dataStatus": "star_pending_recheck"
+    "dataStatus": "star_pending_recheck",
+    "nameZh": "Nabeno-Ism",
+    "nameEn": "Nabeno-Ism",
+    "areaZh": "驹形",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "纪念日服务需以预约页为准。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "中等",
+      "bookingRule": "官网或预约系统预约；详细规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.nabeno-ism.tokyo/",
+      "reservation": "https://www.nabeno-ism.tokyo/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": null,
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   },
   {
     "id": "la-table-robuchon",
@@ -375,6 +1902,95 @@
     "lunch": [],
     "dinner": [],
     "url": "https://www.robuchon.jp/",
-    "dataStatus": "star_pending_recheck"
+    "dataStatus": "star_pending_recheck",
+    "nameZh": "LA TABLE de Joël Robuchon",
+    "nameEn": "LA TABLE de Joël Robuchon",
+    "areaZh": "惠比寿",
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false
+    },
+    "childPolicy": {
+      "diningRoomAllowed": null,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "fullCourseRequired": null,
+      "advanceNoticeRequired": null,
+      "notes": "待官网或预约页核验",
+      "verified": false
+    },
+    "anniversary": {
+      "messagePlate": null,
+      "free": null,
+      "languages": [],
+      "characterLimit": null,
+      "wholeCake": null,
+      "cakePrice": null,
+      "flowers": null,
+      "proposalSupport": null,
+      "notes": "纪念日甜点或蛋糕以预约页为准。",
+      "verified": false
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "中等",
+      "bookingRule": "官网或电话预约；详细规则待核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "estimatedLunchAllIn": null,
+      "estimatedDinnerAllIn": null,
+      "verified": false
+    },
+    "experience": {
+      "counter": null,
+      "table": null,
+      "privateRoom": null,
+      "view": null,
+      "solo": null,
+      "date": null,
+      "business": null,
+      "family": null,
+      "proposal": null
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.robuchon.jp/",
+      "reservation": "https://www.robuchon.jp/",
+      "googleMaps": "",
+      "michelin": "",
+      "tabelog": "",
+      "instagram": ""
+    },
+    "sync": {
+      "lastChecked": "2026-08-01",
+      "lastUpdated": null,
+      "source": "餐厅官网 / 预约页",
+      "changeSummary": "初始录入",
+      "autoCheckEnabled": false
+    }
   }
 ]
