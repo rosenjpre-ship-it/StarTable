@@ -42,7 +42,7 @@ function tabContent(item,tab){
  if(tab==='ratings'){
   const r=item.ratings||{};
   const tabelog=r.tabelogScore?`${r.tabelogScore}${r.tabelogUrl?` <a href="${r.tabelogUrl}" target="_blank" rel="noopener">Tabelog</a>`:''}`:'待补充';
-  const google=r.googleMapsScore?`${r.googleMapsScore}${r.googleMapsUrl?` <a href="${r.googleMapsUrl}" target="_blank" rel="noopener">Google Maps</a>`:''}`:'待补充';
+  const google=r.googleMapsScore?String(r.googleMapsScore):'待补充';
   return `<div class="content-empty">Tabelog：${tabelog}<br>Google Maps：${google}</div>`;
  }
  if(tab==='links'){
@@ -64,6 +64,11 @@ function budgetText(b){
  if(!b||b.verified===false)return '待核验';
  return `Lunch ¥${b.lunchFrom??'-'} 起；Dinner ¥${b.dinnerFrom??'-'} 起`;
 }
+function stationText(item){
+ const stations=item.transport?.stations||[];
+ if(!stations.length)return '最近车站：待补充';
+ return `最近车站：${stations.map(s=>`${s.name}（${s.lines.join(' / ')}，步行${s.walkMinutes}分钟）`).join('；')}`;
+}
 function makeCard(item){
  const f=els.template.content.cloneNode(true),head=f.querySelector('.card-head'),detail=f.querySelector('.detail');
  f.querySelector('.area').textContent=item.areaZh||item.area;f.querySelector('.cuisine').textContent=item.cuisineZh||item.cuisine;
@@ -71,6 +76,7 @@ function makeCard(item){
  f.querySelector('.names-secondary').textContent=[item.nameJa,item.nameEn].filter(Boolean).join('｜');
  f.querySelector('.stars').textContent=stars(item.stars);f.querySelector('.address').textContent=item.address||'地址待补充';
  f.querySelector('.phone').textContent=item.phone?`电话：${item.phone}`:'电话待补充';
+ f.querySelector('.stations').textContent=stationText(item);
  f.querySelector('.difficulty').textContent=`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`;
  f.querySelector('.booking').textContent=item.reservation?.bookingRule||'待核验';
  const reserve=f.querySelector('.reserve');reserve.href=item.links?.reservation||item.links?.official||'#';if(reserve.href.endsWith('#'))reserve.style.display='none';

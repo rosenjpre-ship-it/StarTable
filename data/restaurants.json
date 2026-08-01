@@ -361,7 +361,7 @@
     "links": {
       "official": "https://www.robuchon.jp/en/shop-list/joelrobuchon",
       "reservation": "https://www.robuchon.jp/en/shop-list/joelrobuchon",
-      "googleMaps": "https://www.google.com/maps/search/?api=1&query=Joel%20Robuchon%20Tokyo%20Ebisu",
+      "googleMaps": "",
       "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/joel-robuchon-1193981",
       "tabelog": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=Jo%C3%ABl%20Robuchon",
       "instagram": ""
@@ -370,14 +370,41 @@
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
       "source": "Joël Robuchon official shop page",
-      "changeSummary": "地址电话、预约规则、course、评分链接批量核验",
+      "changeSummary": "补充最近车站、步行时间与线路信息",
       "autoCheckEnabled": false
     },
     "ratings": {
       "tabelogScore": null,
       "tabelogUrl": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=Jo%C3%ABl%20Robuchon",
-      "googleMapsScore": null,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Joel%20Robuchon%20Tokyo%20Ebisu",
+      "googleMapsScore": 4.5,
+      "lastChecked": "2026-08-01",
+      "googleMapsSource": "Wanderlog Google reviews summary"
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "惠比寿",
+          "lines": [
+            "JR山手线",
+            "JR埼京线",
+            "JR湘南新宿线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 10
+        },
+        {
+          "name": "目黑",
+          "lines": [
+            "JR山手线",
+            "东急目黑线",
+            "东京Metro南北线",
+            "都营三田线"
+          ],
+          "walkMinutes": 12
+        }
+      ],
+      "verified": true,
+      "source": "official access page / Tabelog / OMAKASE station information",
       "lastChecked": "2026-08-01"
     }
   },
@@ -716,7 +743,7 @@
     "links": {
       "official": "https://www.leffervescence.jp/",
       "reservation": "https://www.leffervescence.jp/en/address.html",
-      "googleMaps": "https://www.google.com/maps/search/?api=1&query=L%27Effervescence%20Tokyo",
+      "googleMaps": "",
       "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/l-effervescence",
       "tabelog": "https://tabelog.com/en/tokyo/A1306/A130602/13116356/",
       "instagram": ""
@@ -725,14 +752,30 @@
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
       "source": "L'Effervescence official address/reservation page; Tabelog page",
-      "changeSummary": "地址电话、预约规则、course、评分链接批量核验",
+      "changeSummary": "补充最近车站、步行时间与线路信息",
       "autoCheckEnabled": false
     },
     "ratings": {
       "tabelogScore": 4.47,
       "tabelogUrl": "https://tabelog.com/en/tokyo/A1306/A130602/13116356/",
-      "googleMapsScore": null,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27Effervescence%20Tokyo",
+      "googleMapsScore": 4.6,
+      "lastChecked": "2026-08-01",
+      "googleMapsSource": "Postcard Google Maps summary"
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "表参道",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro半藏门线",
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 12
+        }
+      ],
+      "verified": true,
+      "source": "official access page / Tabelog / OMAKASE station information",
       "lastChecked": "2026-08-01"
     }
   },
@@ -859,7 +902,7 @@
     "links": {
       "official": "https://losier.shiseido.co.jp/e/",
       "reservation": "https://losier.shiseido.co.jp/e/",
-      "googleMaps": "https://www.google.com/maps/search/?api=1&query=L%27OSIER%20Tokyo",
+      "googleMaps": "",
       "michelin": "",
       "tabelog": "https://tabelog.com/tw/tokyo/A1301/A130101/13002607/",
       "instagram": ""
@@ -868,14 +911,49 @@
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
       "source": "L'OSIER official access/lunch pages; Tabelog page",
-      "changeSummary": "地址电话、预约规则、course、评分链接批量核验",
+      "changeSummary": "补充最近车站、步行时间与线路信息",
       "autoCheckEnabled": false
     },
     "ratings": {
       "tabelogScore": 4.4,
       "tabelogUrl": "https://tabelog.com/tw/tokyo/A1301/A130101/13002607/",
-      "googleMapsScore": null,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27OSIER%20Tokyo",
+      "googleMapsScore": 4.7,
+      "lastChecked": "2026-08-01",
+      "googleMapsSource": "Postcard Google Maps summary"
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 7
+        },
+        {
+          "name": "新桥",
+          "lines": [
+            "JR各线",
+            "东京Metro银座线",
+            "都营浅草线",
+            "百合海鸥线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "有乐町",
+          "lines": [
+            "JR山手线",
+            "JR京滨东北线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "verified": true,
+      "source": "official access page / Tabelog / OMAKASE station information",
       "lastChecked": "2026-08-01"
     }
   },
@@ -1214,7 +1292,7 @@
     "links": {
       "official": "https://www.nihonryori-ryugin.com/",
       "reservation": "https://www.nihonryori-ryugin.com/en/about/",
-      "googleMaps": "https://www.google.com/maps/search/?api=1&query=Nihonryori%20RyuGin%20Tokyo",
+      "googleMaps": "",
       "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/nihonryori-ryugin",
       "tabelog": "https://tabelog.com/cn/tokyo/A1301/A130102/13001457/",
       "instagram": ""
@@ -1223,14 +1301,48 @@
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
       "source": "RyuGin official menu/about pages; Tabelog page",
-      "changeSummary": "地址电话、预约规则、course、评分链接批量核验",
+      "changeSummary": "补充最近车站、步行时间与线路信息",
       "autoCheckEnabled": false
     },
     "ratings": {
       "tabelogScore": 4.13,
       "tabelogUrl": "https://tabelog.com/cn/tokyo/A1301/A130102/13001457/",
-      "googleMapsScore": null,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nihonryori%20RyuGin%20Tokyo",
+      "googleMapsScore": 4,
+      "lastChecked": "2026-08-01",
+      "googleMapsSource": "Wanderlog Google reviews summary"
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "日比谷",
+          "lines": [
+            "东京Metro日比谷线",
+            "东京Metro千代田线",
+            "都营三田线"
+          ],
+          "walkMinutes": 1
+        },
+        {
+          "name": "有乐町",
+          "lines": [
+            "JR山手线",
+            "JR京滨东北线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 5
+        }
+      ],
+      "verified": true,
+      "source": "official access page / Tabelog / OMAKASE station information",
       "lastChecked": "2026-08-01"
     }
   },
@@ -1466,7 +1578,7 @@
     "links": {
       "official": "https://www.sezanne.tokyo/",
       "reservation": "https://www.sezanne.tokyo/",
-      "googleMaps": "https://www.google.com/maps/search/?api=1&query=SEZANNE%20Tokyo",
+      "googleMaps": "",
       "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/sezanne",
       "tabelog": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=S%C3%89ZANNE",
       "instagram": ""
@@ -1475,14 +1587,44 @@
       "lastChecked": "2026-08-01",
       "lastUpdated": "2026-08-01",
       "source": "SÉZANNE official menu/basic information pages",
-      "changeSummary": "地址电话、预约规则、course、评分链接批量核验",
+      "changeSummary": "补充最近车站、步行时间与线路信息",
       "autoCheckEnabled": false
     },
     "ratings": {
       "tabelogScore": null,
       "tabelogUrl": "https://tabelog.com/tokyo/rstLst/?SrtT=rt&sk=S%C3%89ZANNE",
-      "googleMapsScore": null,
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SEZANNE%20Tokyo",
+      "googleMapsScore": 4.4,
+      "lastChecked": "2026-08-01",
+      "googleMapsSource": "Google hotels restaurant listing"
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "东京",
+          "lines": [
+            "JR各线",
+            "新干线",
+            "东京Metro丸之内线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "京桥",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "银座一丁目",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 5
+        }
+      ],
+      "verified": true,
+      "source": "official access page / Tabelog / OMAKASE station information",
       "lastChecked": "2026-08-01"
     }
   },
