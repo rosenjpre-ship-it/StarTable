@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Tokyo Michelin Lunch Guide</title>
+  <meta name="description" content="东京米其林餐厅午餐、预约与纪念日信息数据库" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="shell hero-inner">
+      <div>
+        <p class="eyebrow">TOKYO FINE DINING DATABASE</p>
+        <h1>Tokyo Michelin<br />Lunch Guide</h1>
+        <p class="hero-copy">搜索东京米其林餐厅，查看午餐套餐、预约难度、预约方法与 Message Plate 信息。</p>
+      </div>
+      <div class="hero-stat">
+        <strong id="totalRestaurants">11</strong>
+        <span>当前收录</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell main">
+    <section class="toolbar">
+      <label class="search">
+        <span>搜索</span>
+        <input id="searchInput" type="search" placeholder="餐厅、日文名、地区、套餐…" />
+      </label>
+
+      <div class="filters">
+        <label><span>星级</span><select id="starFilter"><option value="">全部</option><option value="3">三星</option><option value="2">二星</option><option value="1">一星</option></select></label>
+        <label><span>菜系</span><select id="cuisineFilter"><option value="">全部</option></select></label>
+        <label><span>地区</span><select id="areaFilter"><option value="">全部</option></select></label>
+        <label><span>难度</span><select id="difficultyFilter"><option value="">全部</option><option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option></select></label>
+      </div>
+    </section>
+
+    <section class="summary">
+      <div><strong id="visibleCount">11</strong><span>家餐厅</span></div>
+      <div><strong id="courseCount">18</strong><span>个 Lunch Course</span></div>
+      <button id="resetButton" type="button">重置筛选</button>
+    </section>
+
+    <section id="restaurantGrid" class="restaurant-grid" aria-live="polite"></section>
+    <div id="emptyState" class="empty-state" hidden>没有符合当前条件的餐厅。</div>
+  </main>
+
+  <template id="restaurantTemplate">
+    <article class="restaurant-card">
+      <button class="card-summary" type="button" aria-expanded="false">
+        <div>
+          <p class="restaurant-ja"></p>
+          <h2 class="restaurant-name"></h2>
+          <div class="chips"></div>
+        </div>
+        <div class="stars"></div>
+      </button>
+      <div class="card-detail" hidden>
+        <div class="detail-grid">
+          <section class="info-panel">
+            <h3>预约难度与方法</h3>
+            <div class="difficulty"></div>
+            <p class="booking"></p>
+            <a class="booking-link" target="_blank" rel="noopener">打开预约页面</a>
+          </section>
+          <section class="info-panel">
+            <h3>Message Plate / 纪念日</h3>
+            <p class="plate"></p>
+          </section>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Lunch Course</th><th>价格</th><th>说明</th></tr></thead>
+            <tbody class="course-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="./app.js"></script>
+</body>
+</html>

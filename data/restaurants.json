@@ -1,0 +1,251 @@
+[
+  {
+    "id": "losier",
+    "name": "L’OSIER",
+    "nameJa": "ロオジエ",
+    "stars": 3,
+    "cuisine": "法餐",
+    "area": "银座",
+    "difficulty": 5,
+    "booking": "官网 / TableCheck / 电话。官方说明可预约当月起至未来第3个月月底；热门日期建议新月份开放后尽快查看。",
+    "plate": "可申请免费 Message Plate；通常20字以内，可用日语、英语或法语。另有付费整只蛋糕选项。",
+    "lunch": [
+      {
+        "name": "Lunch Course",
+        "price": "以预约日期页面为准",
+        "note": "季节菜单；另收服务费"
+      }
+    ],
+    "url": "https://www.tablecheck.com/ja/shops/shiseido-losier/reserve"
+  },
+  {
+    "id": "leffervescence",
+    "name": "L’Effervescence",
+    "nameJa": "レフェルヴェソンス",
+    "stars": 3,
+    "cuisine": "现代法餐",
+    "area": "西麻布",
+    "difficulty": 5,
+    "booking": "官网在线预约。席位按预约日历滚动开放；周五、周六午餐和节日前后最难订。",
+    "plate": "纪念日需求可在预约备注中提出；是否提供文字盘及费用，以餐厅回复为准。",
+    "lunch": [
+      {
+        "name": "Chef’s Omakase Menu",
+        "price": "¥49,500",
+        "note": "午餐、晚餐同一主厨套餐；服务费另计"
+      }
+    ],
+    "url": "https://www.leffervescence.jp/en/reservation.html"
+  },
+  {
+    "id": "narisawa",
+    "name": "NARISAWA",
+    "nameJa": "ナリサワ",
+    "stars": 3,
+    "cuisine": "创新料理",
+    "area": "南青山",
+    "difficulty": 4,
+    "booking": "通过官网预约系统选择日期、人数和套餐；热门周末建议提前1–3个月。",
+    "plate": "可在预约备注中说明生日或纪念日；具体形式和费用需餐厅确认。",
+    "lunch": [
+      {
+        "name": "Chef’s Tasting Course",
+        "price": "以预约页为准",
+        "note": "季节性品鉴套餐"
+      },
+      {
+        "name": "Special Pairing Course",
+        "price": "以预约页为准",
+        "note": "部分日期提供酒水搭配版本"
+      }
+    ],
+    "url": "https://www.narisawa-yoshihiro-en.com/"
+  },
+  {
+    "id": "robuchon",
+    "name": "Gastronomy “Joël Robuchon”",
+    "nameJa": "ガストロノミー ジョエル・ロブション",
+    "stars": 3,
+    "cuisine": "法餐",
+    "area": "惠比寿",
+    "difficulty": 4,
+    "booking": "官网或电话预约；午餐营业日应以预约日历为准，节日套餐通常单独开放。",
+    "plate": "通常可提出生日、纪念日甜点或蛋糕需求；费用、文字和截止日以预约页为准。",
+    "lunch": [
+      {
+        "name": "PRIX FIXE",
+        "price": "以预约页为准",
+        "note": "午餐可选档位随日期变化"
+      },
+      {
+        "name": "MENU DÉGUSTATION",
+        "price": "以预约页为准",
+        "note": "品鉴套餐；服务费另计"
+      }
+    ],
+    "url": "https://www.robuchon.jp/en/shop-list/joelrobuchon"
+  },
+  {
+    "id": "sezanne",
+    "name": "SÉZANNE",
+    "nameJa": "セザン",
+    "stars": 3,
+    "cuisine": "法餐",
+    "area": "丸之内",
+    "difficulty": 5,
+    "booking": "通过四季酒店官网或预约系统预约。热门周末和特殊日期开放后很快满位。",
+    "plate": "纪念日需求可在预约备注提出；具体安排以酒店餐厅确认为准。",
+    "lunch": [
+      {
+        "name": "Lunch Tasting Menu",
+        "price": "以预约页为准",
+        "note": "季节品鉴菜单；服务费另计"
+      }
+    ],
+    "url": "https://www.fourseasons.com/tokyo/dining/restaurants/sezanne/"
+  },
+  {
+    "id": "quintessence",
+    "name": "Quintessence",
+    "nameJa": "カンテサンス",
+    "stars": 3,
+    "cuisine": "法餐",
+    "area": "品川",
+    "difficulty": 5,
+    "booking": "以官网预约规则为准；属于东京最难预约餐厅之一，通常需在指定开放窗口申请。",
+    "plate": "纪念日安排是否可接受需直接咨询；不应默认一定提供 Message Plate。",
+    "lunch": [
+      {
+        "name": "Menu unique",
+        "price": "以预约页为准",
+        "note": "统一主厨套餐"
+      }
+    ],
+    "url": "https://www.quintessence.jp/"
+  },
+  {
+    "id": "tempura-kondo",
+    "name": "Tempura Kondo",
+    "nameJa": "てんぷら近藤",
+    "stars": 2,
+    "cuisine": "天妇罗",
+    "area": "银座",
+    "difficulty": 4,
+    "booking": "官网或电话预约；午餐热门日期建议提前，取消位也较常见。",
+    "plate": "天妇罗专门店通常不以 Message Plate 为主；纪念日需求应提前电话确认。",
+    "lunch": [
+      {
+        "name": "Lunch Course A",
+        "price": "以预约页为准",
+        "note": "午餐套餐"
+      },
+      {
+        "name": "Lunch Course B",
+        "price": "以预约页为准",
+        "note": "较完整套餐"
+      },
+      {
+        "name": "Omakase",
+        "price": "以预约页为准",
+        "note": "主厨套餐"
+      }
+    ],
+    "url": "https://tempura-kondo.com/"
+  },
+  {
+    "id": "esquisse",
+    "name": "ESqUISSE",
+    "nameJa": "エスキス",
+    "stars": 2,
+    "cuisine": "法餐",
+    "area": "银座",
+    "difficulty": 4,
+    "booking": "官网或预约系统预约；周末午餐建议在开放后尽早预订。",
+    "plate": "可在预约备注提出纪念日需求；文字盘、蛋糕与费用以预约页可选项目为准。",
+    "lunch": [
+      {
+        "name": "Lunch Menu",
+        "price": "以预约页为准",
+        "note": "季节菜单"
+      },
+      {
+        "name": "Chef’s Tasting Menu",
+        "price": "以预约页为准",
+        "note": "完整品鉴菜单"
+      }
+    ],
+    "url": "https://www.esquissetokyo.com/"
+  },
+  {
+    "id": "hommage",
+    "name": "HOMMAGE",
+    "nameJa": "オマージュ",
+    "stars": 2,
+    "cuisine": "法餐",
+    "area": "浅草",
+    "difficulty": 4,
+    "booking": "官网或预约系统预约；周末午餐较热门。",
+    "plate": "可在预约备注中提出纪念日需求；具体文字和费用需确认。",
+    "lunch": [
+      {
+        "name": "Lunch Course",
+        "price": "以预约页为准",
+        "note": "季节套餐"
+      },
+      {
+        "name": "Special Course",
+        "price": "以预约页为准",
+        "note": "部分日期提供"
+      }
+    ],
+    "url": "https://hommagetokyo.com/"
+  },
+  {
+    "id": "nabeno-ism",
+    "name": "Nabeno-Ism",
+    "nameJa": "ナベノイズム",
+    "stars": 2,
+    "cuisine": "法餐",
+    "area": "驹形",
+    "difficulty": 3,
+    "booking": "官网或预约系统预约。相较最顶级热门店更容易规划，但周末仍建议提前。",
+    "plate": "可在预约备注中咨询 Message Plate 或蛋糕；以预约页选项为准。",
+    "lunch": [
+      {
+        "name": "Lunch Short Course",
+        "price": "以预约页为准",
+        "note": "较短午餐套餐"
+      },
+      {
+        "name": "Lunch Full Course",
+        "price": "以预约页为准",
+        "note": "完整午餐套餐"
+      }
+    ],
+    "url": "https://www.nabeno-ism.tokyo/"
+  },
+  {
+    "id": "la-table-robuchon",
+    "name": "LA TABLE de Joël Robuchon",
+    "nameJa": "ラ ターブル ドゥ ジョエル・ロブション",
+    "stars": 1,
+    "cuisine": "法餐",
+    "area": "惠比寿",
+    "difficulty": 3,
+    "booking": "官网或电话预约；通常比楼上 Gastronomy 更容易订，但周末仍建议提前。",
+    "plate": "常见纪念日甜点或蛋糕安排可在预约时选择或备注；费用以预约页为准。",
+    "lunch": [
+      {
+        "name": "Lunch Prix Fixe",
+        "price": "以预约页为准",
+        "note": "午餐套餐"
+      },
+      {
+        "name": "Lunch Dégustation",
+        "price": "以预约页为准",
+        "note": "品鉴套餐"
+      }
+    ],
+    "url": "https://www.robuchon.jp/en/shop-list/latable"
+  }
+]
