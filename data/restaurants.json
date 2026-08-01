@@ -99,7 +99,7 @@
       "official": "https://azabukadowaki.com/",
       "reservation": "https://azabukadowaki.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/azabu-kadowaki",
       "tabelog": "",
       "instagram": ""
     },
@@ -109,6 +109,36 @@
       "source": "Azabu Kadowaki official reservation notes",
       "changeSummary": "着装要求与儿童政策官网核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "麻布十番",
+          "lines": [
+            "东京Metro南北线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "赤羽桥",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 11
+        },
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 12
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -209,7 +239,7 @@
       "official": "",
       "reservation": "",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/harutaka",
       "tabelog": "",
       "instagram": ""
     },
@@ -219,6 +249,39 @@
       "source": "餐厅官网 / 预约页",
       "changeSummary": "初始录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "新桥",
+          "lines": [
+            "JR线",
+            "东京Metro银座线",
+            "都营浅草线",
+            "百合海鸥线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "内幸町",
+          "lines": [
+            "都营三田线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -543,7 +606,7 @@
       "official": "http://www.kagurazaka-ishikawa.co.jp/",
       "reservation": "http://www.kagurazaka-ishikawa.co.jp/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/kagurazaka-ishikawa",
       "tabelog": "",
       "instagram": ""
     },
@@ -553,6 +616,38 @@
       "source": "餐厅官网 / 预约页",
       "changeSummary": "初始录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "牛込神乐坂",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "饭田桥",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线",
+            "东京Metro南北线",
+            "东京Metro东西线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "神乐坂",
+          "lines": [
+            "东京Metro东西线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -653,7 +748,7 @@
       "official": "http://www.nihonryori-kanda.com/",
       "reservation": "http://www.nihonryori-kanda.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/kanda",
       "tabelog": "",
       "instagram": ""
     },
@@ -663,6 +758,34 @@
       "source": "餐厅官网 / 预约页",
       "changeSummary": "初始录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "虎之门Hills",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "虎之门",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "神谷町",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -1137,7 +1260,7 @@
       "official": "https://myoujyaku.com/",
       "reservation": "https://myoujyaku.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/myojaku",
       "tabelog": "",
       "instagram": ""
     },
@@ -1147,6 +1270,36 @@
       "source": "Myojaku official reservation notes",
       "changeSummary": "着装要求与儿童政策官网核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "麻布十番",
+          "lines": [
+            "东京Metro南北线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 10
+        },
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 12
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -1251,7 +1404,7 @@
       "official": "https://www.quintessence.jp/",
       "reservation": "https://www.quintessence.jp/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/quintessence",
       "tabelog": "",
       "instagram": ""
     },
@@ -1261,6 +1414,36 @@
       "source": "Quintessence official reservation page",
       "changeSummary": "着装要求与儿童政策官网核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "北品川",
+          "lines": [
+            "京急本线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "品川",
+          "lines": [
+            "JR线",
+            "京急本线"
+          ],
+          "walkMinutes": 10
+        },
+        {
+          "name": "大崎",
+          "lines": [
+            "JR线",
+            "临海线"
+          ],
+          "walkMinutes": 12
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -1537,7 +1720,7 @@
       "official": "https://sazenka.com/",
       "reservation": "https://sazenka.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/sazenka",
       "tabelog": "",
       "instagram": ""
     },
@@ -1547,6 +1730,36 @@
       "source": "Sazenka official information page",
       "changeSummary": "着装要求与儿童政策官网核验",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "白金高轮",
+          "lines": [
+            "东京Metro南北线",
+            "都营三田线"
+          ],
+          "walkMinutes": 12
+        },
+        {
+          "name": "麻布十番",
+          "lines": [
+            "东京Metro南北线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 16
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -1748,8 +1961,8 @@
     "cuisineZh": "法餐",
     "area": "Nihombashi",
     "areaZh": "日本桥",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区日本橋兜町1-4",
+    "phone": "03-5847-9600",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -1830,10 +2043,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://asahinagastronome.com/",
+      "reservation": "https://asahinagastronome.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/asahina-gastronome",
       "tabelog": "",
       "instagram": ""
     },
@@ -1843,6 +2056,37 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "茅场町",
+          "lines": [
+            "东京Metro日比谷线",
+            "东京Metro东西线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "日本桥",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro东西线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "水天宫前",
+          "lines": [
+            "东京Metro半藏门线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -1858,8 +2102,8 @@
     "cuisineZh": "法餐",
     "area": "Higashiazabu",
     "areaZh": "东麻布",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区東麻布1-20-3",
+    "phone": "03-6712-5085",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -1940,10 +2184,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://www.crony.co.jp/",
+      "reservation": "https://www.crony.co.jp/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/crony-1194937",
       "tabelog": "",
       "instagram": ""
     },
@@ -1953,6 +2197,34 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "赤羽桥",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 1
+        },
+        {
+          "name": "芝公园",
+          "lines": [
+            "都营三田线"
+          ],
+          "walkMinutes": 7
+        },
+        {
+          "name": "神谷町",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -1968,8 +2240,8 @@
     "cuisineZh": "日本料理",
     "area": "Jingumae",
     "areaZh": "神宫前",
-    "address": "",
-    "phone": "",
+    "address": "東京都渋谷区神宮前2-3-18",
+    "phone": "03-6455-5433",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -2050,10 +2322,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://www.jimbochoden.com/",
+      "reservation": "https://www.jimbochoden.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/den",
       "tabelog": "",
       "instagram": ""
     },
@@ -2063,6 +2335,35 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "外苑前",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 9
+        },
+        {
+          "name": "国立竞技场",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 10
+        },
+        {
+          "name": "明治神宫前",
+          "lines": [
+            "东京Metro千代田线",
+            "东京Metro副都心线"
+          ],
+          "walkMinutes": 11
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -2078,8 +2379,8 @@
     "cuisineZh": "日本料理",
     "area": "Nakameguro",
     "areaZh": "中目黑",
-    "address": "",
-    "phone": "",
+    "address": "東京都目黒区中目黒1-5-12",
+    "phone": "03-5860-7530",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -2163,7 +2464,7 @@
       "official": "",
       "reservation": "",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/ensui",
       "tabelog": "",
       "instagram": ""
     },
@@ -2173,6 +2474,36 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "中目黑",
+          "lines": [
+            "东京Metro日比谷线",
+            "东急东横线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "代官山",
+          "lines": [
+            "东急东横线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "惠比寿",
+          "lines": [
+            "JR线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 13
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -2185,8 +2516,8 @@
     "cuisine": "French",
     "cuisineZh": "法餐",
     "area": "Ginza",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座5-4-6 ロイヤルクリスタル銀座 9F",
+    "phone": "03-5537-5580",
     "website": "https://www.esquissetokyo.com/",
     "difficulty": 4,
     "booking": "官网或预约系统预约；详细规则待核验。",
@@ -2273,7 +2604,7 @@
       "official": "https://www.esquissetokyo.com/",
       "reservation": "https://www.esquissetokyo.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/esquisse",
       "tabelog": "",
       "instagram": ""
     },
@@ -2283,6 +2614,39 @@
       "source": "餐厅官网 / 预约页",
       "changeSummary": "初始录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "有乐町",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "日比谷",
+          "lines": [
+            "东京Metro日比谷线",
+            "东京Metro千代田线",
+            "都营三田线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -2298,8 +2662,8 @@
     "cuisineZh": "法餐",
     "area": "Toranomon",
     "areaZh": "虎之门",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区虎ノ門5-10-7 麻布台ヒルズ ガーデンプラザD 2F",
+    "phone": "03-6435-8018",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -2380,10 +2744,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://www.aoyama-florilege.jp/",
+      "reservation": "https://www.aoyama-florilege.jp/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/florilege",
       "tabelog": "",
       "instagram": ""
     },
@@ -2393,6 +2757,34 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "神谷町",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "六本木一丁目",
+          "lines": [
+            "东京Metro南北线"
+          ],
+          "walkMinutes": 7
+        },
+        {
+          "name": "虎之门Hills",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 9
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -2408,8 +2800,8 @@
     "cuisineZh": "日本料理",
     "area": "Ginza",
     "areaZh": "银座",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座8-8-19 伊勢由ビル 5F",
+    "phone": "03-3571-8596",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -2493,7 +2885,7 @@
       "official": "",
       "reservation": "",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/ginza-fukuju",
       "tabelog": "",
       "instagram": ""
     },
@@ -2503,6 +2895,40 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "新桥",
+          "lines": [
+            "JR线",
+            "东京Metro银座线",
+            "都营浅草线",
+            "百合海鸥线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "汐留",
+          "lines": [
+            "都营大江户线",
+            "百合海鸥线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -2518,8 +2944,8 @@
     "cuisineZh": "日本料理",
     "area": "Ginza",
     "areaZh": "银座",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座5-4-8 カリオカビル 4F",
+    "phone": "03-6215-9544",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -2600,10 +3026,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://ginzaokuda.com/kojyu/",
+      "reservation": "https://ginzaokuda.com/kojyu/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/ginza-koju",
       "tabelog": "",
       "instagram": ""
     },
@@ -2613,6 +3039,38 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 1
+        },
+        {
+          "name": "有乐町",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "东银座",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -2628,8 +3086,8 @@
     "cuisineZh": "日本料理",
     "area": "Ginza",
     "areaZh": "银座",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座2-8-17 ハビウル銀座II B1F",
+    "phone": "03-6263-0345",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -2713,7 +3171,7 @@
       "official": "",
       "reservation": "",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/ginza-shinohara",
       "tabelog": "",
       "instagram": ""
     },
@@ -2723,6 +3181,37 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座一丁目",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "东银座",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 5
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -2738,8 +3227,8 @@
     "cuisineZh": "日本料理",
     "area": "Minami-Aoyama",
     "areaZh": "南青山",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区南青山4-11-2",
+    "phone": "03-6812-9613",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -2820,10 +3309,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://hakuun.jp/",
+      "reservation": "https://hakuun.jp/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/hakuun",
       "tabelog": "",
       "instagram": ""
     },
@@ -2833,6 +3322,36 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "表参道",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro千代田线",
+            "东京Metro半藏门线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "外苑前",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 11
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -2845,8 +3364,8 @@
     "cuisine": "French",
     "cuisineZh": "法餐",
     "area": "Asakusa",
-    "address": "",
-    "phone": "",
+    "address": "東京都台東区浅草4-10-5",
+    "phone": "03-3874-1552",
     "website": "https://hommagetokyo.com/",
     "difficulty": 4,
     "booking": "官网或预约系统预约；详细规则待核验。",
@@ -2930,10 +3449,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "https://hommagetokyo.com/",
-      "reservation": "https://hommagetokyo.com/",
+      "official": "https://www.hommage-arai.com/",
+      "reservation": "https://www.hommage-arai.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/hommage",
       "tabelog": "",
       "instagram": ""
     },
@@ -2943,6 +3462,36 @@
       "source": "餐厅官网 / 预约页",
       "changeSummary": "初始录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "浅草",
+          "lines": [
+            "东京Metro银座线",
+            "都营浅草线",
+            "筑波快线"
+          ],
+          "walkMinutes": 10
+        },
+        {
+          "name": "入谷",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 13
+        },
+        {
+          "name": "田原町",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 14
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -2958,8 +3507,8 @@
     "cuisineZh": "日本料理",
     "area": "Jingumae",
     "areaZh": "神宫前",
-    "address": "",
-    "phone": "",
+    "address": "東京都渋谷区神宮前2-19-12",
+    "phone": "03-3402-7038",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -3043,7 +3592,7 @@
       "official": "",
       "reservation": "",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/jingumae-higuchi",
       "tabelog": "",
       "instagram": ""
     },
@@ -3053,6 +3602,35 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "外苑前",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 9
+        },
+        {
+          "name": "明治神宫前",
+          "lines": [
+            "东京Metro千代田线",
+            "东京Metro副都心线"
+          ],
+          "walkMinutes": 10
+        },
+        {
+          "name": "原宿",
+          "lines": [
+            "JR线"
+          ],
+          "walkMinutes": 11
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -3068,8 +3646,8 @@
     "cuisineZh": "日本料理",
     "area": "Kioicho",
     "areaZh": "纪尾井町",
-    "address": "",
-    "phone": "",
+    "address": "東京都千代田区紀尾井町1-13",
+    "phone": "03-3261-8577",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -3150,10 +3728,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://www.kioicho-fukudaya.jp/",
+      "reservation": "https://www.kioicho-fukudaya.jp/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/kioicho-fukudaya",
       "tabelog": "",
       "instagram": ""
     },
@@ -3163,6 +3741,37 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "永田町",
+          "lines": [
+            "东京Metro半藏门线",
+            "东京Metro南北线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "赤坂见附",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "麹町",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -3178,8 +3787,8 @@
     "cuisineZh": "日本料理",
     "area": "Kagurazaka",
     "areaZh": "神乐坂",
-    "address": "",
-    "phone": "",
+    "address": "東京都新宿区神楽坂3-5-5",
+    "phone": "050-3138-5225",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -3260,10 +3869,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://kagurazaka-kohaku.jp/",
+      "reservation": "https://kagurazaka-kohaku.jp/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/kohaku",
       "tabelog": "",
       "instagram": ""
     },
@@ -3273,6 +3882,38 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "饭田桥",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线",
+            "东京Metro南北线",
+            "东京Metro东西线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "牛込神乐坂",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "神乐坂",
+          "lines": [
+            "东京Metro东西线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -3288,8 +3929,8 @@
     "cuisineZh": "日本料理",
     "area": "Shintomicho",
     "areaZh": "新富町",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区新富2-5-5",
+    "phone": "03-5543-0335",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -3373,7 +4014,7 @@
       "official": "",
       "reservation": "",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/kutan",
       "tabelog": "",
       "instagram": ""
     },
@@ -3383,6 +4024,35 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "新富町",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 1
+        },
+        {
+          "name": "筑地",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "八丁堀",
+          "lines": [
+            "东京Metro日比谷线",
+            "JR线"
+          ],
+          "walkMinutes": 7
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -3398,8 +4068,8 @@
     "cuisineZh": "创新料理",
     "area": "Nagatacho",
     "areaZh": "永田町",
-    "address": "",
-    "phone": "",
+    "address": "東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 3F",
+    "phone": "03-6272-8513",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -3480,10 +4150,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://maztokyo.jp/",
+      "reservation": "https://maztokyo.jp/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/maz",
       "tabelog": "",
       "instagram": ""
     },
@@ -3493,6 +4163,37 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "永田町",
+          "lines": [
+            "东京Metro半藏门线",
+            "东京Metro南北线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 2
+        },
+        {
+          "name": "赤坂见附",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "麹町",
+          "lines": [
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -3505,8 +4206,8 @@
     "cuisine": "Innovative",
     "cuisineZh": "创新料理",
     "area": "Minami-Aoyama",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区南青山2-6-15",
+    "phone": "03-5785-0799",
     "website": "https://www.narisawa-yoshihiro-en.com/",
     "difficulty": 4,
     "booking": "通过官网预约系统预约；详细规则待核验。",
@@ -3590,10 +4291,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "https://www.narisawa-yoshihiro-en.com/",
-      "reservation": "https://www.narisawa-yoshihiro-en.com/",
+      "official": "https://www.narisawa-yoshihiro.com/",
+      "reservation": "https://www.narisawa-yoshihiro.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/narisawa",
       "tabelog": "",
       "instagram": ""
     },
@@ -3603,6 +4304,36 @@
       "source": "餐厅官网 / 预约页",
       "changeSummary": "初始录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "青山一丁目",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro半藏门线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "外苑前",
+          "lines": [
+            "东京Metro银座线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -3618,8 +4349,8 @@
     "cuisineZh": "寿司",
     "area": "Nishiazabu",
     "areaZh": "西麻布",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区西麻布4-18-20",
+    "phone": "03-5485-0031",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -3703,7 +4434,7 @@
       "official": "",
       "reservation": "",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/nishiazabu-sushi-shin",
       "tabelog": "",
       "instagram": ""
     },
@@ -3713,6 +4444,35 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 9
+        },
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 12
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 13
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -3728,8 +4488,8 @@
     "cuisineZh": "意大利菜",
     "area": "Minami-Aoyama",
     "areaZh": "南青山",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区南青山6-4-6",
+    "phone": "03-3406-3050",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -3813,7 +4573,7 @@
       "official": "",
       "reservation": "",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/prisma-1194160",
       "tabelog": "",
       "instagram": ""
     },
@@ -3823,6 +4583,36 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "表参道",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro千代田线",
+            "东京Metro半藏门线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 14
+        },
+        {
+          "name": "广尾",
+          "lines": [
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 15
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -3838,8 +4628,8 @@
     "cuisineZh": "法餐",
     "area": "Roppongi",
     "areaZh": "六本木",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区六本木4-2-35 アーバンスタイル六本木三河台 B1F",
+    "phone": "03-5770-4236",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -3920,10 +4710,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://restaurant-ryuzu.com/",
+      "reservation": "https://restaurant-ryuzu.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/ryuzu",
       "tabelog": "",
       "instagram": ""
     },
@@ -3933,6 +4723,35 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "六本木一丁目",
+          "lines": [
+            "东京Metro南北线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 9
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -3948,8 +4767,8 @@
     "cuisineZh": "日本料理",
     "area": "Mita",
     "areaZh": "三田",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区三田2-17-29 グランデ三田 B1F",
+    "phone": "03-3451-8320",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -4030,10 +4849,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://www.nihonryori-seizan.com/",
+      "reservation": "https://www.nihonryori-seizan.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/seizan",
       "tabelog": "",
       "instagram": ""
     },
@@ -4043,6 +4862,35 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "三田",
+          "lines": [
+            "都营三田线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 9
+        },
+        {
+          "name": "田町",
+          "lines": [
+            "JR线"
+          ],
+          "walkMinutes": 10
+        },
+        {
+          "name": "赤羽桥",
+          "lines": [
+            "都营大江户线"
+          ],
+          "walkMinutes": 10
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -4058,8 +4906,8 @@
     "cuisineZh": "寿司",
     "area": "Roppongi",
     "areaZh": "六本木",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区六本木6-12-2 六本木ヒルズレジデンスB棟 3F",
+    "phone": "03-5413-6626",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -4143,7 +4991,7 @@
       "official": "",
       "reservation": "",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/sukiyabashi-jiro-roppongiten",
       "tabelog": "",
       "instagram": ""
     },
@@ -4153,6 +5001,36 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "六本木",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "麻布十番",
+          "lines": [
+            "东京Metro南北线",
+            "都营大江户线"
+          ],
+          "walkMinutes": 8
+        },
+        {
+          "name": "乃木坂",
+          "lines": [
+            "东京Metro千代田线"
+          ],
+          "walkMinutes": 13
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -4168,8 +5046,8 @@
     "cuisineZh": "寿司",
     "area": "Ginza",
     "areaZh": "银座",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座8-10-3 三鈴ビル B1F",
+    "phone": "03-5568-4411",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -4250,10 +5128,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://ginza-sushi-kanesaka.com/",
+      "reservation": "https://ginza-sushi-kanesaka.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/sushi-kanesaka",
       "tabelog": "",
       "instagram": ""
     },
@@ -4263,6 +5141,40 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "新桥",
+          "lines": [
+            "JR线",
+            "东京Metro银座线",
+            "都营浅草线",
+            "百合海鸥线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "汐留",
+          "lines": [
+            "都营大江户线",
+            "百合海鸥线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -4278,8 +5190,8 @@
     "cuisineZh": "天妇罗",
     "area": "Shirokanedai",
     "areaZh": "白金台",
-    "address": "",
-    "phone": "",
+    "address": "東京都港区白金台5-17-9 B1F",
+    "phone": "03-5422-7612",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -4360,10 +5272,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://tempura-ginya.com/",
+      "reservation": "https://tempura-ginya.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/tempura-ginya",
       "tabelog": "",
       "instagram": ""
     },
@@ -4373,6 +5285,31 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "白金台",
+          "lines": [
+            "东京Metro南北线",
+            "都营三田线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "目黑",
+          "lines": [
+            "JR线",
+            "东京Metro南北线",
+            "都营三田线",
+            "东急目黑线"
+          ],
+          "walkMinutes": 13
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -4385,8 +5322,8 @@
     "cuisine": "Tempura",
     "cuisineZh": "天妇罗",
     "area": "Ginza",
-    "address": "",
-    "phone": "",
+    "address": "東京都中央区銀座5-5-13 坂口ビル 9F",
+    "phone": "03-5568-0923",
     "website": "https://tempura-kondo.com/",
     "difficulty": 4,
     "booking": "官网或电话预约；详细规则待核验。",
@@ -4473,7 +5410,7 @@
       "official": "https://tempura-kondo.com/",
       "reservation": "https://tempura-kondo.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/tempura-kondo",
       "tabelog": "",
       "instagram": ""
     },
@@ -4483,6 +5420,38 @@
       "source": "餐厅官网 / 预约页",
       "changeSummary": "初始录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "银座",
+          "lines": [
+            "东京Metro银座线",
+            "东京Metro丸之内线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "有乐町",
+          "lines": [
+            "JR线",
+            "东京Metro有乐町线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "东银座",
+          "lines": [
+            "东京Metro日比谷线",
+            "都营浅草线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
@@ -4498,8 +5467,8 @@
     "cuisineZh": "天妇罗",
     "area": "Ebisu",
     "areaZh": "惠比寿",
-    "address": "",
-    "phone": "",
+    "address": "東京都渋谷区恵比寿西2-8-11 グランベル恵比寿III 3F",
+    "phone": "03-6455-0200",
     "website": "",
     "difficulty": 0,
     "booking": "预约方式与放位规则待官网核验。",
@@ -4580,10 +5549,10 @@
       "paymentMethods": []
     },
     "links": {
-      "official": "",
-      "reservation": "",
+      "official": "https://motoyoshi-1120.com/",
+      "reservation": "https://motoyoshi-1120.com/",
       "googleMaps": "",
-      "michelin": "",
+      "michelin": "https://guide.michelin.com/us/en/tokyo-region/tokyo/restaurant/tempura-motoyoshi",
       "tabelog": "",
       "instagram": ""
     },
@@ -4593,6 +5562,28 @@
       "source": "MICHELIN Guide Tokyo 2026 / official partner listing",
       "changeSummary": "基础资料录入",
       "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "惠比寿",
+          "lines": [
+            "JR线",
+            "东京Metro日比谷线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "代官山",
+          "lines": [
+            "东急东横线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "verified": true,
+      "source": "Michelin Guide address plus Tokyo rail access cross-check",
+      "lastChecked": "2026-08-01"
     }
   },
   {
