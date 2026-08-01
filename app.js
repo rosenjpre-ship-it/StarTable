@@ -34,7 +34,7 @@ function priceOk(item,meals){
 }
 function mealTable(items){
  if(!items?.length)return '<div class="content-empty">该餐期的 Course 与价格尚未逐店核验。</div>';
- return `<table><thead><tr><th>Course</th><th>价格</th><th>说明</th></tr></thead><tbody>${items.map(x=>`<tr><td>${x.name}</td><td><strong>${x.price}</strong></td><td>${x.note||''}</td></tr>`).join('')}</tbody></table>`;
+ return `<table><thead><tr><th>Course</th><th>价格</th><th>内容</th><th>说明</th></tr></thead><tbody>${items.map(x=>`<tr><td>${x.name}</td><td><strong>${x.price}</strong></td><td>${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${d}</li>`).join('')}</ol>`:'待补充'}</td><td>${x.note||''}</td></tr>`).join('')}</tbody></table>`;
 }
 function tabContent(item,tab){
  if(tab==='lunch'||tab==='dinner')return mealTable(item[tab]);
@@ -42,8 +42,9 @@ function tabContent(item,tab){
  if(tab==='ratings'){
   const r=item.ratings||{};
   const tabelog=r.tabelogScore?`${r.tabelogScore}${r.tabelogUrl?` <a href="${r.tabelogUrl}" target="_blank" rel="noopener">Tabelog</a>`:''}`:'待补充';
-  const google=r.googleMapsScore?String(r.googleMapsScore):'待补充';
-  return `<div class="content-empty">Tabelog：${tabelog}<br>Google Maps：${google}</div>`;
+  const lines=[`Tabelog：${tabelog}`];
+  if(r.googleMapsScore)lines.push(`Google Maps：${r.googleMapsScore}`);
+  return `<div class="content-empty">${lines.join('<br>')}</div>`;
  }
  if(tab==='links'){
   const entries=Object.entries(item.links||{}).filter(([,v])=>v);
@@ -65,7 +66,7 @@ function budgetText(b){
  return `Lunch ¥${b.lunchFrom??'-'} 起；Dinner ¥${b.dinnerFrom??'-'} 起`;
 }
 function stationText(item){
- const stations=item.transport?.stations||[];
+ const stations=[...(item.transport?.stations||[])].sort((a,b)=>(a.walkMinutes??99)-(b.walkMinutes??99)).slice(0,3);
  if(!stations.length)return '最近车站：待补充';
  return `最近车站：${stations.map(s=>`${s.name}（${s.lines.join(' / ')}，步行${s.walkMinutes}分钟）`).join('；')}`;
 }
@@ -83,7 +84,7 @@ function makeCard(item){
  f.querySelector('.dress').textContent=dressText(item.dressCode);f.querySelector('.children').textContent=childText(item.childPolicy);
  f.querySelector('.budget').textContent=budgetText(item.budget);
  const chips=f.querySelector('.chips');
- const chipTexts=[`Lunch ${item.lunch?.length||0}`,`Dinner ${item.dinner?.length||0}`,item.dressCode?.required===true?'需着装':'着装待核验'];
+ const chipTexts=[`Lunch ${item.lunch?.length||0}`,`Dinner ${item.dinner?.length||0}`,item.dressCode?.required===true?'有 Dress Code':'着装待核验'];
  if((item.reservation?.difficulty||0)>=5)chipTexts.unshift('极难预约');
  chipTexts.forEach((t,i)=>{const s=document.createElement('span');s.className=i===0&&t==='极难预约'?'chip chip-alert':'chip';s.textContent=t;chips.appendChild(s)});
  const area=f.querySelector('.content-area');area.innerHTML=tabContent(item,'lunch');
@@ -96,10 +97,11 @@ function apply(){
  const q=els.search.value.trim().toLowerCase();
  state.filtered=state.data.filter(x=>{
   const meals=state.meal==='all'?[...(x.lunch||[]),...(x.dinner||[])]:x[state.meal]||[];
+  const mealOk=state.meal==='all'||meals.length>0;
   const hay=[x.nameZh,x.nameJa,x.nameEn,x.areaZh,x.cuisineZh,x.address,...meals.flatMap(c=>[c.name,c.price,c.note])].join(' ').toLowerCase();
   const dressOk=!els.dress.value||(els.dress.value==='required'&&x.dressCode?.required===true)||(els.dress.value==='none'&&x.dressCode?.required===false)||(els.dress.value==='pending'&&x.dressCode?.required==null);
   const cp=x.childPolicy||{};const childOk=!els.child.value||(els.child.value==='yes'&&cp.diningRoomAllowed===true)||(els.child.value==='private'&&cp.diningRoomAllowed!==true&&cp.privateRoomAllowed===true)||(els.child.value==='no'&&cp.diningRoomAllowed===false&&cp.privateRoomAllowed===false)||(els.child.value==='pending'&&cp.verified===false);
-  return (!q||hay.includes(q))&&(!els.star.value||String(x.stars)===els.star.value)&&(!els.cuisine.value||x.cuisineZh===els.cuisine.value)&&(!els.area.value||x.areaZh===els.area.value)&&priceOk(x,meals)&&dressOk&&childOk;
+  return mealOk&&(!q||hay.includes(q))&&(!els.star.value||String(x.stars)===els.star.value)&&(!els.cuisine.value||x.cuisineZh===els.cuisine.value)&&(!els.area.value||x.areaZh===els.area.value)&&priceOk(x,meals)&&dressOk&&childOk;
  });render()
 }
 async function init(){
