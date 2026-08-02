@@ -143,7 +143,7 @@ h1{font:700 clamp(44px,7vw,78px)/.96 Georgia,"Times New Roman",serif;margin:0;le
   background:var(--surface);
 }
 .meal-toggle:before{
-  content:"餐期筛选";
+  content:"快速筛选";
   color:var(--muted);
   font-size:12px;
   font-weight:700;
@@ -1208,7 +1208,11 @@ input,
 .account-panel,
 .modal,
 .restaurant-hero,
-.auth-modal{
+.auth-modal,
+.manners-panel,
+.manners-panel h3,
+.manners-panel ul,
+.manners-panel li{
   font-family:var(--cn-ui-font);
 }
 .brand em,

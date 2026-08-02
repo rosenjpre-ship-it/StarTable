@@ -1,9 +1,9 @@
 
 const activeUser=localStorage.getItem('stUser')||'guest';
 const prefKey=name=>`st:${activeUser}:${name}`;
-const state={data:[],filtered:[],meal:'all',user:activeUser,compareExpanded:true,accountExpanded:false,favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}'),compare:new Set(JSON.parse(localStorage.getItem(prefKey('compare'))||'[]'))};
+const state={data:[],filtered:[],meal:'all',solo:false,user:activeUser,compareExpanded:true,accountExpanded:false,favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}'),compare:new Set(JSON.parse(localStorage.getItem(prefKey('compare'))||'[]'))};
 const $=id=>document.getElementById(id);
-const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),star:$('starFilter'),cuisine:$('cuisineFilter'),area:$('areaFilter'),mealButtons:[...document.querySelectorAll('.meal-btn')],price:$('priceFilter'),dress:$('dressFilter'),child:$('childFilter'),visible:$('visibleCount'),total:$('totalRestaurants'),three:$('threeStarCount'),two:$('twoStarCount'),one:$('oneStarCount'),lastUpdated:$('lastUpdated'),reset:$('resetButton'),accountPanel:$('accountPanel'),areaRail:$('areaRail'),empty:$('empty'),theme:$('themeButton'),loginButton:$('loginButton'),loginModal:$('loginModal'),loginClose:$('loginClose'),loginName:$('loginName'),loginSubmit:$('loginSubmit'),controls:document.querySelector('.controls'),filterBody:$('filterBody'),toggleFilters:$('toggleFiltersButton'),mobileFilter:$('mobileFilterButton'),modal:$('detailModal'),modalContent:$('modalContent'),modalClose:$('modalClose')};
+const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),star:$('starFilter'),cuisine:$('cuisineFilter'),area:$('areaFilter'),mealButtons:[...document.querySelectorAll('.meal-btn[data-meal]')],soloButton:document.querySelector('[data-filter="solo"]'),price:$('priceFilter'),dress:$('dressFilter'),child:$('childFilter'),visible:$('visibleCount'),total:$('totalRestaurants'),three:$('threeStarCount'),two:$('twoStarCount'),one:$('oneStarCount'),lastUpdated:$('lastUpdated'),reset:$('resetButton'),accountPanel:$('accountPanel'),areaRail:$('areaRail'),empty:$('empty'),theme:$('themeButton'),loginButton:$('loginButton'),loginModal:$('loginModal'),loginClose:$('loginClose'),loginName:$('loginName'),loginSubmit:$('loginSubmit'),controls:document.querySelector('.controls'),filterBody:$('filterBody'),toggleFilters:$('toggleFiltersButton'),mobileFilter:$('mobileFilterButton'),modal:$('detailModal'),modalContent:$('modalContent'),modalClose:$('modalClose')};
 const stars=n=>'★'.repeat(n);const diff=n=>n?'★'.repeat(n)+'☆'.repeat(5-n):'待评估';
 const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const priceRanges={
@@ -101,6 +101,9 @@ function priceFilterOk(item){
  if(!els.price.value)return true;
  return selectedMealTypes().some(meal=>priceOk(item,meal));
 }
+function soloOk(item){
+ return !state.solo||item.filters?.soloDiningAvailable===true||item.soloDining?.available===true;
+}
 function savePrefs(){localStorage.setItem(prefKey('favorites'),JSON.stringify([...state.favorites]));localStorage.setItem(prefKey('marks'),JSON.stringify(state.marks));localStorage.setItem(prefKey('compare'),JSON.stringify([...state.compare]))}
 function setMark(id,status){
  if(state.marks[id]===status)delete state.marks[id];
@@ -163,6 +166,30 @@ function reservationGuideHtml(item){
  <div class="guide-row"><span>提前准备</span><strong>${esc(g.advance)}</strong></div>
  <div class="guide-tags">${g.platforms.map(x=>`<span>${esc(x)}</span>`).join('')}</div>
  <ul class="guide-list">${g.tactics.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
+}
+function soloText(item){
+ const solo=item.soloDining||{};
+ if(solo.available===true)return '可 1 人预约';
+ if(solo.available===false&&solo.minGuests)return `公开预约信息显示最少 ${solo.minGuests} 人起。`;
+ return '公开来源暂未确认是否接受 1 人预约。';
+}
+function mannersList(item){
+ const cuisine=item.cuisineZh||item.cuisine||'';
+ const rules=[
+  '准时到店；迟到会影响餐序，建议提前 5-10 分钟抵达。',
+  '预约前整理过敏、忌口、同行人数与联系方式，避免临时更改。',
+  '避免强烈香水、香氛护手霜或烟味，尤其是寿司、天妇罗和日本料理。',
+  '拍照前观察店内氛围；吧台餐厅避免长时间拍摄厨师和其他客人。'
+ ];
+ if(/寿司/.test(cuisine))rules.push('寿司吧台建议按师傅节奏食用，握寿司上桌后尽快入口。');
+ if(/天妇罗/.test(cuisine))rules.push('天妇罗建议趁热食用，避免长时间拍照影响口感。');
+ if(/法餐|意大利|西班牙/.test(cuisine))rules.push('西式餐序可按服务节奏用餐；不确定餐具顺序时跟随服务提示即可。');
+ if(item.dressCode?.required)rules.push('有着装规定，建议 smart casual，避免短裤、凉鞋、运动服。');
+ if(item.soloDining?.available===true)rules.push('1 人用餐时建议提前准备日文/英文备注，说明可接受吧台席。');
+ return item.tableManners?.notes?.length?item.tableManners.notes:rules;
+}
+function mannersHtml(item){
+ return mannersList(item).map(x=>`<li>${esc(x)}</li>`).join('');
 }
 function heroImageUrl(item){
  return item.heroImage||item.image?.url||item.media?.hero||item.media?.heroImage||'';
@@ -256,13 +283,13 @@ function budgetText(b){
  return `Lunch ¥${b.lunchFrom??'-'} 起；Dinner ¥${b.dinnerFrom??'-'} 起`;
 }
 function conceptSlogan(item){
+ if(item.concept?.verified===false)return '';
  if(item.concept?.slogan)return item.concept.slogan;
  if(item.concept?.text)return item.concept.text;
- const cuisine=item.cuisineZh||item.cuisine||'料理';
- return `以${cuisine}为核心，呈现季节食材与餐厅个性。`;
+ return '';
 }
 function conceptText(item){
- return item.concept?.text||conceptSlogan(item);
+ return item.concept?.verified===false?'官方 Concept 待整理。':item.concept?.text||conceptSlogan(item)||'官方 Concept 待整理。';
 }
 function stationText(item){
  const stations=[...(item.transport?.stations||[])].sort((a,b)=>(a.walkMinutes??99)-(b.walkMinutes??99)).slice(0,3);
@@ -284,7 +311,7 @@ function normalizeSearch(value){
  return String(value||'')
   .normalize('NFKC')
   .toLowerCase()
-  .replace(/[\s·・|｜/／,，.。'’"“”()（）\\-ー_]/g,'');
+  .replace(/[\s·・|｜\/／,，.。'’"“”()（）\\\-ー_]/g,'');
 }
 function nameSearchText(item){
  return normalizeSearch([item.nameZh,item.nameJa,item.nameEn,item.name,item.id].filter(Boolean).join(' '));
@@ -293,7 +320,9 @@ function nameMatches(item,query){
  const q=normalizeSearch(query);
  if(!q)return true;
  const hay=nameSearchText(item);
- return hay.includes(q)||[...q].every(char=>hay.includes(char));
+ if(hay.includes(q))return true;
+ if(/[a-z0-9]/.test(q))return false;
+ return [...q].every(char=>hay.includes(char));
 }
 function makeCard(item){
  const f=els.template.content.cloneNode(true),head=f.querySelector('.card-head'),detail=f.querySelector('.detail');
@@ -301,7 +330,7 @@ function makeCard(item){
  f.querySelector('.area').textContent=displayArea(item);f.querySelector('.cuisine').textContent=item.cuisineZh||item.cuisine;
  f.querySelector('.name-zh').textContent=item.nameZh||item.name;
  f.querySelector('.names-secondary').textContent=[item.nameJa,item.nameEn].filter(Boolean).join('｜');
- f.querySelector('.concept-line').textContent=conceptSlogan(item);
+ const slogan=conceptSlogan(item);f.querySelector('.concept-line').textContent=slogan;f.querySelector('.concept-line').hidden=!slogan;
  f.querySelector('.stars').textContent=stars(item.stars);f.querySelector('.address').textContent=item.address||'地址待补充';
  f.querySelector('.concept').textContent=conceptText(item);
  f.querySelector('.phone').textContent=item.phone?`电话：${item.phone}`:'电话待补充';
@@ -311,9 +340,12 @@ function makeCard(item){
  f.querySelector('.reservation-guide').innerHTML=reservationGuideHtml(item);
  const reserve=f.querySelector('.reserve');reserve.href=item.links?.reservation||item.links?.official||'#';if(reserve.href.endsWith('#'))reserve.style.display='none';
  f.querySelector('.dress').textContent=dressText(item.dressCode);f.querySelector('.children').textContent=childText(item.childPolicy);
+ f.querySelector('.solo').textContent=soloText(item);
+ f.querySelector('.manners').innerHTML=mannersHtml(item);
  f.querySelector('.budget').textContent=budgetText(item.budget);
  const chips=f.querySelector('.chips');
  const chipTexts=[`Lunch ${item.lunch?.length||0}`,`Dinner ${item.dinner?.length||0}`,item.dressCode?.required===true?'有 Dress Code':'着装需确认'];
+ if(item.soloDining?.available===true)chipTexts.unshift('Solo dining');
  if((item.reservation?.difficulty||0)>=5)chipTexts.unshift('极难预约');
  if(state.favorites.has(item.id))chipTexts.unshift('已收藏');
  if(state.marks[item.id]==='want')chipTexts.unshift('想摘星');
@@ -369,10 +401,10 @@ function render(){els.grid.innerHTML='';state.filtered.forEach(x=>els.grid.appen
 function apply(){
  const q=els.search.value.trim();
  state.filtered=state.data.filter(x=>{
-  const mealOk=state.meal==='all'||availabilityOk(x,state.meal);
+ const mealOk=state.meal==='all'||availabilityOk(x,state.meal);
   const dressOk=!els.dress.value||filterDressCategory(x)===els.dress.value;
   const childOk=!els.child.value||filterChildCategory(x)===els.child.value;
-  return mealOk&&nameMatches(x,q)&&(!els.star.value||String(x.stars)===els.star.value)&&(!els.cuisine.value||x.cuisineZh===els.cuisine.value)&&(!els.area.value||displayArea(x)===els.area.value)&&priceFilterOk(x)&&dressOk&&childOk;
+  return mealOk&&soloOk(x)&&nameMatches(x,q)&&(!els.star.value||String(x.stars)===els.star.value)&&(!els.cuisine.value||x.cuisineZh===els.cuisine.value)&&(!els.area.value||displayArea(x)===els.area.value)&&priceFilterOk(x)&&dressOk&&childOk;
  });state.filtered=sortRestaurants(state.filtered);render()
 }
 async function init(){
@@ -393,7 +425,8 @@ els.mealButtons.forEach(btn=>btn.addEventListener('click',()=>{
  els.mealButtons.forEach(x=>x.classList.toggle('active',state.meal===x.dataset.meal));
  apply();
 }));
-els.reset.addEventListener('click',()=>{[els.search,els.star,els.cuisine,els.area,els.price,els.dress,els.child].forEach(x=>x.value='');state.meal='all';els.mealButtons.forEach(x=>x.classList.remove('active'));document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===''));apply()});
+els.soloButton?.addEventListener('click',()=>{state.solo=!state.solo;els.soloButton.classList.toggle('active',state.solo);apply()});
+els.reset.addEventListener('click',()=>{[els.search,els.star,els.cuisine,els.area,els.price,els.dress,els.child].forEach(x=>x.value='');state.meal='all';state.solo=false;els.mealButtons.forEach(x=>x.classList.remove('active'));els.soloButton?.classList.remove('active');document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===''));apply()});
 setTheme(localStorage.getItem('stTheme')==='dark'?'dark':'light');
 els.theme.addEventListener('click',()=>setTheme(document.body.classList.contains('dark')?'light':'dark'));
 els.toggleFilters.addEventListener('click',()=>{const collapsed=els.controls.classList.toggle('filters-collapsed');els.filterBody.hidden=collapsed;els.toggleFilters.textContent=collapsed?'展开筛选':'收起筛选'});
