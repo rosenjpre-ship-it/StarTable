@@ -1,26 +1,37 @@
 {
-  "version": "4.2-starred-batch",
-  "modules": [
-    "overview",
-    "lunch",
-    "dinner",
-    "pairings",
-    "reservation",
-    "anniversary",
-    "dressCode",
-    "childPolicy",
-    "budget",
-    "experience",
-    "policies",
-    "links",
-    "sync"
-  ],
-  "note": "未核验字段使用 null 或 verified=false，不以推测值代替。",
+  "name": "StarTable Tokyo Michelin starred restaurants",
   "recordCount": 160,
   "breakdown": {
     "threeStar": 12,
     "twoStar": 26,
     "oneStar": 122
   },
-  "dataScope": "东京 Michelin Guide 2026 星级餐厅基础资料扩充中；详情字段仅在逐店核验后填写。"
+  "scope": "东京 2026 全部星级米其林餐厅",
+  "visibleModules": [
+    "overview",
+    "basicInfo",
+    "transport",
+    "reservation",
+    "dressCode",
+    "childPolicy",
+    "budget",
+    "lunch",
+    "dinner",
+    "pairings",
+    "ratings",
+    "links"
+  ],
+  "filterFields": [
+    "stars",
+    "cuisineZh",
+    "areaZh",
+    "filters.lunchAvailable",
+    "filters.dinnerAvailable",
+    "filters.priceTiers",
+    "filters.lunchPriceTiers",
+    "filters.dinnerPriceTiers",
+    "filters.dressCategory",
+    "filters.childCategory"
+  ],
+  "policy": "公开来源没有明确写出的政策，以需预约确认展示，不使用推测值。"
 }

@@ -21,16 +21,20 @@ function parsePrice(value){
  const amount=Number(match[1])*(match[2]?10000:1);
  return Number.isFinite(amount)?amount:null;
 }
-function itemPrices(item,meals){
+function itemPrices(item,mealType){
  const values=[];
- [item.budget?.lunchFrom,item.budget?.dinnerFrom].forEach(v=>{const n=parsePrice(v);if(n!=null)values.push(n)});
- meals.forEach(course=>{const n=parsePrice(course.price);if(n!=null)values.push(n)});
+ const courses=mealType==='lunch'?(item.lunch||[]):mealType==='dinner'?(item.dinner||[]):[...(item.lunch||[]),...(item.dinner||[])];
+ const budgetValues=mealType==='lunch'?[item.budget?.lunchFrom]:mealType==='dinner'?[item.budget?.dinnerFrom]:[item.budget?.lunchFrom,item.budget?.dinnerFrom];
+ budgetValues.forEach(v=>{const n=parsePrice(v);if(n!=null)values.push(n)});
+ courses.forEach(course=>{const n=parsePrice(course.price);if(n!=null)values.push(n)});
  return values;
 }
-function priceOk(item,meals){
+function priceOk(item,mealType){
  if(!els.price.value)return true;
+ const field=mealType==='lunch'?'lunchPriceTiers':mealType==='dinner'?'dinnerPriceTiers':'priceTiers';
+ if(item.filters?.[field])return item.filters[field].includes(els.price.value);
  const [min,max]=priceRanges[els.price.value]||[0,Infinity];
- return itemPrices(item,meals).some(price=>price>=min&&price<max);
+ return itemPrices(item,mealType).some(price=>price>=min&&price<max);
 }
 function mealTable(items){
  if(!items?.length)return '<div class="content-empty">该餐期的 Course 与价格尚未逐店核验。</div>';
@@ -52,9 +56,27 @@ function tabContent(item,tab){
 }
 function childText(p){
  if(!p||p.verified===false)return '待核验';
+ if(p.minimumAge!=null)return `可；最低年龄 ${p.minimumAge}岁${p.notes?'；'+p.notes:''}`;
  if(p.diningRoomAllowed)return `大厅可；最低年龄 ${p.minimumAge??'未注明'}`;
  if(p.privateRoomAllowed)return `仅包厢可；最低年龄 ${p.minimumAge??'未注明'}`;
  return '不可带儿童';
+}
+function childCategory(p){
+ if(!p||p.verified===false||p.verified==null)return 'pending';
+ if(p.privateRoomAllowed===true&&p.diningRoomAllowed!==true)return 'private';
+ if(p.diningRoomAllowed===false&&p.privateRoomAllowed===false)return 'no';
+ if(p.diningRoomAllowed===true||p.minimumAge!=null)return 'yes';
+ const note=p.notes||'';
+ if(/仅可使用包厢|仅限包间|仅包厢/.test(note))return 'private';
+ if(/儿童可|可入店|可预约|可申请|欢迎|可享用/.test(note))return 'yes';
+ return 'pending';
+}
+function filterChildCategory(item){return item.filters?.childCategory||childCategory(item.childPolicy)}
+function filterDressCategory(item){
+ if(item.filters?.dressCategory)return item.filters.dressCategory;
+ const d=item.dressCode;
+ if(!d||d.required==null||d.verified===false)return 'pending';
+ return d.required===true?'required':'none';
 }
 function dressText(d){
  if(!d||d.level==='待核验')return '待核验';
@@ -96,11 +118,11 @@ function apply(){
  const q=els.search.value.trim().toLowerCase();
  state.filtered=state.data.filter(x=>{
   const meals=state.meal==='all'?[...(x.lunch||[]),...(x.dinner||[])]:x[state.meal]||[];
-  const mealOk=state.meal==='all'||meals.length>0;
+  const mealOk=state.meal==='all'||x.filters?.[`${state.meal}Available`]===true||meals.length>0;
   const hay=[x.nameZh,x.nameJa,x.nameEn,x.areaZh,x.cuisineZh,x.address,...meals.flatMap(c=>[c.name,c.price,c.note])].join(' ').toLowerCase();
-  const dressOk=!els.dress.value||(els.dress.value==='required'&&x.dressCode?.required===true)||(els.dress.value==='none'&&x.dressCode?.required===false)||(els.dress.value==='pending'&&x.dressCode?.required==null);
-  const cp=x.childPolicy||{};const childOk=!els.child.value||(els.child.value==='yes'&&cp.diningRoomAllowed===true)||(els.child.value==='private'&&cp.diningRoomAllowed!==true&&cp.privateRoomAllowed===true)||(els.child.value==='no'&&cp.diningRoomAllowed===false&&cp.privateRoomAllowed===false)||(els.child.value==='pending'&&cp.verified===false);
-  return mealOk&&(!q||hay.includes(q))&&(!els.star.value||String(x.stars)===els.star.value)&&(!els.cuisine.value||x.cuisineZh===els.cuisine.value)&&(!els.area.value||x.areaZh===els.area.value)&&priceOk(x,meals)&&dressOk&&childOk;
+  const dressOk=!els.dress.value||filterDressCategory(x)===els.dress.value;
+  const childOk=!els.child.value||filterChildCategory(x)===els.child.value;
+  return mealOk&&(!q||hay.includes(q))&&(!els.star.value||String(x.stars)===els.star.value)&&(!els.cuisine.value||x.cuisineZh===els.cuisine.value)&&(!els.area.value||x.areaZh===els.area.value)&&priceOk(x,state.meal)&&dressOk&&childOk;
  });render()
 }
 async function init(){
