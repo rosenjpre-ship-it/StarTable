@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>StarTable Tokyo</title>
 <meta name="description" content="东京星级餐厅信息浏览与筛选平台">
-<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./styles.css?v=202608030033">
 </head>
 <body>
 <header class="topbar"><div class="shell nav">
@@ -15,8 +15,7 @@
 <section class="hero"><div class="shell hero-grid">
 <div><p class="eyebrow">TOKYO MICHELIN RESTAURANT DATABASE</p>
 <h1>Find your next<br>beautiful table.</h1>
-<p class="sub">收录东京 2026 全部星级米其林餐厅。按地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与 Tabelog 评分快速筛选；每年米其林指南更新后同步核对。</p>
-<p class="updated">最后更新：<span id="lastUpdated">-</span></p></div>
+<p class="sub">收录东京 2026 全部星级米其林餐厅。按地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与 Tabelog 评分快速筛选。</p></div>
 <div class="hero-stats">
 <div><strong id="totalRestaurants">0</strong><span>2026 星级餐厅合计</span></div>
 <div><strong id="threeStarCount">0</strong><span>2026 三星</span></div>
@@ -62,7 +61,6 @@
 <div class="meta"><span class="area"></span><span>•</span><span class="cuisine"></span></div>
 <div class="name-line"><h2 class="name-zh"></h2><div class="stars"></div></div>
 <div class="names-secondary"></div>
-<p class="concept-line"></p>
 <div class="chips"></div>
 </div>
 </button>
@@ -73,7 +71,6 @@
 </div>
 <div class="detail" hidden>
 <div class="quick-grid">
-<section class="panel concept-panel"><h3>Concept</h3><p class="concept"></p></section>
 <section class="panel"><h3>基本信息</h3><p class="address"></p><p class="phone"></p><p class="stations"></p></section>
 <section class="panel"><h3>预约助手</h3><div class="difficulty"></div><p class="booking"></p><div class="reservation-guide"></div><a class="reserve" target="_blank" rel="noopener">前往官网预约</a></section>
 <section class="panel"><h3>Dress Code</h3><p class="dress"></p></section>
@@ -110,7 +107,7 @@
 <button id="loginSubmit" class="reserve auth-submit" type="button">进入 My page</button>
 </div>
 </dialog>
-<footer class="disclaimer shell">本页为东京 2026 米其林星级餐厅数据。价格、菜单、着装规定、儿童政策、预约规则会随餐厅官网和预约平台变化；每年米其林指南更新后需同步核对，实际信息以餐厅官网/预约页最新内容为准。</footer>
+<footer class="disclaimer shell"><span>本页为东京 2026 米其林星级餐厅数据。价格、菜单、着装规定、儿童政策、预约规则会随餐厅官网和预约平台变化；实际信息以餐厅官网/预约页最新内容为准。</span><small>最后更新：<span id="lastUpdated">-</span></small><strong>© 2026 Rosen. All rights reserved.</strong></footer>
 <button id="mobileFilterButton" class="mobile-filter" type="button">筛选</button>
-<script src="./app.js"></script>
+<script src="./app.js?v=202608030033"></script>
 </body></html>

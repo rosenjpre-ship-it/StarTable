@@ -216,8 +216,8 @@ function detailHeroMediaHtml(item){
  return `<div class="detail-hero-media ${url?'has-image':''}">${url?`<img src="${esc(url)}" alt="${esc(item.nameZh||item.name)} 餐厅照片" loading="lazy" onerror="this.remove();this.parentElement.classList.remove('has-image')">`:''}<span>STARTABLE</span></div>`;
 }
 function mealTable(items){
- if(!items?.length)return '<div class="content-empty">该餐期的 Course 与价格尚未逐店核验。</div>';
- return `<table><thead><tr><th>Course</th><th>价格</th><th>内容</th><th>说明</th></tr></thead><tbody>${items.map(x=>`<tr><td>${x.name}</td><td><strong>${x.price}</strong></td><td>${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${d}</li>`).join('')}</ol>`:'待补充'}</td><td>${x.note||''}</td></tr>`).join('')}</tbody></table>`;
+ if(!items?.length)return '<div class="content-empty">该餐期暂无公开套餐信息。</div>';
+ return `<table><thead><tr><th>套餐</th><th>价格</th><th>内容</th><th>说明</th></tr></thead><tbody>${items.map(x=>`<tr><td>${x.name}</td><td><strong>${x.price}</strong></td><td>${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${d}</li>`).join('')}</ol>`:'待补充'}</td><td>${x.note||''}</td></tr>`).join('')}</tbody></table>`;
 }
 function tabContent(item,tab){
  if(tab==='lunch'||tab==='dinner')return mealTable(item[tab]);
@@ -239,15 +239,42 @@ function fullDetail(item){
  <h2 class="modal-title">${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars)}</span></h2>
  <div class="modal-meta">${esc([item.nameJa,item.nameEn,item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</div>
  <div class="source-row">${sourceBadges(item).map(x=>`<span class="source-badge">${esc(x)}</span>`).join('')}</div>
- <div class="modal-grid">
-  <section class="panel"><h3>基本信息</h3><p>${esc(item.address)}</p><p>电话：${esc(item.phone||'待补充')}</p><p class="station-line">${stationHtml(item)}</p>${fieldSource(item,'basic')}</section>
-  <section class="panel"><h3>预约助手</h3><p>${esc(`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`)}</p><p>${esc(item.reservation?.bookingRule||'需预约确认')}</p><div class="reservation-guide">${reservationGuideHtml(item)}</div><a class="reserve" href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a>${fieldSource(item,'reservation')}</section>
-  <section class="panel"><h3>Dress Code</h3><p>${esc(dressText(item.dressCode))}</p>${fieldSource(item,'policy')}</section>
-  <section class="panel"><h3>儿童政策</h3><p>${esc(childText(item.childPolicy))}</p>${fieldSource(item,'policy')}</section>
+ <div class="detail-layout">
+  <section class="detail-block detail-block-main">
+   <h3>基本信息</h3>
+   <dl class="detail-list">
+    <div><dt>地址</dt><dd>${esc(item.address||'待补充')}</dd></div>
+    <div><dt>电话</dt><dd>${esc(item.phone||'待补充')}</dd></div>
+    <div><dt>最近车站</dt><dd class="station-line">${stationHtml(item).replace('最近车站：','')}</dd></div>
+    <div><dt>预算</dt><dd>${esc(budgetText(item.budget))}</dd></div>
+    <div><dt>Tabelog</dt><dd>${esc(item.ratings?.tabelogScore||'待补充')}</dd></div>
+   </dl>
+  </section>
+  <section class="detail-block">
+   <h3>预约信息</h3>
+   <p class="detail-lead">${esc(`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`)}</p>
+   <p>${esc(item.reservation?.bookingRule||'需预约确认')}</p>
+   <div class="reservation-guide">${reservationGuideHtml(item)}</div>
+   <a class="reserve" href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a>
+  </section>
+  <section class="detail-block">
+   <h3>用餐规则</h3>
+   <dl class="detail-list compact">
+    <div><dt>Dress Code</dt><dd>${esc(dressText(item.dressCode))}</dd></div>
+    <div><dt>儿童政策</dt><dd>${esc(childText(item.childPolicy))}</dd></div>
+    <div><dt>Solo dining</dt><dd>${esc(soloText(item))}</dd></div>
+   </dl>
+   <ul class="manners detail-manners">${mannersHtml(item)}</ul>
+  </section>
+  <section class="detail-block">
+   <h3>链接</h3>
+   <div class="link-list">${links}</div>
+  </section>
  </div>
- <section class="modal-section"><h3>Lunch Course</h3>${tabContent(item,'lunch')}</section>
- <section class="modal-section"><h3>Dinner Course</h3>${tabContent(item,'dinner')}</section>
- <section class="modal-section"><h3>评分与链接</h3>${tabContent(item,'ratings')}<div class="link-list">${links}</div></section>`;
+ <div class="detail-menu-grid">
+  <section class="modal-section"><h3>Lunch Course</h3>${tabContent(item,'lunch')}</section>
+  <section class="modal-section"><h3>Dinner Course</h3>${tabContent(item,'dinner')}</section>
+ </div>`;
 }
 function childText(p){
  if(!p||p.verified===false)return '需预约确认';
@@ -281,15 +308,6 @@ function dressText(d){
 function budgetText(b){
  if(!b||b.verified===false)return '需预约确认';
  return `Lunch ¥${b.lunchFrom??'-'} 起；Dinner ¥${b.dinnerFrom??'-'} 起`;
-}
-function conceptSlogan(item){
- if(item.concept?.verified===false)return '';
- if(item.concept?.slogan)return item.concept.slogan;
- if(item.concept?.text)return item.concept.text;
- return '';
-}
-function conceptText(item){
- return item.concept?.verified===false?'官方 Concept 待整理。':item.concept?.text||conceptSlogan(item)||'官方 Concept 待整理。';
 }
 function stationText(item){
  const stations=[...(item.transport?.stations||[])].sort((a,b)=>(a.walkMinutes??99)-(b.walkMinutes??99)).slice(0,3);
@@ -330,9 +348,7 @@ function makeCard(item){
  f.querySelector('.area').textContent=displayArea(item);f.querySelector('.cuisine').textContent=item.cuisineZh||item.cuisine;
  f.querySelector('.name-zh').textContent=item.nameZh||item.name;
  f.querySelector('.names-secondary').textContent=[item.nameJa,item.nameEn].filter(Boolean).join('｜');
- const slogan=conceptSlogan(item);f.querySelector('.concept-line').textContent=slogan;f.querySelector('.concept-line').hidden=!slogan;
  f.querySelector('.stars').textContent=stars(item.stars);f.querySelector('.address').textContent=item.address||'地址待补充';
- f.querySelector('.concept').textContent=conceptText(item);
  f.querySelector('.phone').textContent=item.phone?`电话：${item.phone}`:'电话待补充';
  f.querySelector('.stations').innerHTML=stationHtml(item);
  f.querySelector('.difficulty').textContent=`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`;

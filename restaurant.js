@@ -90,6 +90,24 @@ function reservationGuideHtml(item){
  <div class="guide-tags">${g.platforms.map(x=>`<span>${esc(x)}</span>`).join('')}</div>
  <ul class="guide-list">${g.tactics.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
 }
+function soloText(item){
+ const solo=item.soloDining||{};
+ if(solo.available===true)return '可 1 人预约';
+ if(solo.available===false&&solo.minGuests)return `公开预约信息显示最少 ${solo.minGuests} 人起。`;
+ return '公开来源暂未确认是否接受 1 人预约。';
+}
+function mannersList(item){
+ if(item.tableManners?.notes?.length)return item.tableManners.notes;
+ return [
+  '准时到店；迟到会影响餐序，建议提前 5-10 分钟抵达。',
+  '预约前整理过敏、忌口、同行人数与联系方式，避免临时更改。',
+  '避免强烈香水、香氛护手霜或烟味。',
+  '拍照前观察店内氛围，避免影响厨师和其他客人。'
+ ];
+}
+function mannersHtml(item){
+ return mannersList(item).map(x=>`<li>${esc(x)}</li>`).join('');
+}
 function heroImageUrl(item){
  return item.heroImage||item.image?.url||item.media?.hero||item.media?.heroImage||'';
 }
@@ -98,8 +116,8 @@ function detailHeroMediaHtml(item){
  return `<div class="detail-hero-media ${url?'has-image':''}">${url?`<img src="${esc(url)}" alt="${esc(item.nameZh||item.name)} 餐厅照片" loading="lazy" onerror="this.remove();this.parentElement.classList.remove('has-image')">`:''}<span>STARTABLE</span></div>`;
 }
 function mealTable(items){
- if(!items?.length)return '<div class="content-empty">该餐期暂无公开 Course。</div>';
- return `<table><thead><tr><th>Course</th><th>价格</th><th>内容</th><th>说明</th></tr></thead><tbody>${items.map(x=>`<tr><td>${esc(x.name)}</td><td><strong>${esc(x.price)}</strong></td><td>${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${esc(d)}</li>`).join('')}</ol>`:'待补充'}</td><td>${esc(x.note||'')}</td></tr>`).join('')}</tbody></table>`;
+ if(!items?.length)return '<div class="content-empty">该餐期暂无公开套餐信息。</div>';
+ return `<table><thead><tr><th>套餐</th><th>价格</th><th>内容</th><th>说明</th></tr></thead><tbody>${items.map(x=>`<tr><td>${esc(x.name)}</td><td><strong>${esc(x.price)}</strong></td><td>${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${esc(d)}</li>`).join('')}</ol>`:'待补充'}</td><td>${esc(x.note||'')}</td></tr>`).join('')}</tbody></table>`;
 }
 function links(item){
  return Object.entries(item.links||{}).filter(([k,v])=>['official','reservation','tabelog','instagram'].includes(k)&&v).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(k)}</a>`).join('');
@@ -125,18 +143,42 @@ function render(item){
    </div>
   </div>
  </section>
- <section class="modal-grid">
-  <section class="panel concept-panel"><h3>Concept</h3><p>${esc(conceptText(item))}</p>${fieldSource(item,'course')}</section>
-  <section class="panel"><h3>基本信息</h3><p>${esc(item.address)}</p><p>电话：${esc(item.phone||'待补充')}</p><p class="station-line">${stationHtml(item)}</p>${fieldSource(item,'basic')}</section>
-  <section class="panel"><h3>预约助手</h3><p>${esc(`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`)}</p><p>${esc(item.reservation?.bookingRule||'需预约确认')}</p><div class="reservation-guide">${reservationGuideHtml(item)}</div><a class="reserve" href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a>${fieldSource(item,'reservation')}</section>
-  <section class="panel"><h3>预算</h3><p>${esc(budgetText(item.budget))}</p>${fieldSource(item,'budget')}</section>
-  <section class="panel"><h3>Tabelog</h3><p>${esc(item.ratings?.tabelogScore||'待补充')}</p>${fieldSource(item,'rating')}</section>
-  <section class="panel"><h3>Dress Code</h3><p>${esc(dressText(item.dressCode))}</p>${fieldSource(item,'policy')}</section>
-  <section class="panel"><h3>儿童政策</h3><p>${esc(childText(item.childPolicy))}</p>${fieldSource(item,'policy')}</section>
- </section>
- <section class="modal-section"><h3>Lunch Course</h3>${mealTable(item.lunch)}${fieldSource(item,'course')}</section>
- <section class="modal-section"><h3>Dinner Course</h3>${mealTable(item.dinner)}${fieldSource(item,'course')}</section>
- <section class="modal-section"><h3>链接</h3><div class="link-list">${links(item)}</div></section>`;
+ <div class="detail-layout">
+  <section class="detail-block detail-block-main">
+   <h3>基本信息</h3>
+   <dl class="detail-list">
+    <div><dt>地址</dt><dd>${esc(item.address||'待补充')}</dd></div>
+    <div><dt>电话</dt><dd>${esc(item.phone||'待补充')}</dd></div>
+    <div><dt>最近车站</dt><dd class="station-line">${stationHtml(item).replace('最近车站：','')}</dd></div>
+    <div><dt>预算</dt><dd>${esc(budgetText(item.budget))}</dd></div>
+    <div><dt>Tabelog</dt><dd>${esc(item.ratings?.tabelogScore||'待补充')}</dd></div>
+   </dl>
+  </section>
+  <section class="detail-block">
+   <h3>预约信息</h3>
+   <p class="detail-lead">${esc(`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`)}</p>
+   <p>${esc(item.reservation?.bookingRule||'需预约确认')}</p>
+   <div class="reservation-guide">${reservationGuideHtml(item)}</div>
+   <a class="reserve" href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a>
+  </section>
+  <section class="detail-block">
+   <h3>用餐规则</h3>
+   <dl class="detail-list compact">
+    <div><dt>Dress Code</dt><dd>${esc(dressText(item.dressCode))}</dd></div>
+    <div><dt>儿童政策</dt><dd>${esc(childText(item.childPolicy))}</dd></div>
+    <div><dt>Solo dining</dt><dd>${esc(soloText(item))}</dd></div>
+   </dl>
+   <ul class="manners detail-manners">${mannersHtml(item)}</ul>
+  </section>
+  <section class="detail-block">
+   <h3>链接</h3>
+   <div class="link-list">${links(item)}</div>
+  </section>
+ </div>
+ <div class="detail-menu-grid">
+  <section class="modal-section"><h3>Lunch Course</h3>${mealTable(item.lunch)}${fieldSource(item,'course')}</section>
+  <section class="modal-section"><h3>Dinner Course</h3>${mealTable(item.dinner)}${fieldSource(item,'course')}</section>
+ </div>`;
  $('detailFavorite').addEventListener('click',()=>{
   userState.favorites.has(item.id)?userState.favorites.delete(item.id):userState.favorites.add(item.id);
   saveUserState();
