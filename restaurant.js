@@ -39,6 +39,12 @@ function budgetText(b){
  if(!b||b.verified===false)return '需预约确认';
  return `Lunch ¥${b.lunchFrom??'-'} 起；Dinner ¥${b.dinnerFrom??'-'} 起`;
 }
+function conceptText(item){
+ if(item.concept?.text)return item.concept.text;
+ if(item.concept?.slogan)return item.concept.slogan;
+ const cuisine=item.cuisineZh||item.cuisine||'料理';
+ return `以${cuisine}为核心，呈现季节食材与餐厅个性。`;
+}
 function fieldSource(item,field){
  const checked=item.sync?.lastChecked||item.transport?.lastChecked||'2026-08-02';
  const map={basic:'官网 / Tabelog / 预约页',transport:'地址与车站公开信息',reservation:'官网 / 预约页',course:'官网 / 预约页 / Tabelog',rating:'Tabelog',policy:'官网 / 预约页',budget:'官网 / 预约页 / Tabelog'};
@@ -120,6 +126,7 @@ function render(item){
   </div>
  </section>
  <section class="modal-grid">
+  <section class="panel concept-panel"><h3>Concept</h3><p>${esc(conceptText(item))}</p>${fieldSource(item,'course')}</section>
   <section class="panel"><h3>基本信息</h3><p>${esc(item.address)}</p><p>电话：${esc(item.phone||'待补充')}</p><p class="station-line">${stationHtml(item)}</p>${fieldSource(item,'basic')}</section>
   <section class="panel"><h3>预约助手</h3><p>${esc(`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`)}</p><p>${esc(item.reservation?.bookingRule||'需预约确认')}</p><div class="reservation-guide">${reservationGuideHtml(item)}</div><a class="reserve" href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a>${fieldSource(item,'reservation')}</section>
   <section class="panel"><h3>预算</h3><p>${esc(budgetText(item.budget))}</p>${fieldSource(item,'budget')}</section>

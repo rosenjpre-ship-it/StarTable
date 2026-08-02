@@ -113,6 +113,12 @@ function setUser(name){
  localStorage.setItem('stUser',next);
  location.reload();
 }
+function setTheme(mode){
+ const isDark=mode==='dark';
+ document.body.classList.toggle('dark',isDark);
+ if(els.theme)els.theme.textContent=isDark?'浅色模式':'深色模式';
+ localStorage.setItem('stTheme',isDark?'dark':'light');
+}
 function sourceBadges(item){
  const badges=[];
  if(item.sync?.source)badges.push(`来源：公开官网/预约页/Tabelog`);
@@ -249,6 +255,15 @@ function budgetText(b){
  if(!b||b.verified===false)return '需预约确认';
  return `Lunch ¥${b.lunchFrom??'-'} 起；Dinner ¥${b.dinnerFrom??'-'} 起`;
 }
+function conceptSlogan(item){
+ if(item.concept?.slogan)return item.concept.slogan;
+ if(item.concept?.text)return item.concept.text;
+ const cuisine=item.cuisineZh||item.cuisine||'料理';
+ return `以${cuisine}为核心，呈现季节食材与餐厅个性。`;
+}
+function conceptText(item){
+ return item.concept?.text||conceptSlogan(item);
+}
 function stationText(item){
  const stations=[...(item.transport?.stations||[])].sort((a,b)=>(a.walkMinutes??99)-(b.walkMinutes??99)).slice(0,3);
  if(!stations.length)return '最近车站：待补充';
@@ -265,13 +280,30 @@ function displayArea(item){
  if(station==='东京')return '东京站';
  return station||'东京';
 }
+function normalizeSearch(value){
+ return String(value||'')
+  .normalize('NFKC')
+  .toLowerCase()
+  .replace(/[\s·・|｜/／,，.。'’"“”()（）\\-ー_]/g,'');
+}
+function nameSearchText(item){
+ return normalizeSearch([item.nameZh,item.nameJa,item.nameEn,item.name,item.id].filter(Boolean).join(' '));
+}
+function nameMatches(item,query){
+ const q=normalizeSearch(query);
+ if(!q)return true;
+ const hay=nameSearchText(item);
+ return hay.includes(q)||[...q].every(char=>hay.includes(char));
+}
 function makeCard(item){
  const f=els.template.content.cloneNode(true),head=f.querySelector('.card-head'),detail=f.querySelector('.detail');
  applyHeroImage(f.querySelector('.card-media'),item);
  f.querySelector('.area').textContent=displayArea(item);f.querySelector('.cuisine').textContent=item.cuisineZh||item.cuisine;
  f.querySelector('.name-zh').textContent=item.nameZh||item.name;
  f.querySelector('.names-secondary').textContent=[item.nameJa,item.nameEn].filter(Boolean).join('｜');
+ f.querySelector('.concept-line').textContent=conceptSlogan(item);
  f.querySelector('.stars').textContent=stars(item.stars);f.querySelector('.address').textContent=item.address||'地址待补充';
+ f.querySelector('.concept').textContent=conceptText(item);
  f.querySelector('.phone').textContent=item.phone?`电话：${item.phone}`:'电话待补充';
  f.querySelector('.stations').innerHTML=stationHtml(item);
  f.querySelector('.difficulty').textContent=`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`;
@@ -335,13 +367,12 @@ function updateAccount(){
 }
 function render(){els.grid.innerHTML='';state.filtered.forEach(x=>els.grid.appendChild(makeCard(x)));els.visible.textContent=state.filtered.length;els.empty.hidden=state.filtered.length!==0;updateCompare();updateAccount()}
 function apply(){
- const q=els.search.value.trim().toLowerCase();
+ const q=els.search.value.trim();
  state.filtered=state.data.filter(x=>{
   const mealOk=state.meal==='all'||availabilityOk(x,state.meal);
- const nameHay=[x.nameZh,x.nameJa,x.nameEn,x.name].join(' ').toLowerCase();
   const dressOk=!els.dress.value||filterDressCategory(x)===els.dress.value;
   const childOk=!els.child.value||filterChildCategory(x)===els.child.value;
-  return mealOk&&(!q||nameHay.includes(q))&&(!els.star.value||String(x.stars)===els.star.value)&&(!els.cuisine.value||x.cuisineZh===els.cuisine.value)&&(!els.area.value||displayArea(x)===els.area.value)&&priceFilterOk(x)&&dressOk&&childOk;
+  return mealOk&&nameMatches(x,q)&&(!els.star.value||String(x.stars)===els.star.value)&&(!els.cuisine.value||x.cuisineZh===els.cuisine.value)&&(!els.area.value||displayArea(x)===els.area.value)&&priceFilterOk(x)&&dressOk&&childOk;
  });state.filtered=sortRestaurants(state.filtered);render()
 }
 async function init(){
@@ -356,13 +387,15 @@ async function init(){
  render()
 }
 [els.search,els.star,els.cuisine,els.area,els.price,els.dress,els.child].filter(Boolean).forEach(el=>el.addEventListener('input',()=>{if(el===els.area)document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===els.area.value));apply()}));
+['keyup','search','compositionend'].forEach(type=>els.search?.addEventListener(type,apply));
 els.mealButtons.forEach(btn=>btn.addEventListener('click',()=>{
  state.meal=state.meal===btn.dataset.meal?'all':btn.dataset.meal;
  els.mealButtons.forEach(x=>x.classList.toggle('active',state.meal===x.dataset.meal));
  apply();
 }));
 els.reset.addEventListener('click',()=>{[els.search,els.star,els.cuisine,els.area,els.price,els.dress,els.child].forEach(x=>x.value='');state.meal='all';els.mealButtons.forEach(x=>x.classList.remove('active'));document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===''));apply()});
-els.theme.addEventListener('click',()=>document.body.classList.toggle('dark'));
+setTheme(localStorage.getItem('stTheme')==='dark'?'dark':'light');
+els.theme.addEventListener('click',()=>setTheme(document.body.classList.contains('dark')?'light':'dark'));
 els.toggleFilters.addEventListener('click',()=>{const collapsed=els.controls.classList.toggle('filters-collapsed');els.filterBody.hidden=collapsed;els.toggleFilters.textContent=collapsed?'展开筛选':'收起筛选'});
 els.mobileFilter.addEventListener('click',()=>{els.controls.classList.remove('filters-collapsed');els.filterBody.hidden=false;els.toggleFilters.textContent='收起筛选';els.controls.scrollIntoView({behavior:'smooth',block:'start'})});
 els.modalClose.addEventListener('click',()=>els.modal.close());
