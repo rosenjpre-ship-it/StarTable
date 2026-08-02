@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>StarTable 管理表</title>
+<meta name="description" content="StarTable 静态数据管理表">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="topbar"><div class="shell nav">
+<a class="brand" href="./index.html"><span>★</span>StarTable</a>
+<div class="nav-actions"><a class="ghost nav-link" href="./index.html">返回网站</a><button id="downloadButton" class="ghost">导出 JSON</button></div>
+</div></header>
+<main class="shell">
+<section class="hero admin-hero"><div class="shell hero-grid">
+<div><p class="eyebrow">STATIC CMS</p><h1>餐厅数据<br>管理表。</h1><p class="sub">本页在浏览器本地编辑数据，不会自动上传 GitHub。编辑后导出 restaurants.json，再替换 data 文件夹里的同名文件。</p></div>
+<div class="hero-stats"><div><strong id="adminCount">0</strong><span>餐厅记录</span></div></div>
+</div></section>
+<section class="admin-layout">
+<aside class="admin-panel">
+<input id="adminSearch" type="search" placeholder="搜索餐厅 / 地区 / 菜系">
+<select id="adminStatus"><option value="">全部状态</option><option value="sourcePending">有需确认政策</option><option value="complete">基础完整</option></select>
+<textarea id="editor" spellcheck="false"></textarea>
+<div class="admin-actions"><button id="saveRecord" class="ghost">保存当前记录</button><button id="copyRecord" class="ghost">复制记录 JSON</button></div>
+<p class="updated">字段编辑建议：只修改公开来源已确认的信息；不明确的内容保持“需预约确认”。</p>
+</aside>
+<section class="admin-table-wrap">
+<table class="admin-table"><thead><tr><th>餐厅</th><th>星级</th><th>地区</th><th>评分</th><th>状态</th><th>操作</th></tr></thead><tbody id="adminRows"></tbody></table>
+</section>
+</section>
+</main>
+<script src="./admin.js"></script>
+</body>
+</html>

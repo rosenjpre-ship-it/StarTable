@@ -9,13 +9,14 @@
 <body>
 <header class="topbar"><div class="shell nav">
 <a class="brand" href="#"><span>★</span>StarTable</a>
-<button id="themeButton" class="ghost">深色模式</button>
+<div class="nav-actions"><a class="ghost nav-link" href="./admin.html">管理表</a><button id="themeButton" class="ghost">深色模式</button></div>
 </div></header>
 
 <section class="hero"><div class="shell hero-grid">
-<div><p class="eyebrow">TOKYO FINE DINING DATABASE</p>
-<h1>Find your next<br>beautiful table.</h1>
-<p class="sub">已收录东京 2026 全部星级米其林餐厅，搜索和筛选三星、二星、一星餐厅，比较 Lunch / Dinner Course、价格区间、着装要求、儿童政策与评分信息。</p></div>
+<div><p class="eyebrow">TOKYO MICHELIN RESTAURANT DATABASE</p>
+<h1>东京星级餐厅<br>预约前检索。</h1>
+<p class="sub">收录东京 2026 全部星级米其林餐厅。按地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与 Tabelog 评分快速筛选和对比。</p>
+<p class="updated">最后更新：<span id="lastUpdated">-</span></p></div>
 <div class="hero-stats">
 <div><strong id="totalRestaurants">0</strong><span>星级餐厅合计</span></div>
 <div><strong id="threeStarCount">0</strong><span>三星</span></div>
@@ -34,19 +35,20 @@
 <select id="starFilter"><option value="">全部星级</option><option value="3">三星</option><option value="2">二星</option><option value="1">一星</option></select>
 <select id="cuisineFilter"><option value="">全部菜系</option></select>
 <select id="areaFilter"><option value="">全部地区</option></select>
+<select id="lunchFilter"><option value="">Lunch</option><option value="yes">Lunch 可</option><option value="no">Lunch 不可</option></select>
+<select id="dinnerFilter"><option value="">Dinner</option><option value="yes">Dinner 可</option><option value="no">Dinner 不可</option></select>
 <select id="priceFilter"><option value="">全部价格</option><option value="under-10000">1万日元以下</option><option value="10000-20000">1~2万日元</option><option value="20000-30000">2~3万日元</option><option value="30000-40000">3~4万日元</option><option value="40000-50000">4~5万日元</option><option value="50000-plus">5万日元以上</option></select>
 <select id="dressFilter"><option value="">着装要求</option><option value="required">有 Dress Code</option><option value="none">无明确要求</option><option value="pending">需预约确认</option></select>
 <select id="childFilter"><option value="">儿童政策</option><option value="yes">可带儿童</option><option value="private">仅包厢可</option><option value="no">不可带儿童</option><option value="pending">需预约确认</option></select>
+<select id="sortFilter"><option value="location">按地点顺序</option><option value="stars">星级高到低</option><option value="tabelog">Tabelog 高到低</option><option value="priceLunch">Lunch 价格低到高</option><option value="priceDinner">Dinner 价格低到高</option><option value="difficulty">预约难度高到低</option></select>
 </div>
-<div class="meal-toggle">
-<button class="meal-btn active" data-meal="all">全部</button>
-<button class="meal-btn" data-meal="lunch">Lunch 可</button>
-<button class="meal-btn" data-meal="dinner">Dinner 可</button>
-</div>
+<div id="areaRail" class="area-rail"></div>
 </div>
 </section>
 
-<section class="result-bar"><div>显示 <strong id="visibleCount">0</strong> 家</div><button id="resetButton" class="ghost">重置</button></section>
+<section class="result-bar"><div>显示 <strong id="visibleCount">0</strong> 家</div><div class="result-actions"><button id="listViewButton" class="ghost active">列表</button><button id="mapViewButton" class="ghost">地图</button><button id="compareButton" class="ghost">对比 0</button><button id="resetButton" class="ghost">重置</button></div></section>
+<section id="compareBar" class="compare-bar" hidden></section>
+<section id="mapView" class="map-view" hidden><div id="mapCanvas" class="map-canvas"></div><aside id="mapPanel" class="map-panel"></aside></section>
 <section id="grid" class="grid"></section>
 <div id="empty" class="empty" hidden>没有符合条件的餐厅。</div>
 </main>
@@ -61,6 +63,11 @@
 <div class="chips"></div>
 </div>
 </button>
+<div class="card-actions">
+<button class="favorite-btn" type="button">收藏</button>
+<button class="compare-btn" type="button">加入对比</button>
+<button class="details-btn" type="button">详情页</button>
+</div>
 <div class="detail" hidden>
 <div class="quick-grid">
 <section class="panel"><h3>基本信息</h3><p class="address"></p><p class="phone"></p><p class="stations"></p></section>
@@ -81,5 +88,13 @@
 </div>
 </article>
 </template>
+<dialog id="detailModal" class="modal">
+<div class="modal-shell">
+<button id="modalClose" class="modal-close" type="button">关闭</button>
+<div id="modalContent"></div>
+</div>
+</dialog>
+<footer class="disclaimer shell">价格、菜单、着装规定、儿童政策、预约规则会随餐厅官网和预约平台变化；实际信息以餐厅官网/预约页最新内容为准。</footer>
+<button id="mobileFilterButton" class="mobile-filter" type="button">筛选</button>
 <script src="./app.js"></script>
 </body></html>

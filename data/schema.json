@@ -19,7 +19,16 @@
     "dinner",
     "pairings",
     "ratings",
-    "links"
+    "links",
+    "detailModal",
+    "restaurantDetailPage",
+    "mapView",
+    "favorites",
+    "comparison",
+    "sourceStatus",
+    "fieldLevelSources",
+    "staticCmsAdmin",
+    "disclaimer"
   ],
   "filterFields": [
     "stars",
@@ -32,6 +41,14 @@
     "filters.dinnerPriceTiers",
     "filters.dressCategory",
     "filters.childCategory"
+  ],
+  "sortFields": [
+    "location",
+    "stars",
+    "tabelog",
+    "priceLunch",
+    "priceDinner",
+    "difficulty"
   ],
   "policy": "公开来源没有明确写出的政策，以需预约确认展示，不使用推测值。"
 }
