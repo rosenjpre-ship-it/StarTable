@@ -1,7 +1,9 @@
 
-const state={data:[],filtered:[],compareExpanded:true,favorites:new Set(JSON.parse(localStorage.getItem('stFavorites')||'[]')),compare:new Set(JSON.parse(localStorage.getItem('stCompare')||'[]'))};
+const activeUser=localStorage.getItem('stUser')||'guest';
+const prefKey=name=>`st:${activeUser}:${name}`;
+const state={data:[],filtered:[],meal:'all',user:activeUser,compareExpanded:true,accountExpanded:false,favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}'),compare:new Set(JSON.parse(localStorage.getItem(prefKey('compare'))||'[]'))};
 const $=id=>document.getElementById(id);
-const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),star:$('starFilter'),cuisine:$('cuisineFilter'),area:$('areaFilter'),lunch:$('lunchFilter'),dinner:$('dinnerFilter'),price:$('priceFilter'),dress:$('dressFilter'),child:$('childFilter'),sort:$('sortFilter'),visible:$('visibleCount'),total:$('totalRestaurants'),three:$('threeStarCount'),two:$('twoStarCount'),one:$('oneStarCount'),lastUpdated:$('lastUpdated'),reset:$('resetButton'),listView:$('listViewButton'),mapViewButton:$('mapViewButton'),mapView:$('mapView'),mapCanvas:$('mapCanvas'),mapPanel:$('mapPanel'),compareButton:$('compareButton'),compareBar:$('compareBar'),areaRail:$('areaRail'),empty:$('empty'),theme:$('themeButton'),controls:document.querySelector('.controls'),filterBody:$('filterBody'),toggleFilters:$('toggleFiltersButton'),mobileFilter:$('mobileFilterButton'),modal:$('detailModal'),modalContent:$('modalContent'),modalClose:$('modalClose')};
+const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),star:$('starFilter'),cuisine:$('cuisineFilter'),area:$('areaFilter'),mealButtons:[...document.querySelectorAll('.meal-btn')],price:$('priceFilter'),dress:$('dressFilter'),child:$('childFilter'),visible:$('visibleCount'),total:$('totalRestaurants'),three:$('threeStarCount'),two:$('twoStarCount'),one:$('oneStarCount'),lastUpdated:$('lastUpdated'),reset:$('resetButton'),accountPanel:$('accountPanel'),areaRail:$('areaRail'),empty:$('empty'),theme:$('themeButton'),loginButton:$('loginButton'),loginModal:$('loginModal'),loginClose:$('loginClose'),loginName:$('loginName'),loginSubmit:$('loginSubmit'),controls:document.querySelector('.controls'),filterBody:$('filterBody'),toggleFilters:$('toggleFiltersButton'),mobileFilter:$('mobileFilterButton'),modal:$('detailModal'),modalContent:$('modalContent'),modalClose:$('modalClose')};
 const stars=n=>'★'.repeat(n);const diff=n=>n?'★'.repeat(n)+'☆'.repeat(5-n):'待评估';
 const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const priceRanges={
@@ -55,12 +57,6 @@ function mapPoint(item){
  return areaKey?areaCoords[areaKey]:[52,52];
 }
 function sortRestaurants(items){
- const mode=els.sort?.value||'location';
- if(mode==='stars')return [...items].sort((a,b)=>b.stars-a.stars||restaurantLocationRank(a)-restaurantLocationRank(b));
- if(mode==='tabelog')return [...items].sort((a,b)=>Number(b.ratings?.tabelogScore||0)-Number(a.ratings?.tabelogScore||0)||restaurantLocationRank(a)-restaurantLocationRank(b));
- if(mode==='priceLunch')return [...items].sort((a,b)=>minMealPrice(a,'lunch')-minMealPrice(b,'lunch')||restaurantLocationRank(a)-restaurantLocationRank(b));
- if(mode==='priceDinner')return [...items].sort((a,b)=>minMealPrice(a,'dinner')-minMealPrice(b,'dinner')||restaurantLocationRank(a)-restaurantLocationRank(b));
- if(mode==='difficulty')return [...items].sort((a,b)=>(b.reservation?.difficulty||0)-(a.reservation?.difficulty||0)||restaurantLocationRank(a)-restaurantLocationRank(b));
  return [...items].sort((a,b)=>
   restaurantLocationRank(a)-restaurantLocationRank(b)||
   (a.areaZh||'').localeCompare(b.areaZh||'','zh')||
@@ -95,21 +91,28 @@ function priceOk(item,mealType){
  return itemPrices(item,mealType).some(price=>price>=min&&price<max);
 }
 function selectedMealTypes(){
- const meals=[];
- if(els.lunch.value==='yes')meals.push('lunch');
- if(els.dinner.value==='yes')meals.push('dinner');
- return meals.length?meals:['all'];
+ return state.meal==='all'?['all']:[state.meal];
 }
-function availabilityOk(item,meal,value){
- if(!value)return true;
+function availabilityOk(item,meal){
  const available=item.filters?.[`${meal}Available`]??!!(item[meal]&&item[meal].length);
- return value==='yes'?available:!available;
+ return available;
 }
 function priceFilterOk(item){
  if(!els.price.value)return true;
  return selectedMealTypes().some(meal=>priceOk(item,meal));
 }
-function savePrefs(){localStorage.setItem('stFavorites',JSON.stringify([...state.favorites]));localStorage.setItem('stCompare',JSON.stringify([...state.compare]))}
+function savePrefs(){localStorage.setItem(prefKey('favorites'),JSON.stringify([...state.favorites]));localStorage.setItem(prefKey('marks'),JSON.stringify(state.marks));localStorage.setItem(prefKey('compare'),JSON.stringify([...state.compare]))}
+function setMark(id,status){
+ if(state.marks[id]===status)delete state.marks[id];
+ else state.marks[id]=status;
+ savePrefs();
+ render();
+}
+function setUser(name){
+ const next=(name||'guest').trim()||'guest';
+ localStorage.setItem('stUser',next);
+ location.reload();
+}
 function sourceBadges(item){
  const badges=[];
  if(item.sync?.source)badges.push(`来源：公开官网/预约页/Tabelog`);
@@ -122,6 +125,62 @@ function fieldSource(item,field){
  const checked=item.sync?.lastChecked||item.transport?.lastChecked||'2026-08-02';
  const map={basic:'官网 / Tabelog / 预约页',transport:'地址与车站公开信息',reservation:'官网 / 预约页',course:'官网 / 预约页 / Tabelog',rating:'Tabelog',policy:'官网 / 预约页'};
  return `<span class="field-source">${esc(map[field]||'公开来源')} · ${esc(checked)}</span>`;
+}
+function channelLabel(value){
+ const key=String(value||'').toLowerCase();
+ if(key.includes('tablecheck'))return 'TableCheck';
+ if(key.includes('omakase'))return 'OMAKASE';
+ if(key.includes('pocket'))return 'Pocket Concierge';
+ if(key.includes('tableall'))return 'TABLEALL';
+ if(key.includes('phone')||key.includes('電話'))return '电话预约';
+ if(key.includes('hotel')||key.includes('concierge'))return '酒店 Concierge';
+ if(key.includes('official'))return '官网预约';
+ return value||'预约渠道待确认';
+}
+function reservationAdvice(item){
+ const r=item.reservation||{};
+ const platforms=[...(r.platforms||[])].map(channelLabel).filter(Boolean);
+ const release=[r.releaseTime,r.releaseWindow].filter(Boolean).join(' / ')||'公开来源未明确固定放位时间';
+ const advance=[r.advanceDaysLunch?`Lunch 建议提前约 ${r.advanceDaysLunch} 天`:null,r.advanceDaysDinner?`Dinner 建议提前约 ${r.advanceDaysDinner} 天`:null].filter(Boolean).join('；')||'建议按预约页最新开放日历确认';
+ const best=platforms[0]||channelLabel(item.links?.reservation?'official':'');
+ const tactics=[];
+ if((r.difficulty||0)>=5)tactics.push('极难预约：建议放位前 5 分钟完成登录、人数、日期、过敏信息准备。');
+ if(/电话|phone/i.test([...(r.platforms||[]),r.bookingRule].join(' ')))tactics.push('含电话预约：准备日文店名、日期、人数、到店时间和联系电话。');
+ if(r.conciergeRecommended)tactics.push('可优先尝试酒店 Concierge 或高端预约平台协助。');
+ if(!tactics.length)tactics.push('优先使用官方预约入口，并避开周末晚餐等竞争最高时段。');
+ return {release,advance,best,tactics,platforms};
+}
+function reservationGuideHtml(item){
+ const g=reservationAdvice(item);
+ return `<div class="guide-row"><span>开放规则</span><strong>${esc(g.release)}</strong></div>
+ <div class="guide-row"><span>推荐渠道</span><strong>${esc(g.best)}</strong></div>
+ <div class="guide-row"><span>提前准备</span><strong>${esc(g.advance)}</strong></div>
+ <div class="guide-tags">${g.platforms.map(x=>`<span>${esc(x)}</span>`).join('')}</div>
+ <ul class="guide-list">${g.tactics.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
+}
+function heroImageUrl(item){
+ return item.heroImage||item.image?.url||item.media?.hero||item.media?.heroImage||'';
+}
+function imageFallbackHtml(){
+ return '<div class="media-fallback"><span>STARTABLE</span></div>';
+}
+function applyHeroImage(el,item){
+ const url=heroImageUrl(item);
+ if(!el)return;
+ if(url){
+  el.style.backgroundImage='';
+  el.classList.add('has-image');
+  el.innerHTML=`<img src="${esc(url)}" alt="${esc(item.nameZh||item.name)} 餐厅照片" loading="lazy">${imageFallbackHtml()}`;
+  const img=el.querySelector('img');
+  img.addEventListener('error',()=>{el.classList.remove('has-image');img.remove()},{once:true});
+ }else{
+  el.classList.remove('has-image');
+  el.innerHTML=imageFallbackHtml();
+ }
+}
+function detailHeroMediaHtml(item){
+ const url=heroImageUrl(item);
+ return `<div class="detail-hero-media ${url?'has-image':''}">${url?`<img src="${esc(url)}" alt="${esc(item.nameZh||item.name)} 餐厅照片" loading="lazy" onerror="this.remove();this.parentElement.classList.remove('has-image')">`:''}<span>STARTABLE</span></div>`;
 }
 function mealTable(items){
  if(!items?.length)return '<div class="content-empty">该餐期的 Course 与价格尚未逐店核验。</div>';
@@ -143,12 +202,13 @@ function tabContent(item,tab){
 }
 function fullDetail(item){
  const links=Object.entries(item.links||{}).filter(([k,v])=>['official','reservation','tabelog','instagram'].includes(k)&&v).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(k)}</a>`).join('');
- return `<h2 class="modal-title">${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars)}</span></h2>
+ return `${detailHeroMediaHtml(item)}
+ <h2 class="modal-title">${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars)}</span></h2>
  <div class="modal-meta">${esc([item.nameJa,item.nameEn,item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</div>
  <div class="source-row">${sourceBadges(item).map(x=>`<span class="source-badge">${esc(x)}</span>`).join('')}</div>
  <div class="modal-grid">
-  <section class="panel"><h3>基本信息</h3><p>${esc(item.address)}</p><p>电话：${esc(item.phone||'待补充')}</p><p>${esc(stationText(item))}</p>${fieldSource(item,'basic')}</section>
-  <section class="panel"><h3>预约</h3><p>${esc(`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`)}</p><p>${esc(item.reservation?.bookingRule||'需预约确认')}</p><a class="reserve" href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a>${fieldSource(item,'reservation')}</section>
+  <section class="panel"><h3>基本信息</h3><p>${esc(item.address)}</p><p>电话：${esc(item.phone||'待补充')}</p><p class="station-line">${stationHtml(item)}</p>${fieldSource(item,'basic')}</section>
+  <section class="panel"><h3>预约助手</h3><p>${esc(`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`)}</p><p>${esc(item.reservation?.bookingRule||'需预约确认')}</p><div class="reservation-guide">${reservationGuideHtml(item)}</div><a class="reserve" href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a>${fieldSource(item,'reservation')}</section>
   <section class="panel"><h3>Dress Code</h3><p>${esc(dressText(item.dressCode))}</p>${fieldSource(item,'policy')}</section>
   <section class="panel"><h3>儿童政策</h3><p>${esc(childText(item.childPolicy))}</p>${fieldSource(item,'policy')}</section>
  </div>
@@ -194,16 +254,29 @@ function stationText(item){
  if(!stations.length)return '最近车站：待补充';
  return `最近车站：${stations.map(s=>`${s.name} 步行${s.walkMinutes}分钟（${s.lines.join(' / ')}）`).join('；')}`;
 }
+function stationHtml(item){
+ const stations=[...(item.transport?.stations||[])].sort((a,b)=>(a.walkMinutes??99)-(b.walkMinutes??99)).slice(0,3);
+ if(!stations.length)return '<strong>最近车站：待补充</strong>';
+ return `最近车站：${stations.map(s=>`<strong>${esc(s.name)} 步行${esc(s.walkMinutes)}分钟</strong><span>（${esc(s.lines.join(' / '))}）</span>`).join('；')}`;
+}
+function displayArea(item){
+ if(item.areaZh&&item.areaZh!=='东京')return item.areaZh;
+ const station=item.transport?.stations?.[0]?.name;
+ if(station==='东京')return '东京站';
+ return station||'东京';
+}
 function makeCard(item){
  const f=els.template.content.cloneNode(true),head=f.querySelector('.card-head'),detail=f.querySelector('.detail');
- f.querySelector('.area').textContent=item.areaZh||item.area;f.querySelector('.cuisine').textContent=item.cuisineZh||item.cuisine;
+ applyHeroImage(f.querySelector('.card-media'),item);
+ f.querySelector('.area').textContent=displayArea(item);f.querySelector('.cuisine').textContent=item.cuisineZh||item.cuisine;
  f.querySelector('.name-zh').textContent=item.nameZh||item.name;
  f.querySelector('.names-secondary').textContent=[item.nameJa,item.nameEn].filter(Boolean).join('｜');
  f.querySelector('.stars').textContent=stars(item.stars);f.querySelector('.address').textContent=item.address||'地址待补充';
  f.querySelector('.phone').textContent=item.phone?`电话：${item.phone}`:'电话待补充';
- f.querySelector('.stations').textContent=stationText(item);
+ f.querySelector('.stations').innerHTML=stationHtml(item);
  f.querySelector('.difficulty').textContent=`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`;
  f.querySelector('.booking').textContent=item.reservation?.bookingRule||'需预约确认';
+ f.querySelector('.reservation-guide').innerHTML=reservationGuideHtml(item);
  const reserve=f.querySelector('.reserve');reserve.href=item.links?.reservation||item.links?.official||'#';if(reserve.href.endsWith('#'))reserve.style.display='none';
  f.querySelector('.dress').textContent=dressText(item.dressCode);f.querySelector('.children').textContent=childText(item.childPolicy);
  f.querySelector('.budget').textContent=budgetText(item.budget);
@@ -211,13 +284,16 @@ function makeCard(item){
  const chipTexts=[`Lunch ${item.lunch?.length||0}`,`Dinner ${item.dinner?.length||0}`,item.dressCode?.required===true?'有 Dress Code':'着装需确认'];
  if((item.reservation?.difficulty||0)>=5)chipTexts.unshift('极难预约');
  if(state.favorites.has(item.id))chipTexts.unshift('已收藏');
+ if(state.marks[item.id]==='want')chipTexts.unshift('想摘星');
+ if(state.marks[item.id]==='done')chipTexts.unshift('已摘星');
   chipTexts.forEach((t,i)=>{const s=document.createElement('span');s.className=i===0&&t==='极难预约'?'chip chip-alert':'chip';s.textContent=t;chips.appendChild(s)});
- const fav=f.querySelector('.favorite-btn'),cmp=f.querySelector('.compare-btn'),details=f.querySelector('.details-btn');
- fav.classList.toggle('active',state.favorites.has(item.id));fav.textContent=state.favorites.has(item.id)?'已收藏':'收藏';
- cmp.classList.toggle('active',state.compare.has(item.id));cmp.textContent=state.compare.has(item.id)?'已加入对比':'加入对比';
+ const fav=f.querySelector('.favorite-btn'),want=f.querySelector('.want-btn'),done=f.querySelector('.done-btn');
+ fav.classList.toggle('active',state.favorites.has(item.id));fav.innerHTML=state.favorites.has(item.id)?'<span>♥</span>已收藏':'<span>♡</span>收藏';
+ want.classList.toggle('active',state.marks[item.id]==='want');
+ done.classList.toggle('active',state.marks[item.id]==='done');
  fav.addEventListener('click',()=>{state.favorites.has(item.id)?state.favorites.delete(item.id):state.favorites.add(item.id);savePrefs();render()});
- cmp.addEventListener('click',()=>{state.compare.has(item.id)?state.compare.delete(item.id):(state.compare.size<3&&state.compare.add(item.id));savePrefs();updateCompare();render()});
- details.addEventListener('click',()=>{location.href=`./restaurant.html?id=${encodeURIComponent(item.id)}`});
+ want.addEventListener('click',()=>setMark(item.id,'want'));
+ done.addEventListener('click',()=>setMark(item.id,'done'));
  const area=f.querySelector('.content-area');area.innerHTML=tabContent(item,'lunch');
  const tabs=[...f.querySelectorAll('.local-btn')];tabs.forEach(btn=>btn.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('active'));btn.classList.add('active');area.innerHTML=tabContent(item,btn.dataset.tab)}));
  head.addEventListener('click',()=>{const open=head.getAttribute('aria-expanded')==='true';head.setAttribute('aria-expanded',String(!open));detail.hidden=open});
@@ -241,45 +317,56 @@ function renderMap(){
 function showMapItem(item,pin){
  document.querySelectorAll('.map-pin').forEach(x=>x.classList.remove('active'));
  pin?.classList.add('active');
- els.mapPanel.innerHTML=`<h3>${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars)}</span></h3><p>${esc([item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</p><p>${esc(stationText(item))}</p><p>Tabelog：${esc(item.ratings?.tabelogScore||'-')}</p><div class="source-row">${sourceBadges(item).map(x=>`<span class="source-badge">${esc(x)}</span>`).join('')}</div><div class="link-list"><a href="./restaurant.html?id=${encodeURIComponent(item.id)}">独立详情页</a><a href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a></div>`;
+ els.mapPanel.innerHTML=`<h3>${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars)}</span></h3><p>${esc([item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</p><p>${esc(stationText(item))}</p><p>Tabelog：${esc(item.ratings?.tabelogScore||'-')}</p><div class="source-row">${sourceBadges(item).map(x=>`<span class="source-badge">${esc(x)}</span>`).join('')}</div><div class="link-list"><a href="./restaurant.html?id=${encodeURIComponent(item.id)}">查看餐厅</a><a href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a></div>`;
 }
-function updateCompare(){
- const items=[...state.compare].map(id=>state.data.find(x=>x.id===id)).filter(Boolean);
- els.compareButton.textContent=`对比 ${items.length}`;
- els.compareBar.hidden=!items.length||!state.compareExpanded;
- els.compareBar.innerHTML=items.length?`<strong>餐厅对比</strong><div class="compare-grid">${items.map(x=>`<div class="compare-item"><strong>${esc(x.nameZh||x.name)}</strong><br>${stars(x.stars)} ｜ ${esc(x.cuisineZh)}<br>Tabelog：${esc(x.ratings?.tabelogScore||'-')}<br>Lunch：${esc(x.lunch?.[0]?.price||'无')}<br>Dinner：${esc(x.dinner?.[0]?.price||'无')}<br>${esc(stationText(x))}</div>`).join('')}</div>`:'';
+function updateCompare(){}
+function updateAccount(){
+ els.loginButton.textContent=state.user==='guest'?'Log in':`我的星宴`;
+ document.body.classList.toggle('account-mode',state.accountExpanded);
+ const favs=[...state.favorites].map(id=>state.data.find(x=>x.id===id)).filter(Boolean);
+ const wants=Object.entries(state.marks).filter(([,v])=>v==='want').map(([id])=>state.data.find(x=>x.id===id)).filter(Boolean);
+ const dones=Object.entries(state.marks).filter(([,v])=>v==='done').map(([id])=>state.data.find(x=>x.id===id)).filter(Boolean);
+ els.accountPanel.hidden=!state.accountExpanded;
+ if(!state.accountExpanded)return;
+ const list=items=>items.length?`<div class="account-list">${items.map(x=>`<a href="./restaurant.html?id=${encodeURIComponent(x.id)}"><strong>${esc(x.nameZh||x.name)}</strong><span>${stars(x.stars)} · ${esc(displayArea(x))}</span></a>`).join('')}</div>`:'<div class="account-empty">暂无餐厅。</div>';
+ els.accountPanel.innerHTML=`<div class="account-head"><div><p class="eyebrow">MY PAGE</p><strong>我的星宴</strong><span>${esc(state.user==='guest'?'访客':state.user)}</span></div><div class="account-actions"><button id="accountBackButton" class="ghost">返回餐厅列表</button><button id="logoutButton" class="ghost">退出登录</button></div></div><div class="account-summary"><span>已摘星 <strong>${dones.length}</strong></span><span>想摘星 <strong>${wants.length}</strong></span><span>收藏 <strong>${favs.length}</strong></span></div><div class="account-sections"><section><h3>已摘星</h3>${list(dones)}</section><section><h3>想摘星</h3>${list(wants)}</section><section><h3>收藏</h3>${list(favs)}</section></div>`;
+ $('accountBackButton')?.addEventListener('click',()=>{state.accountExpanded=false;updateAccount();window.scrollTo({top:0,behavior:'smooth'})});
+ $('logoutButton')?.addEventListener('click',()=>setUser('guest'));
 }
-function render(){els.grid.innerHTML='';state.filtered.forEach(x=>els.grid.appendChild(makeCard(x)));els.visible.textContent=state.filtered.length;els.empty.hidden=state.filtered.length!==0;updateCompare();if(!els.mapView.hidden)renderMap()}
+function render(){els.grid.innerHTML='';state.filtered.forEach(x=>els.grid.appendChild(makeCard(x)));els.visible.textContent=state.filtered.length;els.empty.hidden=state.filtered.length!==0;updateCompare();updateAccount()}
 function apply(){
  const q=els.search.value.trim().toLowerCase();
  state.filtered=state.data.filter(x=>{
-  const meals=selectedMealTypes().flatMap(meal=>meal==='all'?[...(x.lunch||[]),...(x.dinner||[])]:x[meal]||[]);
-  const mealOk=availabilityOk(x,'lunch',els.lunch.value)&&availabilityOk(x,'dinner',els.dinner.value);
- const stationHay=(x.transport?.stations||[]).flatMap(s=>[s.name,...(s.lines||[])]).join(' ');
- const hay=[x.nameZh,x.nameJa,x.nameEn,x.areaZh,x.cuisineZh,x.address,stationHay,...meals.flatMap(c=>[c.name,c.price,c.note,...(c.details||[])])].join(' ').toLowerCase();
+  const mealOk=state.meal==='all'||availabilityOk(x,state.meal);
+ const nameHay=[x.nameZh,x.nameJa,x.nameEn,x.name].join(' ').toLowerCase();
   const dressOk=!els.dress.value||filterDressCategory(x)===els.dress.value;
   const childOk=!els.child.value||filterChildCategory(x)===els.child.value;
-  return mealOk&&(!q||hay.includes(q))&&(!els.star.value||String(x.stars)===els.star.value)&&(!els.cuisine.value||x.cuisineZh===els.cuisine.value)&&(!els.area.value||x.areaZh===els.area.value)&&priceFilterOk(x)&&dressOk&&childOk;
+  return mealOk&&(!q||nameHay.includes(q))&&(!els.star.value||String(x.stars)===els.star.value)&&(!els.cuisine.value||x.cuisineZh===els.cuisine.value)&&(!els.area.value||displayArea(x)===els.area.value)&&priceFilterOk(x)&&dressOk&&childOk;
  });state.filtered=sortRestaurants(state.filtered);render()
 }
 async function init(){
  const res=await fetch('./data/restaurants.json');state.data=sortRestaurants(await res.json());state.filtered=[...state.data];
  els.total.textContent=state.data.length;els.three.textContent=state.data.filter(x=>x.stars===3).length;els.two.textContent=state.data.filter(x=>x.stars===2).length;els.one.textContent=state.data.filter(x=>x.stars===1).length;
  addOptions(els.cuisine,new Set(state.data.map(x=>x.cuisineZh).filter(Boolean)));
- addOptions(els.area,new Set(state.data.map(x=>x.areaZh).filter(Boolean)),(a,b)=>locationRankText(a)-locationRankText(b)||a.localeCompare(b,'zh'));
+ addOptions(els.area,new Set(state.data.map(displayArea).filter(Boolean)),(a,b)=>locationRankText(a)-locationRankText(b)||a.localeCompare(b,'zh'));
  els.lastUpdated.textContent=state.data.map(x=>x.sync?.lastChecked).filter(Boolean).sort().at(-1)||'2026-08-02';
- const areas=[...new Set(state.data.map(x=>x.areaZh).filter(Boolean))].sort((a,b)=>locationRankText(a)-locationRankText(b)||a.localeCompare(b,'zh'));
+ const areas=[...new Set(state.data.map(displayArea).filter(Boolean))].sort((a,b)=>locationRankText(a)-locationRankText(b)||a.localeCompare(b,'zh'));
  els.areaRail.innerHTML=`<button class="area-pill active" data-area="">全部区域</button>`+areas.map(a=>`<button class="area-pill" data-area="${esc(a)}">${esc(a)}</button>`).join('');
  els.areaRail.addEventListener('click',e=>{const btn=e.target.closest('.area-pill');if(!btn)return;els.area.value=btn.dataset.area;document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x===btn));apply()});
  render()
 }
-[els.search,els.star,els.cuisine,els.area,els.lunch,els.dinner,els.price,els.dress,els.child,els.sort].forEach(el=>el.addEventListener('input',()=>{if(el===els.area)document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===els.area.value));apply()}));
-els.reset.addEventListener('click',()=>{[els.search,els.star,els.cuisine,els.area,els.lunch,els.dinner,els.price,els.dress,els.child].forEach(x=>x.value='');els.sort.value='location';document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===''));apply()});
+[els.search,els.star,els.cuisine,els.area,els.price,els.dress,els.child].filter(Boolean).forEach(el=>el.addEventListener('input',()=>{if(el===els.area)document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===els.area.value));apply()}));
+els.mealButtons.forEach(btn=>btn.addEventListener('click',()=>{
+ state.meal=state.meal===btn.dataset.meal?'all':btn.dataset.meal;
+ els.mealButtons.forEach(x=>x.classList.toggle('active',state.meal===x.dataset.meal));
+ apply();
+}));
+els.reset.addEventListener('click',()=>{[els.search,els.star,els.cuisine,els.area,els.price,els.dress,els.child].forEach(x=>x.value='');state.meal='all';els.mealButtons.forEach(x=>x.classList.remove('active'));document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===''));apply()});
 els.theme.addEventListener('click',()=>document.body.classList.toggle('dark'));
 els.toggleFilters.addEventListener('click',()=>{const collapsed=els.controls.classList.toggle('filters-collapsed');els.filterBody.hidden=collapsed;els.toggleFilters.textContent=collapsed?'展开筛选':'收起筛选'});
 els.mobileFilter.addEventListener('click',()=>{els.controls.classList.remove('filters-collapsed');els.filterBody.hidden=false;els.toggleFilters.textContent='收起筛选';els.controls.scrollIntoView({behavior:'smooth',block:'start'})});
 els.modalClose.addEventListener('click',()=>els.modal.close());
-els.compareButton.addEventListener('click',()=>{state.compareExpanded=!state.compareExpanded;updateCompare()});
-els.listView.addEventListener('click',()=>{els.grid.hidden=false;els.mapView.hidden=true;els.listView.classList.add('active');els.mapViewButton.classList.remove('active')});
-els.mapViewButton.addEventListener('click',()=>{els.grid.hidden=true;els.mapView.hidden=false;els.mapViewButton.classList.add('active');els.listView.classList.remove('active');renderMap()});
+els.loginButton.addEventListener('click',()=>{if(state.user==='guest'){els.loginModal.showModal()}else{state.accountExpanded=true;updateAccount();els.accountPanel.scrollIntoView({behavior:'smooth',block:'start'})}});
+els.loginClose.addEventListener('click',()=>els.loginModal.close());
+els.loginSubmit.addEventListener('click',()=>setUser(els.loginName.value));
 init().catch(e=>{els.empty.hidden=false;els.empty.textContent='数据加载失败，请确认已部署到 GitHub Pages。';console.error(e)});
