@@ -352,8 +352,9 @@ function nameMatches(item,query){
  return [...q].every(char=>hay.includes(char));
 }
 function makeCard(item){
- const f=els.template.content.cloneNode(true),head=f.querySelector('.card-head'),detail=f.querySelector('.detail');
- applyHeroImage(f.querySelector('.card-media'),item);
+ const f=els.template.content.cloneNode(true),head=f.querySelector('.card-head'),detail=f.querySelector('.detail'),media=f.querySelector('.card-media');
+ const goDetail=()=>{window.location.href=`./restaurant.html?id=${encodeURIComponent(item.id)}`};
+ applyHeroImage(media,item);
  f.querySelector('.area').textContent=displayArea(item);f.querySelector('.cuisine').textContent=item.cuisineZh||item.cuisine;
  f.querySelector('.name-zh').textContent=item.nameZh||item.name;
  f.querySelector('.names-secondary').textContent=[item.nameJa,item.nameEn].filter(Boolean).join('｜');
@@ -385,7 +386,15 @@ function makeCard(item){
  done.addEventListener('click',()=>setMark(item.id,'done'));
  const area=f.querySelector('.content-area');area.innerHTML=tabContent(item,'lunch');
  const tabs=[...f.querySelectorAll('.local-btn')];tabs.forEach(btn=>btn.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('active'));btn.classList.add('active');area.innerHTML=tabContent(item,btn.dataset.tab)}));
- head.addEventListener('click',()=>{const open=head.getAttribute('aria-expanded')==='true';head.setAttribute('aria-expanded',String(!open));detail.hidden=open});
+ head.addEventListener('click',goDetail);
+ if(media){
+  media.setAttribute('role','link');
+  media.setAttribute('tabindex','0');
+  media.setAttribute('aria-label',`查看${item.nameZh||item.name}详情`);
+  media.addEventListener('click',goDetail);
+  media.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();goDetail()}});
+ }
+ if(detail)detail.remove();
  return f;
 }
 function openDetail(item){els.modalContent.innerHTML=fullDetail(item);els.modal.showModal()}

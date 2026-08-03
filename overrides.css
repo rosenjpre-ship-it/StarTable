@@ -249,6 +249,10 @@
   font-weight:400!important;
   line-height:1.55!important;
 }
+.card-head,
+.card-media{
+  cursor:pointer!important;
+}
 .detail-list .budget-row{
   margin-top:22px!important;
   padding-top:28px!important;
@@ -799,6 +803,21 @@ table{
   backdrop-filter:blur(8px)!important;
 }
 
+.area-pill.active{
+  color:#fff!important;
+  text-shadow:0 1px 2px rgba(56,38,8,.28)!important;
+}
+
+body.restaurant-detail-body{
+  background:
+    linear-gradient(180deg,rgba(255,252,244,.96),rgba(250,248,241,.98) 320px),
+    #fbfaf6!important;
+}
+
+body.restaurant-detail-body .detail-page-content{
+  background:linear-gradient(180deg,#fffdfa 0%,#fbfaf5 100%)!important;
+}
+
 /* Detail body typography: keep section titles, normalize all body text. */
 .detail-block p,
 .detail-block li,
@@ -1147,12 +1166,12 @@ body{
 
 @media(max-width:380px){
   .brand b{
-    font-size:16px!important;
-    letter-spacing:.06em!important;
+    font-size:17px!important;
+    letter-spacing:.08em!important;
   }
   .brand em{
-    font-size:14px!important;
-    padding-left:6px!important;
+    font-size:16px!important;
+    padding-left:7px!important;
   }
   #loginButton{
     width:48px!important;
@@ -1167,5 +1186,93 @@ body{
   }
   h1{
     font-size:42px!important;
+  }
+}
+
+/* Detail page should read as calm single-column sections. */
+body.restaurant-detail-body .detail-identity,
+body.restaurant-detail-body .detail-layout,
+body.restaurant-detail-body .detail-menu-grid{
+  grid-template-columns:1fr!important;
+  gap:26px!important;
+}
+
+body.restaurant-detail-body .detail-block-main{
+  grid-row:auto!important;
+}
+
+body.restaurant-detail-body .detail-copy{
+  min-height:auto!important;
+  background:
+    radial-gradient(circle at 10% 12%,rgba(224,178,61,.32) 0,rgba(224,178,61,.17) 23%,transparent 46%),
+    radial-gradient(circle at 86% 18%,rgba(212,170,70,.16) 0,transparent 34%),
+    linear-gradient(135deg,#fffdf7 0%,#fffaf0 38%,#f7f2e6 100%)!important;
+  border-color:rgba(212,170,70,.32)!important;
+  box-shadow:
+    0 22px 58px rgba(74,55,18,.13),
+    0 6px 18px rgba(74,55,18,.08),
+    inset 0 1px 0 rgba(255,255,255,.78)!important;
+}
+
+body.restaurant-detail-body .detail-identity{
+  display:block!important;
+}
+
+body.restaurant-detail-body .detail-identity .detail-hero-media{
+  min-height:420px!important;
+  max-height:520px!important;
+}
+
+@media(max-width:700px){
+  body.restaurant-detail-body .detail-identity .detail-hero-media{
+    min-height:260px!important;
+  }
+}
+
+/* Mobile brand: same typography as desktop, only scaled down. */
+@media(max-width:700px){
+  .brand-word{
+    align-items:center!important;
+    gap:7px!important;
+  }
+  .brand b,
+  .brand em{
+    font-family:"Songti SC","STSong","SimSun","Times New Roman",serif!important;
+    font-weight:600!important;
+    background:linear-gradient(180deg,#f1d987 0%,#d4aa46 58%,#b88624 100%)!important;
+    -webkit-background-clip:text!important;
+    background-clip:text!important;
+    color:transparent!important;
+    text-shadow:
+      0 1px 0 rgba(255,255,255,.22),
+      0 5px 12px rgba(91,62,16,.12)!important;
+  }
+  .brand b{
+    font-size:19px!important;
+    line-height:24px!important;
+    height:24px!important;
+    letter-spacing:.1em!important;
+    transform:translateY(2px)!important;
+  }
+  .brand em{
+    font-size:18px!important;
+    line-height:24px!important;
+    height:24px!important;
+    letter-spacing:.1em!important;
+    border-left:1px solid rgba(229,183,67,.48)!important;
+    padding-left:8px!important;
+  }
+}
+
+@media(max-width:380px){
+  .brand b{
+    font-size:17px!important;
+    line-height:22px!important;
+    height:22px!important;
+  }
+  .brand em{
+    font-size:16px!important;
+    line-height:22px!important;
+    height:22px!important;
   }
 }

@@ -139,7 +139,6 @@ function render(item){
     <button id="detailDone" class="mark-btn ${mark==='done'?'active':''}" type="button">已摘星</button>
   </div>
   </div>
-  ${detailHeroMediaHtml(item)}
  </section>
  <div class="detail-layout">
   <section class="detail-block detail-block-main">
