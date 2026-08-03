@@ -189,7 +189,7 @@ function mannersList(item){
  return item.tableManners?.notes?.length?item.tableManners.notes:rules;
 }
 function mannersHtml(item){
- return mannersList(item).map(x=>`<li>${esc(x)}</li>`).join('');
+ return mannersList(item).map((x,i)=>`<li><span class="manners-label">${String(i+1).padStart(2,'0')}</span><span class="manners-text">${esc(x)}</span></li>`).join('');
 }
 function heroImageUrl(item){
  return item.heroImage||item.image?.url||item.media?.hero||item.media?.heroImage||'';
@@ -217,7 +217,7 @@ function detailHeroMediaHtml(item){
 }
 function mealTable(items){
  if(!items?.length)return '<div class="content-empty">该餐期暂无公开套餐信息。</div>';
- return `<table><thead><tr><th>套餐</th><th>价格</th><th>内容</th><th>说明</th></tr></thead><tbody>${items.map(x=>`<tr><td>${x.name}</td><td><strong>${x.price}</strong></td><td>${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${d}</li>`).join('')}</ol>`:'待补充'}</td><td>${x.note||''}</td></tr>`).join('')}</tbody></table>`;
+ return `<div class="course-list">${items.map(x=>`<article class="course-card"><div class="course-main"><h4>${x.name}</h4><strong>${x.price}</strong></div><div class="course-body">${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${d}</li>`).join('')}</ol>`:'<p>待补充</p>'}</div>${x.note?`<p class="course-note">${x.note}</p>`:''}</article>`).join('')}</div>`;
 }
 function tabContent(item,tab){
  if(tab==='lunch'||tab==='dinner')return mealTable(item[tab]);
@@ -235,18 +235,23 @@ function tabContent(item,tab){
 }
 function fullDetail(item){
  const links=Object.entries(item.links||{}).filter(([k,v])=>['official','reservation','tabelog','instagram'].includes(k)&&v).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(k)}</a>`).join('');
- return `${detailHeroMediaHtml(item)}
- <h2 class="modal-title">${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars)}</span></h2>
- <div class="modal-meta">${esc([item.nameJa,item.nameEn,item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</div>
- <div class="source-row">${sourceBadges(item).map(x=>`<span class="source-badge">${esc(x)}</span>`).join('')}</div>
+ return `<section class="detail-identity modal-identity">
+  <div class="detail-copy">
+   <p class="eyebrow">RESTAURANT DETAIL</p>
+   <h2 class="modal-title">${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars)}</span></h2>
+   <div class="modal-meta">${esc([item.nameJa,item.nameEn,item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</div>
+   <div class="source-row">${sourceBadges(item).map(x=>`<span class="source-badge">${esc(x)}</span>`).join('')}</div>
+  </div>
+  ${detailHeroMediaHtml(item)}
+ </section>
  <div class="detail-layout">
   <section class="detail-block detail-block-main">
    <h3>基本信息</h3>
    <dl class="detail-list">
     <div><dt>地址</dt><dd>${esc(item.address||'待补充')}</dd></div>
     <div><dt>电话</dt><dd>${esc(item.phone||'待补充')}</dd></div>
-    <div><dt>最近车站</dt><dd class="station-line">${stationHtml(item).replace('最近车站：','')}</dd></div>
-    <div><dt>预算</dt><dd>${esc(budgetText(item.budget))}</dd></div>
+    <div><dt>交通信息</dt><dd class="station-line">${stationHtml(item).replace('交通信息：','')}</dd></div>
+    <div class="budget-row"><dt>预算</dt><dd>${esc(budgetText(item.budget))}</dd></div>
     <div><dt>Tabelog</dt><dd>${esc(item.ratings?.tabelogScore||'待补充')}</dd></div>
    </dl>
   </section>
@@ -311,13 +316,13 @@ function budgetText(b){
 }
 function stationText(item){
  const stations=[...(item.transport?.stations||[])].sort((a,b)=>(a.walkMinutes??99)-(b.walkMinutes??99)).slice(0,3);
- if(!stations.length)return '最近车站：待补充';
- return `最近车站：${stations.map(s=>`${s.name} 步行${s.walkMinutes}分钟（${s.lines.join(' / ')}）`).join('；')}`;
+ if(!stations.length)return '交通信息：待补充';
+ return `交通信息：${stations.map(s=>`${s.name} 步行${s.walkMinutes}分钟（${s.lines.join(' / ')}）`).join('；')}`;
 }
 function stationHtml(item){
  const stations=[...(item.transport?.stations||[])].sort((a,b)=>(a.walkMinutes??99)-(b.walkMinutes??99)).slice(0,3);
- if(!stations.length)return '<strong>最近车站：待补充</strong>';
- return `最近车站：${stations.map(s=>`<strong>${esc(s.name)} 步行${esc(s.walkMinutes)}分钟</strong><span>（${esc(s.lines.join(' / '))}）</span>`).join('；')}`;
+ if(!stations.length)return '<span>交通信息：待补充</span>';
+ return `交通信息：<span class="station-list">${stations.map(s=>`<span class="station-item"><span class="station-main">${esc(s.name)} 步行${esc(s.walkMinutes)}分钟</span><span class="station-routes">${esc(s.lines.join(' / '))}</span></span>`).join('')}</span>`;
 }
 function displayArea(item){
  if(item.areaZh&&item.areaZh!=='东京')return item.areaZh;
@@ -348,7 +353,7 @@ function makeCard(item){
  f.querySelector('.area').textContent=displayArea(item);f.querySelector('.cuisine').textContent=item.cuisineZh||item.cuisine;
  f.querySelector('.name-zh').textContent=item.nameZh||item.name;
  f.querySelector('.names-secondary').textContent=[item.nameJa,item.nameEn].filter(Boolean).join('｜');
- f.querySelector('.stars').textContent=stars(item.stars);f.querySelector('.address').textContent=item.address||'地址待补充';
+ f.querySelector('.stars').textContent=stars(item.stars);f.querySelector('.address').textContent=item.address?`地址：${item.address}`:'地址待补充';
  f.querySelector('.phone').textContent=item.phone?`电话：${item.phone}`:'电话待补充';
  f.querySelector('.stations').innerHTML=stationHtml(item);
  f.querySelector('.difficulty').textContent=`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`;
@@ -358,7 +363,7 @@ function makeCard(item){
  f.querySelector('.dress').textContent=dressText(item.dressCode);f.querySelector('.children').textContent=childText(item.childPolicy);
  f.querySelector('.solo').textContent=soloText(item);
  f.querySelector('.manners').innerHTML=mannersHtml(item);
- f.querySelector('.budget').textContent=budgetText(item.budget);
+ f.querySelector('.budget').textContent=`预算：${budgetText(item.budget)}`;
  const chips=f.querySelector('.chips');
  const chipTexts=[`Lunch ${item.lunch?.length||0}`,`Dinner ${item.dinner?.length||0}`,item.dressCode?.required===true?'有 Dress Code':'着装需确认'];
  if(item.soloDining?.available===true)chipTexts.unshift('Solo dining');

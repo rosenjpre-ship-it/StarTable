@@ -1209,7 +1209,40 @@
         ]
       }
     ],
-    "dinner": [],
+    "dinner": [
+      {
+        "name": "MENU DÉGUSTATION",
+        "price": "¥45,000",
+        "note": "晚餐套餐。官方 Dinner 菜单示例含红富士鳟鱼与鱼子酱、海螯虾、喉黑鱼、青森银鸭、奶酪、甜点车与咖啡。含税，另收15%服务费。",
+        "details": [
+          "Amuse-bouche 开胃小点",
+          "红富士鳟鱼两种呈现与 Oscietra 鱼子酱：低温烹调后樱木轻熏的鱼柳、鞑靼、烤西葫芦、柠檬冻与茴香汤",
+          "海螯虾：煎制后覆以竹炭薄面皮，搭配多种口感茄子、酸味甜菜、万寿菊叶与柠檬草风味轻盈浓汤",
+          "喉黑鱼：北海道藜麦脆壳、青柚皮、黑松露脆黄瓜、烤芦笋、银色泡沫与焦糖化鱼骨汁",
+          "青森银鸭：烤鸭胸、油封鸭腿、胡桃南瓜慕斯、无花果、发酵可可果泥与香料肉汁",
+          "熟成奶酪",
+          "甜点",
+          "甜点车",
+          "咖啡"
+        ]
+      },
+      {
+        "name": "〖DINNER〗AU FIL DU TEMPS…2026",
+        "price": "¥70,000",
+        "note": "2026 夏季特别晚餐菜单，需整桌同点。含千叶天然黑鲍、蓝龙虾、虎鱼、熊本赤牛等。含税，另收15%服务费。",
+        "details": [
+          "千叶天然黑鲍与 Oscietra 鱼子酱：金丝瓜、鲍肝酱、腌鸡油菌、海藻冻、白瓜 veloute 与香草油焦糖汁",
+          "蓝龙虾与玉米：court bouillon 汆煮、玉米慕斯、烤玉米、黑松露奶油玉米粥与马鞭草风味龙虾汁",
+          "南法风味虎鱼：鱼皮下填馅后以 bouillabaisse 高汤汆煮，搭配脆 May Queen 土豆、橙柠香茴香与鱿鱼带",
+          "熊本赤牛：菲力中心部位、烤夏季蔬菜卷、填馅小番茄与干邑胡椒肉汁",
+          "柑橘清爽甜点：马鞭草雪葩",
+          "香槟舒芙蕾：白桃糖煮水果与雪葩",
+          "甜点车",
+          "咖啡",
+          "可追加熟成奶酪 ¥5,000 起"
+        ]
+      }
+    ],
     "nameZh": "L’OSIER",
     "nameEn": "L’OSIER",
     "areaZh": "银座",
@@ -1254,7 +1287,7 @@
     "pairings": [],
     "budget": {
       "lunchFrom": 20000,
-      "dinnerFrom": null,
+      "dinnerFrom": 45000,
       "serviceCharge": "15%",
       "estimatedLunchAllIn": null,
       "estimatedDinnerAllIn": null,
@@ -1274,10 +1307,10 @@
       "instagram": ""
     },
     "sync": {
-      "lastChecked": "2026-08-02",
-      "lastUpdated": "2026-08-02",
+      "lastChecked": "2026-08-03",
+      "lastUpdated": "2026-08-03",
       "source": "official / Tabelog",
-      "changeSummary": "更新Tabelog实际评分与儿童年龄规则",
+      "changeSummary": "官方 Dinner 页面确认ロオジエ晚餐套餐与价格，修正 Dinner 可用筛选。",
       "autoCheckEnabled": false
     },
     "ratings": {
@@ -1321,16 +1354,20 @@
     },
     "filters": {
       "lunchAvailable": true,
-      "dinnerAvailable": false,
+      "dinnerAvailable": true,
       "priceTiers": [
         "20000-30000",
-        "50000-plus"
+        "50000-plus",
+        "40000-50000"
       ],
       "lunchPriceTiers": [
         "20000-30000",
         "50000-plus"
       ],
-      "dinnerPriceTiers": [],
+      "dinnerPriceTiers": [
+        "40000-50000",
+        "50000-plus"
+      ],
       "dressCategory": "required",
       "childCategory": "yes",
       "soloDiningAvailable": false

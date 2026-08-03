@@ -310,6 +310,644 @@ input,
   font-family:var(--cn-title-font);
 }
 
+/* Final override: polished detail page and tactile rounded UI. */
+.hero{
+  background:
+    radial-gradient(circle at 16% 10%,rgba(255,212,122,.3),transparent 280px),
+    radial-gradient(circle at 76% 18%,rgba(104,176,138,.28),transparent 360px),
+    radial-gradient(circle at 58% 106%,rgba(150,68,82,.28),transparent 420px),
+    linear-gradient(124deg,#101713 0%,#1f342a 40%,#584624 72%,#171411 100%) !important;
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(0,0,0,.45),rgba(0,0,0,.06) 54%,rgba(0,0,0,.26));
+  pointer-events:none;
+}
+.hero-grid{position:relative;z-index:1}
+.hero-stats{gap:12px!important;border:0!important}
+.hero-stats div,
+.hero-stats div:first-child{
+  border-radius:22px!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.17),rgba(255,255,255,.055))!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  box-shadow:0 20px 46px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.18)!important;
+}
+.ghost,
+.meal-btn,
+.area-pill,
+.card-actions button,
+.restaurant-actions button,
+.reserve,
+.local-btn,
+.link-list a,
+.mobile-filter{
+  border-radius:999px!important;
+  box-shadow:0 11px 24px rgba(23,21,17,.12),inset 0 1px 0 rgba(255,255,255,.7)!important;
+  transition:transform .16s ease,box-shadow .16s ease,background .16s ease,border-color .16s ease;
+}
+.ghost:hover,
+.meal-btn:hover,
+.area-pill:hover,
+.card-actions button:hover,
+.restaurant-actions button:hover,
+.reserve:hover,
+.local-btn:hover,
+.link-list a:hover{
+  transform:translateY(-2px);
+  box-shadow:0 17px 34px rgba(23,21,17,.16),inset 0 1px 0 rgba(255,255,255,.78)!important;
+}
+.ghost:active,
+.meal-btn:active,
+.area-pill:active,
+.card-actions button:active,
+.restaurant-actions button:active,
+.reserve:active,
+.local-btn:active,
+.link-list a:active{
+  transform:translateY(1px) scale(.985);
+  box-shadow:inset 0 4px 10px rgba(0,0,0,.14)!important;
+}
+#searchInput,
+.filters select,
+.meal-toggle,
+.card,
+.account-panel,
+.detail-page-content,
+.modal,
+.content-empty,
+table{
+  border-radius:26px!important;
+  box-shadow:0 20px 54px rgba(25,31,27,.11),0 6px 16px rgba(25,31,27,.06)!important;
+}
+#searchInput,
+.filters select{
+  background:linear-gradient(180deg,var(--surface),color-mix(in srgb,var(--surface) 88%,var(--surface-2)))!important;
+}
+.chip,
+.source-badge,
+.guide-tags span{
+  border-radius:999px!important;
+}
+.card-actions button,
+.restaurant-actions button,
+.local-btn,
+.area-pill{
+  background:linear-gradient(180deg,var(--surface),color-mix(in srgb,var(--surface) 82%,var(--surface-2)))!important;
+}
+.meal-btn.active,
+.area-pill.active,
+.local-btn.active,
+.card-actions button.active,
+.restaurant-actions button.active,
+.reserve{
+  background:linear-gradient(180deg,color-mix(in srgb,var(--ink) 92%,white),var(--ink))!important;
+  color:var(--surface)!important;
+  box-shadow:0 16px 34px rgba(12,14,12,.24),inset 0 1px 0 rgba(255,255,255,.16)!important;
+}
+.detail-page{padding:30px 0 48px}
+.detail-page-content,
+.modal{
+  border:1px solid color-mix(in srgb,var(--line) 78%,transparent)!important;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--surface) 98%,white),color-mix(in srgb,var(--surface) 92%,var(--surface-2)))!important;
+}
+.detail-page-content{padding:22px}
+.modal-shell{padding:20px}
+.detail-identity{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(320px,42%);
+  gap:22px;
+  align-items:stretch;
+  margin-bottom:22px;
+}
+.detail-copy{
+  min-height:320px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:28px;
+  border-radius:26px;
+  background:
+    radial-gradient(circle at 14% 12%,rgba(214,167,47,.18),transparent 260px),
+    linear-gradient(145deg,color-mix(in srgb,var(--surface) 94%,white),color-mix(in srgb,var(--surface) 88%,var(--surface-2)));
+  border:1px solid color-mix(in srgb,var(--line) 80%,transparent);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.68);
+}
+.detail-copy h1,
+.detail-copy .modal-title{
+  margin:0;
+  color:var(--ink);
+  font-family:var(--cn-title-font);
+  font-size:clamp(36px,5.4vw,70px);
+  line-height:1.02;
+  letter-spacing:0;
+}
+.detail-copy .modal-title{font-size:clamp(30px,4vw,48px)}
+.detail-copy .sub,
+.detail-copy .modal-meta{
+  margin-top:12px;
+  color:var(--muted);
+  line-height:1.75;
+}
+.detail-copy .source-row{margin-top:18px}
+.detail-identity .detail-hero-media{
+  min-height:320px;
+  margin:0;
+  border-radius:26px;
+  box-shadow:0 20px 54px rgba(20,24,20,.16);
+}
+.detail-identity .detail-hero-media img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.restaurant-actions{
+  margin-top:22px;
+  min-width:0!important;
+  justify-content:flex-start;
+}
+.detail-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);
+  gap:18px;
+  margin-top:0;
+}
+.detail-block,
+.modal-section{
+  border:1px solid color-mix(in srgb,var(--line) 78%,transparent)!important;
+  border-radius:24px!important;
+  padding:20px!important;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--surface) 98%,white),color-mix(in srgb,var(--surface) 92%,var(--surface-2)))!important;
+  box-shadow:0 14px 34px rgba(25,31,27,.075),inset 0 1px 0 rgba(255,255,255,.66)!important;
+}
+.detail-block-main{grid-row:span 2}
+.detail-block h3,
+.modal-section h3{
+  margin:0 0 14px;
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.detail-list{display:grid;gap:0;margin:0}
+.detail-list div{
+  display:grid;
+  grid-template-columns:96px minmax(0,1fr);
+  gap:14px;
+  padding:13px 0;
+  border-bottom:1px solid color-mix(in srgb,var(--line) 76%,transparent);
+}
+.detail-list div:first-child{padding-top:0}
+.detail-list div:last-child{border-bottom:0;padding-bottom:0}
+.detail-list dt{color:var(--faint);font-size:12px;line-height:1.7}
+.detail-list dd{margin:0;color:var(--ink);font-size:14px;line-height:1.7}
+.detail-list.compact div{grid-template-columns:112px minmax(0,1fr)}
+.detail-lead{margin:0 0 8px;color:var(--accent);font-weight:800}
+.reservation-guide{margin-top:14px;border-radius:20px}
+.detail-manners{
+  margin:16px 0 0;
+  padding:14px 16px 14px 34px;
+  border-radius:20px;
+  background:color-mix(in srgb,var(--surface-2) 62%,transparent);
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.75;
+}
+.detail-menu-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin-top:18px;
+}
+.modal-section table{box-shadow:none!important;border-radius:18px!important}
+.modal-identity{grid-template-columns:minmax(0,1fr) 280px}
+.modal-identity .detail-copy,
+.modal-identity .detail-hero-media{min-height:240px}
+.modal-identity .detail-copy{padding:22px}
+@media(max-width:900px){
+  .detail-identity,
+  .modal-identity,
+  .detail-layout{grid-template-columns:1fr}
+  .detail-block-main{grid-row:auto}
+  .detail-copy,
+  .detail-identity .detail-hero-media{min-height:240px}
+  .detail-list div,
+  .detail-list.compact div{grid-template-columns:1fr;gap:3px}
+}
+
+/* Absolute final visual fixes. Keep this at the real end of the stylesheet. */
+.hero-stats{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:16px!important;
+  border:0!important;
+  background:transparent!important;
+}
+.hero-stats div,
+.hero-stats div:first-child{
+  grid-column:auto!important;
+  border:1px solid rgba(255,255,255,.16)!important;
+  border-radius:28px!important;
+  padding:24px 26px!important;
+  background:
+    radial-gradient(circle at 18% 8%,rgba(255,255,255,.16),transparent 160px),
+    linear-gradient(145deg,rgba(255,255,255,.15),rgba(255,255,255,.055))!important;
+  box-shadow:
+    0 22px 50px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.2)!important;
+}
+.hero-stats div:first-child{
+  grid-column:1/-1!important;
+}
+.hero-stats strong{
+  font-size:34px!important;
+  line-height:1!important;
+}
+.hero-stats span{
+  margin-top:10px!important;
+  font-size:13px!important;
+}
+.detail-page-content{padding:36px!important}
+.modal-shell{padding:34px!important}
+.detail-copy{padding:42px!important}
+.detail-block,
+.modal-section{padding:32px!important}
+.detail-layout{gap:26px!important}
+.detail-menu-grid{gap:26px!important;margin-top:26px!important}
+.detail-identity{gap:28px!important;margin-bottom:28px!important}
+.detail{padding:32px 36px 36px!important}
+.quick-grid{gap:24px!important}
+.panel{padding:26px!important}
+.card-head{padding:32px 36px 24px!important}
+.card-actions{padding:0 36px 32px!important}
+.detail-list div{padding:17px 0!important;grid-template-columns:118px minmax(0,1fr)!important}
+.detail-list div:first-child{padding-top:0!important}
+.detail-list div:last-child{padding-bottom:0!important}
+.detail-list dt,
+.detail-list dd,
+.panel p,
+.detail-block,
+.modal-section{line-height:1.88!important}
+.reservation-guide{padding:20px!important}
+.detail-manners{padding:20px 24px 20px 42px!important}
+@media(max-width:700px){
+  .hero-stats{
+    grid-template-columns:1fr 1fr!important;
+    gap:12px!important;
+  }
+  .hero-stats div,
+  .hero-stats div:first-child{
+    padding:18px!important;
+    border-radius:22px!important;
+  }
+  .detail-page-content,
+  .modal-shell{padding:22px!important}
+  .detail-copy,
+  .detail-block,
+  .modal-section,
+  .panel{padding:24px!important}
+  .card-head{padding:26px 24px 20px!important}
+  .card-actions{padding:0 24px 26px!important}
+  .detail{padding:26px 24px 28px!important}
+  .detail-list div,
+  .detail-list.compact div{grid-template-columns:1fr!important;gap:6px!important}
+}
+
+/* Absolute final spacing override. */
+.detail-page-content{padding:36px!important}
+.modal-shell{padding:34px!important}
+.detail-copy{padding:42px!important}
+.detail-block,
+.modal-section{padding:32px!important}
+.detail-layout{gap:26px!important}
+.detail-menu-grid{gap:26px!important;margin-top:26px!important}
+.detail-identity{gap:28px!important;margin-bottom:28px!important}
+.detail{padding:32px 36px 36px!important}
+.quick-grid{gap:24px!important}
+.panel{padding:26px!important}
+.card-head{padding:32px 36px 24px!important}
+.card-actions{padding:0 36px 32px!important}
+.detail-list div{padding:17px 0!important;grid-template-columns:118px minmax(0,1fr)!important}
+.detail-list div:first-child{padding-top:0!important}
+.detail-list div:last-child{padding-bottom:0!important}
+.detail-list dt,
+.detail-list dd,
+.panel p,
+.detail-block,
+.modal-section{line-height:1.88!important}
+.reservation-guide{padding:20px!important}
+.detail-manners{padding:20px 24px 20px 42px!important}
+@media(max-width:700px){
+  .detail-page-content,
+  .modal-shell{padding:22px!important}
+  .detail-copy,
+  .detail-block,
+  .modal-section,
+  .panel{padding:24px!important}
+  .card-head{padding:26px 24px 20px!important}
+  .card-actions{padding:0 24px 26px!important}
+  .detail{padding:26px 24px 28px!important}
+  .detail-list div,
+  .detail-list.compact div{grid-template-columns:1fr!important;gap:6px!important}
+}
+
+/* Final spacing fix: restaurant information should never touch card edges. */
+.detail-page-content{
+  padding:34px!important;
+}
+.modal-shell{
+  padding:32px!important;
+}
+.detail-copy{
+  padding:40px!important;
+}
+.detail-block,
+.modal-section{
+  padding:30px!important;
+}
+.detail-layout{
+  gap:24px!important;
+}
+.detail-menu-grid{
+  gap:24px!important;
+  margin-top:24px!important;
+}
+.detail-identity{
+  gap:26px!important;
+  margin-bottom:26px!important;
+}
+.detail{
+  padding:30px 34px 34px!important;
+}
+.quick-grid{
+  gap:22px!important;
+}
+.panel{
+  padding:24px!important;
+}
+.card-head{
+  padding:30px 34px 22px!important;
+}
+.card-actions{
+  padding:0 34px 30px!important;
+}
+.detail-list div{
+  padding:16px 0!important;
+  grid-template-columns:112px minmax(0,1fr)!important;
+}
+.detail-list div:first-child{
+  padding-top:0!important;
+}
+.detail-list div:last-child{
+  padding-bottom:0!important;
+}
+.detail-list dt,
+.detail-list dd,
+.panel p,
+.modal-section,
+.detail-block{
+  line-height:1.85!important;
+}
+.reservation-guide{
+  padding:18px!important;
+}
+.detail-manners{
+  padding:18px 22px 18px 40px!important;
+}
+@media(max-width:700px){
+  .detail-page-content,
+  .modal-shell{
+    padding:20px!important;
+  }
+  .detail-copy,
+  .detail-block,
+  .modal-section,
+  .panel{
+    padding:22px!important;
+  }
+  .card-head{
+    padding:24px 22px 18px!important;
+  }
+  .card-actions{
+    padding:0 22px 24px!important;
+  }
+  .detail{
+    padding:24px 22px 26px!important;
+  }
+  .detail-list div,
+  .detail-list.compact div{
+    grid-template-columns:1fr!important;
+    gap:5px!important;
+  }
+}
+
+/* Final detail page composition override. */
+.detail-page{
+  padding:30px 0 48px;
+}
+.detail-page-content,
+.modal{
+  border-radius:28px;
+  border:1px solid color-mix(in srgb,var(--line) 78%,transparent);
+  background:
+    linear-gradient(180deg,color-mix(in srgb,var(--surface) 98%,white),color-mix(in srgb,var(--surface) 92%,var(--surface-2)));
+  box-shadow:0 24px 70px rgba(25,31,27,.13),0 8px 22px rgba(25,31,27,.07);
+}
+.detail-page-content{
+  padding:22px;
+}
+.modal-shell{
+  padding:20px;
+}
+.detail-identity{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(320px,42%);
+  gap:22px;
+  align-items:stretch;
+  margin-bottom:22px;
+}
+.detail-copy{
+  min-height:320px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:28px;
+  border-radius:26px;
+  background:
+    radial-gradient(circle at 14% 12%,rgba(214,167,47,.18),transparent 260px),
+    linear-gradient(145deg,color-mix(in srgb,var(--surface) 94%,white),color-mix(in srgb,var(--surface) 88%,var(--surface-2)));
+  border:1px solid color-mix(in srgb,var(--line) 80%,transparent);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.68);
+}
+.detail-copy h1,
+.detail-copy .modal-title{
+  margin:0;
+  color:var(--ink);
+  font-family:var(--cn-title-font);
+  font-size:clamp(36px,5.4vw,70px);
+  line-height:1.02;
+  letter-spacing:0;
+}
+.detail-copy .modal-title{
+  font-size:clamp(30px,4vw,48px);
+}
+.detail-copy .sub,
+.detail-copy .modal-meta{
+  margin-top:12px;
+  color:var(--muted);
+  line-height:1.75;
+}
+.detail-copy .source-row{
+  margin-top:18px;
+}
+.detail-identity .detail-hero-media{
+  min-height:320px;
+  margin:0;
+  border-radius:26px;
+  box-shadow:0 20px 54px rgba(20,24,20,.16);
+}
+.detail-identity .detail-hero-media img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.restaurant-actions{
+  margin-top:22px;
+  min-width:0;
+  justify-content:flex-start;
+}
+.restaurant-actions button,
+.card-actions button,
+.ghost,
+.meal-btn,
+.area-pill,
+.local-btn,
+.reserve,
+.link-list a{
+  border-radius:999px;
+}
+.detail-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);
+  gap:18px;
+  margin-top:0;
+}
+.detail-block,
+.modal-section{
+  border:1px solid color-mix(in srgb,var(--line) 78%,transparent);
+  border-radius:24px;
+  padding:20px;
+  background:
+    linear-gradient(180deg,color-mix(in srgb,var(--surface) 98%,white),color-mix(in srgb,var(--surface) 92%,var(--surface-2)));
+  box-shadow:0 14px 34px rgba(25,31,27,.075),inset 0 1px 0 rgba(255,255,255,.66);
+}
+.detail-block-main{
+  grid-row:span 2;
+}
+.detail-block h3,
+.modal-section h3{
+  margin:0 0 14px;
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.detail-list{
+  display:grid;
+  gap:0;
+  margin:0;
+}
+.detail-list div{
+  display:grid;
+  grid-template-columns:96px minmax(0,1fr);
+  gap:14px;
+  padding:13px 0;
+  border-bottom:1px solid color-mix(in srgb,var(--line) 76%,transparent);
+}
+.detail-list div:first-child{
+  padding-top:0;
+}
+.detail-list div:last-child{
+  border-bottom:0;
+  padding-bottom:0;
+}
+.detail-list dt{
+  color:var(--faint);
+  font-size:12px;
+  line-height:1.7;
+}
+.detail-list dd{
+  margin:0;
+  color:var(--ink);
+  font-size:14px;
+  line-height:1.7;
+}
+.detail-list.compact div{
+  grid-template-columns:112px minmax(0,1fr);
+}
+.detail-lead{
+  margin:0 0 8px;
+  color:var(--accent);
+  font-weight:800;
+}
+.reservation-guide{
+  margin-top:14px;
+  border-radius:20px;
+}
+.detail-manners{
+  margin:16px 0 0;
+  padding:14px 16px 14px 34px;
+  border-radius:20px;
+  background:color-mix(in srgb,var(--surface-2) 62%,transparent);
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.75;
+}
+.detail-menu-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin-top:18px;
+}
+.modal-section table{
+  box-shadow:none;
+  border-radius:18px;
+}
+.modal-identity{
+  grid-template-columns:minmax(0,1fr) 280px;
+}
+.modal-identity .detail-copy,
+.modal-identity .detail-hero-media{
+  min-height:240px;
+}
+.modal-identity .detail-copy{
+  padding:22px;
+}
+@media(max-width:900px){
+  .detail-identity,
+  .modal-identity,
+  .detail-layout{
+    grid-template-columns:1fr;
+  }
+  .detail-block-main{
+    grid-row:auto;
+  }
+  .detail-copy,
+  .detail-identity .detail-hero-media{
+    min-height:240px;
+  }
+  .detail-list div,
+  .detail-list.compact div{
+    grid-template-columns:1fr;
+    gap:3px;
+  }
+}
+
 /* Softer premium UI pass: rounded, dimensional, and more tactile. */
 :root{
   --radius-lg:24px;
@@ -1419,4 +2057,232 @@ input,
 .auth-brand em,
 .name-zh{
   font-family:var(--cn-title-font);
+}
+
+/* End-of-file final override: detail layout and soft 3D controls. */
+.hero{
+  background:
+    radial-gradient(circle at 16% 10%,rgba(255,212,122,.3),transparent 280px),
+    radial-gradient(circle at 76% 18%,rgba(104,176,138,.28),transparent 360px),
+    radial-gradient(circle at 58% 106%,rgba(150,68,82,.28),transparent 420px),
+    linear-gradient(124deg,#101713 0%,#1f342a 40%,#584624 72%,#171411 100%) !important;
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(0,0,0,.45),rgba(0,0,0,.06) 54%,rgba(0,0,0,.26));
+  pointer-events:none;
+}
+.hero-grid{position:relative;z-index:1}
+.hero-stats{gap:12px!important;border:0!important}
+.hero-stats div,
+.hero-stats div:first-child{
+  border-radius:22px!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.17),rgba(255,255,255,.055))!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  box-shadow:0 20px 46px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.18)!important;
+}
+.ghost,
+.meal-btn,
+.area-pill,
+.card-actions button,
+.restaurant-actions button,
+.reserve,
+.local-btn,
+.link-list a,
+.mobile-filter{
+  border-radius:999px!important;
+  box-shadow:0 11px 24px rgba(23,21,17,.12),inset 0 1px 0 rgba(255,255,255,.7)!important;
+  transition:transform .16s ease,box-shadow .16s ease,background .16s ease,border-color .16s ease;
+}
+.ghost:hover,
+.meal-btn:hover,
+.area-pill:hover,
+.card-actions button:hover,
+.restaurant-actions button:hover,
+.reserve:hover,
+.local-btn:hover,
+.link-list a:hover{
+  transform:translateY(-2px);
+  box-shadow:0 17px 34px rgba(23,21,17,.16),inset 0 1px 0 rgba(255,255,255,.78)!important;
+}
+.ghost:active,
+.meal-btn:active,
+.area-pill:active,
+.card-actions button:active,
+.restaurant-actions button:active,
+.reserve:active,
+.local-btn:active,
+.link-list a:active{
+  transform:translateY(1px) scale(.985);
+  box-shadow:inset 0 4px 10px rgba(0,0,0,.14)!important;
+}
+#searchInput,
+.filters select,
+.meal-toggle,
+.card,
+.account-panel,
+.detail-page-content,
+.modal,
+.content-empty,
+table{
+  border-radius:26px!important;
+  box-shadow:0 20px 54px rgba(25,31,27,.11),0 6px 16px rgba(25,31,27,.06)!important;
+}
+#searchInput,
+.filters select{
+  background:linear-gradient(180deg,var(--surface),color-mix(in srgb,var(--surface) 88%,var(--surface-2)))!important;
+}
+.chip,
+.source-badge,
+.guide-tags span{
+  border-radius:999px!important;
+}
+.card-actions button,
+.restaurant-actions button,
+.local-btn,
+.area-pill{
+  background:linear-gradient(180deg,var(--surface),color-mix(in srgb,var(--surface) 82%,var(--surface-2)))!important;
+}
+.meal-btn.active,
+.area-pill.active,
+.local-btn.active,
+.card-actions button.active,
+.restaurant-actions button.active,
+.reserve{
+  background:linear-gradient(180deg,color-mix(in srgb,var(--ink) 92%,white),var(--ink))!important;
+  color:var(--surface)!important;
+  box-shadow:0 16px 34px rgba(12,14,12,.24),inset 0 1px 0 rgba(255,255,255,.16)!important;
+}
+.detail-page{padding:30px 0 48px}
+.detail-page-content,
+.modal{
+  border:1px solid color-mix(in srgb,var(--line) 78%,transparent)!important;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--surface) 98%,white),color-mix(in srgb,var(--surface) 92%,var(--surface-2)))!important;
+}
+.detail-page-content{padding:22px}
+.modal-shell{padding:20px}
+.detail-identity{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(320px,42%);
+  gap:22px;
+  align-items:stretch;
+  margin-bottom:22px;
+}
+.detail-copy{
+  min-height:320px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:28px;
+  border-radius:26px;
+  background:
+    radial-gradient(circle at 14% 12%,rgba(214,167,47,.18),transparent 260px),
+    linear-gradient(145deg,color-mix(in srgb,var(--surface) 94%,white),color-mix(in srgb,var(--surface) 88%,var(--surface-2)));
+  border:1px solid color-mix(in srgb,var(--line) 80%,transparent);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.68);
+}
+.detail-copy h1,
+.detail-copy .modal-title{
+  margin:0;
+  color:var(--ink);
+  font-family:var(--cn-title-font);
+  font-size:clamp(36px,5.4vw,70px);
+  line-height:1.02;
+  letter-spacing:0;
+}
+.detail-copy .modal-title{font-size:clamp(30px,4vw,48px)}
+.detail-copy .sub,
+.detail-copy .modal-meta{
+  margin-top:12px;
+  color:var(--muted);
+  line-height:1.75;
+}
+.detail-copy .source-row{margin-top:18px}
+.detail-identity .detail-hero-media{
+  min-height:320px;
+  margin:0;
+  border-radius:26px;
+  box-shadow:0 20px 54px rgba(20,24,20,.16);
+}
+.detail-identity .detail-hero-media img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.restaurant-actions{
+  margin-top:22px;
+  min-width:0!important;
+  justify-content:flex-start;
+}
+.detail-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);
+  gap:18px;
+  margin-top:0;
+}
+.detail-block,
+.modal-section{
+  border:1px solid color-mix(in srgb,var(--line) 78%,transparent)!important;
+  border-radius:24px!important;
+  padding:20px!important;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--surface) 98%,white),color-mix(in srgb,var(--surface) 92%,var(--surface-2)))!important;
+  box-shadow:0 14px 34px rgba(25,31,27,.075),inset 0 1px 0 rgba(255,255,255,.66)!important;
+}
+.detail-block-main{grid-row:span 2}
+.detail-block h3,
+.modal-section h3{
+  margin:0 0 14px;
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.detail-list{display:grid;gap:0;margin:0}
+.detail-list div{
+  display:grid;
+  grid-template-columns:96px minmax(0,1fr);
+  gap:14px;
+  padding:13px 0;
+  border-bottom:1px solid color-mix(in srgb,var(--line) 76%,transparent);
+}
+.detail-list div:first-child{padding-top:0}
+.detail-list div:last-child{border-bottom:0;padding-bottom:0}
+.detail-list dt{color:var(--faint);font-size:12px;line-height:1.7}
+.detail-list dd{margin:0;color:var(--ink);font-size:14px;line-height:1.7}
+.detail-list.compact div{grid-template-columns:112px minmax(0,1fr)}
+.detail-lead{margin:0 0 8px;color:var(--accent);font-weight:800}
+.reservation-guide{margin-top:14px;border-radius:20px}
+.detail-manners{
+  margin:16px 0 0;
+  padding:14px 16px 14px 34px;
+  border-radius:20px;
+  background:color-mix(in srgb,var(--surface-2) 62%,transparent);
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.75;
+}
+.detail-menu-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin-top:18px;
+}
+.modal-section table{box-shadow:none!important;border-radius:18px!important}
+.modal-identity{grid-template-columns:minmax(0,1fr) 280px}
+.modal-identity .detail-copy,
+.modal-identity .detail-hero-media{min-height:240px}
+.modal-identity .detail-copy{padding:22px}
+@media(max-width:900px){
+  .detail-identity,
+  .modal-identity,
+  .detail-layout{grid-template-columns:1fr}
+  .detail-block-main{grid-row:auto}
+  .detail-copy,
+  .detail-identity .detail-hero-media{min-height:240px}
+  .detail-list div,
+  .detail-list.compact div{grid-template-columns:1fr;gap:3px}
 }

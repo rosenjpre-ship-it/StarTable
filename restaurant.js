@@ -15,13 +15,13 @@ function saveUserState(){
 
 function stationText(item){
  const stations=[...(item.transport?.stations||[])].sort((a,b)=>(a.walkMinutes??99)-(b.walkMinutes??99)).slice(0,3);
- if(!stations.length)return '最近车站：待补充';
- return `最近车站：${stations.map(s=>`${s.name} 步行${s.walkMinutes}分钟（${s.lines.join(' / ')}）`).join('；')}`;
+ if(!stations.length)return '交通信息：待补充';
+ return `交通信息：${stations.map(s=>`${s.name} 步行${s.walkMinutes}分钟（${s.lines.join(' / ')}）`).join('；')}`;
 }
 function stationHtml(item){
  const stations=[...(item.transport?.stations||[])].sort((a,b)=>(a.walkMinutes??99)-(b.walkMinutes??99)).slice(0,3);
- if(!stations.length)return '<strong>最近车站：待补充</strong>';
- return `最近车站：${stations.map(s=>`<strong>${esc(s.name)} 步行${esc(s.walkMinutes)}分钟</strong><span>（${esc(s.lines.join(' / '))}）</span>`).join('；')}`;
+ if(!stations.length)return '<span>交通信息：待补充</span>';
+ return `交通信息：<span class="station-list">${stations.map(s=>`<span class="station-item"><span class="station-main">${esc(s.name)} 步行${esc(s.walkMinutes)}分钟</span><span class="station-routes">${esc(s.lines.join(' / '))}</span></span>`).join('')}</span>`;
 }
 function dressText(d){
  if(!d||d.level==='待核验')return '需预约确认';
@@ -106,7 +106,7 @@ function mannersList(item){
  ];
 }
 function mannersHtml(item){
- return mannersList(item).map(x=>`<li>${esc(x)}</li>`).join('');
+ return mannersList(item).map((x,i)=>`<li><span class="manners-label">${String(i+1).padStart(2,'0')}</span><span class="manners-text">${esc(x)}</span></li>`).join('');
 }
 function heroImageUrl(item){
  return item.heroImage||item.image?.url||item.media?.hero||item.media?.heroImage||'';
@@ -117,7 +117,7 @@ function detailHeroMediaHtml(item){
 }
 function mealTable(items){
  if(!items?.length)return '<div class="content-empty">该餐期暂无公开套餐信息。</div>';
- return `<table><thead><tr><th>套餐</th><th>价格</th><th>内容</th><th>说明</th></tr></thead><tbody>${items.map(x=>`<tr><td>${esc(x.name)}</td><td><strong>${esc(x.price)}</strong></td><td>${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${esc(d)}</li>`).join('')}</ol>`:'待补充'}</td><td>${esc(x.note||'')}</td></tr>`).join('')}</tbody></table>`;
+ return `<div class="course-list">${items.map(x=>`<article class="course-card"><div class="course-main"><h4>${esc(x.name)}</h4><strong>${esc(x.price)}</strong></div><div class="course-body">${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${esc(d)}</li>`).join('')}</ol>`:'<p>待补充</p>'}</div>${x.note?`<p class="course-note">${esc(x.note)}</p>`:''}</article>`).join('')}</div>`;
 }
 function links(item){
  return Object.entries(item.links||{}).filter(([k,v])=>['official','reservation','tabelog','instagram'].includes(k)&&v).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(k)}</a>`).join('');
@@ -127,21 +127,19 @@ function render(item){
  const isFav=userState.favorites.has(item.id);
  const mark=userState.marks[item.id];
  $('restaurantDetail').innerHTML=`
- ${detailHeroMediaHtml(item)}
- <section class="restaurant-hero">
-  <div class="restaurant-hero-main">
-   <div>
+ <section class="detail-identity">
+  <div class="detail-copy">
     <p class="eyebrow">RESTAURANT DETAIL</p>
     <h1>${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars)}</span></h1>
     <p class="sub">${esc([item.nameJa,item.nameEn,item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</p>
     <div class="source-row">${sourceBadges(item)}</div>
-   </div>
-   <div class="restaurant-actions">
+    <div class="restaurant-actions">
     <button id="detailFavorite" class="favorite-btn icon-action ${isFav?'active':''}" type="button"><span>${isFav?'♥':'♡'}</span>${isFav?'已收藏':'收藏'}</button>
     <button id="detailWant" class="mark-btn ${mark==='want'?'active':''}" type="button">想摘星</button>
     <button id="detailDone" class="mark-btn ${mark==='done'?'active':''}" type="button">已摘星</button>
-   </div>
   </div>
+  </div>
+  ${detailHeroMediaHtml(item)}
  </section>
  <div class="detail-layout">
   <section class="detail-block detail-block-main">
@@ -149,8 +147,8 @@ function render(item){
    <dl class="detail-list">
     <div><dt>地址</dt><dd>${esc(item.address||'待补充')}</dd></div>
     <div><dt>电话</dt><dd>${esc(item.phone||'待补充')}</dd></div>
-    <div><dt>最近车站</dt><dd class="station-line">${stationHtml(item).replace('最近车站：','')}</dd></div>
-    <div><dt>预算</dt><dd>${esc(budgetText(item.budget))}</dd></div>
+    <div><dt>交通信息</dt><dd class="station-line">${stationHtml(item).replace('交通信息：','')}</dd></div>
+    <div class="budget-row"><dt>预算</dt><dd>${esc(budgetText(item.budget))}</dd></div>
     <div><dt>Tabelog</dt><dd>${esc(item.ratings?.tabelogScore||'待补充')}</dd></div>
    </dl>
   </section>
