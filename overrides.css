@@ -896,3 +896,276 @@ table{
   font-weight:400!important;
   line-height:1.82!important;
 }
+
+/* Responsive polish for phone / tablet / desktop. */
+html,
+body{
+  max-width:100%!important;
+  overflow-x:hidden!important;
+}
+
+@media(min-width:701px) and (max-width:1100px){
+  .shell{width:min(100% - 44px,920px)!important}
+  .hero-grid{
+    grid-template-columns:1fr!important;
+    gap:30px!important;
+    align-items:start!important;
+  }
+  .hero-stats{
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  }
+  .hero-stats div:first-child{
+    grid-column:auto!important;
+  }
+  .filters{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .grid{
+    grid-template-columns:1fr!important;
+  }
+}
+
+@media(max-width:700px){
+  .shell{
+    width:calc(100% - 28px)!important;
+  }
+  .topbar{
+    overflow:hidden!important;
+  }
+  .nav{
+    width:calc(100% - 18px)!important;
+    height:auto!important;
+    min-height:58px!important;
+    padding:10px 0!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    gap:8px!important;
+    align-items:center!important;
+  }
+  .brand{
+    min-width:0!important;
+    gap:7px!important;
+    overflow:hidden!important;
+  }
+  .brand-mark{
+    width:28px!important;
+    height:28px!important;
+    flex:0 0 28px!important;
+  }
+  .brand-mark:after{
+    font-size:16px!important;
+  }
+  .brand-word{
+    min-width:0!important;
+    gap:6px!important;
+    overflow:hidden!important;
+    filter:drop-shadow(0 5px 10px rgba(118,78,16,.12))!important;
+  }
+  .brand b{
+    font-size:18px!important;
+    line-height:22px!important;
+    height:22px!important;
+    letter-spacing:.08em!important;
+    transform:translateY(2px)!important;
+    white-space:nowrap!important;
+  }
+  .brand em{
+    font-size:15px!important;
+    line-height:20px!important;
+    height:20px!important;
+    letter-spacing:.04em!important;
+    padding-left:7px!important;
+    white-space:nowrap!important;
+    flex:0 0 auto!important;
+  }
+  .nav-actions{
+    display:flex!important;
+    gap:6px!important;
+    flex:0 0 auto!important;
+  }
+  .nav-actions .ghost{
+    font-size:11px!important;
+    line-height:1.1!important;
+    padding:8px 10px!important;
+    white-space:nowrap!important;
+    min-width:0!important;
+  }
+  #loginButton{
+    width:54px!important;
+  }
+  #themeButton{
+    width:68px!important;
+  }
+  .hero{
+    padding:54px 0 28px!important;
+  }
+  .hero-grid{
+    grid-template-columns:1fr!important;
+    gap:28px!important;
+    align-items:start!important;
+  }
+  .eyebrow{
+    font-size:11px!important;
+    line-height:1.5!important;
+    letter-spacing:.18em!important;
+    margin-bottom:18px!important;
+  }
+  h1{
+    font-size:clamp(42px,15vw,58px)!important;
+    line-height:.94!important;
+    max-width:9ch!important;
+  }
+  .hero .sub{
+    font-size:14px!important;
+    line-height:1.75!important;
+    max-width:100%!important;
+    margin-top:26px!important;
+  }
+  .hero .sub span{
+    display:block!important;
+  }
+  .hero .sub span + span{
+    margin-top:10px!important;
+  }
+  .hero-stats{
+    grid-template-columns:1fr!important;
+    gap:14px!important;
+  }
+  .hero-stats div,
+  .hero-stats div:first-child{
+    min-height:108px!important;
+    padding:22px 18px!important;
+    border-radius:24px!important;
+  }
+  .hero-stats strong{
+    font-size:32px!important;
+  }
+  .hero-stats span{
+    font-size:12px!important;
+  }
+  .controls{
+    position:relative!important;
+    top:auto!important;
+    margin-top:18px!important;
+    padding:14px!important;
+    border-radius:24px!important;
+  }
+  .controls-head{
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+  }
+  #searchInput{
+    height:48px!important;
+    font-size:14px!important;
+  }
+  #toggleFiltersButton{
+    width:100%!important;
+    height:42px!important;
+  }
+  .filters{
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+  }
+  .filters select{
+    height:46px!important;
+    font-size:14px!important;
+  }
+  .meal-toggle{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:9px!important;
+    padding:14px!important;
+  }
+  .meal-toggle:before{
+    grid-column:1/-1!important;
+    width:auto!important;
+    margin:0 0 2px!important;
+    padding:0!important;
+    font-size:12px!important;
+  }
+  .meal-btn{
+    min-width:0!important;
+    width:100%!important;
+    height:42px!important;
+    padding:0 8px!important;
+    font-size:13px!important;
+    white-space:nowrap!important;
+  }
+  .area-rail{
+    padding:14px 0 2px!important;
+    gap:9px!important;
+  }
+  .area-pill{
+    padding:10px 14px!important;
+    font-size:13px!important;
+  }
+  .result-bar{
+    flex-direction:row!important;
+    align-items:center!important;
+    gap:10px!important;
+  }
+  .grid{
+    grid-template-columns:1fr!important;
+    gap:16px!important;
+  }
+  .card{
+    border-radius:24px!important;
+  }
+  .card-head{
+    padding:24px 20px 18px!important;
+  }
+  .card-actions{
+    grid-template-columns:1fr!important;
+    padding:0 20px 22px!important;
+  }
+  .quick-grid,
+  .modal-grid,
+  .account-sections,
+  .account-sections-two{
+    grid-template-columns:1fr!important;
+  }
+  .detail{
+    padding:24px 20px 26px!important;
+  }
+  .panel,
+  .detail-block,
+  .modal-section{
+    padding:22px!important;
+    border-radius:22px!important;
+  }
+  .manners li,
+  .detail-manners li{
+    grid-template-columns:38px minmax(0,1fr)!important;
+    gap:10px!important;
+    padding:13px 14px!important;
+  }
+  .mobile-filter{
+    right:18px!important;
+    bottom:18px!important;
+  }
+}
+
+@media(max-width:380px){
+  .brand b{
+    font-size:16px!important;
+    letter-spacing:.06em!important;
+  }
+  .brand em{
+    font-size:14px!important;
+    padding-left:6px!important;
+  }
+  #loginButton{
+    width:48px!important;
+  }
+  #themeButton{
+    width:58px!important;
+  }
+  .nav-actions .ghost{
+    font-size:10px!important;
+    padding-left:8px!important;
+    padding-right:8px!important;
+  }
+  h1{
+    font-size:42px!important;
+  }
+}

@@ -337,13 +337,17 @@ function normalizeSearch(value){
   .replace(/[\s·・|｜\/／,，.。'’"“”()（）\\\-ー_]/g,'');
 }
 function nameSearchText(item){
- return normalizeSearch([item.nameZh,item.nameJa,item.nameEn,item.name,item.id].filter(Boolean).join(' '));
+ return [item.nameZh,item.nameJa,item.nameEn,item.name,item.id]
+  .filter(Boolean)
+  .map(normalizeSearch)
+  .join(' ');
 }
 function nameMatches(item,query){
  const q=normalizeSearch(query);
  if(!q)return true;
- const hay=nameSearchText(item);
- if(hay.includes(q))return true;
+ const fields=[item.nameZh,item.nameJa,item.nameEn,item.name,item.id].filter(Boolean).map(normalizeSearch);
+ if(fields.some(value=>value.includes(q)))return true;
+ const hay=fields.join('');
  if(/[a-z0-9]/.test(q))return false;
  return [...q].every(char=>hay.includes(char));
 }
@@ -421,6 +425,11 @@ function updateAccount(){
 function render(){els.grid.innerHTML='';state.filtered.forEach(x=>els.grid.appendChild(makeCard(x)));els.visible.textContent=state.filtered.length;els.empty.hidden=state.filtered.length!==0;updateCompare();updateAccount()}
 function apply(){
  const q=els.search.value.trim();
+ if(q){
+  state.filtered=sortRestaurants(state.data.filter(x=>nameMatches(x,q)));
+  render();
+  return;
+ }
  state.filtered=state.data.filter(x=>{
  const mealOk=state.meal==='all'||availabilityOk(x,state.meal);
   const dressOk=!els.dress.value||filterDressCategory(x)===els.dress.value;
