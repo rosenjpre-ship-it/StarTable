@@ -2,21 +2,21 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>StarTable Tokyo</title>
-<meta name="description" content="东京星级餐厅信息浏览与筛选平台">
+<title>StarTable</title>
+<meta name="description" content="东京与香港星级餐厅信息浏览与筛选平台">
 <link rel="stylesheet" href="./styles.css?v=202608030934">
-<link rel="stylesheet" href="./overrides.css?v=202608031245">
+<link rel="stylesheet" href="./overrides.css?v=202608072255">
 </head>
 <body>
 <header class="topbar"><div class="shell nav">
-<a class="brand" href="./index.html"><span class="brand-mark">✦</span><span class="brand-word"><b>STARTABLE</b><em>星宴</em></span></a>
-<div class="nav-actions"><button id="loginButton" class="ghost">Log in</button><button id="themeButton" class="ghost">深色模式</button></div>
+<div class="brand-cluster"><a class="brand" href="./index.html"><span class="brand-mark">✦</span><span class="brand-word"><b>STARTABLE</b><em>星宴</em></span></a><button id="membershipButton" class="city-switch member-button" type="button">会员订阅</button></div>
+<div class="nav-actions"><div class="language-switch" aria-label="Language"><button type="button" data-lang="zh">中文</button><button type="button" data-lang="en">EN</button></div><div class="city-picker"><button id="cityButton" class="city-switch" type="button" aria-haspopup="menu" aria-expanded="false">全球</button><div id="cityMenu" class="city-menu" hidden><button type="button" data-city="">全球</button><button type="button" data-city="东京">东京</button><button type="button" data-city="香港">香港</button></div><select id="cityFilter" class="city-native" aria-hidden="true" tabindex="-1" hidden><option value="">全球</option><option value="东京">东京</option><option value="香港">香港</option></select></div><button id="loginButton" class="ghost">Log in</button><button id="themeButton" class="ghost">深色模式</button></div>
 </div></header>
 
 <section class="hero"><div class="shell hero-grid">
-<div><p class="eyebrow">TOKYO MICHELIN RESTAURANT DATABASE</p>
+<div><p class="eyebrow">MICHELIN RESTAURANT DATABASE</p>
 <h1>Find your next<br>beautiful table.</h1>
-<p class="sub"><span>收录东京 2026 全部星级米其林餐厅。</span><span>按地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与 Tabelog 评分筛选。</span></p></div>
+<p class="sub"><span>收录东京与香港 2026 全部星级米其林餐厅。</span><span>按城市、地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与评分筛选。</span></p></div>
 <div class="hero-stats">
 <div><strong id="totalRestaurants">0</strong><span>2026 星级餐厅合计</span></div>
 <div><strong id="threeStarCount">0</strong><span>2026 三星</span></div>
@@ -107,7 +107,29 @@
 <button id="loginSubmit" class="reserve auth-submit" type="button">进入 My page</button>
 </div>
 </dialog>
-<footer class="disclaimer shell"><span>本页为东京 2026 米其林星级餐厅数据。价格、菜单、着装规定、儿童政策、预约规则会随餐厅官网和预约平台变化；实际信息以餐厅官网/预约页最新内容为准。</span><small>最后更新：<span id="lastUpdated">-</span></small><strong>© 2026 Rosen. All rights reserved.</strong></footer>
+<dialog id="membershipModal" class="modal membership-modal">
+<div class="modal-shell">
+<button id="membershipClose" class="modal-close" type="button">关闭</button>
+<div class="account-head membership-head"><div><p class="eyebrow">MEMBERSHIP</p><strong>星宴年会员</strong><span>通过 Stripe 安全订阅，解锁完整餐厅数据库与高阶筛选。</span></div></div>
+<div class="account-summary membership-summary">
+<span>月费 <strong>Monthly</strong></span>
+<span>年费 <strong>$99</strong></span>
+<span>餐厅浏览 <strong>全部</strong></span>
+</div>
+<div class="account-sections membership-sections">
+<section><h3>完整资料</h3><p>查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。</p></section>
+<section><h3>高级筛选</h3><p>不受 20 家浏览和 5 次搜索限制，按城市、餐期、价格与政策快速筛选。</p></section>
+<section><h3>我的星宴</h3><p>按全球、东京、HK 管理已摘星、想摘星和收藏餐厅。</p></section>
+</div>
+<div class="membership-actions">
+<button class="reserve membership-cta" type="button" data-checkout-plan="monthly">Monthly 订阅</button>
+<button class="reserve membership-cta" type="button" data-checkout-plan="yearly">Yearly $99 / 年</button>
+<button id="manageSubscriptionButton" class="ghost membership-manage" type="button">管理订阅</button>
+</div>
+<p id="membershipStatus" class="membership-note">登录邮箱后可以测试 Stripe 订阅流程。</p>
+</div>
+</dialog>
+<footer class="disclaimer shell"><span>本页为东京与香港 2026 米其林星级餐厅数据。价格、菜单、着装规定、儿童政策、预约规则会随餐厅官网和预约平台变化；实际信息以餐厅官网/预约页最新内容为准。</span><small>最后更新：<span id="lastUpdated">-</span></small><strong>© 2026 Rosen. All rights reserved.</strong></footer>
 <button id="mobileFilterButton" class="mobile-filter" type="button">筛选</button>
-<script src="./app.js?v=202608031410"></script>
+<script src="./app.js?v=202608072255"></script>
 </body></html>

@@ -1,11 +1,83 @@
 
 const activeUser=localStorage.getItem('stUser')||'guest';
 const prefKey=name=>`st:${activeUser}:${name}`;
-const state={data:[],filtered:[],meal:'all',solo:false,user:activeUser,compareExpanded:true,accountExpanded:false,favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}'),compare:new Set(JSON.parse(localStorage.getItem(prefKey('compare'))||'[]'))};
+const state={data:[],filtered:[],meal:'all',solo:false,user:activeUser,lang:localStorage.getItem('stLang')||'zh',compareExpanded:true,accountExpanded:false,accountCity:'',favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}'),compare:new Set(JSON.parse(localStorage.getItem(prefKey('compare'))||'[]'))};
 const $=id=>document.getElementById(id);
-const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),star:$('starFilter'),cuisine:$('cuisineFilter'),area:$('areaFilter'),mealButtons:[...document.querySelectorAll('.meal-btn[data-meal]')],soloButton:document.querySelector('[data-filter="solo"]'),price:$('priceFilter'),dress:$('dressFilter'),child:$('childFilter'),visible:$('visibleCount'),total:$('totalRestaurants'),three:$('threeStarCount'),two:$('twoStarCount'),one:$('oneStarCount'),lastUpdated:$('lastUpdated'),reset:$('resetButton'),accountPanel:$('accountPanel'),areaRail:$('areaRail'),empty:$('empty'),theme:$('themeButton'),loginButton:$('loginButton'),loginModal:$('loginModal'),loginClose:$('loginClose'),loginName:$('loginName'),loginSubmit:$('loginSubmit'),controls:document.querySelector('.controls'),filterBody:$('filterBody'),toggleFilters:$('toggleFiltersButton'),mobileFilter:$('mobileFilterButton'),modal:$('detailModal'),modalContent:$('modalContent'),modalClose:$('modalClose')};
+const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),city:$('cityFilter'),cityButton:$('cityButton'),cityMenu:$('cityMenu'),langButtons:[...document.querySelectorAll('[data-lang]')],star:$('starFilter'),cuisine:$('cuisineFilter'),area:$('areaFilter'),mealButtons:[...document.querySelectorAll('.meal-btn[data-meal]')],soloButton:document.querySelector('[data-filter="solo"]'),price:$('priceFilter'),dress:$('dressFilter'),child:$('childFilter'),visible:$('visibleCount'),total:$('totalRestaurants'),three:$('threeStarCount'),two:$('twoStarCount'),one:$('oneStarCount'),lastUpdated:$('lastUpdated'),reset:$('resetButton'),accountPanel:$('accountPanel'),areaRail:$('areaRail'),empty:$('empty'),theme:$('themeButton'),loginButton:$('loginButton'),membershipButton:$('membershipButton'),membershipModal:$('membershipModal'),membershipClose:$('membershipClose'),checkoutButtons:[...document.querySelectorAll('[data-checkout-plan]')],manageSubscriptionButton:$('manageSubscriptionButton'),membershipStatus:$('membershipStatus'),loginModal:$('loginModal'),loginClose:$('loginClose'),loginName:$('loginName'),loginSubmit:$('loginSubmit'),controls:document.querySelector('.controls'),filterBody:$('filterBody'),toggleFilters:$('toggleFiltersButton'),mobileFilter:$('mobileFilterButton'),modal:$('detailModal'),modalContent:$('modalContent'),modalClose:$('modalClose')};
 const stars=n=>'★'.repeat(n);const diff=n=>n?'★'.repeat(n)+'☆'.repeat(5-n):'待评估';
 const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+const dict={
+ zh:{
+  global:'全球',tokyo:'东京',hongkong:'香港',membership:'会员订阅',dark:'深色模式',light:'浅色模式',
+  hero1:'收录东京与香港 2026 全部星级米其林餐厅。',hero2:'按城市、地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与评分筛选。',
+  total:'2026 星级餐厅合计',three:'2026 三星',two:'2026 二星',one:'2026 一星',search:'搜索餐厅名称（中文 / 日文 / 英文）',
+  collapse:'收起筛选',expand:'展开筛选',allStars:'全部星级',threeStar:'三星',twoStar:'二星',oneStar:'一星',allCuisine:'全部菜系',allArea:'全部地区',
+  chooseCity:'选择城市后筛选地区',chooseCityRail:'选择城市后显示地区',allPrice:'全部价格',dress:'着装要求',children:'儿童政策',
+  show:'显示',restaurants:'家',reset:'重置',empty:'没有符合条件的餐厅。',close:'关闭',login:'Log in',mypage:'我的星宴',
+  basic:'基本信息',reservation:'预约助手',address:'地址',phone:'电话',transport:'交通信息',budget:'预算',reserve:'前往官网预约',
+  want:'想摘星',done:'已摘星',favorite:'收藏',favorited:'已收藏',none:'暂无餐厅。',back:'返回餐厅列表',logout:'退出登录',
+  globalDone:'全球已摘星',memberTitle:'星宴年会员',memberDesc:'通过 Stripe 安全订阅，解锁完整餐厅数据库与高阶筛选。',
+  yearly:'年费',browse:'餐厅浏览',all:'全部',searches:'搜索次数',unlimited:'不限',fullData:'完整资料',advanced:'高级筛选',
+  fullDataText:'查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。',advancedText:'不受 20 家浏览和 5 次搜索限制，按城市、餐期、价格与政策快速筛选。',
+  mypageText:'按全球、东京、香港管理已摘星、想摘星和收藏餐厅。',stripeSoon:'Stripe 支付即将接入',
+  stripeAlert:'Stripe 支付链接接入后，这里会跳转到官方 Checkout 页面。',loadFail:'数据加载失败，请确认已部署到 GitHub Pages。'
+ },
+ en:{
+  global:'Global',tokyo:'Tokyo',hongkong:'Hong Kong',membership:'Membership',dark:'Dark mode',light:'Light mode',
+  hero1:'A 2026 Michelin starred restaurant database for Tokyo and Hong Kong.',hero2:'Filter by city, area, stars, cuisine, Lunch / Dinner, price, dress code, child policy and ratings.',
+  total:'2026 starred restaurants',three:'2026 three stars',two:'2026 two stars',one:'2026 one star',search:'Search restaurant name (Chinese / Japanese / English)',
+  collapse:'Hide filters',expand:'Show filters',allStars:'All stars',threeStar:'Three stars',twoStar:'Two stars',oneStar:'One star',allCuisine:'All cuisines',allArea:'All areas',
+  chooseCity:'Select a city to filter areas',chooseCityRail:'Select a city to show areas',allPrice:'All prices',dress:'Dress code',children:'Child policy',
+  show:'Showing',restaurants:'restaurants',reset:'Reset',empty:'No matching restaurants.',close:'Close',login:'Log in',mypage:'My page',
+  basic:'Basic info',reservation:'Reservation assistant',address:'Address',phone:'Phone',transport:'Access',budget:'Budget',reserve:'Official reservation',
+  want:'Want to visit',done:'Visited',favorite:'Save',favorited:'Saved',none:'No restaurants yet.',back:'Back to list',logout:'Log out',
+  globalDone:'Global visited',memberTitle:'StarTable Membership',memberDesc:'Subscribe securely with Stripe to unlock the full restaurant database and advanced filters.',
+  yearly:'Annual fee',browse:'Restaurant access',all:'All',searches:'Searches',unlimited:'Unlimited',fullData:'Full data',advanced:'Advanced filters',
+  fullDataText:'View full restaurant details, reservation links, access, dining rules and course information.',advancedText:'Remove the 20-restaurant and 5-search limits; filter by city, meal, price and policies.',
+  mypageText:'Manage visited, wish list and saved restaurants by Global, Tokyo and Hong Kong.',stripeSoon:'Stripe payment coming soon',
+  stripeAlert:'After the Stripe payment link is connected, this button will open the official Checkout page.',loadFail:'Data failed to load. Please confirm the site is deployed on GitHub Pages.'
+ }
+};
+const t=key=>(dict[state.lang]&&dict[state.lang][key])||dict.zh[key]||key;
+const cuisineEnMap={'日本料理':'Japanese','寿司':'Sushi','法餐':'French','法式':'French','中餐':'Chinese','中国菜':'Chinese','天妇罗':'Tempura','意大利菜':'Italian','创新料理':'Innovative','西班牙菜':'Spanish','烧鸟':'Yakitori','鳗鱼':'Unagi','拉面':'Ramen'};
+function cuisineLabel(item){
+ if(state.lang==='en')return item.cuisineEn||cuisineEnMap[item.cuisineZh]||item.cuisine||item.cuisineZh;
+ return item.cuisineZh||item.cuisine;
+}
+function restaurantName(item){
+ return state.lang==='en' ? (item.nameEn||item.name||item.nameZh) : (item.nameZh||item.name);
+}
+function secondaryNames(item){
+ return state.lang==='en' ? [item.nameZh,item.nameJa].filter(Boolean).join('｜') : [item.nameJa,item.nameEn].filter(Boolean).join('｜');
+}
+function setLanguage(lang){
+ state.lang=lang==='en'?'en':'zh';
+ localStorage.setItem('stLang',state.lang);
+ document.documentElement.lang=state.lang==='en'?'en':'zh-CN';
+ document.querySelectorAll('[data-lang]').forEach(btn=>btn.classList.toggle('active',btn.dataset.lang===state.lang));
+ updateCityButton();
+ if(els.membershipButton)els.membershipButton.textContent=t('membership');
+ if(els.theme)els.theme.textContent=document.body.classList.contains('dark')?t('light'):t('dark');
+ const heroSub=document.querySelector('.hero .sub');
+ if(heroSub)heroSub.innerHTML=`<span>${esc(t('hero1'))}</span><span>${esc(t('hero2'))}</span>`;
+ if(els.search)els.search.placeholder=t('search');
+ if(els.toggleFilters)els.toggleFilters.textContent=els.filterBody.hidden?t('expand'):t('collapse');
+ if(els.mobileFilter)els.mobileFilter.textContent=t('collapse').replace('Hide ','');
+ if(els.reset)els.reset.textContent=t('reset');
+ if(els.empty)els.empty.textContent=t('empty');
+ if(els.star?.options.length){els.star.options[0].textContent=t('allStars');els.star.options[1].textContent=t('threeStar');els.star.options[2].textContent=t('twoStar');els.star.options[3].textContent=t('oneStar');}
+ if(els.cuisine?.options.length)els.cuisine.options[0].textContent=t('allCuisine');
+ if(els.area?.options.length)els.area.options[0].textContent=els.city.value?t('allArea'):t('chooseCity');
+ if(els.price?.options.length)els.price.options[0].textContent=t('allPrice');
+ if(els.dress?.options.length)els.dress.options[0].textContent=t('dress');
+ if(els.child?.options.length)els.child.options[0].textContent=t('children');
+ document.querySelector('#totalRestaurants')?.nextElementSibling&&(document.querySelector('#totalRestaurants').nextElementSibling.textContent=t('total'));
+ document.querySelector('#threeStarCount')?.nextElementSibling&&(document.querySelector('#threeStarCount').nextElementSibling.textContent=t('three'));
+ document.querySelector('#twoStarCount')?.nextElementSibling&&(document.querySelector('#twoStarCount').nextElementSibling.textContent=t('two'));
+ document.querySelector('#oneStarCount')?.nextElementSibling&&(document.querySelector('#oneStarCount').nextElementSibling.textContent=t('one'));
+ rebuildAreaControls();
+ render();
+}
 const priceRanges={
  'under-10000':[0,10000],
  '10000-20000':[10000,20000],
@@ -66,6 +138,55 @@ function sortRestaurants(items){
 }
 function minMealPrice(item,meal){const values=itemPrices(item,meal);return values.length?Math.min(...values):999999999}
 function addOptions(el,vals,sorter){[...vals].sort(sorter||undefined).forEach(v=>el.insertAdjacentHTML('beforeend',`<option value="${v}">${v}</option>`))}
+function cityLabel(item){
+ const city=String(item.city||'');
+ if(city.toLowerCase().includes('hong kong'))return '香港';
+ if(city.toLowerCase().includes('tokyo'))return '东京';
+ return city||'其他';
+}
+function cityDisplay(value){
+ if(value==='东京')return t('tokyo');
+ if(value==='香港')return t('hongkong');
+ return t('global');
+}
+function selectedCityItems(){
+ const current=els.city?.value||'';
+ return current?state.data.filter(x=>cityLabel(x)===current):state.data;
+}
+function updateStats(items=selectedCityItems()){
+ els.total.textContent=items.length;
+ els.three.textContent=items.filter(x=>x.stars===3).length;
+ els.two.textContent=items.filter(x=>x.stars===2).length;
+ els.one.textContent=items.filter(x=>x.stars===1).length;
+}
+function currentCityAreas(){
+ return [...new Set(selectedCityItems().map(displayArea).filter(Boolean))]
+  .sort((a,b)=>locationRankText(a)-locationRankText(b)||a.localeCompare(b,'zh'));
+}
+function rebuildAreaControls(){
+ if(!els.city?.value){
+  els.area.value='';
+  els.area.disabled=true;
+  els.area.innerHTML=`<option value="">${esc(t('chooseCity'))}</option>`;
+  els.areaRail.innerHTML=`<button class="area-pill active area-pill-muted" data-area="" type="button">${esc(t('chooseCityRail'))}</button>`;
+  return;
+ }
+ els.area.disabled=false;
+ const areas=currentCityAreas();
+ els.area.innerHTML=`<option value="">${esc(t('allArea'))}</option>`+areas.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('');
+ els.areaRail.innerHTML=`<button class="area-pill active" data-area="">${esc(t('allArea'))}</button>`+areas.map(a=>`<button class="area-pill" data-area="${esc(a)}">${esc(a)}</button>`).join('');
+}
+function updateCityButton(){
+ const label=cityDisplay(els.city?.value||'');
+ if(els.cityButton)els.cityButton.textContent=label;
+ els.cityMenu?.querySelectorAll('[data-city]').forEach(btn=>btn.classList.toggle('active',btn.dataset.city===(els.city?.value||'')));
+}
+function setCity(value){
+ els.city.value=value;
+ updateCityButton();
+ rebuildAreaControls();
+ apply();
+}
 function parsePrice(value){
  if(typeof value==='number')return value;
  if(!value)return null;
@@ -119,8 +240,64 @@ function setUser(name){
 function setTheme(mode){
  const isDark=mode==='dark';
  document.body.classList.toggle('dark',isDark);
- if(els.theme)els.theme.textContent=isDark?'浅色模式':'深色模式';
+ if(els.theme)els.theme.textContent=isDark?t('light'):t('dark');
  localStorage.setItem('stTheme',isDark?'dark':'light');
+}
+function currentEmail(){
+ return state.user && state.user !== 'guest' ? state.user : '';
+}
+function requireEmail(){
+ const email = currentEmail();
+ if(email && email.includes('@')) return email;
+ els.membershipModal?.close();
+ els.loginModal?.showModal();
+ throw new Error('login_required');
+}
+async function apiPost(url, body){
+ if(location.protocol === 'file:') {
+  throw new Error('需要部署到支持 /api 的环境后才能测试 Stripe 支付。');
+ }
+ const res = await fetch(url, {
+  method:'POST',
+  headers:{'Content-Type':'application/json'},
+  body:JSON.stringify(body)
+ });
+ const data = await res.json().catch(()=>({}));
+ if(!res.ok) throw new Error(data.error || '请求失败');
+ return data;
+}
+async function checkMembershipStatus(){
+ const email=currentEmail();
+ if(!email || !email.includes('@') || location.protocol === 'file:') return;
+ try{
+  const res=await fetch(`/api/stripe/subscription-status?email=${encodeURIComponent(email)}`);
+  const data=await res.json();
+  if(els.membershipStatus){
+   els.membershipStatus.textContent=data.active?'当前邮箱已开通会员。':'当前邮箱暂未开通会员。';
+  }
+ }catch(error){
+  if(els.membershipStatus)els.membershipStatus.textContent='会员状态暂时无法确认。';
+ }
+}
+async function startCheckout(plan){
+ try{
+  const email=requireEmail();
+  const data=await apiPost('/api/stripe/create-checkout-session',{plan,email});
+  location.href=data.url;
+ }catch(error){
+  if(error.message==='login_required')return;
+  alert(error.message);
+ }
+}
+async function manageSubscription(){
+ try{
+  const email=requireEmail();
+  const data=await apiPost('/api/stripe/create-portal-session',{email});
+  location.href=data.url;
+ }catch(error){
+  if(error.message==='login_required')return;
+  alert(error.message);
+ }
 }
 function sourceBadges(item){
  const badges=[];
@@ -203,7 +380,7 @@ function applyHeroImage(el,item){
  if(url){
   el.style.backgroundImage='';
   el.classList.add('has-image');
-  el.innerHTML=`<img src="${esc(url)}" alt="${esc(item.nameZh||item.name)} 餐厅照片" loading="lazy">${imageFallbackHtml()}`;
+  el.innerHTML=`<img src="${esc(url)}" alt="${esc(restaurantName(item))}" loading="lazy">${imageFallbackHtml()}`;
   const img=el.querySelector('img');
   img.addEventListener('error',()=>{el.classList.remove('has-image');img.remove()},{once:true});
  }else{
@@ -213,7 +390,7 @@ function applyHeroImage(el,item){
 }
 function detailHeroMediaHtml(item){
  const url=heroImageUrl(item);
- return `<div class="detail-hero-media ${url?'has-image':''}">${url?`<img src="${esc(url)}" alt="${esc(item.nameZh||item.name)} 餐厅照片" loading="lazy" onerror="this.remove();this.parentElement.classList.remove('has-image')">`:''}<span>STARTABLE</span></div>`;
+ return `<div class="detail-hero-media ${url?'has-image':''}">${url?`<img src="${esc(url)}" alt="${esc(restaurantName(item))}" loading="lazy" onerror="this.remove();this.parentElement.classList.remove('has-image')">`:''}<span>STARTABLE</span></div>`;
 }
 function mealTable(items){
  if(!items?.length)return '<div class="content-empty">该餐期暂无公开套餐信息。</div>';
@@ -238,8 +415,8 @@ function fullDetail(item){
  return `<section class="detail-identity modal-identity">
   <div class="detail-copy">
    <p class="eyebrow">RESTAURANT DETAIL</p>
-   <h2 class="modal-title">${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars)}</span></h2>
-   <div class="modal-meta">${esc([item.nameJa,item.nameEn,item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</div>
+   <h2 class="modal-title">${esc(restaurantName(item))} <span class="stars">${stars(item.stars)}</span></h2>
+   <div class="modal-meta">${esc([secondaryNames(item),item.areaZh,cuisineLabel(item)].filter(Boolean).join(' ｜ '))}</div>
    <div class="source-row">${sourceBadges(item).map(x=>`<span class="source-badge">${esc(x)}</span>`).join('')}</div>
   </div>
   ${detailHeroMediaHtml(item)}
@@ -328,7 +505,7 @@ function displayArea(item){
  if(item.areaZh&&item.areaZh!=='东京')return item.areaZh;
  const station=item.transport?.stations?.[0]?.name;
  if(station==='东京')return '东京站';
- return station||'东京';
+ return station||cityLabel(item);
 }
 function normalizeSearch(value){
  return String(value||'')
@@ -355,9 +532,9 @@ function makeCard(item){
  const f=els.template.content.cloneNode(true),head=f.querySelector('.card-head'),detail=f.querySelector('.detail'),media=f.querySelector('.card-media');
  const goDetail=()=>{window.location.href=`./restaurant.html?id=${encodeURIComponent(item.id)}`};
  applyHeroImage(media,item);
- f.querySelector('.area').textContent=displayArea(item);f.querySelector('.cuisine').textContent=item.cuisineZh||item.cuisine;
- f.querySelector('.name-zh').textContent=item.nameZh||item.name;
- f.querySelector('.names-secondary').textContent=[item.nameJa,item.nameEn].filter(Boolean).join('｜');
+ f.querySelector('.area').textContent=displayArea(item);f.querySelector('.cuisine').textContent=cuisineLabel(item);
+ f.querySelector('.name-zh').textContent=restaurantName(item);
+ f.querySelector('.names-secondary').textContent=secondaryNames(item);
  f.querySelector('.stars').textContent=stars(item.stars);f.querySelector('.address').textContent=item.address?`地址：${item.address}`:'地址待补充';
  f.querySelector('.phone').textContent=item.phone?`电话：${item.phone}`:'电话待补充';
  f.querySelector('.stations').innerHTML=stationHtml(item);
@@ -390,7 +567,7 @@ function makeCard(item){
  if(media){
   media.setAttribute('role','link');
   media.setAttribute('tabindex','0');
-  media.setAttribute('aria-label',`查看${item.nameZh||item.name}详情`);
+  media.setAttribute('aria-label',`${state.lang==='en'?'View details for':'查看'}${restaurantName(item)}`);
   media.addEventListener('click',goDetail);
   media.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();goDetail()}});
  }
@@ -406,7 +583,7 @@ function renderMap(){
   const pin=document.createElement('button');
   pin.className=`map-pin star-${item.stars}`;
   pin.style.left=`${x}%`;pin.style.top=`${y}%`;
-  pin.title=item.nameZh||item.name;
+  pin.title=restaurantName(item);
   pin.addEventListener('click',()=>showMapItem(item,pin));
   els.mapCanvas.appendChild(pin);
  });
@@ -415,31 +592,37 @@ function renderMap(){
 function showMapItem(item,pin){
  document.querySelectorAll('.map-pin').forEach(x=>x.classList.remove('active'));
  pin?.classList.add('active');
- els.mapPanel.innerHTML=`<h3>${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars)}</span></h3><p>${esc([item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</p><p>${esc(stationText(item))}</p><p>Tabelog：${esc(item.ratings?.tabelogScore||'-')}</p><div class="source-row">${sourceBadges(item).map(x=>`<span class="source-badge">${esc(x)}</span>`).join('')}</div><div class="link-list"><a href="./restaurant.html?id=${encodeURIComponent(item.id)}">查看餐厅</a><a href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a></div>`;
+ els.mapPanel.innerHTML=`<h3>${esc(restaurantName(item))} <span class="stars">${stars(item.stars)}</span></h3><p>${esc([displayArea(item),cuisineLabel(item)].filter(Boolean).join(' ｜ '))}</p><p>${esc(stationText(item))}</p><p>Tabelog：${esc(item.ratings?.tabelogScore||'-')}</p><div class="source-row">${sourceBadges(item).map(x=>`<span class="source-badge">${esc(x)}</span>`).join('')}</div><div class="link-list"><a href="./restaurant.html?id=${encodeURIComponent(item.id)}">${state.lang==='en'?'View restaurant':'查看餐厅'}</a><a href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">${esc(t('reserve'))}</a></div>`;
 }
 function updateCompare(){}
 function updateAccount(){
  els.loginButton.textContent=state.user==='guest'?'Log in':`我的星宴`;
  document.body.classList.toggle('account-mode',state.accountExpanded);
- const favs=[...state.favorites].map(id=>state.data.find(x=>x.id===id)).filter(Boolean);
- const wants=Object.entries(state.marks).filter(([,v])=>v==='want').map(([id])=>state.data.find(x=>x.id===id)).filter(Boolean);
- const dones=Object.entries(state.marks).filter(([,v])=>v==='done').map(([id])=>state.data.find(x=>x.id===id)).filter(Boolean);
+ const byCity=items=>state.accountCity?items.filter(x=>cityLabel(x)===state.accountCity):items;
+ const favs=byCity([...state.favorites].map(id=>state.data.find(x=>x.id===id)).filter(Boolean));
+ const wants=byCity(Object.entries(state.marks).filter(([,v])=>v==='want').map(([id])=>state.data.find(x=>x.id===id)).filter(Boolean));
+ const dones=byCity(Object.entries(state.marks).filter(([,v])=>v==='done').map(([id])=>state.data.find(x=>x.id===id)).filter(Boolean));
+ const allDones=Object.entries(state.marks).filter(([,v])=>v==='done').map(([id])=>state.data.find(x=>x.id===id)).filter(Boolean);
  els.accountPanel.hidden=!state.accountExpanded;
  if(!state.accountExpanded)return;
- const list=items=>items.length?`<div class="account-list">${items.map(x=>`<a href="./restaurant.html?id=${encodeURIComponent(x.id)}"><strong>${esc(x.nameZh||x.name)}</strong><span>${stars(x.stars)} · ${esc(displayArea(x))}</span></a>`).join('')}</div>`:'<div class="account-empty">暂无餐厅。</div>';
- els.accountPanel.innerHTML=`<div class="account-head"><div><p class="eyebrow">MY PAGE</p><strong>我的星宴</strong><span>${esc(state.user==='guest'?'访客':state.user)}</span></div><div class="account-actions"><button id="accountBackButton" class="ghost">返回餐厅列表</button><button id="logoutButton" class="ghost">退出登录</button></div></div><div class="account-summary"><span>已摘星 <strong>${dones.length}</strong></span><span>想摘星 <strong>${wants.length}</strong></span><span>收藏 <strong>${favs.length}</strong></span></div><div class="account-sections"><section><h3>已摘星</h3>${list(dones)}</section><section><h3>想摘星</h3>${list(wants)}</section><section><h3>收藏</h3>${list(favs)}</section></div>`;
+ const list=items=>items.length?`<div class="account-list">${items.map(x=>`<a href="./restaurant.html?id=${encodeURIComponent(x.id)}"><strong>${esc(restaurantName(x))}</strong><span>${stars(x.stars)} · ${esc(displayArea(x))}</span></a>`).join('')}</div>`:`<div class="account-empty">${esc(t('none'))}</div>`;
+ const cityOptions=['','东京','香港'].map(value=>`<button class="account-city ${state.accountCity===value?'active':''}" type="button" data-account-city="${esc(value)}">${esc(cityDisplay(value))}</button>`).join('');
+ els.accountPanel.innerHTML=`<div class="account-head"><div><p class="eyebrow">MY PAGE</p><strong>${esc(t('mypage'))}</strong><span>${esc(state.user==='guest'?'Guest':state.user)}</span></div><div class="account-actions"><button id="accountBackButton" class="ghost">${esc(t('back'))}</button><button id="logoutButton" class="ghost">${esc(t('logout'))}</button></div></div><div class="account-city-row">${cityOptions}</div><div class="account-summary"><span>${esc(cityDisplay(state.accountCity))}${esc(t('done'))} <strong>${dones.length}</strong></span><span>${esc(t('want'))} <strong>${wants.length}</strong></span><span>${esc(t('favorite'))} <strong>${favs.length}</strong></span><span>${esc(t('globalDone'))} <strong>${allDones.length}</strong></span></div><div class="account-sections"><section><h3>${esc(t('done'))}</h3>${list(dones)}</section><section><h3>${esc(t('want'))}</h3>${list(wants)}</section><section><h3>${esc(t('favorite'))}</h3>${list(favs)}</section></div>`;
  $('accountBackButton')?.addEventListener('click',()=>{state.accountExpanded=false;updateAccount();window.scrollTo({top:0,behavior:'smooth'})});
  $('logoutButton')?.addEventListener('click',()=>setUser('guest'));
+ document.querySelectorAll('[data-account-city]').forEach(btn=>btn.addEventListener('click',()=>{state.accountCity=btn.dataset.accountCity;updateAccount()}));
 }
 function render(){els.grid.innerHTML='';state.filtered.forEach(x=>els.grid.appendChild(makeCard(x)));els.visible.textContent=state.filtered.length;els.empty.hidden=state.filtered.length!==0;updateCompare();updateAccount()}
 function apply(){
  const q=els.search.value.trim();
+ const cityItems=selectedCityItems();
+ updateStats(cityItems);
  if(q){
-  state.filtered=sortRestaurants(state.data.filter(x=>nameMatches(x,q)));
+  state.filtered=sortRestaurants(cityItems.filter(x=>nameMatches(x,q)));
   render();
   return;
  }
- state.filtered=state.data.filter(x=>{
+ state.filtered=cityItems.filter(x=>{
  const mealOk=state.meal==='all'||availabilityOk(x,state.meal);
   const dressOk=!els.dress.value||filterDressCategory(x)===els.dress.value;
   const childOk=!els.child.value||filterChildCategory(x)===els.child.value;
@@ -448,16 +631,16 @@ function apply(){
 }
 async function init(){
  const res=await fetch('./data/restaurants.json');state.data=sortRestaurants(await res.json());state.filtered=[...state.data];
- els.total.textContent=state.data.length;els.three.textContent=state.data.filter(x=>x.stars===3).length;els.two.textContent=state.data.filter(x=>x.stars===2).length;els.one.textContent=state.data.filter(x=>x.stars===1).length;
+ updateStats(selectedCityItems());
  addOptions(els.cuisine,new Set(state.data.map(x=>x.cuisineZh).filter(Boolean)));
- addOptions(els.area,new Set(state.data.map(displayArea).filter(Boolean)),(a,b)=>locationRankText(a)-locationRankText(b)||a.localeCompare(b,'zh'));
  els.lastUpdated.textContent=state.data.map(x=>x.sync?.lastChecked).filter(Boolean).sort().at(-1)||'2026-08-02';
- const areas=[...new Set(state.data.map(displayArea).filter(Boolean))].sort((a,b)=>locationRankText(a)-locationRankText(b)||a.localeCompare(b,'zh'));
- els.areaRail.innerHTML=`<button class="area-pill active" data-area="">全部区域</button>`+areas.map(a=>`<button class="area-pill" data-area="${esc(a)}">${esc(a)}</button>`).join('');
+ updateCityButton();
+ rebuildAreaControls();
  els.areaRail.addEventListener('click',e=>{const btn=e.target.closest('.area-pill');if(!btn)return;els.area.value=btn.dataset.area;document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x===btn));apply()});
- render()
+ setLanguage(state.lang);
+ apply()
 }
-[els.search,els.star,els.cuisine,els.area,els.price,els.dress,els.child].filter(Boolean).forEach(el=>el.addEventListener('input',()=>{if(el===els.area)document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===els.area.value));apply()}));
+[els.search,els.city,els.star,els.cuisine,els.area,els.price,els.dress,els.child].filter(Boolean).forEach(el=>el.addEventListener('input',()=>{if(el===els.city){updateCityButton();rebuildAreaControls()}if(el===els.area)document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===els.area.value));apply()}));
 ['keyup','search','compositionend'].forEach(type=>els.search?.addEventListener(type,apply));
 els.mealButtons.forEach(btn=>btn.addEventListener('click',()=>{
  state.meal=state.meal===btn.dataset.meal?'all':btn.dataset.meal;
@@ -465,13 +648,37 @@ els.mealButtons.forEach(btn=>btn.addEventListener('click',()=>{
  apply();
 }));
 els.soloButton?.addEventListener('click',()=>{state.solo=!state.solo;els.soloButton.classList.toggle('active',state.solo);apply()});
-els.reset.addEventListener('click',()=>{[els.search,els.star,els.cuisine,els.area,els.price,els.dress,els.child].forEach(x=>x.value='');state.meal='all';state.solo=false;els.mealButtons.forEach(x=>x.classList.remove('active'));els.soloButton?.classList.remove('active');document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===''));apply()});
+els.cityButton?.addEventListener('click',e=>{
+ e.stopPropagation();
+ const open=els.cityMenu.hidden;
+ els.cityMenu.hidden=!open;
+ els.cityButton.setAttribute('aria-expanded',String(open));
+});
+els.cityMenu?.addEventListener('click',e=>{
+ const btn=e.target.closest('[data-city]');
+ if(!btn)return;
+ setCity(btn.dataset.city);
+ els.cityMenu.hidden=true;
+ els.cityButton.setAttribute('aria-expanded','false');
+});
+document.addEventListener('click',e=>{
+ if(!els.cityMenu||els.cityMenu.hidden)return;
+ if(e.target.closest('.city-picker'))return;
+ els.cityMenu.hidden=true;
+ els.cityButton?.setAttribute('aria-expanded','false');
+});
+els.reset.addEventListener('click',()=>{[els.search,els.star,els.cuisine,els.area,els.price,els.dress,els.child].forEach(x=>x.value='');els.city.value='';updateCityButton();rebuildAreaControls();state.meal='all';state.solo=false;els.mealButtons.forEach(x=>x.classList.remove('active'));els.soloButton?.classList.remove('active');document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===''));apply()});
 setTheme(localStorage.getItem('stTheme')==='dark'?'dark':'light');
+els.langButtons.forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
 els.theme.addEventListener('click',()=>setTheme(document.body.classList.contains('dark')?'light':'dark'));
 els.toggleFilters.addEventListener('click',()=>{const collapsed=els.controls.classList.toggle('filters-collapsed');els.filterBody.hidden=collapsed;els.toggleFilters.textContent=collapsed?'展开筛选':'收起筛选'});
 els.mobileFilter.addEventListener('click',()=>{els.controls.classList.remove('filters-collapsed');els.filterBody.hidden=false;els.toggleFilters.textContent='收起筛选';els.controls.scrollIntoView({behavior:'smooth',block:'start'})});
 els.modalClose.addEventListener('click',()=>els.modal.close());
 els.loginButton.addEventListener('click',()=>{if(state.user==='guest'){els.loginModal.showModal()}else{state.accountExpanded=true;updateAccount();els.accountPanel.scrollIntoView({behavior:'smooth',block:'start'})}});
+els.membershipButton?.addEventListener('click',()=>{els.membershipModal.showModal();checkMembershipStatus()});
+els.membershipClose?.addEventListener('click',()=>els.membershipModal.close());
+els.checkoutButtons.forEach(btn=>btn.addEventListener('click',()=>startCheckout(btn.dataset.checkoutPlan)));
+els.manageSubscriptionButton?.addEventListener('click',manageSubscription);
 els.loginClose.addEventListener('click',()=>els.loginModal.close());
 els.loginSubmit.addEventListener('click',()=>setUser(els.loginName.value));
 init().catch(e=>{els.empty.hidden=false;els.empty.textContent='数据加载失败，请确认已部署到 GitHub Pages。';console.error(e)});

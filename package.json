@@ -1,0 +1,15 @@
+{
+  "name": "startable",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "check": "node --check app.js && node --check restaurant.js && node --check api/stripe/create-checkout-session.js && node --check api/stripe/create-portal-session.js && node --check api/stripe/subscription-status.js && node --check api/stripe/webhook.js"
+  },
+  "dependencies": {
+    "stripe": "^18.5.0"
+  }
+}

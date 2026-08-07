@@ -1,12 +1,11 @@
-# StarTable Tokyo
+# StarTable
 
-东京 2026 全部星级米其林餐厅数据库。
+东京与香港 2026 星级米其林餐厅数据库。
 
 ## 数据规模
-- 三星：12 家
-- 二星：26 家
-- 一星：122 家
-- 合计：160 家
+- 东京：160 家
+- 香港：77 家
+- 合计：237 家
 
 ## 当前内容
 - 餐厅中文/日文/英文名
@@ -26,9 +25,44 @@
 - 字段来源状态、最后更新时间与免责声明
 - 独立餐厅详情页：`restaurant.html?id=餐厅id`
 - 字段级来源/更新时间提示
-- 静态 CMS 管理表：`admin.html`
+- Stripe 会员订阅入口与后端 API
 
-数据年份：东京 2026 米其林星级餐厅。每年米其林指南更新后需同步核对餐厅名单、星级、价格、菜单与预约政策。
+## Stripe 订阅
+Stripe 后端接口需要部署到支持 Node API Routes 的环境，例如 Vercel。只上传到 GitHub Pages 时，前端可以显示会员入口，但不能完成真实 Checkout。
+
+必需环境变量：
+- `STRIPE_SECRET_KEY`：Stripe test/live secret key
+- `STRIPE_WEBHOOK_SECRET`：Stripe webhook signing secret
+- `SITE_URL`：正式站点地址
+
+可选环境变量：
+- `STRIPE_MONTHLY_PRICE_ID`：StarTable Premium Monthly 的 Price ID
+- `STRIPE_YEARLY_PRICE_ID`：StarTable Premium Yearly 的 Price ID
+
+如果不配置 Price ID，后端会按产品名查找现有 Stripe 产品和已有 active recurring Price。代码不会创建新的 Stripe Product 或 Price：
+- `StarTable Premium Monthly`
+- `StarTable Premium Yearly`
+
+接口：
+- `POST /api/stripe/create-checkout-session`
+- `POST /api/stripe/create-portal-session`
+- `GET /api/stripe/subscription-status?email=...`
+- `POST /api/stripe/webhook`
+
+Webhook URL：
+- `https://你的域名/api/stripe/webhook`
+
+Stripe Dashboard 需要添加的 Webhook Events：
+- `checkout.session.completed`
+- `customer.subscription.created`
+- `customer.subscription.updated`
+- `customer.subscription.deleted`
+- `invoice.payment_succeeded`
+- `invoice.payment_failed`
+
+Checkout 会使用用户登录邮箱查找 Stripe Customer；如果同邮箱 Customer 已存在会复用，不存在才创建新的 Customer。
+
+数据年份：东京与香港 2026 米其林星级餐厅。每年米其林指南更新后需同步核对餐厅名单、星级、价格、菜单与预约政策。
 
 ## 上传
 解压 zip 后，把文件覆盖上传到 GitHub 仓库根目录，然后提交即可。

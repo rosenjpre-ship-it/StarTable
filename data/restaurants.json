@@ -30209,5 +30209,7741 @@
       "lastUpdated": "2026-08-02",
       "verified": false
     }
+  },
+  {
+    "id": "hk-81-2-otto-e-mezzo-bombana",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "8½ Otto e Mezzo BOMBANA",
+    "nameZh": "8½ Otto e Mezzo BOMBANA",
+    "nameEn": "8½ Otto e Mezzo BOMBANA",
+    "nameJa": "",
+    "stars": 3,
+    "cuisine": "意大利菜",
+    "cuisineZh": "意大利菜",
+    "area": "Hong Kong",
+    "areaZh": "中环",
+    "address": "Shop 202, Landmark Alexandra, 18 Chater Road, Central, Hong Kong",
+    "phone": "+852 2537 8859",
+    "difficulty": null,
+    "booking": "官网订座；主餐厅午餐和晚餐均开放。",
+    "lunch": [
+      {
+        "name": "Lunch 8 ½",
+        "price": "价格需预约确认",
+        "details": [
+          "官网显示午餐提供单点菜单，并有 Lunch 8 ½ 时令套餐。"
+        ],
+        "note": "官网未在页面直接列出固定价格。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "Dinner 8 ½ / Degustation 8 ½",
+        "price": "价格需预约确认",
+        "details": [
+          "官网显示晚餐提供单点菜单，并有 Dinner 8 ½ 与 Degustation 8 ½ 时令套餐。"
+        ],
+        "note": "官网未在页面直接列出固定价格。"
+      }
+    ],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "男士请避免短裤、背心、凉鞋及拖鞋。"
+      ],
+      "verified": true
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not explicitly published",
+      "notes": "官网公开页面未明确儿童政策，需预约确认。"
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "较难",
+      "bookingRule": "官网订座；周一至周六午餐 12:00-14:30，晚餐 18:30-22:30，周日休息。",
+      "platforms": [
+        "Official"
+      ],
+      "verified": true
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": true
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.ottoemezzobombana.com/the-restaurant/main-dining-room/",
+      "reservation": "https://www.ottoemezzobombana.com/the-restaurant/main-dining-room/"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "restaurant official website / official booking page / MICHELIN Guide",
+      "changeSummary": "核对香港三星餐厅基础信息、餐期、预约、着装与儿童政策",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "中环",
+          "lines": [
+            "港铁荃湾线",
+            "港铁港岛线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "香港",
+          "lines": [
+            "港铁东涌线",
+            "机场快线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "lastChecked": "2026-08-07"
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "dressCategory": "required",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": [
+        "准时到店；迟到可能影响餐序或被收取费用。",
+        "预约时提前说明过敏、忌口和同行人数。",
+        "避免强烈香水、响亮通话或影响邻桌的拍摄。",
+        "高级餐厅建议保持 smart casual 以上着装。"
+      ]
+    }
+  },
+  {
+    "id": "hk-amber",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Amber",
+    "nameZh": "Amber",
+    "nameEn": "Amber",
+    "nameJa": "",
+    "stars": 3,
+    "cuisine": "创新菜",
+    "cuisineZh": "创新菜",
+    "area": "Hong Kong",
+    "areaZh": "中环",
+    "address": "7/F, The Landmark Mandarin Oriental, 15 Queen’s Road Central, Central, Hong Kong",
+    "phone": "+852 2132 0066",
+    "difficulty": null,
+    "booking": "官网/酒店订座；午餐和晚餐菜单均公开。",
+    "lunch": [
+      {
+        "name": "Lunch Menu",
+        "price": "价格需预约确认",
+        "details": [
+          "官网显示 Lunch Menu，另有 Weekdays / Weekend & Public Holiday 午餐菜单。"
+        ],
+        "note": "菜单随季节变化，价格以官网预约页为准。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "Dinner Menu",
+        "price": "价格需预约确认",
+        "details": [
+          "官网显示 Dinner Menu 与 Wine Menu。"
+        ],
+        "note": "菜单随季节变化，价格以官网预约页为准。"
+      }
+    ],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "避免短裤、破洞牛仔、背心、运动装、浴袍、人字拖和男士凉鞋。"
+      ],
+      "verified": true
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "partially published",
+      "notes": "官网显示 Kids Set Menu，但儿童年龄及座位限制需预约确认。"
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "较难",
+      "bookingRule": "通过 Mandarin Oriental / Amber 官方预约；官网列出午餐时段 12:00-16:00。",
+      "platforms": [
+        "Official"
+      ],
+      "verified": true
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": true
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.mandarinoriental.com/en/hong-kong/the-landmark/dine/amber",
+      "reservation": "https://www.mandarinoriental.com/en/hong-kong/the-landmark/dine/amber"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "restaurant official website / official booking page / MICHELIN Guide",
+      "changeSummary": "核对香港三星餐厅基础信息、餐期、预约、着装与儿童政策",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "中环",
+          "lines": [
+            "港铁荃湾线",
+            "港铁港岛线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "香港",
+          "lines": [
+            "港铁东涌线",
+            "机场快线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "lastChecked": "2026-08-07"
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "dressCategory": "required",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": [
+        "准时到店；迟到可能影响餐序或被收取费用。",
+        "预约时提前说明过敏、忌口和同行人数。",
+        "避免强烈香水、响亮通话或影响邻桌的拍摄。",
+        "高级餐厅建议保持 smart casual 以上着装。"
+      ]
+    }
+  },
+  {
+    "id": "hk-caprice",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Caprice",
+    "nameZh": "Caprice",
+    "nameEn": "Caprice",
+    "nameJa": "",
+    "stars": 3,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "中环",
+    "address": "6/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central, Hong Kong",
+    "phone": "+852 3196 8882",
+    "difficulty": null,
+    "booking": "Four Seasons 官网订座；午餐和晚餐均开放。",
+    "lunch": [
+      {
+        "name": "Set Lunch / Menu Connaisseur / Refined Power Lunch",
+        "price": "价格需预约确认",
+        "details": [
+          "官网列出 Set Lunch、Menu Connaisseur、Refined Power Lunch 等午餐菜单。",
+          "OpenTable 页面显示 Carte Blanche 午餐为 5 道，HK$1,888+10%。"
+        ],
+        "note": "价格可能随菜单变化，以官网/预约页为准。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "Menu Signature / Menu Découverte",
+        "price": "价格需预约确认",
+        "details": [
+          "官网列出 Menu Signature 与 Menu Découverte。",
+          "官方介绍说明晚餐为 prix-fixe 套餐。"
+        ],
+        "note": "价格以官网/预约页为准。"
+      }
+    ],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "8岁及以上男士需有领上衣、长裤、包脚鞋；女士不可穿凉鞋或拖鞋；不可穿运动装或帽子。"
+      ],
+      "verified": true
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": null,
+      "minimumAge": 8,
+      "babyAllowed": false,
+      "notes": "官网显示欢迎 8 岁及以上儿童。",
+      "verified": true
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "较难",
+      "bookingRule": "午餐周二至周日 12:00-14:00；晚餐周二至周日 18:30-20:30；需信用卡担保，取消政策以预约页为准。",
+      "platforms": [
+        "Official",
+        "OpenTable"
+      ],
+      "verified": true
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": true
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.fourseasons.com/hongkong/dining/restaurants/caprice.html/",
+      "reservation": "https://www.fourseasons.com/hongkong/dining/restaurants/caprice.html/"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "restaurant official website / official booking page / MICHELIN Guide",
+      "changeSummary": "核对香港三星餐厅基础信息、餐期、预约、着装与儿童政策",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "香港",
+          "lines": [
+            "港铁东涌线",
+            "机场快线"
+          ],
+          "walkMinutes": 6
+        },
+        {
+          "name": "中环",
+          "lines": [
+            "港铁荃湾线",
+            "港铁港岛线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "lastChecked": "2026-08-07"
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "dressCategory": "required",
+      "childCategory": "yes"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": [
+        "准时到店；迟到可能影响餐序或被收取费用。",
+        "预约时提前说明过敏、忌口和同行人数。",
+        "避免强烈香水、响亮通话或影响邻桌的拍摄。",
+        "高级餐厅建议保持 smart casual 以上着装。"
+      ]
+    }
+  },
+  {
+    "id": "hk-forum",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Forum",
+    "nameZh": "富临饭店",
+    "nameEn": "Forum",
+    "nameJa": "",
+    "stars": 3,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "铜锣湾",
+    "address": "1/F, Sino Plaza, 255-257 Gloucester Road, Causeway Bay, Hong Kong",
+    "phone": "+852 2869 8282",
+    "difficulty": null,
+    "booking": "官网预约表；餐厅会联系确认。",
+    "lunch": [
+      {
+        "name": "Lunch",
+        "price": "价格需预约确认",
+        "details": [
+          "官网显示午市 11:30-14:30。",
+          "招牌包括阿一鲍鱼等粤菜。"
+        ],
+        "note": "官网未直接列出固定午餐套餐价格。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "Dinner",
+        "price": "价格需预约确认",
+        "details": [
+          "官网显示晚市 18:00-23:00。",
+          "以高级粤菜和鲍鱼菜式为核心。"
+        ],
+        "note": "官网未直接列出固定晚餐套餐价格。"
+      }
+    ],
+    "dressCode": {
+      "level": "需预约确认",
+      "required": null,
+      "notes": [
+        "官网公开页面未明确 dress code。"
+      ],
+      "verified": false,
+      "publicInfoStatus": "not explicitly published"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not explicitly published",
+      "notes": "官网公开页面未明确儿童政策，需预约确认。"
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "较难",
+      "bookingRule": "官网预约表提交后由餐厅联系确认；午市 11:30-14:30，晚市 18:00-23:00。",
+      "platforms": [
+        "Official"
+      ],
+      "verified": true
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": true
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.forumrestaurant1977.com/contact.php",
+      "reservation": "https://www.forumrestaurant1977.com/contact.php"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "restaurant official website / official booking page / MICHELIN Guide",
+      "changeSummary": "核对香港三星餐厅基础信息、餐期、预约、着装与儿童政策",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "铜锣湾",
+          "lines": [
+            "港铁港岛线"
+          ],
+          "walkMinutes": 5
+        },
+        {
+          "name": "会展",
+          "lines": [
+            "港铁东铁线"
+          ],
+          "walkMinutes": 12
+        }
+      ],
+      "lastChecked": "2026-08-07"
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": [
+        "准时到店；迟到可能影响餐序或被收取费用。",
+        "预约时提前说明过敏、忌口和同行人数。",
+        "避免强烈香水、响亮通话或影响邻桌的拍摄。",
+        "高级餐厅建议保持 smart casual 以上着装。"
+      ]
+    }
+  },
+  {
+    "id": "hk-sushi-shikon",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Sushi Shikon",
+    "nameZh": "志魂",
+    "nameEn": "Sushi Shikon",
+    "nameJa": "",
+    "stars": 3,
+    "cuisine": "寿司",
+    "cuisineZh": "寿司",
+    "area": "Hong Kong",
+    "areaZh": "中环",
+    "address": "7/F, Mandarin Oriental The Landmark Hong Kong, 15 Queen’s Road Central, Central, Hong Kong",
+    "phone": "+852 2643 6800",
+    "difficulty": null,
+    "booking": "电话、电邮及 TableCheck 预约；需信用卡担保。",
+    "lunch": [
+      {
+        "name": "Lunch Omakase Course",
+        "price": "HK$2,250 + 10%",
+        "details": [
+          "1 款前菜",
+          "8 件寿司",
+          "汤",
+          "甜品"
+        ],
+        "note": "官网联系页价格。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "Dinner Omakase Course",
+        "price": "HK$4,000 + 10%",
+        "details": [
+          "5-6 款前菜",
+          "10 件寿司",
+          "汤",
+          "甜品"
+        ],
+        "note": "官网联系页价格。"
+      }
+    ],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "不可穿人字拖、无袖上衣；TableCheck 亦提示避免破洞牛仔、浴袍、男士背心和凉鞋。"
+      ],
+      "verified": true
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": 12,
+      "babyAllowed": false,
+      "notes": "12 岁及以上可在主寿司台用餐；12 岁以下仅可在私人寿司台并需厨师同意。",
+      "verified": true
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "电话预约 Mon-Sat 11:30-20:30；Lunch 12:30-14:00，Dinner 18:00-20:00 / 20:30-22:30；取消政策以官网/TableCheck 为准。",
+      "platforms": [
+        "Phone",
+        "Email",
+        "TableCheck"
+      ],
+      "verified": true
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": true
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://sushi-shikon.com/contact/",
+      "reservation": "https://www.tablecheck.com/en/shops/sushi-shikon/reserve"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "restaurant official website / official booking page / MICHELIN Guide",
+      "changeSummary": "核对香港三星餐厅基础信息、餐期、预约、着装与儿童政策",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "中环",
+          "lines": [
+            "港铁荃湾线",
+            "港铁港岛线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "香港",
+          "lines": [
+            "港铁东涌线",
+            "机场快线"
+          ],
+          "walkMinutes": 8
+        }
+      ],
+      "lastChecked": "2026-08-07"
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "dressCategory": "required",
+      "childCategory": "yes"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": [
+        "准时到店；迟到可能影响餐序或被收取费用。",
+        "预约时提前说明过敏、忌口和同行人数。",
+        "避免强烈香水、响亮通话或影响邻桌的拍摄。",
+        "高级餐厅建议保持 smart casual 以上着装。"
+      ]
+    }
+  },
+  {
+    "id": "hk-tang-court",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "T’ang Court",
+    "nameZh": "唐阁",
+    "nameEn": "T’ang Court",
+    "nameJa": "",
+    "stars": 3,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "尖沙咀",
+    "address": "1/F and 2/F, The Langham, Hong Kong, 8 Peking Road, Tsim Sha Tsui, Hong Kong",
+    "phone": "+852 2132 7898",
+    "difficulty": null,
+    "booking": "The Langham 官网/电话预约。",
+    "lunch": [
+      {
+        "name": "Lunch",
+        "price": "价格需预约确认",
+        "details": [
+          "周一至周五 12:00-15:00",
+          "周六 11:00-15:00",
+          "周日及公众假期 11:00-16:00"
+        ],
+        "note": "官网未在页面直接列出套餐价格。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "Dinner",
+        "price": "价格需预约确认",
+        "details": [
+          "每日 18:00-23:00"
+        ],
+        "note": "官网未在页面直接列出套餐价格。"
+      }
+    ],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "男士请避免塑料鞋、沙滩拖鞋、凉鞋和无袖上衣；晚餐不可穿短裤。"
+      ],
+      "verified": true
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not explicitly published",
+      "notes": "官网公开页面未明确儿童政策，需预约确认。"
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "较难",
+      "bookingRule": "官网/电话预约；午餐和晚餐均开放。",
+      "platforms": [
+        "Official",
+        "Phone"
+      ],
+      "verified": true
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": true
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.langhamhotels.com/en/the-langham/hong-kong/dine/tang-court/",
+      "reservation": "https://www.langhamhotels.com/en/the-langham/hong-kong/dine/tang-court/"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "restaurant official website / official booking page / MICHELIN Guide",
+      "changeSummary": "核对香港三星餐厅基础信息、餐期、预约、着装与儿童政策",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "尖沙咀",
+          "lines": [
+            "港铁荃湾线"
+          ],
+          "walkMinutes": 3
+        },
+        {
+          "name": "尖东",
+          "lines": [
+            "港铁屯马线"
+          ],
+          "walkMinutes": 6
+        }
+      ],
+      "lastChecked": "2026-08-07"
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "dressCategory": "required",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": [
+        "准时到店；迟到可能影响餐序或被收取费用。",
+        "预约时提前说明过敏、忌口和同行人数。",
+        "避免强烈香水、响亮通话或影响邻桌的拍摄。",
+        "高级餐厅建议保持 smart casual 以上着装。"
+      ]
+    }
+  },
+  {
+    "id": "hk-ta-vie",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Ta Vie",
+    "nameZh": "旅",
+    "nameEn": "Ta Vie",
+    "nameJa": "",
+    "stars": 3,
+    "cuisine": "创新菜",
+    "cuisineZh": "创新菜",
+    "area": "Hong Kong",
+    "areaZh": "中环",
+    "address": "2/F, The Pottinger, 74 Queen’s Road Central, Central, Hong Kong",
+    "phone": "+852 2668 6488",
+    "difficulty": null,
+    "booking": "WhatsApp 或电邮预约；最早可提前 2 个月。",
+    "lunch": [],
+    "dinner": [
+      {
+        "name": "Tasting Menu",
+        "price": "价格需预约确认",
+        "details": [
+          "官网显示仅提供由佐藤秀明主厨设计的 tasting menu。",
+          "预约时间为 18:00、19:00、20:00，建议预留至少 2 小时。"
+        ],
+        "note": "当前菜单需通过 WhatsApp 或电邮联系餐厅查看。"
+      }
+    ],
+    "dressCode": {
+      "level": "Formal / Smart casual",
+      "required": true,
+      "notes": [
+        "建议正式或 smart casual；男士请避免短裤、半裤、背心和凉鞋。"
+      ],
+      "verified": true
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": null,
+      "minimumAge": 12,
+      "babyAllowed": false,
+      "notes": "官网显示欢迎 12 岁及以上儿童。",
+      "verified": true
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "极难",
+      "bookingRule": "仅通过 WhatsApp / Email；接受最多提前 2 个月预约；Dinner 营业日按月份变化。",
+      "platforms": [
+        "WhatsApp",
+        "Email"
+      ],
+      "verified": true
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": true
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "https://www.tavie.com.hk/reservation-1",
+      "reservation": "https://www.tavie.com.hk/reservation-1"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "restaurant official website / official booking page / MICHELIN Guide",
+      "changeSummary": "核对香港三星餐厅基础信息、餐期、预约、着装与儿童政策",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "中环",
+          "lines": [
+            "港铁荃湾线",
+            "港铁港岛线"
+          ],
+          "walkMinutes": 4
+        },
+        {
+          "name": "香港",
+          "lines": [
+            "港铁东涌线",
+            "机场快线"
+          ],
+          "walkMinutes": 9
+        }
+      ],
+      "lastChecked": "2026-08-07"
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": true,
+      "dressCategory": "required",
+      "childCategory": "yes"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": [
+        "准时到店；迟到可能影响餐序或被收取费用。",
+        "预约时提前说明过敏、忌口和同行人数。",
+        "避免强烈香水、响亮通话或影响邻桌的拍摄。",
+        "高级餐厅建议保持 smart casual 以上着装。"
+      ]
+    }
+  },
+  {
+    "id": "hk-arbor",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Arbor",
+    "nameZh": "Arbor",
+    "nameEn": "Arbor",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "创新菜",
+    "cuisineZh": "创新菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-bo-innovation",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Bo Innovation",
+    "nameZh": "厨魔",
+    "nameEn": "Bo Innovation",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "创新菜",
+    "cuisineZh": "创新菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-cristal-room-by-anne-sophie-pic",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Cristal Room by Anne-Sophie Pic",
+    "nameZh": "Cristal Room by Anne-Sophie Pic",
+    "nameEn": "Cristal Room by Anne-Sophie Pic",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-lai-ching-heen",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Lai Ching Heen",
+    "nameZh": "丽晶轩",
+    "nameEn": "Lai Ching Heen",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-latelier-de-joe-l-robuchon",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "L’Atelier de Joël Robuchon",
+    "nameZh": "L’Atelier de Joël Robuchon",
+    "nameEn": "L’Atelier de Joël Robuchon",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-lenvol",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "L’Envol",
+    "nameZh": "L’Envol",
+    "nameEn": "L’Envol",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-lung-king-heen",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Lung King Heen",
+    "nameZh": "龙景轩",
+    "nameEn": "Lung King Heen",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-noi",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Noi",
+    "nameZh": "Noi",
+    "nameEn": "Noi",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "意大利菜",
+    "cuisineZh": "意大利菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-octavium",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Octavium",
+    "nameZh": "Octavium",
+    "nameEn": "Octavium",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "意大利菜",
+    "cuisineZh": "意大利菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-ru-n",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Rùn",
+    "nameZh": "润",
+    "nameEn": "Rùn",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-tate-dining-room",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "TATE Dining Room",
+    "nameZh": "TATE Dining Room",
+    "nameEn": "TATE Dining Room",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "创新菜",
+    "cuisineZh": "创新菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-tin-lung-heen",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Tin Lung Heen",
+    "nameZh": "天龙轩",
+    "nameEn": "Tin Lung Heen",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-ying-jee-club",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Ying Jee Club",
+    "nameZh": "营致会馆",
+    "nameEn": "Ying Jee Club",
+    "nameJa": "",
+    "stars": 2,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-ami",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Ami",
+    "nameZh": "Ami",
+    "nameEn": "Ami",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-ando",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Andō",
+    "nameZh": "Andō",
+    "nameEn": "Andō",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "创新菜",
+    "cuisineZh": "创新菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-arcane",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Arcane",
+    "nameZh": "Arcane",
+    "nameEn": "Arcane",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "欧洲菜",
+    "cuisineZh": "欧洲菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-beefbar",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Beefbar",
+    "nameZh": "Beefbar",
+    "nameEn": "Beefbar",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "牛排馆",
+    "cuisineZh": "牛排馆",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-belon",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "BELON",
+    "nameZh": "BELON",
+    "nameEn": "BELON",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-chaat",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "CHAAT",
+    "nameZh": "CHAAT",
+    "nameEn": "CHAAT",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "印度菜",
+    "cuisineZh": "印度菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-the-chairman",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "The Chairman",
+    "nameZh": "大班楼",
+    "nameEn": "The Chairman",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-china-tang",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "China Tang",
+    "nameZh": "唐人馆",
+    "nameEn": "China Tang",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "中餐",
+    "cuisineZh": "中餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-duddells",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Duddell’s",
+    "nameZh": "都爹利会馆",
+    "nameEn": "Duddell’s",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-e-pure",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "ÉPURE",
+    "nameZh": "ÉPURE",
+    "nameEn": "ÉPURE",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-estro",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Estro",
+    "nameZh": "Estro",
+    "nameEn": "Estro",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "意大利菜",
+    "cuisineZh": "意大利菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-feuille",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Feuille",
+    "nameZh": "Feuille",
+    "nameEn": "Feuille",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "创新菜",
+    "cuisineZh": "创新菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-fook-lam-moon-wan-chai",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Fook Lam Moon (Wan Chai)",
+    "nameZh": "福临门（湾仔）",
+    "nameEn": "Fook Lam Moon (Wan Chai)",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "湾仔",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-fu-ho",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Fu Ho",
+    "nameZh": "富豪",
+    "nameEn": "Fu Ho",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-gaddis",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Gaddi’s",
+    "nameZh": "吉地士",
+    "nameEn": "Gaddi’s",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-godenya",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "GODENYA",
+    "nameZh": "GODENYA",
+    "nameEn": "GODENYA",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "日本料理",
+    "cuisineZh": "日本料理",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-hansik-goo",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Hansik Goo",
+    "nameZh": "Hansik Goo",
+    "nameEn": "Hansik Goo",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "韩国菜",
+    "cuisineZh": "韩国菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-ho-hung-kee-causeway-bay",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Ho Hung Kee (Causeway Bay)",
+    "nameZh": "何洪记（铜锣湾）",
+    "nameEn": "Ho Hung Kee (Causeway Bay)",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "铜锣湾",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-imperial-treasure-fine-chinese-cuisine-tsim-sha-tsui",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Imperial Treasure Fine Chinese Cuisine (Tsim Sha Tsui)",
+    "nameZh": "御宝轩（尖沙咀）",
+    "nameEn": "Imperial Treasure Fine Chinese Cuisine (Tsim Sha Tsui)",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "尖沙咀",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-i-m-teppanyaki-wine",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "I M Teppanyaki & Wine",
+    "nameZh": "I M Teppanyaki & Wine",
+    "nameEn": "I M Teppanyaki & Wine",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "铁板烧",
+    "cuisineZh": "铁板烧",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-kams-roast-goose",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Kam’s Roast Goose",
+    "nameZh": "甘牌烧鹅",
+    "nameEn": "Kam’s Roast Goose",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-kappo-rin",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Kappo Rin",
+    "nameZh": "割烹凛",
+    "nameEn": "Kappo Rin",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "日本料理",
+    "cuisineZh": "日本料理",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-the-legacy-house",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "The Legacy House",
+    "nameZh": "彤福轩",
+    "nameEn": "The Legacy House",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "顺德菜",
+    "cuisineZh": "顺德菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-liu-yuan-pavilion",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Liu Yuan Pavilion",
+    "nameZh": "留园雅叙",
+    "nameEn": "Liu Yuan Pavilion",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "上海菜",
+    "cuisineZh": "上海菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-loaf-on",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Loaf On",
+    "nameZh": "六福菜馆",
+    "nameEn": "Loaf On",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "海鲜",
+    "cuisineZh": "海鲜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-louise",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Louise",
+    "nameZh": "Louise",
+    "nameEn": "Louise",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-man-ho-admiralty",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Man Ho (Admiralty)",
+    "nameZh": "万豪金殿（金钟）",
+    "nameEn": "Man Ho (Admiralty)",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "金钟",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-man-wah",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Man Wah",
+    "nameZh": "文华厅",
+    "nameEn": "Man Wah",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-mono",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "MONO",
+    "nameZh": "MONO",
+    "nameEn": "MONO",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "拉丁美洲菜",
+    "cuisineZh": "拉丁美洲菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-mora",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Mora",
+    "nameZh": "摩",
+    "nameEn": "Mora",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-nagamoto",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Nagamoto",
+    "nameZh": "长本",
+    "nameEn": "Nagamoto",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "日本料理",
+    "cuisineZh": "日本料理",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-neighborhood",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Neighborhood",
+    "nameZh": "Neighborhood",
+    "nameEn": "Neighborhood",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "欧陆菜",
+    "cuisineZh": "欧陆菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-new-punjab-club",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "New Punjab Club",
+    "nameZh": "New Punjab Club",
+    "nameEn": "New Punjab Club",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "印度菜",
+    "cuisineZh": "印度菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-pangs-kitchen",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Pang’s Kitchen",
+    "nameZh": "彭庆记",
+    "nameEn": "Pang’s Kitchen",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-petrus",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Petrus",
+    "nameZh": "珀翠",
+    "nameEn": "Petrus",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-plaisance-by-mauro-colagreco",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Plaisance by Mauro Colagreco",
+    "nameZh": "Plaisance by Mauro Colagreco",
+    "nameEn": "Plaisance by Mauro Colagreco",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-racines",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Racines",
+    "nameZh": "Racines",
+    "nameEn": "Racines",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "法餐",
+    "cuisineZh": "法餐",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-roganic",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Roganic",
+    "nameZh": "Roganic",
+    "nameEn": "Roganic",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "创新菜",
+    "cuisineZh": "创新菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-ryota-kappou-modern",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Ryota Kappou Modern",
+    "nameZh": "Ryota Kappou Modern",
+    "nameEn": "Ryota Kappou Modern",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "日本料理",
+    "cuisineZh": "日本料理",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-seventh-son-wan-chai",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Seventh Son (Wan Chai)",
+    "nameZh": "家全七福（湾仔）",
+    "nameEn": "Seventh Son (Wan Chai)",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "湾仔",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-shang-palace",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Shang Palace",
+    "nameZh": "香宫",
+    "nameEn": "Shang Palace",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-spring-moon",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Spring Moon",
+    "nameZh": "嘉麟楼",
+    "nameEn": "Spring Moon",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-summer-palace",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Summer Palace",
+    "nameZh": "夏宫",
+    "nameEn": "Summer Palace",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-sun-tung-lok",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Sun Tung Lok",
+    "nameZh": "新同乐",
+    "nameEn": "Sun Tung Lok",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-sushi-takeshi",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Sushi Takeshi",
+    "nameZh": "Sushi Takeshi",
+    "nameEn": "Sushi Takeshi",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "寿司",
+    "cuisineZh": "寿司",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-sushi-wadatsumi",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Sushi Wadatsumi",
+    "nameZh": "Sushi Wadatsumi",
+    "nameEn": "Sushi Wadatsumi",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "寿司",
+    "cuisineZh": "寿司",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-tosca-di-angelo",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Tosca di Angelo",
+    "nameZh": "Tosca di Angelo",
+    "nameEn": "Tosca di Angelo",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "意大利菜",
+    "cuisineZh": "意大利菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-tuber-umberto-bombana",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "TUBER Umberto Bombana",
+    "nameZh": "TUBER Umberto Bombana",
+    "nameEn": "TUBER Umberto Bombana",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "意大利菜",
+    "cuisineZh": "意大利菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-vea",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "VEA",
+    "nameZh": "VEA",
+    "nameEn": "VEA",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "创新菜",
+    "cuisineZh": "创新菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-whey",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Whey",
+    "nameZh": "Whey",
+    "nameEn": "Whey",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "新加坡菜",
+    "cuisineZh": "新加坡菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-xin-rong-ji-wan-chai",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Xin Rong Ji (Wan Chai)",
+    "nameZh": "新荣记（湾仔）",
+    "nameEn": "Xin Rong Ji (Wan Chai)",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "台州菜",
+    "cuisineZh": "台州菜",
+    "area": "Hong Kong",
+    "areaZh": "湾仔",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-yardbird",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Yardbird",
+    "nameZh": "Yardbird",
+    "nameEn": "Yardbird",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "烧鸟",
+    "cuisineZh": "烧鸟",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-yat-lok-central",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Yat Lok (Central)",
+    "nameZh": "一乐烧鹅（中环）",
+    "nameEn": "Yat Lok (Central)",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "中环",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-yat-tung-heen",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Yat Tung Heen",
+    "nameZh": "逸东轩",
+    "nameEn": "Yat Tung Heen",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "粤菜",
+    "cuisineZh": "粤菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-ye-shanghai-tsim-sha-tsui",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "yè shanghai (Tsim Sha Tsui)",
+    "nameZh": "夜上海（尖沙咀）",
+    "nameEn": "yè shanghai (Tsim Sha Tsui)",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "上海菜",
+    "cuisineZh": "上海菜",
+    "area": "Hong Kong",
+    "areaZh": "尖沙咀",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-yong-fu",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Yong Fu",
+    "nameZh": "甬府",
+    "nameEn": "Yong Fu",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "宁波菜",
+    "cuisineZh": "宁波菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
+  },
+  {
+    "id": "hk-zhejiang-heen",
+    "city": "Hong Kong",
+    "country": "China",
+    "name": "Zhejiang Heen",
+    "nameZh": "浙江轩",
+    "nameEn": "Zhejiang Heen",
+    "nameJa": "",
+    "stars": 1,
+    "cuisine": "浙江菜",
+    "cuisineZh": "浙江菜",
+    "area": "Hong Kong",
+    "areaZh": "香港",
+    "address": "香港（地址待补充）",
+    "phone": "",
+    "difficulty": null,
+    "booking": "预约规则待补充。",
+    "lunch": [],
+    "dinner": [],
+    "dressCode": {
+      "level": "待核验",
+      "required": null,
+      "notes": [],
+      "verified": false,
+      "publicInfoStatus": "not checked"
+    },
+    "childPolicy": {
+      "verified": false,
+      "publicInfoStatus": "not checked",
+      "notes": "需预约确认。"
+    },
+    "reservation": {
+      "difficulty": null,
+      "difficultyLabel": "待评估",
+      "bookingRule": "需预约确认。",
+      "platforms": [],
+      "verified": false
+    },
+    "pairings": [],
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": null,
+      "serviceCharge": null,
+      "verified": false
+    },
+    "policies": {
+      "photo": null,
+      "perfume": null,
+      "cancellation": null,
+      "languageSupport": [],
+      "paymentMethods": []
+    },
+    "links": {
+      "official": "",
+      "reservation": "",
+      "tabelog": "",
+      "instagram": "",
+      "michelin": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-hong-kong-macau-18th-edition"
+    },
+    "sync": {
+      "lastChecked": "2026-08-07",
+      "lastUpdated": "2026-08-07",
+      "source": "MICHELIN Guide Hong Kong & Macau 2026 official release",
+      "changeSummary": "新增香港 2026 星级餐厅基础名单",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [],
+      "lastChecked": null
+    },
+    "ratings": {
+      "tabelogScore": null
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": false,
+      "soloDiningAvailable": false,
+      "priceTiers": [],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [],
+      "dressCategory": "pending",
+      "childCategory": "pending"
+    },
+    "heroImage": "",
+    "imageSource": "",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "",
+    "concept": null,
+    "soloDining": {
+      "available": null,
+      "source": "",
+      "checkedAt": null
+    },
+    "tableManners": {
+      "notes": []
+    }
   }
 ]

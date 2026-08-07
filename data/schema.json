@@ -1,12 +1,12 @@
 {
-  "name": "StarTable Tokyo Michelin starred restaurants",
-  "recordCount": 160,
+  "name": "StarTable Tokyo and Hong Kong Michelin starred restaurants",
+  "recordCount": 237,
   "breakdown": {
-    "threeStar": 12,
-    "twoStar": 26,
-    "oneStar": 122
+    "threeStar": 19,
+    "twoStar": 39,
+    "oneStar": 179
   },
-  "scope": "东京 2026 全部星级米其林餐厅",
+  "scope": "东京与香港 2026 全部星级米其林餐厅",
   "visibleModules": [
     "overview",
     "basicInfo",
@@ -32,6 +32,7 @@
     "disclaimer"
   ],
   "filterFields": [
+    "city",
     "stars",
     "cuisineZh",
     "areaZh",
