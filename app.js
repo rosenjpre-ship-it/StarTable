@@ -1,7 +1,7 @@
 
 const activeUser=localStorage.getItem('stUser')||'guest';
 const prefKey=name=>`st:${activeUser}:${name}`;
-const state={data:[],filtered:[],meal:'all',solo:false,user:activeUser,lang:localStorage.getItem('stLang')||'zh',compareExpanded:true,accountExpanded:false,accountCity:'',favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}'),compare:new Set(JSON.parse(localStorage.getItem(prefKey('compare'))||'[]'))};
+const state={data:[],filtered:[],meal:'all',solo:false,user:activeUser,lang:localStorage.getItem('stLang')||'zh',compareExpanded:true,accountExpanded:false,accountCity:'',membership:{status:'unknown',message:'会员状态未确认',plan:'-',renewal:'-'},favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}'),compare:new Set(JSON.parse(localStorage.getItem(prefKey('compare'))||'[]'))};
 const $=id=>document.getElementById(id);
 const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),city:$('cityFilter'),cityButton:$('cityButton'),cityMenu:$('cityMenu'),langButtons:[...document.querySelectorAll('[data-lang]')],star:$('starFilter'),cuisine:$('cuisineFilter'),area:$('areaFilter'),mealButtons:[...document.querySelectorAll('.meal-btn[data-meal]')],soloButton:document.querySelector('[data-filter="solo"]'),price:$('priceFilter'),dress:$('dressFilter'),child:$('childFilter'),visible:$('visibleCount'),total:$('totalRestaurants'),three:$('threeStarCount'),two:$('twoStarCount'),one:$('oneStarCount'),lastUpdated:$('lastUpdated'),reset:$('resetButton'),accountPanel:$('accountPanel'),areaRail:$('areaRail'),empty:$('empty'),theme:$('themeButton'),loginButton:$('loginButton'),membershipButton:$('membershipButton'),membershipModal:$('membershipModal'),membershipClose:$('membershipClose'),checkoutButtons:[...document.querySelectorAll('[data-checkout-plan]')],manageSubscriptionButton:$('manageSubscriptionButton'),membershipStatus:$('membershipStatus'),loginModal:$('loginModal'),loginClose:$('loginClose'),loginName:$('loginName'),loginSubmit:$('loginSubmit'),controls:document.querySelector('.controls'),filterBody:$('filterBody'),toggleFilters:$('toggleFiltersButton'),mobileFilter:$('mobileFilterButton'),modal:$('detailModal'),modalContent:$('modalContent'),modalClose:$('modalClose')};
 const stars=n=>'★'.repeat(n);const diff=n=>n?'★'.repeat(n)+'☆'.repeat(5-n):'待评估';
@@ -266,18 +266,46 @@ async function apiPost(url, body){
  if(!res.ok) throw new Error(data.error || '请求失败');
  return data;
 }
+function membershipPlanName(data){
+ const names=(data?.subscriptions?.[0]?.products||[]).join(' ');
+ if(/year/i.test(names))return 'Yearly';
+ if(/month/i.test(names))return 'Monthly';
+ return data?.active?'Premium':'Free';
+}
+function membershipRenewal(data){
+ const end=data?.subscriptions?.[0]?.currentPeriodEnd;
+ if(!end)return '-';
+ return new Date(end*1000).toLocaleDateString(state.lang==='en'?'en-US':'zh-CN',{year:'numeric',month:'short',day:'numeric'});
+}
+function setMembership(next){
+ state.membership={...state.membership,...next};
+ if(els.membershipStatus)els.membershipStatus.textContent=`${state.membership.message}。`;
+ if(state.accountExpanded)updateAccount();
+}
 async function checkMembershipStatus(){
  const email=currentEmail();
- if(!email || !email.includes('@') || location.protocol === 'file:') return;
+ if(!email || !email.includes('@') || location.protocol === 'file:') return null;
  try{
+  setMembership({status:'checking',message:'正在确认会员状态'});
   const res=await fetch(`/api/stripe/subscription-status?email=${encodeURIComponent(email)}`);
   const data=await res.json();
-  if(els.membershipStatus){
-   els.membershipStatus.textContent=data.active?'当前邮箱已开通会员。':'当前邮箱暂未开通会员。';
-  }
+  setMembership(data.active
+   ? {status:'active',message:'当前邮箱已开通会员',plan:membershipPlanName(data),renewal:membershipRenewal(data)}
+   : {status:'inactive',message:'当前邮箱暂未开通会员',plan:'Free',renewal:'-'});
+  return data;
  }catch(error){
-  if(els.membershipStatus)els.membershipStatus.textContent='会员状态暂时无法确认。';
+  setMembership({status:'error',message:'会员状态暂时无法确认'});
+  return null;
  }
+}
+async function confirmMembershipAfterCheckout(){
+ setMembership({status:'pending',message:'支付完成，正在确认会员状态',plan:'Premium',renewal:'确认中'});
+ for(const delay of [0,1500,3000,6000]){
+  if(delay)await new Promise(resolve=>setTimeout(resolve,delay));
+  const data=await checkMembershipStatus();
+  if(data?.active)return;
+ }
+ setMembership({status:'pending',message:'支付完成，Stripe 仍在同步；请稍后刷新会员状态',plan:'Premium',renewal:'确认中'});
 }
 function handleCheckoutReturn(){
  const params=new URLSearchParams(location.search);
@@ -289,7 +317,8 @@ function handleCheckoutReturn(){
    ? '支付完成，正在确认会员状态。'
    : '支付已取消，当前未完成订阅。';
  }
- if(checkout==='success')checkMembershipStatus();
+ if(checkout==='success')confirmMembershipAfterCheckout();
+ else setMembership({status:'inactive',message:'订阅未完成，未产生扣费',plan:'Free',renewal:'-'});
  params.delete('checkout');
  params.delete('session_id');
  const nextUrl=`${location.pathname}${params.toString()?`?${params}`:''}${location.hash}`;
@@ -623,10 +652,15 @@ function updateAccount(){
  if(!state.accountExpanded)return;
  const list=items=>items.length?`<div class="account-list">${items.map(x=>`<a href="./restaurant.html?id=${encodeURIComponent(x.id)}"><strong>${esc(restaurantName(x))}</strong><span>${stars(x.stars)} · ${esc(displayArea(x))}</span></a>`).join('')}</div>`:`<div class="account-empty">${esc(t('none'))}</div>`;
  const cityOptions=['','东京','香港'].map(value=>`<button class="account-city ${state.accountCity===value?'active':''}" type="button" data-account-city="${esc(value)}">${esc(cityDisplay(value))}</button>`).join('');
- els.accountPanel.innerHTML=`<div class="account-head"><div><p class="eyebrow">MY PAGE</p><strong>${esc(t('mypage'))}</strong><span>${esc(state.user==='guest'?'Guest':state.user)}</span></div><div class="account-actions"><button id="accountBackButton" class="ghost">${esc(t('back'))}</button><button id="logoutButton" class="ghost">${esc(t('logout'))}</button></div></div><div class="account-city-row">${cityOptions}</div><div class="account-summary"><span>${esc(cityDisplay(state.accountCity))}${esc(t('done'))} <strong>${dones.length}</strong></span><span>${esc(t('want'))} <strong>${wants.length}</strong></span><span>${esc(t('favorite'))} <strong>${favs.length}</strong></span><span>${esc(t('globalDone'))} <strong>${allDones.length}</strong></span></div><div class="account-sections"><section><h3>${esc(t('done'))}</h3>${list(dones)}</section><section><h3>${esc(t('want'))}</h3>${list(wants)}</section><section><h3>${esc(t('favorite'))}</h3>${list(favs)}</section></div>`;
+ const memberClass=`account-member ${esc(state.membership.status)}`;
+ const memberMessage=state.user==='guest'?'登录后确认会员状态':state.membership.message;
+ els.accountPanel.innerHTML=`<div class="account-head"><div><p class="eyebrow">MY PAGE</p><strong>${esc(t('mypage'))}</strong><span>${esc(state.user==='guest'?'Guest':state.user)}</span></div><div class="account-actions"><button id="accountBackButton" class="ghost">${esc(t('back'))}</button><button id="logoutButton" class="ghost">${esc(t('logout'))}</button></div></div><div class="${memberClass}"><div><span>会员状态</span><strong>${esc(memberMessage)}</strong><small>绑定邮箱：${esc(state.user==='guest'?'未登录':state.user)}</small></div><div><span>方案</span><strong>${esc(state.membership.plan)}</strong><small>下次续费：${esc(state.membership.renewal)}</small></div><div class="account-member-actions"><button id="accountMembershipButton" class="ghost" type="button">会员订阅</button><button id="accountManageSubscriptionButton" class="ghost" type="button">管理订阅</button></div></div><div class="account-city-row">${cityOptions}</div><div class="account-summary"><span>${esc(cityDisplay(state.accountCity))}${esc(t('done'))} <strong>${dones.length}</strong></span><span>${esc(t('want'))} <strong>${wants.length}</strong></span><span>${esc(t('favorite'))} <strong>${favs.length}</strong></span><span>${esc(t('globalDone'))} <strong>${allDones.length}</strong></span></div><div class="account-sections"><section><h3>${esc(t('done'))}</h3>${list(dones)}</section><section><h3>${esc(t('want'))}</h3>${list(wants)}</section><section><h3>${esc(t('favorite'))}</h3>${list(favs)}</section></div>`;
  $('accountBackButton')?.addEventListener('click',()=>{state.accountExpanded=false;updateAccount();window.scrollTo({top:0,behavior:'smooth'})});
  $('logoutButton')?.addEventListener('click',()=>setUser('guest'));
+ $('accountMembershipButton')?.addEventListener('click',()=>{els.membershipModal?.showModal();checkMembershipStatus()});
+ $('accountManageSubscriptionButton')?.addEventListener('click',manageSubscription);
  document.querySelectorAll('[data-account-city]').forEach(btn=>btn.addEventListener('click',()=>{state.accountCity=btn.dataset.accountCity;updateAccount()}));
+ if(state.membership.status==='unknown')checkMembershipStatus();
 }
 function render(){els.grid.innerHTML='';state.filtered.forEach(x=>els.grid.appendChild(makeCard(x)));els.visible.textContent=state.filtered.length;els.empty.hidden=state.filtered.length!==0;updateCompare();updateAccount()}
 function apply(){
