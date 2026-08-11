@@ -279,6 +279,22 @@ async function checkMembershipStatus(){
   if(els.membershipStatus)els.membershipStatus.textContent='会员状态暂时无法确认。';
  }
 }
+function handleCheckoutReturn(){
+ const params=new URLSearchParams(location.search);
+ const checkout=params.get('checkout');
+ if(!checkout)return;
+ if(els.membershipModal)els.membershipModal.showModal();
+ if(els.membershipStatus){
+  els.membershipStatus.textContent=checkout==='success'
+   ? '支付完成，正在确认会员状态。'
+   : '支付已取消，当前未完成订阅。';
+ }
+ if(checkout==='success')checkMembershipStatus();
+ params.delete('checkout');
+ params.delete('session_id');
+ const nextUrl=`${location.pathname}${params.toString()?`?${params}`:''}${location.hash}`;
+ history.replaceState({},'',nextUrl);
+}
 async function startCheckout(plan){
  try{
   const email=requireEmail();
@@ -681,4 +697,4 @@ els.checkoutButtons.forEach(btn=>btn.addEventListener('click',()=>startCheckout(
 els.manageSubscriptionButton?.addEventListener('click',manageSubscription);
 els.loginClose.addEventListener('click',()=>els.loginModal.close());
 els.loginSubmit.addEventListener('click',()=>setUser(els.loginName.value));
-init().catch(e=>{els.empty.hidden=false;els.empty.textContent='数据加载失败，请确认已部署到 GitHub Pages。';console.error(e)});
+init().then(handleCheckoutReturn).catch(e=>{els.empty.hidden=false;els.empty.textContent='数据加载失败，请确认已部署到 GitHub Pages。';console.error(e)});

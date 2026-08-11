@@ -30,14 +30,14 @@
 ## Stripe 订阅
 Stripe 后端接口需要部署到支持 Node API Routes 的环境，例如 Vercel。只上传到 GitHub Pages 时，前端可以显示会员入口，但不能完成真实 Checkout。
 
-必需环境变量：
+Checkout 测试必需环境变量：
 - `STRIPE_SECRET_KEY`：Stripe test/live secret key
-- `STRIPE_WEBHOOK_SECRET`：Stripe webhook signing secret
 - `SITE_URL`：正式站点地址
-
-可选环境变量：
 - `STRIPE_MONTHLY_PRICE_ID`：StarTable Premium Monthly 的 Price ID
 - `STRIPE_YEARLY_PRICE_ID`：StarTable Premium Yearly 的 Price ID
+
+Webhook 启用后再添加：
+- `STRIPE_WEBHOOK_SECRET`：Stripe webhook signing secret
 
 如果不配置 Price ID，后端会按产品名查找现有 Stripe 产品和已有 active recurring Price。代码不会创建新的 Stripe Product 或 Price：
 - `StarTable Premium Monthly`
