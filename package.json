@@ -7,7 +7,7 @@
     "node": "22.x"
   },
   "scripts": {
-    "check": "node --check app.js && node --check restaurant.js && node --check api/stripe/create-checkout-session.js && node --check api/stripe/create-portal-session.js && node --check api/stripe/subscription-status.js && node --check api/stripe/webhook.js"
+    "check": "node -e \"JSON.parse(require('fs').readFileSync('data/cities.json','utf8')); JSON.parse(require('fs').readFileSync('data/restaurant-template.json','utf8'))\" && node --check app.js && node --check restaurant.js && node --check scripts/audit_completeness.js && node --check scripts/audit_product_readiness.js && node --check scripts/verify_detail_links.js && node --check scripts/verify_return_urls.js && node scripts/verify_detail_links.js && node scripts/verify_return_urls.js && node scripts/audit_product_readiness.js && node --check api/_http.js && node --check api/_data.js && node --check api/_auth.js && node --check api/_subscription.js && node --check api/auth/request-code.js && node --check api/auth/verify-code.js && node --check api/restaurants.js && node --check api/me.js && node --check api/favorites.js && node --check api/assistant.js && node --check api/stripe/create-checkout-session.js && node --check api/stripe/create-portal-session.js && node --check api/stripe/subscription-status.js && node --check api/stripe/webhook.js && node --check scripts/audit_city.js && node --check scripts/verify_city_regression.js && node scripts/audit_city.js all && node scripts/verify_city_regression.js && node --check scripts/verify_city_intake.js && node scripts/verify_city_intake.js && node --check scripts/verify_verified_city_batches.js && node scripts/verify_verified_city_batches.js"
   },
   "dependencies": {
     "stripe": "^18.5.0"

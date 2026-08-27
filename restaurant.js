@@ -2,12 +2,67 @@ const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const stars=n=>'★'.repeat(n);
 const diff=n=>n?'★'.repeat(n)+'☆'.repeat(5-n):'待评估';
+const normalizeSearch=value=>String(value||'').toLowerCase().normalize('NFKC').replace(/\s+/g,'').replace(/[·・･\-.＿_]/g,'').replace(/[臺]/g,'台').replace(/[龍]/g,'龙').replace(/[銀]/g,'银').replace(/[壽]/g,'寿').replace(/[廣]/g,'广').replace(/[國]/g,'国').replace(/[廳]/g,'厅').replace(/[樓]/g,'楼').replace(/[灣]/g,'湾').replace(/[麵]/g,'面');
+const normalizeId=value=>normalizeSearch(value).replace(/[^a-z0-9\u4e00-\u9fffぁ-んァ-ンー]/g,'');
+const slugFromName=value=>String(value||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/&/g,' and ').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
 const activeUser=localStorage.getItem('stUser')||'guest';
 const prefKey=name=>`st:${activeUser}:${name}`;
 const userState={
  favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),
  marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}')
 };
+let cityConfig={cities:[],defaultPriceTiers:[]};
+const cnyFallbackRates={JPY:.049,HKD:.92,EUR:8.35,USD:7.2,CNY:1};
+let cnyRates={...cnyFallbackRates};
+function listReturnUrl(){
+ const raw=new URLSearchParams(location.search).get('return');
+ if(raw){
+  try{
+   if(/^[?#]/.test(raw))return `./index.html${raw}`;
+   if(/^\.\/index\.html(?:[?#].*)?$/.test(raw))return raw;
+   if(/^index\.html(?:[?#].*)?$/.test(raw))return `./${raw}`;
+   const url=new URL(raw, location.href);
+   if(url.origin===location.origin)return `./index.html${url.search}${url.hash}`;
+  }catch(error){
+   console.warn('Invalid return URL', error);
+  }
+ }
+ return './index.html';
+}
+function updateBackLinks(){
+ const href=listReturnUrl();
+ document.querySelectorAll('[data-back-list], .nav-link').forEach(link=>link.setAttribute('href',href));
+}
+function restaurantIdFromLocation(){
+ const params=new URLSearchParams(location.search);
+ const id=params.get('id');
+ if(id)return id;
+ const hashParams=new URLSearchParams(String(location.hash||'').replace(/^#/,''));
+ const hashId=hashParams.get('id');
+ if(hashId)return hashId;
+ const match=location.pathname.match(/\/restaurant(?:\.html)?\/([^/?#]+)/);
+ if(match)return decodeURIComponent(match[1]);
+ return sessionStorage.getItem('stPendingRestaurantId')||'';
+}
+function findRestaurantById(data,id){
+ const raw=String(id||'').trim();
+ if(!raw)return null;
+ const exact=data.find(item=>item.id===raw);
+ if(exact)return exact;
+ const normalized=normalizeId(raw);
+ const direct=data.find(item=>normalizeId(item.id)===normalized);
+ if(direct)return direct;
+ const withoutCity=raw.replace(/^(tokyo|hk|hong-kong|shanghai|paris)-/i,'');
+ if(withoutCity&&withoutCity!==raw){
+  const stripped=data.find(item=>item.id===withoutCity||normalizeId(item.id)===normalizeId(withoutCity));
+  if(stripped)return stripped;
+ }
+ const citylessNormalized=normalizeId(withoutCity);
+ return data.find(item=>[item.name,item.nameEn,item.nameZh,item.nameJa,...(item.aliases||[]),...(item.searchKeywords||[])].some(candidate=>{
+  const slug=slugFromName(candidate);
+  return slug&&(slug===raw||slug===withoutCity||normalizeId(slug)===normalized||normalizeId(slug)===citylessNormalized);
+ }))||null;
+}
 function saveUserState(){
  localStorage.setItem(prefKey('favorites'),JSON.stringify([...userState.favorites]));
  localStorage.setItem(prefKey('marks'),JSON.stringify(userState.marks));
@@ -45,18 +100,85 @@ function conceptText(item){
  const cuisine=item.cuisineZh||item.cuisine||'料理';
  return `以${cuisine}为核心，呈现季节食材与餐厅个性。`;
 }
+function ratingInfo(item){
+ const r=item.ratings||{};
+ const config=cityConfigForItem(item);
+ for(const platform of config?.ratingPlatforms||[]){
+  const value=r[platform.key];
+  if(value)return {label:platform.label,value,url:r[platform.urlKey]};
+ }
+ return r.localScore?{label:r.localPlatform||'本地评分',value:r.localScore,url:r.localUrl}:null;
+}
+function ratingRowHtml(item){
+ const info=ratingInfo(item);
+ if(info)return `<div><dt>${esc(info.label)}</dt><dd>${esc(info.value)}</dd></div>`;
+ if(item.ratings?.publicInfoStatus==='stable public score not found'){
+  return '<div><dt>本地评分</dt><dd>已核对，暂无稳定公开评分。</dd></div>';
+ }
+ return '';
+}
 function fieldSource(item,field){
  const checked=item.sync?.lastChecked||item.transport?.lastChecked||'2026-08-02';
- const map={basic:'官网 / Tabelog / 预约页',transport:'地址与车站公开信息',reservation:'官网 / 预约页',course:'官网 / 预约页 / Tabelog',rating:'Tabelog',policy:'官网 / 预约页',budget:'官网 / 预约页 / Tabelog'};
+ const ratingSource=(cityConfigForItem(item)?.ratingPlatforms||[]).map(x=>x.label).filter(Boolean).join(' / ')||'本地评分平台';
+ const map={basic:'官网 / 米其林 / 公开预约页',transport:'地址与车站公开信息',reservation:'官网 / 预约页 / 电话',course:'官网 / 预约页 / 米其林',rating:ratingSource,policy:'官网 / 预约页',budget:'官网 / 预约页 / 米其林'};
  return `<span class="field-source">${esc(map[field]||'公开来源')} · ${esc(checked)}</span>`;
 }
 function sourceBadges(item){
  const badges=[];
- if(item.sync?.source)badges.push('来源：公开官网/预约页/Tabelog');
+ const ratingSource=(cityConfigForItem(item)?.ratingPlatforms||[]).map(x=>x.label).filter(Boolean).join('/')||'本地评分平台';
+ if(item.sync?.source)badges.push(`来源：公开官网/预约页/米其林/${ratingSource}`);
  if(item.sync?.lastChecked)badges.push(`检查：${item.sync.lastChecked}`);
  if(item.dressCode?.publicInfoStatus==='not explicitly published')badges.push('着装需预约确认');
  if(item.childPolicy?.publicInfoStatus==='not explicitly published')badges.push('儿童政策需预约确认');
  return badges.map(x=>`<span class="source-badge">${esc(x)}</span>`).join('');
+}
+function cityConfigForItem(item){
+ const raw=String(item.city||'').toLowerCase();
+ return cityConfig.cities.find(config=>String(config.dataCity||'').toLowerCase()===raw||String(config.labelZh||'').toLowerCase()===raw||String(config.id||'').toLowerCase()===raw)||null;
+}
+function currencyForItem(item){
+ return cityConfigForItem(item)?.currency||'CNY';
+}
+function parseLocalAmount(text,currency){
+ const value=String(text||'');
+ const patterns={
+  HKD:/HK\$\s*([0-9][0-9,]*(?:\.\d+)?)/i,
+  EUR:/€\s*([0-9][0-9,]*(?:\.\d+)?)/,
+  USD:/\$\s*([0-9][0-9,]*(?:\.\d+)?)/,
+  JPY:/¥\s*([0-9][0-9,]*(?:\.\d+)?)/,
+  CNY:/¥\s*([0-9][0-9,]*(?:\.\d+)?)/
+ };
+ const match=(patterns[currency]||/([0-9][0-9,]*(?:\.\d+)?)/).exec(value);
+ if(!match)return null;
+ const amount=Number(match[1].replace(/,/g,''));
+ return Number.isFinite(amount)?amount:null;
+}
+function cnyEstimate(amount,currency){
+ const rate=cnyRates[currency]||cnyFallbackRates[currency];
+ if(!amount||!rate||currency==='CNY')return null;
+ const cny=amount*rate;
+ const rounded=cny>=1000?Math.round(cny/100)*100:Math.round(cny/10)*10;
+ return `约 ¥${rounded.toLocaleString('zh-CN')} 人民币`;
+}
+function priceHtml(item,price){
+ const currency=currencyForItem(item);
+ const amount=parseLocalAmount(price,currency);
+ const estimate=cnyEstimate(amount,currency);
+ return `<span class="local-price">${esc(price||'需预约确认')}</span>${estimate?`<span class="cny-price">${esc(estimate)}</span>`:''}`;
+}
+function budgetHtml(item){
+ const b=item.budget;
+ if(!b||b.verified===false)return '需预约确认';
+ const currency=currencyForItem(item);
+ const lunch=b.lunchFrom!=null?cnyEstimate(Number(b.lunchFrom),currency):null;
+ const dinner=b.dinnerFrom!=null?cnyEstimate(Number(b.dinnerFrom),currency):null;
+ return `<span class="budget-line">Lunch ${esc(localBudgetAmount(item,b.lunchFrom))}${lunch?`<span class="cny-price">${esc(lunch)}</span>`:''}</span><span class="budget-line">Dinner ${esc(localBudgetAmount(item,b.dinnerFrom))}${dinner?`<span class="cny-price">${esc(dinner)}</span>`:''}</span>`;
+}
+function localBudgetAmount(item,value){
+ if(value==null)return '需预约确认';
+ const config=cityConfigForItem(item);
+ const symbol=config?.currencySymbol||'¥';
+ return `${symbol}${Number(value).toLocaleString('zh-CN')} 起`;
 }
 function channelLabel(value){
  const key=String(value||'').toLowerCase();
@@ -68,6 +190,24 @@ function channelLabel(value){
  if(key.includes('hotel')||key.includes('concierge'))return '酒店 Concierge';
  if(key.includes('official'))return '官网预约';
  return value||'预约渠道待确认';
+}
+function reservationHref(item){
+ const direct=item.links?.reservation||item.links?.official||item.links?.localListing;
+ if(direct)return direct;
+ const phone=String(item.phone||'').replace(/[^\d+]/g,'');
+ return phone?`tel:${phone}`:'';
+}
+function isOfficialUrl(url){
+ return url && !/dianping\.com\/search|dianping\.com\/shop/i.test(url);
+}
+function reservationButtonLabel(item){
+ return '前往官网预约';
+}
+function reserveActionHtml(item){
+ const href=reservationHref(item);
+ if(!href)return `<span class="reserve reserve-disabled">${esc(reservationButtonLabel(item))}</span>`;
+ const external=!href.startsWith('tel:')?' target="_blank" rel="noopener"':'';
+ return `<a class="reserve" href="${esc(href)}"${external}>${esc(reservationButtonLabel(item))}</a>`;
 }
 function reservationAdvice(item){
  const r=item.reservation||{};
@@ -115,15 +255,35 @@ function detailHeroMediaHtml(item){
  const url=heroImageUrl(item);
  return `<div class="detail-hero-media ${url?'has-image':''}">${url?`<img src="${esc(url)}" alt="${esc(item.nameZh||item.name)} 餐厅照片" loading="lazy" onerror="this.remove();this.parentElement.classList.remove('has-image')">`:''}<span>STARTABLE</span></div>`;
 }
-function mealTable(items){
+function mealTable(item,items){
  if(!items?.length)return '<div class="content-empty">该餐期暂无公开套餐信息。</div>';
- return `<div class="course-list">${items.map(x=>`<article class="course-card"><div class="course-main"><h4>${esc(x.name)}</h4><strong>${esc(x.price)}</strong></div><div class="course-body">${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${esc(d)}</li>`).join('')}</ol>`:'<p>待补充</p>'}</div>${x.note?`<p class="course-note">${esc(x.note)}</p>`:''}</article>`).join('')}</div>`;
+ return `<div class="course-list">${items.map(x=>`<article class="course-card"><div class="course-main"><h4>${esc(x.name)}</h4><strong>${priceHtml(item,x.price)}</strong></div><div class="course-body">${x.details?.length?`<ol class="course-details">${x.details.map(d=>`<li>${esc(d)}</li>`).join('')}</ol>`:'<p>待补充</p>'}</div>${x.note?`<p class="course-note">${esc(x.note)}</p>`:''}</article>`).join('')}</div>`;
 }
 function links(item){
- return Object.entries(item.links||{}).filter(([k,v])=>['official','reservation','tabelog','instagram'].includes(k)&&v).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(k)}</a>`).join('');
+ const entries=Object.entries(item.links||{}).filter(([k,v])=>['official','reservation','localListing','tabelog','openrice','dianping','ctrip','instagram'].includes(k)&&v);
+ if(entries.length)return entries.map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(linkLabel(k,v))}</a>`).join('');
+ if(item.phone)return `<a href="${esc(reservationHref(item))}">电话预约</a>`;
+ return '<span>链接待补充</span>';
+}
+function linkLabel(key,url){
+ if(key==='official')return isOfficialUrl(url)?'官网':'公开入口';
+ if(key==='reservation')return isOfficialUrl(url)?'预约':'预约入口';
+ if(key==='localListing'||key==='dianping')return '大众点评';
+ if(key==='openrice')return 'OpenRice';
+ if(key==='ctrip')return '携程';
+ if(key==='tabelog')return 'Tabelog';
+ if(key==='instagram')return 'Instagram';
+ return key;
+}
+function isTokyo(item){
+ return String(item.city||'').toLowerCase().includes('tokyo');
 }
 function render(item){
  document.title=`${item.nameZh||item.name} | StarTable`;
+ if(item.locked){
+  $('restaurantDetail').innerHTML=`<section class="detail-identity"><div class="detail-copy locked-detail"><p class="eyebrow">PREMIUM</p><h1>${esc(item.nameZh||item.name)} <span class="stars">${stars(item.stars||0)}</span></h1><p class="sub">${esc([item.nameJa,item.nameEn,item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</p><p class="detail-lead">该餐厅完整资料仅会员可查看。会员可解锁全部餐厅详情、预约入口、Course、用餐规则和高阶筛选。</p><div class="restaurant-actions"><a class="reserve" href="./index.html#membership">返回首页开通会员</a></div></div></section>`;
+  return;
+ }
  const isFav=userState.favorites.has(item.id);
  const mark=userState.marks[item.id];
  $('restaurantDetail').innerHTML=`
@@ -147,16 +307,18 @@ function render(item){
     <div><dt>地址</dt><dd>${esc(item.address||'待补充')}</dd></div>
     <div><dt>电话</dt><dd>${esc(item.phone||'待补充')}</dd></div>
     <div><dt>交通信息</dt><dd class="station-line">${stationHtml(item).replace('交通信息：','')}</dd></div>
-    <div class="budget-row"><dt>预算</dt><dd>${esc(budgetText(item.budget))}</dd></div>
-    <div><dt>Tabelog</dt><dd>${esc(item.ratings?.tabelogScore||'待补充')}</dd></div>
+    <div class="budget-row"><dt>预算</dt><dd>${budgetHtml(item)}</dd></div>
+    ${ratingRowHtml(item)}
    </dl>
+   ${fieldSource(item,'basic')}
   </section>
   <section class="detail-block">
    <h3>预约信息</h3>
    <p class="detail-lead">${esc(`${diff(item.reservation?.difficulty||0)} ${item.reservation?.difficultyLabel||''}`)}</p>
    <p>${esc(item.reservation?.bookingRule||'需预约确认')}</p>
    <div class="reservation-guide">${reservationGuideHtml(item)}</div>
-   <a class="reserve" href="${esc(item.links?.reservation||item.links?.official||'#')}" target="_blank" rel="noopener">前往官网预约</a>
+   ${reserveActionHtml(item)}
+   ${fieldSource(item,'reservation')}
   </section>
   <section class="detail-block">
    <h3>用餐规则</h3>
@@ -166,6 +328,7 @@ function render(item){
     <div><dt>Solo dining</dt><dd>${esc(soloText(item))}</dd></div>
    </dl>
    <ul class="manners detail-manners">${mannersHtml(item)}</ul>
+   ${fieldSource(item,'policy')}
   </section>
   <section class="detail-block">
    <h3>链接</h3>
@@ -173,8 +336,8 @@ function render(item){
   </section>
  </div>
  <div class="detail-menu-grid">
-  <section class="modal-section"><h3>Lunch Course</h3>${mealTable(item.lunch)}${fieldSource(item,'course')}</section>
-  <section class="modal-section"><h3>Dinner Course</h3>${mealTable(item.dinner)}${fieldSource(item,'course')}</section>
+  <section class="modal-section"><h3>Lunch Course</h3>${mealTable(item,item.lunch)}${fieldSource(item,'course')}</section>
+  <section class="modal-section"><h3>Dinner Course</h3>${mealTable(item,item.dinner)}${fieldSource(item,'course')}</section>
  </div>`;
  $('detailFavorite').addEventListener('click',()=>{
   userState.favorites.has(item.id)?userState.favorites.delete(item.id):userState.favorites.add(item.id);
@@ -196,9 +359,79 @@ function render(item){
 }
 
 async function init(){
- const id=new URLSearchParams(location.search).get('id');
- const data=await fetch('./data/restaurants.json').then(r=>r.json());
- const item=data.find(x=>x.id===id)||data[0];
+ updateBackLinks();
+ cityConfig=await loadCityConfig();
+ loadFxRates().then(()=>{
+  const id=restaurantIdFromLocation();
+  if(id)loadRestaurantData(id).then(item=>item&&render(item));
+ }).catch(error=>console.warn('FX rate load failed', error));
+ const id=restaurantIdFromLocation();
+ const pendingReturn=sessionStorage.getItem('stPendingReturnUrl');
+ if(!new URLSearchParams(location.search).get('return')&&pendingReturn){
+  const url=new URL(location.href);
+  if(id)url.searchParams.set('id',id);
+  url.searchParams.set('return',pendingReturn);
+  history.replaceState(null,'',`${url.pathname}${url.search}${url.hash}`);
+  updateBackLinks();
+ }
+ if(!id){
+  renderMissing('缺少餐厅 ID。请从餐厅列表重新打开详情页。');
+  return;
+ }
+ const item=await loadRestaurantData(id);
+ if(!item){
+  renderMissing('未找到这家餐厅。请返回列表重新选择。');
+  return;
+ }
  render(item);
+}
+function renderMissing(message){
+ $('restaurantDetail').innerHTML=`<section class="detail-identity"><div class="detail-copy locked-detail"><p class="eyebrow">NOT FOUND</p><h1>餐厅详情未找到</h1><p class="detail-lead">${esc(message)}</p><div class="restaurant-actions"><a class="reserve" data-back-list href="${esc(listReturnUrl())}">返回餐厅列表</a></div></div></section>`;
+}
+async function loadCityConfig(){
+ try{
+  const res=await fetch('./data/cities.json');
+  if(res.ok)return res.json();
+ }catch(error){
+  console.warn('City config load failed', error);
+ }
+ return {cities:[],defaultPriceTiers:[]};
+}
+async function loadFxRates(){
+ const cached=JSON.parse(localStorage.getItem('stFxRates')||'null');
+ const today=new Date().toISOString().slice(0,10);
+ if(cached?.date===today&&cached.rates){
+  cnyRates={...cnyFallbackRates,...cached.rates,CNY:1};
+  return;
+ }
+ const res=await fetch('https://open.er-api.com/v6/latest/CNY');
+ if(!res.ok)throw new Error('fx failed');
+ const data=await res.json();
+ const rates=data.rates||{};
+ const next={CNY:1};
+ ['JPY','HKD','EUR','USD'].forEach(code=>{if(rates[code])next[code]=1/Number(rates[code])});
+ cnyRates={...cnyFallbackRates,...next};
+ localStorage.setItem('stFxRates',JSON.stringify({date:today,rates:next}));
+}
+async function loadRestaurantData(id){
+ if(location.protocol!=='file:'&&id){
+  try{
+   const token=localStorage.getItem('stSessionToken')||'';
+   const headers=token?{Authorization:`Bearer ${token}`}:{};
+   const res=await fetch(`/api/restaurants?id=${encodeURIComponent(id)}`,{headers});
+   if(res.status===402){
+    const payload=await res.json();
+    return payload.restaurant ? {...payload.restaurant, locked:true} : null;
+   }
+   if(res.ok){
+    const payload=await res.json();
+    if(payload.restaurant)return payload.restaurant;
+   }
+  }catch(error){
+   console.warn('API restaurant detail load failed, falling back to JSON', error);
+  }
+ }
+ const data=await fetch('./data/restaurants.json').then(r=>r.json());
+ return findRestaurantById(data,id);
 }
 init().catch(e=>{$('restaurantDetail').innerHTML='<div class="empty">餐厅详情加载失败。</div>';console.error(e)});

@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>StarTable</title>
-<meta name="description" content="东京与香港星级餐厅信息浏览与筛选平台">
+<meta name="description" content="东京、香港、上海与巴黎星级餐厅信息浏览与筛选平台">
 <link rel="stylesheet" href="./styles.css?v=202608030934">
 <link rel="stylesheet" href="./overrides.css?v=202608072255">
 </head>
 <body>
 <header class="topbar"><div class="shell nav">
 <div class="brand-cluster"><a class="brand" href="./index.html"><span class="brand-mark">✦</span><span class="brand-word"><b>STARTABLE</b><em>星宴</em></span></a><button id="membershipButton" class="city-switch member-button" type="button">会员订阅</button></div>
-<div class="nav-actions"><div class="language-switch" aria-label="Language"><button type="button" data-lang="zh">中文</button><button type="button" data-lang="en">EN</button></div><div class="city-picker"><button id="cityButton" class="city-switch" type="button" aria-haspopup="menu" aria-expanded="false">全球</button><div id="cityMenu" class="city-menu" hidden><button type="button" data-city="">全球</button><button type="button" data-city="东京">东京</button><button type="button" data-city="香港">香港</button></div><select id="cityFilter" class="city-native" aria-hidden="true" tabindex="-1" hidden><option value="">全球</option><option value="东京">东京</option><option value="香港">香港</option></select></div><button id="loginButton" class="ghost">Log in</button><button id="themeButton" class="ghost">深色模式</button></div>
+<div class="nav-actions"><div class="language-switch" aria-label="Language"><button type="button" data-lang="zh">中文</button><button type="button" data-lang="en">EN</button></div><div class="city-picker"><button id="cityButton" class="city-switch" type="button" aria-haspopup="menu" aria-expanded="false">全球</button><div id="cityMenu" class="city-menu" hidden></div><select id="cityFilter" class="city-native" aria-hidden="true" tabindex="-1" hidden></select></div><button id="loginButton" class="ghost">Log in</button><button id="themeButton" class="ghost">深色模式</button></div>
 </div></header>
 
 <section class="hero"><div class="shell hero-grid">
 <div><p class="eyebrow">MICHELIN RESTAURANT DATABASE</p>
 <h1>Find your next<br>beautiful table.</h1>
-<p class="sub"><span>收录东京与香港 2026 全部星级米其林餐厅。</span><span>按城市、地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与评分筛选。</span></p></div>
+<p class="sub"><span>收录东京、香港、上海与巴黎 2026 全部星级米其林餐厅。</span><span>按城市、地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与评分筛选。</span></p></div>
 <div class="hero-stats">
 <div><strong id="totalRestaurants">0</strong><span>2026 星级餐厅合计</span></div>
 <div><strong id="threeStarCount">0</strong><span>2026 三星</span></div>
@@ -35,7 +35,7 @@
 <select id="starFilter"><option value="">全部星级</option><option value="3">三星</option><option value="2">二星</option><option value="1">一星</option></select>
 <select id="cuisineFilter"><option value="">全部菜系</option></select>
 <select id="areaFilter"><option value="">全部地区</option></select>
-<select id="priceFilter"><option value="">全部价格</option><option value="under-10000">1万日元以下</option><option value="10000-20000">1~2万日元</option><option value="20000-30000">2~3万日元</option><option value="30000-40000">3~4万日元</option><option value="40000-50000">4~5万日元</option><option value="50000-plus">5万日元以上</option></select>
+<select id="priceFilter"><option value="">全部价格</option></select>
 <select id="dressFilter"><option value="">着装要求</option><option value="required">有 Dress Code</option><option value="none">无明确要求</option><option value="pending">需预约确认</option></select>
 <select id="childFilter"><option value="">儿童政策</option><option value="yes">可带儿童</option><option value="private">仅包厢可</option><option value="no">不可带儿童</option><option value="pending">需预约确认</option></select>
 </div>
@@ -49,6 +49,7 @@
 </section>
 
 <section class="result-bar"><div>显示 <strong id="visibleCount">0</strong> 家</div><div class="result-actions"><button id="resetButton" class="ghost">重置</button></div></section>
+<section id="accessNotice" class="access-notice" hidden></section>
 <section id="accountPanel" class="account-panel" hidden></section>
 <section id="grid" class="grid"></section>
 <div id="empty" class="empty" hidden>没有符合条件的餐厅。</div>
@@ -102,9 +103,11 @@
 <button id="loginClose" class="modal-close" type="button">关闭</button>
 <div class="auth-brand"><span class="brand-mark">✦</span><strong>STARTABLE</strong><em>星宴</em></div>
 <h2 class="modal-title">进入 My page</h2>
-<p class="modal-meta">输入邮箱后可查看你的已摘星、想摘星和收藏餐厅。本版本会保存在当前浏览器中。</p>
+<p class="modal-meta">输入邮箱并通过验证码登录。收藏、已摘星与会员状态会绑定到当前邮箱。</p>
 <label class="auth-field"><span>邮箱</span><input id="loginName" type="email" placeholder="ririko@example.com"></label>
-<button id="loginSubmit" class="reserve auth-submit" type="button">进入 My page</button>
+<label class="auth-field auth-code-field"><span>验证码</span><input id="loginCode" type="text" inputmode="numeric" maxlength="6" placeholder="6 位验证码"></label>
+<p id="loginStatus" class="auth-status"></p>
+<div class="auth-actions"><button id="loginCodeSend" class="ghost" type="button">发送验证码</button><button id="loginSubmit" class="reserve auth-submit" type="button">验证并进入</button></div>
 </div>
 </dialog>
 <dialog id="membershipModal" class="modal membership-modal">
@@ -112,24 +115,30 @@
 <button id="membershipClose" class="modal-close" type="button">关闭</button>
 <div class="account-head membership-head"><div><p class="eyebrow">MEMBERSHIP</p><strong>星宴年会员</strong><span>通过 Stripe 安全订阅，解锁完整餐厅数据库与高阶筛选。</span></div></div>
 <div class="account-summary membership-summary">
-<span>月费 <strong>Monthly</strong></span>
-<span>年费 <strong>$99</strong></span>
+<span>月付 <strong>Monthly</strong></span>
+<span>年付 <strong>$99</strong></span>
 <span>餐厅浏览 <strong>全部</strong></span>
 </div>
 <div class="account-sections membership-sections">
 <section><h3>完整资料</h3><p>查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。</p></section>
 <section><h3>高级筛选</h3><p>不受 20 家浏览和 5 次搜索限制，按城市、餐期、价格与政策快速筛选。</p></section>
-<section><h3>我的星宴</h3><p>按全球、东京、HK 管理已摘星、想摘星和收藏餐厅。</p></section>
+<section><h3>我的星宴</h3><p>按全球、东京、香港、上海、巴黎管理已摘星、想摘星和收藏餐厅。</p></section>
 </div>
 <div class="membership-actions">
 <button class="reserve membership-cta" type="button" data-checkout-plan="monthly">Monthly 订阅</button>
 <button class="reserve membership-cta" type="button" data-checkout-plan="yearly">Yearly $99 / 年</button>
 <button id="manageSubscriptionButton" class="ghost membership-manage" type="button">管理订阅</button>
 </div>
-<p id="membershipStatus" class="membership-note">登录邮箱后可以测试 Stripe 订阅流程。</p>
+<p id="membershipStatus" class="membership-note">登录邮箱后会用同一邮箱跳转 Stripe 安全订阅。</p>
 </div>
 </dialog>
-<footer class="disclaimer shell"><span>本页为东京与香港 2026 米其林星级餐厅数据。价格、菜单、着装规定、儿童政策、预约规则会随餐厅官网和预约平台变化；实际信息以餐厅官网/预约页最新内容为准。</span><small>最后更新：<span id="lastUpdated">-</span></small><strong>© 2026 Rosen. All rights reserved.</strong></footer>
+<button id="assistantButton" class="assistant-fab" type="button" aria-label="打开星助理"><span>✦</span>星助理</button>
+<section id="assistantPanel" class="assistant-panel" hidden aria-label="星助理">
+<div class="assistant-head"><div><small>STAR ASSISTANT</small><strong>星助理</strong></div><button id="assistantClose" type="button" aria-label="关闭星助理">关闭</button></div>
+<div id="assistantMessages" class="assistant-messages"></div>
+<div class="assistant-input-row"><input id="assistantInput" type="text" placeholder="例如：东京银座、无 Dress Code、法餐"><button id="assistantSend" type="button">发送</button></div>
+</section>
+<footer class="disclaimer shell"><span>本页为东京、香港、上海与巴黎 2026 米其林星级餐厅数据。价格、菜单、着装规定、儿童政策、预约规则会随餐厅官网和预约平台变化；实际信息以餐厅官网/预约页最新内容为准。</span><small>最后更新：<span id="lastUpdated">-</span></small><strong>© 2026 AQUA PRIME LIMITED. All rights reserved. ｜ info@aquaprimegroup.com ｜ <a href="./about.html">About</a> ｜ <a href="./legal.html">条款与隐私</a></strong></footer>
 <button id="mobileFilterButton" class="mobile-filter" type="button">筛选</button>
-<script src="./app.js?v=202608111555"></script>
+<script src="./app.js?v=202608131900"></script>
 </body></html>

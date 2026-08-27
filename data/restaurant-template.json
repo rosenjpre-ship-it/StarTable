@@ -1,0 +1,120 @@
+{
+  "id": "city-restaurant-slug",
+  "city": "City Data Name",
+  "country": "Country",
+  "name": "Official name",
+  "nameZh": "中文名",
+  "nameEn": "English name",
+  "nameJa": "",
+  "stars": 1,
+  "cuisine": "Cuisine",
+  "cuisineZh": "菜系",
+  "area": "Area",
+  "areaZh": "地区",
+  "address": "完整地址",
+  "phone": "公开电话",
+  "links": {
+    "official": "https://",
+    "reservation": "https://",
+    "localListing": "https://"
+  },
+  "lunch": [
+    {
+      "name": "Lunch Course",
+      "price": "本地货币价格",
+      "details": ["菜品/品数/构成"],
+      "note": "来源与服务费说明"
+    }
+  ],
+  "dinner": [
+    {
+      "name": "Dinner Course",
+      "price": "本地货币价格",
+      "details": ["菜品/品数/构成"],
+      "note": "来源与服务费说明"
+    }
+  ],
+  "budget": {
+    "lunchFrom": null,
+    "dinnerFrom": null,
+    "verified": false,
+    "source": "official / reservation / local platform"
+  },
+  "reservation": {
+    "difficulty": 3,
+    "difficultyLabel": "中等",
+    "bookingRule": "预约开放规则",
+    "releaseTime": "放位时间",
+    "releaseWindow": "开放周期",
+    "platforms": ["official"],
+    "verified": false
+  },
+  "dressCode": {
+    "level": "需预约确认",
+    "required": null,
+    "notes": [],
+    "verified": false,
+    "publicInfoStatus": "pending"
+  },
+  "childPolicy": {
+    "diningRoomAllowed": null,
+    "privateRoomAllowed": null,
+    "minimumAge": null,
+    "notes": "需预约确认",
+    "verified": false,
+    "publicInfoStatus": "pending"
+  },
+  "soloDining": {
+    "available": null,
+    "minGuests": null,
+    "verified": false
+  },
+  "tableManners": {
+    "notes": []
+  },
+  "ratings": {
+    "localPlatform": "",
+    "localScore": "",
+    "localUrl": ""
+  },
+  "transport": {
+    "stations": [
+      {
+        "name": "最近车站",
+        "walkMinutes": 5,
+        "lines": ["线路"]
+      }
+    ],
+    "lastChecked": "YYYY-MM-DD"
+  },
+  "filters": {
+    "lunchAvailable": false,
+    "dinnerAvailable": true,
+    "priceTiers": [],
+    "lunchPriceTiers": [],
+    "dinnerPriceTiers": [],
+    "dressCategory": "pending",
+    "childCategory": "pending",
+    "soloDiningAvailable": false
+  },
+  "heroImage": "",
+  "imageSource": "",
+  "imageSourceUrl": "",
+  "imageSourceStatus": "official | licensed | stable-placeholder | external-risk",
+  "imageCheckedAt": "YYYY-MM-DD",
+  "sourceQuality": {
+    "basicInfo": "A",
+    "course": "A",
+    "reservation": "A",
+    "policy": "A/B/C/D",
+    "rating": "local platform / stable public score / stable public score not found",
+    "image": "official | licensed | city fallback"
+  },
+  "sync": {
+    "lastChecked": "YYYY-MM-DD",
+    "lastUpdated": "YYYY-MM-DD",
+    "source": "official / reservation / Michelin / local platform",
+    "changeSummary": "新增餐厅数据",
+    "autoCheckEnabled": false
+  }
+}

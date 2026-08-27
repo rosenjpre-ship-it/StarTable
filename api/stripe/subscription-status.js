@@ -1,4 +1,5 @@
 import { stripe, sendJson, subscriptionIsActive } from './_utils.js';
+import { sessionFromRequest } from '../_auth.js';
 
 async function productLabelForItem(item, cache) {
   const price = item.price;
@@ -24,6 +25,23 @@ async function productLabelForItem(item, cache) {
   return fallback;
 }
 
+function periodEndForSubscription(subscription) {
+  const candidates = [
+    subscription.current_period_end,
+    subscription.currentPeriodEnd,
+    subscription.billing_cycle_anchor,
+    subscription.items?.data?.[0]?.current_period_end,
+    subscription.items?.data?.[0]?.currentPeriodEnd
+  ];
+  const end = candidates.find(value => Number.isFinite(Number(value)) && Number(value) > 0);
+  return end ? Number(end) : null;
+}
+
+function formatDate(seconds) {
+  if (!seconds) return null;
+  return new Date(seconds * 1000).toISOString().slice(0, 10);
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
     res.setHeader('Allow', 'GET');
@@ -36,7 +54,8 @@ export default async function handler(req, res) {
 
   try {
     const url = new URL(req.url, `https://${req.headers.host}`);
-    const email = String(url.searchParams.get('email') || '').trim().toLowerCase();
+    const session = sessionFromRequest(req, url);
+    const email = String(session?.email || url.searchParams.get('email') || '').trim().toLowerCase();
     if (!email || !email.includes('@')) {
       return sendJson(res, 400, { error: 'A valid email is required' });
     }
@@ -61,10 +80,12 @@ export default async function handler(req, res) {
       for (const item of sub.items.data) {
         products.push(await productLabelForItem(item, productCache));
       }
+      const currentPeriodEnd = periodEndForSubscription(sub);
       subscriptionSummaries.push({
         id: sub.id,
         status: sub.status,
-        currentPeriodEnd: sub.current_period_end,
+        currentPeriodEnd,
+        renewalDate: formatDate(currentPeriodEnd),
         cancelAtPeriodEnd: sub.cancel_at_period_end,
         products
       });

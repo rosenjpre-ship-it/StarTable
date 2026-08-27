@@ -215,8 +215,9 @@ body.dark .map-canvas{background:linear-gradient(145deg,#1b241f,#262b25)}
   position:relative;
   min-height:190px;
   background:
-    linear-gradient(135deg,rgba(17,17,17,.82),rgba(48,40,29,.78) 48%,rgba(215,168,52,.62)),
-    radial-gradient(circle at 18% 22%,rgba(255,255,255,.18),transparent 210px);
+    radial-gradient(circle at 24% 22%,rgba(255,255,255,.24),transparent 150px),
+    radial-gradient(circle at 78% 70%,rgba(214,170,72,.36),transparent 190px),
+    linear-gradient(135deg,rgba(18,21,17,.9),rgba(56,47,36,.78) 48%,rgba(183,133,50,.62));
   background-size:cover;
   background-position:center;
   overflow:hidden;
@@ -245,20 +246,29 @@ body.dark .map-canvas{background:linear-gradient(145deg,#1b241f,#262b25)}
   inset:0;
   display:grid;
   place-items:center;
-  color:rgba(255,255,255,.78);
-  font:500 12px "Helvetica Neue",Arial,sans-serif;
+  color:rgba(255,255,255,.82);
+  font:500 12px "Cormorant Garamond","Times New Roman",serif;
   letter-spacing:.24em;
+  text-align:center;
+  text-shadow:0 14px 32px rgba(0,0,0,.42);
 }
 .media-fallback:before,
 .media-fallback:after{
   content:"";
   position:absolute;
-  width:160px;
+  width:150px;
   height:1px;
-  background:rgba(255,255,255,.28);
+  background:linear-gradient(90deg,transparent,rgba(246,220,153,.62),transparent);
 }
 .media-fallback:before{transform:translateY(-24px)}
 .media-fallback:after{transform:translateY(24px)}
+.card-media.image-failed{
+  background:
+    radial-gradient(circle at 20% 18%,rgba(255,255,255,.28),transparent 120px),
+    radial-gradient(circle at 72% 26%,rgba(234,201,115,.28),transparent 150px),
+    radial-gradient(circle at 55% 86%,rgba(82,120,95,.3),transparent 190px),
+    linear-gradient(135deg,#101713,#413929 54%,#8d6a2f);
+}
 .card-head{width:100%;display:block;border:0;background:transparent;color:var(--ink);padding:18px 18px 14px;text-align:left;cursor:pointer}
 .card-head:hover{background:color-mix(in srgb,var(--surface-2) 45%,transparent)}
 .meta{font-size:12px;color:var(--muted);display:flex;gap:7px;align-items:center}
@@ -1406,6 +1416,25 @@ th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);font
 tr:last-child td{border-bottom:0}
 th{font-size:12px;color:var(--muted);background:var(--surface-2)}
 .course-details{margin:0;padding-left:18px}.course-details li{margin:0 0 5px}
+.course-main strong,
+.budget-line{
+  display:grid;
+  gap:3px;
+  align-content:start;
+}
+.local-price{
+  color:var(--ink);
+  line-height:1.3;
+}
+.cny-price{
+  color:var(--faint);
+  font-size:12px;
+  font-weight:400;
+  line-height:1.45;
+}
+.budget-line+.budget-line{
+  margin-top:8px;
+}
 .link-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .link-list a{background:var(--surface-2);color:var(--ink);text-decoration:none;padding:9px 12px;border-radius:8px;border:1px solid var(--line);font-size:13px}
 .empty{padding:44px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:8px}

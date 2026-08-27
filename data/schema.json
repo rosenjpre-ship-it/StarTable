@@ -1,12 +1,15 @@
 {
-  "name": "StarTable Tokyo and Hong Kong Michelin starred restaurants",
-  "recordCount": 237,
+  "name": "StarTable Tokyo, Hong Kong, Shanghai, Paris and New York Michelin starred restaurants",
+  "recordCount": 488,
   "breakdown": {
-    "threeStar": 19,
-    "twoStar": 39,
-    "oneStar": 179
+    "threeStar": 34,
+    "twoStar": 86,
+    "oneStar": 368
   },
-  "scope": "东京与香港 2026 全部星级米其林餐厅",
+  "scope": "东京、香港、上海、巴黎与纽约星级米其林餐厅",
+  "cityConfig": "data/cities.json",
+  "restaurantTemplate": "data/restaurant-template.json",
+  "auditScript": "scripts/audit_completeness.js",
   "visibleModules": [
     "overview",
     "basicInfo",
@@ -31,6 +34,35 @@
     "staticCmsAdmin",
     "disclaimer"
   ],
+  "cityConfigFields": [
+    "id",
+    "dataCity",
+    "labelZh",
+    "labelEn",
+    "michelinYear",
+    "currency",
+    "ratingPlatforms",
+    "priceTiers",
+    "areaOrder"
+  ],
+  "cityExpansionChecklist": [
+    "确认该城市 2026 米其林星级餐厅总数与 1/2/3 星拆分",
+    "在 data/cities.json 定义城市 id、中文/英文名、货币、本地评分平台、价格区间与地区顺序",
+    "每家餐厅必须有 id、城市、星级、菜系、地址、电话、官网/预约/本地公开平台至少一个链接",
+    "Lunch/Dinner 可用性必须和 course 数据、预算起点、筛选字段一致",
+    "价格必须使用当地货币；如展示人民币换算，作为淡色估算显示，不替代当地价格",
+    "评分平台按城市本地习惯选择；没有稳定公开评分时标记 stable public score not found，不展示待接入",
+    "Dress Code、儿童政策、solo dining 不推测；官网无明确说明时使用需预约确认",
+    "图片必须标记 imageSourceStatus；外链失败时使用城市级高级占位封面",
+    "新增城市后必须运行 npm run check，并抽测城市筛选、星级筛选、搜索、详情页、返回列表"
+  ],
+  "sourceQualityLevels": {
+    "A": "餐厅官网、酒店官网、官方预约页或官方社交页面",
+    "B": "米其林、TableCheck、OMAKASE、TheFork、Pocket Concierge、OpenRice、大众点评、携程等主流平台",
+    "C": "本地公开餐饮媒体、菜单聚合平台或公开评论记录",
+    "D": "仅作参考的历史记录；页面必须提示以官网/预约页为准"
+  },
+  "imagePolicy": "优先使用官方或授权图片；不稳定外链需标记 external-risk；无稳定图片时使用 city fallback，不让用户看到空白主图。",
   "filterFields": [
     "city",
     "stars",
@@ -44,5 +76,6 @@
     "filters.dressCategory",
     "filters.childCategory"
   ],
-  "policy": "公开来源没有明确写出的政策，以需预约确认展示，不使用推测值。"
+  "policy": "公开来源没有明确写出的政策，以需预约确认展示，不使用推测值。",
+  "notes": "当前东京、香港、上海、巴黎与纽约已完成产品级核心审计；后续新增城市先按 cityExpansionChecklist 建城市配置和数据，再通过自动审计。"
 }

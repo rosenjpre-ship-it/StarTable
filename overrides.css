@@ -1616,3 +1616,400 @@ body.restaurant-detail-body .detail-identity .detail-hero-media{
     height:22px!important;
   }
 }
+
+/* Premium preview and assistant layer. */
+.member-button.premium{
+  background:linear-gradient(135deg,rgba(241,217,135,.98),rgba(207,159,47,.92) 56%,rgba(164,111,22,.9))!important;
+  color:#fff!important;
+  border-color:rgba(191,135,25,.64)!important;
+  text-shadow:0 1px 8px rgba(78,48,8,.22)!important;
+}
+.access-notice{
+  margin:18px 0 22px;
+  padding:18px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  border:1px solid rgba(212,170,70,.34);
+  border-radius:22px;
+  background:linear-gradient(135deg,rgba(255,250,238,.96),rgba(255,255,255,.92) 48%,rgba(240,232,211,.88));
+  box-shadow:0 18px 46px rgba(47,38,22,.08),inset 0 1px 0 rgba(255,255,255,.85);
+}
+.access-notice strong,
+.access-notice span{
+  display:block;
+}
+.access-notice strong{
+  margin-bottom:5px;
+  color:#a97717;
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.access-notice span{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.65;
+}
+.access-notice button,
+.assistant-input-row button,
+.assistant-head button,
+.assistant-message button,
+.limit-card .reserve{
+  border:1px solid rgba(206,165,70,.44);
+  border-radius:999px;
+  background:linear-gradient(135deg,rgba(241,217,135,.98),rgba(207,159,47,.92) 58%,rgba(164,111,22,.9));
+  color:#fff;
+  padding:10px 18px;
+  box-shadow:0 14px 30px rgba(121,87,24,.16),inset 0 1px 0 rgba(255,255,255,.45);
+  cursor:pointer;
+  white-space:nowrap;
+}
+.limit-card{
+  grid-column:1/-1;
+  padding:28px!important;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:22px;
+  background:
+    radial-gradient(circle at 16% 18%,rgba(229,190,92,.22),transparent 32%),
+    linear-gradient(135deg,#fffdf8,#fff 48%,#f4efe2)!important;
+}
+.limit-card h2{
+  margin:4px 0 8px;
+  font-family:"Songti SC","STSong","SimSun","Times New Roman",serif;
+  font-size:28px;
+  font-weight:600;
+  letter-spacing:0;
+}
+.limit-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.75;
+}
+.assistant-fab{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:70;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  border:1px solid rgba(212,170,70,.5);
+  border-radius:999px;
+  background:linear-gradient(135deg,rgba(24,22,18,.96),rgba(77,60,28,.95) 52%,rgba(198,148,35,.92));
+  color:#fff;
+  padding:13px 18px;
+  box-shadow:0 22px 50px rgba(24,18,8,.28),inset 0 1px 0 rgba(255,255,255,.22);
+  cursor:pointer;
+}
+.assistant-fab span{
+  color:#f6d97f;
+  text-shadow:0 0 14px rgba(246,217,127,.45);
+}
+.assistant-panel{
+  position:fixed;
+  right:24px;
+  bottom:86px;
+  z-index:71;
+  width:min(420px,calc(100vw - 32px));
+  border:1px solid rgba(212,170,70,.32);
+  border-radius:28px;
+  background:rgba(255,255,255,.96);
+  box-shadow:0 30px 80px rgba(22,19,14,.2),inset 0 1px 0 rgba(255,255,255,.82);
+  overflow:hidden;
+}
+.assistant-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:18px 20px;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(135deg,rgba(255,250,235,.92),rgba(255,255,255,.96));
+}
+.assistant-head small,
+.assistant-head strong{
+  display:block;
+}
+.assistant-head small{
+  color:#a97717;
+  font-size:10px;
+  letter-spacing:.18em;
+}
+.assistant-head strong{
+  margin-top:4px;
+  font-family:"Songti SC","STSong","SimSun","Times New Roman",serif;
+  font-size:24px;
+  font-weight:600;
+}
+.assistant-head button{
+  padding:8px 13px;
+  background:var(--surface);
+  color:var(--ink);
+}
+.assistant-messages{
+  max-height:360px;
+  overflow:auto;
+  padding:18px;
+  display:grid;
+  gap:12px;
+}
+.assistant-message{
+  width:fit-content;
+  max-width:92%;
+  padding:12px 14px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+  color:var(--ink);
+  box-shadow:0 10px 28px rgba(33,28,20,.06);
+}
+.assistant-message.user{
+  justify-self:end;
+  background:linear-gradient(135deg,rgba(234,205,132,.9),rgba(208,162,55,.82));
+  color:#fff;
+  border-color:rgba(203,153,35,.5);
+}
+.assistant-message p{
+  margin:0;
+  line-height:1.7;
+  font-size:14px;
+}
+.assistant-rec-list{
+  display:grid;
+  gap:9px;
+  margin-top:10px;
+}
+.assistant-rec-list a{
+  display:block;
+  padding:12px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  color:inherit;
+  text-decoration:none;
+  background:linear-gradient(135deg,#fff,#fbf8f1);
+}
+.assistant-rec-list strong,
+.assistant-rec-list span,
+.assistant-rec-list small{
+  display:block;
+}
+.assistant-rec-list span,
+.assistant-rec-list small{
+  margin-top:5px;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.55;
+}
+.assistant-input-row{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:10px;
+  padding:14px;
+  border-top:1px solid var(--line);
+  background:rgba(250,248,242,.86);
+}
+.assistant-input-row input{
+  min-width:0;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:12px 15px;
+  background:#fff;
+}
+.auth-code-field{
+  margin-top:12px;
+}
+.auth-status{
+  min-height:20px;
+  margin:12px 0 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+.auth-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:16px;
+}
+.auth-actions .ghost,
+.auth-actions .auth-submit{
+  width:100%;
+}
+.legal-page{
+  padding-top:72px;
+  padding-bottom:72px;
+}
+.legal-hero,
+.legal-section{
+  border:1px solid rgba(212,170,70,.22);
+  border-radius:28px;
+  background:linear-gradient(135deg,rgba(255,252,244,.96),rgba(255,255,255,.94) 52%,rgba(244,239,226,.72));
+  box-shadow:0 22px 58px rgba(43,35,21,.08),inset 0 1px 0 rgba(255,255,255,.8);
+}
+.legal-hero{
+  padding:48px;
+  margin-bottom:22px;
+}
+.legal-hero h1{
+  margin:10px 0 16px;
+  font-family:"Songti SC","STSong","SimSun","Times New Roman",serif;
+  font-size:clamp(42px,6vw,76px);
+  line-height:1.05;
+  font-weight:600;
+  letter-spacing:0;
+}
+.legal-hero p,
+.legal-section p{
+  color:var(--muted);
+  line-height:1.9;
+}
+.legal-section{
+  padding:30px 34px;
+  margin-top:16px;
+}
+.legal-section h2{
+  margin:0 0 12px;
+  font-family:"Songti SC","STSong","SimSun","Times New Roman",serif;
+  font-size:24px;
+  font-weight:600;
+}
+.disclaimer a{
+  color:inherit;
+  text-decoration:none;
+  border-bottom:1px solid rgba(164,119,23,.35);
+}
+
+@media(max-width:900px){
+  .topbar .nav{
+    gap:12px!important;
+  }
+  .nav-actions{
+    gap:8px!important;
+    justify-content:flex-end!important;
+  }
+  .hero-grid{
+    grid-template-columns:1fr!important;
+    gap:28px!important;
+  }
+  .hero h1{
+    font-size:clamp(54px,12vw,96px)!important;
+    line-height:.94!important;
+  }
+  .filters{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:700px){
+  .topbar{
+    overflow:hidden;
+  }
+  .topbar .shell.nav{
+    padding-inline:14px!important;
+    align-items:center!important;
+  }
+  .brand-cluster{
+    min-width:0!important;
+    flex:1 1 auto!important;
+  }
+  .brand{
+    min-width:0!important;
+  }
+  .member-button{
+    padding:9px 12px!important;
+    font-size:12px!important;
+  }
+  .nav-actions{
+    flex:0 0 auto!important;
+  }
+  .nav-actions .ghost,
+  .city-switch,
+  .language-switch button{
+    min-width:auto!important;
+    padding:9px 11px!important;
+    font-size:12px!important;
+  }
+  .hero{
+    padding:54px 0 34px!important;
+  }
+  .hero h1{
+    font-size:clamp(50px,16vw,76px)!important;
+    max-width:9ch!important;
+  }
+  .hero .sub{
+    max-width:32ch!important;
+    font-size:15px!important;
+    line-height:1.8!important;
+  }
+  .hero-stats{
+    grid-template-columns:1fr!important;
+  }
+  .hero-stats div,
+  .hero-stats div:first-child{
+    min-height:112px!important;
+  }
+  .controls{
+    margin-top:18px!important;
+    padding:18px!important;
+    border-radius:24px!important;
+  }
+  .filters{
+    grid-template-columns:1fr!important;
+  }
+  .meal-toggle{
+    grid-template-columns:1fr!important;
+    padding:12px!important;
+  }
+  .area-rail{
+    padding-bottom:8px!important;
+  }
+  .result-bar{
+    align-items:flex-start!important;
+    gap:12px!important;
+  }
+  .access-notice,
+  .limit-card{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .account-panel{
+    padding:24px!important;
+    border-radius:26px!important;
+  }
+  .account-member,
+  .account-summary,
+  .account-sections{
+    grid-template-columns:1fr!important;
+  }
+  .membership-modal .modal-shell{
+    padding:22px!important;
+  }
+  .auth-actions{
+    grid-template-columns:1fr;
+  }
+  .legal-page{
+    padding-top:34px;
+  }
+  .legal-hero,
+  .legal-section{
+    padding:24px;
+    border-radius:24px;
+  }
+  .assistant-fab{
+    right:16px;
+    bottom:84px;
+  }
+  .assistant-panel{
+    right:16px;
+    bottom:144px;
+  }
+  .mobile-filter{
+    right:16px!important;
+    bottom:18px!important;
+    background:linear-gradient(135deg,rgba(241,217,135,.98),rgba(207,159,47,.92) 58%,rgba(164,111,22,.9))!important;
+    color:#fff!important;
+  }
+}

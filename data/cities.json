@@ -1,0 +1,541 @@
+{
+  "version": "2026.08",
+  "global": {
+    "labelZh": "全球",
+    "labelEn": "Global",
+    "michelinYear": 2026,
+    "heroTextZh": "收录东京、香港、上海、巴黎与纽约 2026/2025 全部星级米其林餐厅。",
+    "heroTextEn": "A Michelin starred restaurant database for Tokyo, Hong Kong, Shanghai, Paris and New York."
+  },
+  "cities": [
+    {
+      "id": "tokyo",
+      "dataCity": "Tokyo",
+      "labelZh": "东京",
+      "labelEn": "Tokyo",
+      "countryZh": "日本",
+      "countryEn": "Japan",
+      "michelinYear": 2026,
+      "currency": "JPY",
+      "currencySymbol": "¥",
+      "ratingPlatforms": [
+        {
+          "key": "tabelogScore",
+          "label": "Tabelog",
+          "urlKey": "tabelogUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "1万日元以下",
+          "labelEn": "Under ¥10,000",
+          "min": 0,
+          "max": 10000
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "1~2万日元",
+          "labelEn": "¥10,000-20,000",
+          "min": 10000,
+          "max": 20000
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "2~3万日元",
+          "labelEn": "¥20,000-30,000",
+          "min": 20000,
+          "max": 30000
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "3~4万日元",
+          "labelEn": "¥30,000-40,000",
+          "min": 30000,
+          "max": 40000
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "4~5万日元",
+          "labelEn": "¥40,000-50,000",
+          "min": 40000,
+          "max": 50000
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "5万日元以上",
+          "labelEn": "¥50,000+",
+          "min": 50000,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "大手町",
+        "丸之内",
+        "东京",
+        "日本桥",
+        "三越前",
+        "茅场町",
+        "人形町",
+        "馬喰町",
+        "馬喰横山",
+        "神保町",
+        "京桥",
+        "银座一丁目",
+        "银座",
+        "东银座",
+        "新富町",
+        "筑地",
+        "日比谷",
+        "有乐町",
+        "新桥",
+        "虎之门",
+        "虎之门Hills",
+        "神谷町",
+        "爱宕",
+        "赤坂",
+        "永田町",
+        "纪尾井町",
+        "六本木一丁目",
+        "六本木",
+        "乃木坂",
+        "西麻布",
+        "麻布十番",
+        "东麻布",
+        "赤羽桥",
+        "芝公园",
+        "三田",
+        "白金高轮",
+        "白金台",
+        "广尾",
+        "惠比寿",
+        "代官山",
+        "中目黑",
+        "目黑",
+        "都立大学",
+        "青山一丁目",
+        "外苑前",
+        "南青山",
+        "表参道",
+        "明治神宫前",
+        "神宫前",
+        "北参道",
+        "涩谷",
+        "新宿",
+        "幡谷",
+        "四谷三丁目",
+        "荒木町",
+        "饭田桥",
+        "神乐坂",
+        "牛込神乐坂",
+        "浅草",
+        "品川",
+        "经堂"
+      ]
+    },
+    {
+      "id": "hong-kong",
+      "dataCity": "Hong Kong",
+      "labelZh": "香港",
+      "labelEn": "Hong Kong",
+      "countryZh": "中国香港",
+      "countryEn": "Hong Kong",
+      "michelinYear": 2026,
+      "currency": "HKD",
+      "currencySymbol": "HK$",
+      "ratingPlatforms": [
+        {
+          "key": "openriceScore",
+          "label": "OpenRice",
+          "urlKey": "openriceUrl"
+        },
+        {
+          "key": "localScore",
+          "label": "OpenRice",
+          "urlKey": "localUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "HK$500 以下",
+          "labelEn": "Under HK$500",
+          "min": 0,
+          "max": 500
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "HK$500~1,000",
+          "labelEn": "HK$500-1,000",
+          "min": 500,
+          "max": 1000
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "HK$1,000~1,500",
+          "labelEn": "HK$1,000-1,500",
+          "min": 1000,
+          "max": 1500
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "HK$1,500~2,000",
+          "labelEn": "HK$1,500-2,000",
+          "min": 1500,
+          "max": 2000
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "HK$2,000~2,500",
+          "labelEn": "HK$2,000-2,500",
+          "min": 2000,
+          "max": 2500
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "HK$2,500 以上",
+          "labelEn": "HK$2,500+",
+          "min": 2500,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "中环",
+        "金钟",
+        "上环",
+        "湾仔",
+        "铜锣湾",
+        "天后",
+        "跑马地",
+        "尖沙咀",
+        "西九龙",
+        "佐敦",
+        "西贡"
+      ]
+    },
+    {
+      "id": "shanghai",
+      "dataCity": "Shanghai",
+      "labelZh": "上海",
+      "labelEn": "Shanghai",
+      "countryZh": "中国",
+      "countryEn": "China",
+      "michelinYear": 2026,
+      "currency": "CNY",
+      "currencySymbol": "¥",
+      "ratingPlatforms": [
+        {
+          "key": "dianpingScore",
+          "label": "大众点评",
+          "urlKey": "dianpingUrl"
+        },
+        {
+          "key": "ctripScore",
+          "label": "携程",
+          "urlKey": "ctripUrl"
+        },
+        {
+          "key": "tripScore",
+          "label": "携程",
+          "urlKey": "tripUrl"
+        },
+        {
+          "key": "localScore",
+          "label": "本地评分",
+          "urlKey": "localUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "¥500 以下",
+          "labelEn": "Under ¥500",
+          "min": 0,
+          "max": 500
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "¥500~1,000",
+          "labelEn": "¥500-1,000",
+          "min": 500,
+          "max": 1000
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "¥1,000~1,500",
+          "labelEn": "¥1,000-1,500",
+          "min": 1000,
+          "max": 1500
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "¥1,500~2,000",
+          "labelEn": "¥1,500-2,000",
+          "min": 1500,
+          "max": 2000
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "¥2,000~2,500",
+          "labelEn": "¥2,000-2,500",
+          "min": 2000,
+          "max": 2500
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "¥2,500 以上",
+          "labelEn": "¥2,500+",
+          "min": 2500,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "黄浦",
+        "静安",
+        "徐汇",
+        "长宁",
+        "浦东",
+        "虹口",
+        "普陀",
+        "闵行"
+      ]
+    },
+    {
+      "id": "paris",
+      "dataCity": "Paris",
+      "labelZh": "巴黎",
+      "labelEn": "Paris",
+      "countryZh": "法国",
+      "countryEn": "France",
+      "michelinYear": 2026,
+      "currency": "EUR",
+      "currencySymbol": "€",
+      "ratingPlatforms": [
+        {
+          "key": "gaultMillauScore",
+          "label": "Gault&Millau",
+          "urlKey": "gaultMillauUrl"
+        },
+        {
+          "key": "theforkScore",
+          "label": "TheFork",
+          "urlKey": "theforkUrl"
+        },
+        {
+          "key": "laListeScore",
+          "label": "La Liste",
+          "urlKey": "laListeUrl"
+        },
+        {
+          "key": "localScore",
+          "label": "本地评分",
+          "urlKey": "localUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "€100 以下",
+          "labelEn": "Under €100",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "€100~200",
+          "labelEn": "€100-200",
+          "min": 100,
+          "max": 200
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "€200~300",
+          "labelEn": "€200-300",
+          "min": 200,
+          "max": 300
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "€300~400",
+          "labelEn": "€300-400",
+          "min": 300,
+          "max": 400
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "€400~500",
+          "labelEn": "€400-500",
+          "min": 400,
+          "max": 500
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "€500 以上",
+          "labelEn": "€500+",
+          "min": 500,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "Paris 1er",
+        "Paris 2e",
+        "Paris 3e",
+        "Paris 4e",
+        "Paris 5e",
+        "Paris 6e",
+        "Paris 7e",
+        "Paris 8e",
+        "Paris 9e",
+        "Paris 10e",
+        "Paris 11e",
+        "Paris 12e",
+        "Paris 13e",
+        "Paris 14e",
+        "Paris 15e",
+        "Paris 16e",
+        "Paris 17e",
+        "Paris 18e",
+        "Paris 19e",
+        "Paris 20e",
+        "Versailles",
+        "Ville-d'Avray",
+        "Rueil-Malmaison",
+        "Issy-les-Moulineaux",
+        "Montreuil",
+        "Vincennes",
+        "Pontoise",
+        "Grand Paris"
+      ]
+    },
+    {
+      "id": "new-york",
+      "dataCity": "New York",
+      "labelZh": "纽约",
+      "labelEn": "New York",
+      "countryZh": "美国",
+      "countryEn": "United States",
+      "michelinYear": 2025,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "ratingPlatforms": [
+        {
+          "key": "localScore",
+          "label": "本地评分",
+          "urlKey": "localUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "$100 以下",
+          "labelEn": "Under $100",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "$100~200",
+          "labelEn": "$100-200",
+          "min": 100,
+          "max": 200
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "$200~300",
+          "labelEn": "$200-300",
+          "min": 200,
+          "max": 300
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "$300~400",
+          "labelEn": "$300-400",
+          "min": 300,
+          "max": 400
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "$400~500",
+          "labelEn": "$400-500",
+          "min": 400,
+          "max": 500
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "$500 以上",
+          "labelEn": "$500+",
+          "min": 500,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "Central Park South",
+        "Upper West Side",
+        "Upper East Side",
+        "Midtown",
+        "Murray Hill",
+        "Herald Square",
+        "Flatiron",
+        "Chelsea",
+        "West Village",
+        "Greenwich Village",
+        "NoHo",
+        "Nolita",
+        "East Village",
+        "Chinatown",
+        "Hell's Kitchen",
+        "Tribeca",
+        "FiDi",
+        "Brooklyn Heights",
+        "Williamsburg",
+        "Greenpoint",
+        "Prospect Heights",
+        "Hudson Valley"
+      ]
+    }
+  ],
+  "defaultPriceTiers": [
+    {
+      "key": "under-10000",
+      "labelZh": "低预算",
+      "labelEn": "Lower budget",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "key": "10000-20000",
+      "labelZh": "标准预算",
+      "labelEn": "Standard budget",
+      "min": 1,
+      "max": 2
+    },
+    {
+      "key": "20000-30000",
+      "labelZh": "中高预算",
+      "labelEn": "Upper-mid budget",
+      "min": 2,
+      "max": 3
+    },
+    {
+      "key": "30000-40000",
+      "labelZh": "高预算",
+      "labelEn": "High budget",
+      "min": 3,
+      "max": 4
+    },
+    {
+      "key": "40000-50000",
+      "labelZh": "高级预算",
+      "labelEn": "Premium budget",
+      "min": 4,
+      "max": 5
+    },
+    {
+      "key": "50000-plus",
+      "labelZh": "顶级预算",
+      "labelEn": "Top budget",
+      "min": 5,
+      "max": null
+    }
+  ]
+}
