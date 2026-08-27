@@ -1,10 +1,8 @@
-import { createHmac, randomInt, timingSafeEqual } from 'node:crypto';
+import { createHmac, timingSafeEqual } from 'node:crypto';
 import { normalizeEmail } from './_data.js';
 
-const otpStore = globalThis.__startableOtpStore || new Map();
-globalThis.__startableOtpStore = otpStore;
-
 const textEncoder = new TextEncoder();
+const otpWindowMs = 1000 * 60 * 10;
 
 function secret() {
   return process.env.AUTH_SESSION_SECRET || process.env.STRIPE_SECRET_KEY || 'startable-local-dev-secret';
@@ -53,33 +51,25 @@ function sessionFromRequest(req, url) {
   return verifySessionToken(token);
 }
 
+function otpForWindow(email, windowId) {
+  const digest = createHmac('sha256', secret()).update(`${normalizeEmail(email)}:${windowId}`).digest('hex');
+  const value = Number.parseInt(digest.slice(0, 10), 16) % 1000000;
+  return String(value).padStart(6, '0');
+}
+
 function createOtp(email) {
   const normalized = normalizeEmail(email);
   if (!normalized) throw new Error('A valid email is required');
-  const code = String(randomInt(100000, 999999));
-  otpStore.set(normalized, {
-    code,
-    expiresAt: Date.now() + 1000 * 60 * 10,
-    attempts: 0
-  });
-  return code;
+  return otpForWindow(normalized, Math.floor(Date.now() / otpWindowMs));
 }
 
 function verifyOtp(email, code) {
   const normalized = normalizeEmail(email);
-  const record = otpStore.get(normalized);
-  if (!normalized || !record) return null;
-  if (record.expiresAt < Date.now()) {
-    otpStore.delete(normalized);
-    return null;
-  }
-  record.attempts += 1;
-  if (record.attempts > 6) {
-    otpStore.delete(normalized);
-    return null;
-  }
-  if (String(record.code) !== String(code || '').trim()) return null;
-  otpStore.delete(normalized);
+  if (!normalized) return null;
+  const submitted = String(code || '').trim();
+  const windowId = Math.floor(Date.now() / otpWindowMs);
+  const validCodes = [otpForWindow(normalized, windowId), otpForWindow(normalized, windowId - 1)];
+  if (!validCodes.includes(submitted)) return null;
   return createSessionToken(normalized);
 }
 

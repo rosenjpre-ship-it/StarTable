@@ -11,6 +11,7 @@ const stripePaymentLinks={
  monthly:'https://buy.stripe.com/28E28k2uJ9WYdmp93c3wQ01',
  yearly:'https://buy.stripe.com/6oU5kw7P3b12aad93c3wQ00'
 };
+const FREE_PREVIEW_PER_CITY_STAR=3;
 const stars=n=>'★'.repeat(n);const diff=n=>n?'★'.repeat(n)+'☆'.repeat(5-n):'待评估';
 const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const dict={
@@ -25,7 +26,7 @@ const dict={
   want:'想摘星',done:'已摘星',favorite:'收藏',favorited:'已收藏',none:'暂无餐厅。',back:'返回餐厅列表',logout:'退出登录',
   globalDone:'全球已摘星',memberTitle:'星宴年会员',memberDesc:'通过 Stripe 安全订阅，解锁完整餐厅数据库与高阶筛选。',
   yearly:'年费',browse:'餐厅浏览',all:'全部',searches:'搜索次数',unlimited:'不限',fullData:'完整资料',advanced:'高级筛选',
-  fullDataText:'查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。',advancedText:'不受 20 家浏览和 5 次搜索限制，按城市、餐期、价格与政策快速筛选。',
+  fullDataText:'查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。',advancedText:'免费模式每个城市每个星级可预览 3 家；会员解除浏览和 5 次搜索限制。',
   mypageText:'按全球、东京、香港、上海、巴黎、纽约管理已摘星、想摘星和收藏餐厅。',stripeSoon:'Stripe 支付即将接入',
   stripeAlert:'Stripe 支付链接接入后，这里会跳转到官方 Checkout 页面。',loadFail:'数据加载失败，请确认已部署到 GitHub Pages。'
  },
@@ -40,7 +41,7 @@ const dict={
   want:'Want to visit',done:'Visited',favorite:'Save',favorited:'Saved',none:'No restaurants yet.',back:'Back to list',logout:'Log out',
   globalDone:'Global visited',memberTitle:'StarTable Membership',memberDesc:'Subscribe securely with Stripe to unlock the full restaurant database and advanced filters.',
   yearly:'Annual fee',browse:'Restaurant access',all:'All',searches:'Searches',unlimited:'Unlimited',fullData:'Full data',advanced:'Advanced filters',
-  fullDataText:'View full restaurant details, reservation links, access, dining rules and course information.',advancedText:'Remove the 20-restaurant and 5-search limits; filter by city, meal, price and policies.',
+  fullDataText:'View full restaurant details, reservation links, access, dining rules and course information.',advancedText:'Free preview includes 3 restaurants per city and star level; Premium removes browsing and 5-search limits.',
   mypageText:'Manage visited, wish list and saved restaurants by Global, Tokyo, Hong Kong, Shanghai, Paris and New York.',stripeSoon:'Stripe payment coming soon',
   stripeAlert:'After the Stripe payment link is connected, this button will open the official Checkout page.',loadFail:'Data failed to load. Please confirm the site is deployed on GitHub Pages.'
  }
@@ -937,6 +938,18 @@ function showMapItem(item,pin){
  els.mapPanel.innerHTML=`<h3>${esc(restaurantName(item))} <span class="stars">${stars(item.stars)}</span></h3><p>${esc([displayArea(item),cuisineLabel(item)].filter(Boolean).join(' ｜ '))}</p><p>${esc(stationText(item))}</p>${ratingLine?`<p>${esc(ratingLine)}</p>`:''}<div class="source-row">${sourceBadges(item).map(x=>`<span class="source-badge">${esc(x)}</span>`).join('')}</div><div class="link-list"><a href="${restaurantDetailUrl(item)}">${state.lang==='en'?'View restaurant':'查看餐厅'}</a>${reserveActionHtml(item)}</div>`;
 }
 function updateCompare(){}
+function previewKey(item){
+ return `${item.city||cityLabel(item)||'global'}::${item.stars||0}`;
+}
+function freePreviewItems(items){
+ const seen=new Map();
+ return items.filter(item=>{
+  const key=previewKey(item);
+  const count=seen.get(key)||0;
+  seen.set(key,count+1);
+  return count<FREE_PREVIEW_PER_CITY_STAR;
+ });
+}
 function scheduleSearchUsage(query){
  if(isPremium()||!query)return;
  clearTimeout(searchUsageTimer);
@@ -958,7 +971,7 @@ function updateAccessNotice(){
   return;
  }
  const remaining=Math.max(0,5-state.searchCount);
- const hidden=Math.max(0,state.filtered.length-20);
+ const hidden=Math.max(0,state.filtered.length-freePreviewItems(state.filtered).length);
  const serverLocked=Number(state.serverMeta?.locked||0);
  const locked=Math.max(hidden,serverLocked);
  if(!locked&&state.searchCount<4){
@@ -967,13 +980,13 @@ function updateAccessNotice(){
   return;
  }
  els.accessNotice.hidden=false;
- els.accessNotice.innerHTML=`<div><strong>${state.lang==='en'?'Free preview':'免费预览'}</strong><span>${state.lang==='en'?`Showing up to 20 restaurants. Searches left: ${remaining}.`:`当前最多预览 20 家餐厅。剩余搜索次数：${remaining} 次。`}${locked?` ${state.lang==='en'?`${locked} more restaurants are locked.`:`还有 ${locked} 家已锁定。`}`:''}</span></div><button type="button" data-open-membership>${state.lang==='en'?'Upgrade':'开通会员'}</button>`;
+ els.accessNotice.innerHTML=`<div><strong>${state.lang==='en'?'Free preview':'免费预览'}</strong><span>${state.lang==='en'?`Showing 3 restaurants per city and star level. Searches left: ${remaining}.`:`每个城市、每个星级可预览 3 家餐厅。剩余搜索次数：${remaining} 次。`}${locked?` ${state.lang==='en'?`${locked} more restaurants are locked.`:`还有 ${locked} 家已锁定。`}`:''}</span></div><button type="button" data-open-membership>${state.lang==='en'?'Upgrade':'开通会员'}</button>`;
  els.accessNotice.querySelector('[data-open-membership]')?.addEventListener('click',openMembershipModal);
 }
 function makeLimitCard(hiddenCount){
  const article=document.createElement('article');
  article.className='card limit-card';
- article.innerHTML=`<div><p class="eyebrow">${state.lang==='en'?'PREMIUM':'MEMBERSHIP'}</p><h2>${state.lang==='en'?'Unlock full restaurant access':'开通会员，查看全部餐厅'}</h2><p>${state.lang==='en'?`${hiddenCount} matching restaurants are hidden in free preview. Premium also removes the 5-search limit.`:`当前筛选结果还有 ${hiddenCount} 家餐厅仅会员可看，并解除 5 次搜索限制。`}</p></div><button class="reserve" type="button">${state.lang==='en'?'Upgrade':'会员订阅'}</button>`;
+ article.innerHTML=`<div><p class="eyebrow">${state.lang==='en'?'PREMIUM':'MEMBERSHIP'}</p><h2>${state.lang==='en'?'Unlock full restaurant access':'开通会员，查看全部餐厅'}</h2><p>${state.lang==='en'?`${hiddenCount} matching restaurants are hidden. Free preview shows 3 restaurants per city and star level.`:`当前筛选结果还有 ${hiddenCount} 家餐厅仅会员可看。免费模式每个城市、每个星级可预览 3 家。`}</p></div><button class="reserve" type="button">${state.lang==='en'?'Upgrade':'会员订阅'}</button>`;
  article.querySelector('button')?.addEventListener('click',openMembershipModal);
  return article;
 }
@@ -1131,9 +1144,9 @@ function updateAccount(){
 }
 function render(){
  els.grid.innerHTML='';
- const visibleItems=isPremium()?state.filtered:state.filtered.slice(0,20);
+ const visibleItems=isPremium()?state.filtered:freePreviewItems(state.filtered);
  visibleItems.forEach(x=>els.grid.appendChild(makeCard(x)));
- const lockedCount=Math.max(0,state.filtered.length-20,Number(state.serverMeta?.locked||0));
+ const lockedCount=Math.max(0,state.filtered.length-visibleItems.length,Number(state.serverMeta?.locked||0));
  if(!isPremium()&&lockedCount>0)els.grid.appendChild(makeLimitCard(lockedCount));
  els.visible.textContent=state.filtered.length;
  els.empty.hidden=state.filtered.length!==0;
