@@ -1,4 +1,5 @@
 import { stripe, sendJson, readJson, siteUrl, findPrice, findOrCreateCustomerByEmail } from './_utils.js';
+import { activeSubscriptionForEmail } from '../_subscription.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -16,6 +17,14 @@ export default async function handler(req, res) {
     const email = String(body.email || '').trim().toLowerCase();
     if (!email || !email.includes('@')) {
       return sendJson(res, 400, { error: 'A valid email is required' });
+    }
+
+    const existingSubscription = await activeSubscriptionForEmail(email);
+    if (existingSubscription.active) {
+      return sendJson(res, 409, {
+        error: 'This email already has an active subscription. Please manage it from My page.',
+        subscription: existingSubscription
+      });
     }
 
     const price = await findPrice(plan);

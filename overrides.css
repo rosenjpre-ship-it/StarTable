@@ -6,6 +6,161 @@
     radial-gradient(circle at 58% 106%,rgba(150,68,82,.28),transparent 420px),
     linear-gradient(124deg,#101713 0%,#1f342a 40%,#584624 72%,#171411 100%) !important;
 }
+
+.globe-section{
+  display:block;
+  margin-top:34px;
+  margin-bottom:30px;
+}
+.globe-copy{
+  padding:10px 0 18px;
+  text-align:center;
+}
+.globe-copy h2{
+  margin:8px 0 12px;
+  font-family:Georgia,"Times New Roman","Songti SC","SimSun",serif;
+  font-size:clamp(38px,5vw,72px);
+  line-height:.98;
+  letter-spacing:0;
+  color:var(--ink);
+}
+.globe-copy p:not(.eyebrow){
+  max-width:40em;
+  margin:0 auto;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.75;
+}
+.globe-card{
+  position:relative;
+  min-height:660px;
+  max-width:980px;
+  margin:0 auto;
+  border:1px solid rgba(202,178,129,.42);
+  border-radius:34px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 20% 12%,rgba(246,220,143,.48),transparent 24%),
+    radial-gradient(circle at 82% 18%,rgba(28,72,55,.16),transparent 34%),
+    linear-gradient(135deg,rgba(255,255,255,.94),rgba(255,252,244,.78) 48%,rgba(239,231,214,.66));
+  box-shadow:0 24px 70px rgba(39,31,18,.13), inset 0 1px 0 rgba(255,255,255,.95);
+}
+.city-globe{
+  position:absolute;
+  width:min(650px,78vw);
+  aspect-ratio:1;
+  left:50%;
+  top:48%;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  overflow:visible;
+  cursor:grab;
+  touch-action:none;
+  user-select:none;
+}
+.city-globe.dragging{
+  cursor:grabbing;
+}
+.city-globe canvas,
+.globe-pins{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+}
+.city-globe canvas{
+  border-radius:50%;
+  filter:drop-shadow(0 32px 60px rgba(24,25,20,.25));
+}
+.globe-pins{
+  pointer-events:none;
+}
+.globe-pin{
+  position:absolute;
+  left:var(--x);
+  top:var(--y);
+  transform:translate(-50%,-50%) scale(var(--scale,1));
+  border:0;
+  border-radius:999px;
+  padding:8px 12px;
+  display:flex;
+  gap:8px;
+  align-items:center;
+  color:#fff;
+  background:linear-gradient(135deg,rgba(244,216,128,.96),rgba(185,129,25,.86));
+  box-shadow:0 12px 28px rgba(0,0,0,.26),inset 0 1px 1px rgba(255,255,255,.62);
+  font:500 13px/1.1 "Songti SC","SimSun",serif;
+  cursor:pointer;
+  z-index:3;
+  white-space:nowrap;
+  opacity:var(--opacity,1);
+  pointer-events:auto;
+  transition:opacity .18s ease, transform .18s ease, background .18s ease;
+}
+.globe-pin:before{
+  content:"";
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 0 0 5px rgba(255,255,255,.18),0 0 22px rgba(247,214,105,.8);
+}
+.globe-pin:hover,
+.globe-pin.active{
+  transform:translate(-50%,-50%) scale(calc(var(--scale,1) * 1.08));
+  background:linear-gradient(135deg,rgba(255,235,164,.98),rgba(207,151,39,.95));
+}
+.globe-pin.is-hidden{
+  opacity:0;
+  pointer-events:none;
+}
+.globe-pin small{
+  opacity:.78;
+  font-size:11px;
+}
+.globe-city-list{
+  display:none;
+}
+.globe-city-list button{
+  border:1px solid rgba(207,177,110,.46);
+  border-radius:999px;
+  background:rgba(255,255,255,.78);
+  color:var(--ink);
+  padding:10px 14px;
+  box-shadow:0 12px 28px rgba(33,28,18,.1),inset 0 1px 0 rgba(255,255,255,.95);
+  cursor:pointer;
+}
+.globe-city-list button.active{
+  color:#fff;
+  background:linear-gradient(135deg,rgba(246,222,146,.95),rgba(197,142,36,.94));
+}
+body.dark .globe-card{
+  background:linear-gradient(135deg,rgba(23,28,24,.92),rgba(45,39,25,.82));
+}
+body.dark .globe-copy h2{color:#fff}
+@media (max-width:900px){
+  .globe-section{
+    margin-top:24px;
+  }
+  .globe-copy{
+    padding:0 4px 14px;
+  }
+  .globe-copy h2{
+    font-size:clamp(36px,11vw,54px);
+  }
+  .globe-card{
+    min-height:620px;
+    border-radius:30px;
+  }
+  .city-globe{
+    top:43%;
+    width:min(520px,96vw);
+  }
+  .globe-pin{
+    padding:7px 10px;
+    font-size:12px;
+  }
+}
 .hero:before{
   content:"";
   position:absolute;

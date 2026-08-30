@@ -11,7 +11,7 @@ import { sessionFromRequest } from './_auth.js';
 import { activeSubscriptionForEmail } from './_subscription.js';
 import { sendJson } from './_http.js';
 
-const FREE_PREVIEW_PER_CITY_STAR = 3;
+const FREE_PREVIEW_PER_CITY = 3;
 
 function limitedRestaurant(item) {
   const summary = restaurantSummary(item);
@@ -27,7 +27,7 @@ function limitedRestaurant(item) {
 }
 
 function previewKey(item) {
-  return `${item.city || item.cityZh || 'global'}::${item.stars || 0}`;
+  return item.city || item.cityZh || 'global';
 }
 
 function freePreviewItems(items) {
@@ -36,7 +36,7 @@ function freePreviewItems(items) {
     const key = previewKey(item);
     const count = seen.get(key) || 0;
     seen.set(key, count + 1);
-    return count < FREE_PREVIEW_PER_CITY_STAR;
+    return count < FREE_PREVIEW_PER_CITY;
   });
 }
 
@@ -66,7 +66,7 @@ export default async function handler(req, res) {
           locked: true,
           restaurant: limitedRestaurant(item),
           membership: subscription,
-          freeLimitPerCityStar: FREE_PREVIEW_PER_CITY_STAR
+          freeLimitPerCity: FREE_PREVIEW_PER_CITY
         });
       }
       return sendJson(res, 200, { restaurant: publicRestaurant(item) });
@@ -82,7 +82,7 @@ export default async function handler(req, res) {
         resultTotal: filtered.length,
         returned: visible.length,
         locked: premium ? 0 : Math.max(0, filtered.length - visible.length),
-        freeLimitPerCityStar: FREE_PREVIEW_PER_CITY_STAR,
+        freeLimitPerCity: FREE_PREVIEW_PER_CITY,
         membership: subscription
       }
     });

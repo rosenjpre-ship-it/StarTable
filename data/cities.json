@@ -15,6 +15,10 @@
       "labelEn": "Tokyo",
       "countryZh": "日本",
       "countryEn": "Japan",
+      "coordinates": {
+        "lat": 35.6762,
+        "lng": 139.6503
+      },
       "michelinYear": 2026,
       "currency": "JPY",
       "currencySymbol": "¥",
@@ -140,6 +144,10 @@
       "labelEn": "Hong Kong",
       "countryZh": "中国香港",
       "countryEn": "Hong Kong",
+      "coordinates": {
+        "lat": 22.3193,
+        "lng": 114.1694
+      },
       "michelinYear": 2026,
       "currency": "HKD",
       "currencySymbol": "HK$",
@@ -220,6 +228,10 @@
       "labelEn": "Shanghai",
       "countryZh": "中国",
       "countryEn": "China",
+      "coordinates": {
+        "lat": 31.2304,
+        "lng": 121.4737
+      },
       "michelinYear": 2026,
       "currency": "CNY",
       "currencySymbol": "¥",
@@ -307,6 +319,10 @@
       "labelEn": "Paris",
       "countryZh": "法国",
       "countryEn": "France",
+      "coordinates": {
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
       "michelinYear": 2026,
       "currency": "EUR",
       "currencySymbol": "€",
@@ -414,6 +430,10 @@
       "labelEn": "New York",
       "countryZh": "美国",
       "countryEn": "United States",
+      "coordinates": {
+        "lat": 40.7128,
+        "lng": -74.006
+      },
       "michelinYear": 2025,
       "currency": "USD",
       "currencySymbol": "$",

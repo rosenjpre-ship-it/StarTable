@@ -7,11 +7,8 @@ const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),cit
 let searchUsageTimer=null;
 const cnyFallbackRates={JPY:.049,HKD:.92,EUR:8.35,USD:7.2,CNY:1};
 let cnyRates={...cnyFallbackRates};
-const stripePaymentLinks={
- monthly:'https://buy.stripe.com/28E28k2uJ9WYdmp93c3wQ01',
- yearly:'https://buy.stripe.com/6oU5kw7P3b12aad93c3wQ00'
-};
-const FREE_PREVIEW_PER_CITY_STAR=3;
+const FREE_PREVIEW_PER_CITY=3;
+let globeState={yaw:54,pitch:-10,dragging:false,lastX:0,lastY:0,moved:false,raf:0,animating:false,world:null,worldLoading:false};
 const stars=n=>'★'.repeat(n);const diff=n=>n?'★'.repeat(n)+'☆'.repeat(5-n):'待评估';
 const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const dict={
@@ -26,7 +23,7 @@ const dict={
   want:'想摘星',done:'已摘星',favorite:'收藏',favorited:'已收藏',none:'暂无餐厅。',back:'返回餐厅列表',logout:'退出登录',
   globalDone:'全球已摘星',memberTitle:'星宴年会员',memberDesc:'通过 Stripe 安全订阅，解锁完整餐厅数据库与高阶筛选。',
   yearly:'年费',browse:'餐厅浏览',all:'全部',searches:'搜索次数',unlimited:'不限',fullData:'完整资料',advanced:'高级筛选',
-  fullDataText:'查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。',advancedText:'免费模式每个城市每个星级可预览 3 家；会员解除浏览和 5 次搜索限制。',
+  fullDataText:'查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。',advancedText:'免费模式每个城市可预览 3 家；会员解除浏览和 5 次搜索限制。',
   mypageText:'按全球、东京、香港、上海、巴黎、纽约管理已摘星、想摘星和收藏餐厅。',stripeSoon:'Stripe 支付即将接入',
   stripeAlert:'Stripe 支付链接接入后，这里会跳转到官方 Checkout 页面。',loadFail:'数据加载失败，请确认已部署到 GitHub Pages。'
  },
@@ -41,7 +38,7 @@ const dict={
   want:'Want to visit',done:'Visited',favorite:'Save',favorited:'Saved',none:'No restaurants yet.',back:'Back to list',logout:'Log out',
   globalDone:'Global visited',memberTitle:'StarTable Membership',memberDesc:'Subscribe securely with Stripe to unlock the full restaurant database and advanced filters.',
   yearly:'Annual fee',browse:'Restaurant access',all:'All',searches:'Searches',unlimited:'Unlimited',fullData:'Full data',advanced:'Advanced filters',
-  fullDataText:'View full restaurant details, reservation links, access, dining rules and course information.',advancedText:'Free preview includes 3 restaurants per city and star level; Premium removes browsing and 5-search limits.',
+  fullDataText:'View full restaurant details, reservation links, access, dining rules and course information.',advancedText:'Free preview includes 3 restaurants per city; Premium removes browsing and 5-search limits.',
   mypageText:'Manage visited, wish list and saved restaurants by Global, Tokyo, Hong Kong, Shanghai, Paris and New York.',stripeSoon:'Stripe payment coming soon',
   stripeAlert:'After the Stripe payment link is connected, this button will open the official Checkout page.',loadFail:'Data failed to load. Please confirm the site is deployed on GitHub Pages.'
  }
@@ -162,6 +159,7 @@ function setLanguage(lang){
  updateMembershipButtons();
  if(els.theme)els.theme.textContent=document.body.classList.contains('dark')?t('light'):t('dark');
  updateHeroCopy();
+ updateGlobeCopy();
  if(els.search)els.search.placeholder=t('search');
  if(els.toggleFilters)els.toggleFilters.textContent=els.filterBody.hidden?t('expand'):t('collapse');
  if(els.mobileFilter)els.mobileFilter.textContent=t('collapse').replace('Hide ','');
@@ -177,6 +175,7 @@ function setLanguage(lang){
  document.querySelector('#threeStarCount')?.nextElementSibling&&(document.querySelector('#threeStarCount').nextElementSibling.textContent=t('three'));
  document.querySelector('#twoStarCount')?.nextElementSibling&&(document.querySelector('#twoStarCount').nextElementSibling.textContent=t('two'));
  document.querySelector('#oneStarCount')?.nextElementSibling&&(document.querySelector('#oneStarCount').nextElementSibling.textContent=t('one'));
+ renderCityGlobe();
  rebuildAreaControls();
  if(validOptionValue(els.area,selected.area))els.area.value=selected.area;
  document.querySelectorAll('.area-pill').forEach(x=>x.classList.toggle('active',x.dataset.area===(els.area?.value||'')));
@@ -188,6 +187,16 @@ function updateHeroCopy(){
  const global=state.cityConfig?.global||{};
  const primary=state.lang==='en'?(global.heroTextEn||t('hero1')):(global.heroTextZh||t('hero1'));
  heroSub.innerHTML=`<span>${esc(primary)}</span><span>${esc(t('hero2'))}</span>`;
+}
+function updateGlobeCopy(){
+ const section=document.querySelector('.globe-section');
+ if(!section)return;
+ const title=section.querySelector('.globe-copy h2');
+ const text=section.querySelector('.globe-copy p:not(.eyebrow)');
+ if(title)title.textContent='Explore by city.';
+ if(text)text.textContent=state.lang==='en'
+  ? 'Tap a city point on the globe to open its Michelin restaurant list.'
+  : '点击地球上的城市坐标，直接查看该城市的星级餐厅。';
 }
 function cities(){return state.cityConfig?.cities||[]}
 function cityConfigByLabel(label){return cities().find(x=>x.labelZh===label||x.labelEn===label||x.dataCity===label||x.id===label)||null}
@@ -317,6 +326,385 @@ function cityDisplay(value){
  if(config)return state.lang==='en'?config.labelEn:config.labelZh;
  return t('global');
 }
+function cityCount(config){
+ return state.data.filter(item=>cityConfigForItem(item)?.id===config.id).length;
+}
+const globeLandRegions=[
+ {c:'#d8d5ea',p:[[72,-166],[66,-148],[60,-134],[50,-126],[42,-122],[32,-116],[24,-106],[18,-95],[10,-88],[8,-78],[19,-73],[32,-82],[45,-92],[58,-104],[67,-125]]},
+ {c:'#e7cfd2',p:[[78,-58],[74,-34],[66,-20],[60,-38],[64,-58]]},
+ {c:'#d8d5ea',p:[[58,-10],[50,-8],[44,2],[48,15],[56,16],[61,6]]},
+ {c:'#e7cfd2',p:[[72,4],[66,20],[59,30],[55,22],[59,10],[66,2]]},
+ {c:'#cbd8cf',p:[[64,18],[58,28],[50,31],[45,22],[52,14],[60,12]]},
+ {c:'#e5c2c8',p:[[55,-5],[50,2],[46,9],[42,4],[44,-4],[50,-8]]},
+ {c:'#d3d1e8',p:[[50,2],[46,8],[42,14],[39,8],[42,1]]},
+ {c:'#cfdccd',p:[[51,-4],[45,0],[43,-7],[49,-9]]},
+ {c:'#e7d1b6',p:[[45,6],[41,14],[38,12],[39,5]]},
+ {c:'#d7cae1',p:[[43,-9],[37,-4],[36,-9],[41,-13]]},
+ {c:'#d6e0d7',p:[[42,-2],[37,8],[32,4],[36,-3]]},
+ {c:'#e9cfd3',p:[[41,11],[37,18],[35,12],[38,7]]},
+ {c:'#d8d5ea',p:[[52,24],[48,35],[43,30],[45,22]]},
+ {c:'#e5d1b4',p:[[49,11],[47,23],[43,18],[44,10]]},
+ {c:'#cbd8cf',p:[[56,32],[52,50],[46,44],[48,32]]},
+ {c:'#cbd8cf',p:[[72,36],[64,58],[56,82],[48,108],[37,122],[28,111],[34,82],[42,58],[54,42],[65,32]]},
+ {c:'#d7cae1',p:[[35,46],[30,68],[22,76],[18,58],[24,44]]},
+ {c:'#e7d1b6',p:[[34,70],[27,90],[18,104],[8,100],[11,78],[22,66]]},
+ {c:'#cfdccd',p:[[39,100],[30,122],[22,121],[20,102],[31,92]]},
+ {c:'#e5c2c8',p:[[42,126],[36,142],[30,137],[32,124]]},
+ {c:'#d8d5ea',p:[[36,138],[31,146],[26,142],[30,134]]},
+ {c:'#e7cfd2',p:[[25,118],[18,122],[12,116],[18,110]]},
+ {c:'#d6e0d7',p:[[23,96],[12,106],[4,100],[9,88],[18,88]]},
+ {c:'#e7d1b6',p:[[14,102],[4,116],[-8,110],[-2,98]]},
+ {c:'#d7cae1',p:[[6,114],[-6,126],[-18,122],[-12,110]]},
+ {c:'#d8d5ea',p:[[32,34],[25,45],[14,52],[7,43],[16,34]]},
+ {c:'#e7cfd2',p:[[36,-8],[24,2],[8,9],[-7,15],[-22,16],[-34,22],[-36,10],[-20,-2],[2,-8],[22,-12]]},
+ {c:'#cfdccd',p:[[12,-17],[1,8],[-18,12],[-5,-11]]},
+ {c:'#e7d1b6',p:[[30,-8],[18,8],[7,2],[18,-14]]},
+ {c:'#d7cae1',p:[[32,18],[18,32],[10,24],[20,12]]},
+ {c:'#e5d1b4',p:[[30,26],[15,42],[4,36],[12,22]]},
+ {c:'#d8d5ea',p:[[-10,112],[-25,134],[-38,144],[-43,128],[-28,116]]},
+ {c:'#cbd8cf',p:[[-16,26],[-30,32],[-34,18],[-22,16]]},
+ {c:'#e9cfd3',p:[[13,-84],[4,-78],[-18,-76],[-42,-70],[-54,-70],[-43,-58],[-16,-52],[6,-64]]}
+];
+function globeCities(){
+ return cities().map(config=>({config,count:cityCount(config),lat:Number(config.coordinates?.lat),lng:Number(config.coordinates?.lng)}))
+  .filter(item=>Number.isFinite(item.lat)&&Number.isFinite(item.lng));
+}
+function projectGlobePoint(lat,lng,size){
+ const radius=size*.42;
+ const center=size/2;
+ const latRad=lat*Math.PI/180;
+ const lngRad=(lng-globeState.yaw)*Math.PI/180;
+ const pitch=globeState.pitch*Math.PI/180;
+ const cosLat=Math.cos(latRad);
+ const x=cosLat*Math.sin(lngRad);
+ const y=Math.sin(latRad);
+ const z=cosLat*Math.cos(lngRad);
+ const y2=y*Math.cos(pitch)-z*Math.sin(pitch);
+ const z2=y*Math.sin(pitch)+z*Math.cos(pitch);
+ return {x:center+x*radius,y:center-y2*radius,z:z2,radius,center,visible:z2>-.03};
+}
+async function loadWorldGeo(){
+ if(globeState.world||globeState.worldLoading)return;
+ globeState.worldLoading=true;
+ try{
+  const res=await fetch('./data/world-countries.geojson');
+  if(!res.ok)throw new Error('world geo failed');
+  globeState.world=await res.json();
+  requestGlobeDraw();
+ }catch(err){
+  globeState.world=null;
+ }finally{
+  globeState.worldLoading=false;
+ }
+}
+const globeLandPalette=['#d8d5ea','#e7cfd2','#cbd8cf','#e7d1b6','#d7cae1','#d6e0d7','#e5c2c8','#cfe0e6'];
+function polygonCentroid(points){
+ if(!points.length)return {lat:0,lng:0};
+ const total=points.reduce((acc,[lng,lat])=>({lng:acc.lng+Number(lng||0),lat:acc.lat+Number(lat||0)}),{lat:0,lng:0});
+ return {lat:total.lat/points.length,lng:total.lng/points.length};
+}
+function drawGeoRing(ctx,size,ring,color){
+ if(!Array.isArray(ring)||ring.length<3)return;
+ const centerPoint=polygonCentroid(ring);
+ if(centerPoint.lat<-62)return;
+ const centerProjection=projectGlobePoint(centerPoint.lat,centerPoint.lng,size);
+ if(!centerProjection.visible&&ring.length<24)return;
+ let segment=[];
+ const flush=()=>{
+  if(segment.length<3){segment=[];return;}
+  ctx.beginPath();
+  ctx.moveTo(segment[0].x,segment[0].y);
+  for(let i=1;i<segment.length;i++)ctx.lineTo(segment[i].x,segment[i].y);
+  ctx.closePath();
+  ctx.fillStyle=color;
+  ctx.strokeStyle='rgba(255,255,255,.9)';
+  ctx.lineWidth=1.65;
+  ctx.lineJoin='round';
+  ctx.fill();
+  ctx.stroke();
+  segment=[];
+ };
+ for(const point of ring){
+  const lng=Number(point[0]);
+  const lat=Number(point[1]);
+  if(!Number.isFinite(lat)||!Number.isFinite(lng)){flush();continue;}
+  const projected=projectGlobePoint(lat,lng,size);
+  if(projected.visible)segment.push(projected);
+  else flush();
+ }
+ flush();
+}
+function drawGeoWorld(ctx,size){
+ const features=globeState.world?.features||[];
+ if(!features.length)return false;
+ ctx.save();
+ ctx.globalAlpha=.78;
+ features.forEach((feature,index)=>{
+  const geometry=feature.geometry||{};
+  const name=feature.properties?.name||feature.properties?.NAME||'';
+  if(String(name).toLowerCase().includes('antarctica'))return;
+  const color=globeLandPalette[index%globeLandPalette.length];
+  if(geometry.type==='Polygon'){
+   geometry.coordinates?.slice(0,1).forEach(ring=>drawGeoRing(ctx,size,ring,color));
+  }else if(geometry.type==='MultiPolygon'){
+   geometry.coordinates?.forEach(poly=>poly?.slice(0,1).forEach(ring=>drawGeoRing(ctx,size,ring,color)));
+  }
+ });
+ ctx.restore();
+ return true;
+}
+function drawFallbackLand(ctx,size){
+ globeLandRegions.forEach(region=>{
+  const projected=region.p.map(([lat,lng])=>projectGlobePoint(lat,lng,size));
+  if(projected.filter(p=>p.visible).length<3)return;
+  ctx.save();
+  ctx.beginPath();
+  let started=false;
+  projected.forEach(p=>{
+   if(!p.visible)return;
+   if(!started){ctx.moveTo(p.x,p.y);started=true;}
+   else ctx.lineTo(p.x,p.y);
+  });
+  if(started){
+   ctx.closePath();
+   ctx.fillStyle=region.c;
+   ctx.globalAlpha=.72;
+   ctx.strokeStyle='rgba(255,255,255,.86)';
+   ctx.lineWidth=2.2;
+   ctx.lineJoin='round';
+   ctx.fill();
+   ctx.stroke();
+  }
+  ctx.restore();
+ });
+}
+function drawGlobeLine(ctx,size,points,color,width){
+ let open=false;
+ ctx.lineWidth=width;
+ ctx.strokeStyle=color;
+ points.forEach(([lat,lng])=>{
+  const p=projectGlobePoint(lat,lng,size);
+  if(!p.visible){if(open)ctx.stroke();open=false;return;}
+  if(!open){ctx.beginPath();ctx.moveTo(p.x,p.y);open=true;}
+  else ctx.lineTo(p.x,p.y);
+ });
+ if(open)ctx.stroke();
+}
+function drawCityGlobe(){
+ const canvas=$('globeCanvas');
+ const pinLayer=$('globePins');
+ const globe=$('cityGlobe');
+ if(!canvas||!pinLayer||!globe)return;
+ const rect=globe.getBoundingClientRect();
+ const size=Math.max(260,Math.round(rect.width));
+ const ratio=window.devicePixelRatio||1;
+ canvas.width=size*ratio;
+ canvas.height=size*ratio;
+ canvas.style.width=`${size}px`;
+ canvas.style.height=`${size}px`;
+ const ctx=canvas.getContext('2d');
+ ctx.setTransform(ratio,0,0,ratio,0,0);
+ ctx.clearRect(0,0,size,size);
+ const center=size/2;
+ const radius=size*.42;
+ ctx.save();
+ ctx.beginPath();
+ ctx.arc(center,center,radius,0,Math.PI*2);
+ ctx.clip();
+ const ocean=ctx.createRadialGradient(center-radius*.34,center-radius*.42,radius*.08,center,center,radius*1.08);
+ ocean.addColorStop(0,'rgba(255,255,255,.92)');
+ ocean.addColorStop(.18,'rgba(237,229,198,.78)');
+ ocean.addColorStop(.4,'rgba(188,216,225,.86)');
+ ocean.addColorStop(.76,'rgba(122,165,174,.92)');
+ ocean.addColorStop(1,'rgba(59,82,80,.96)');
+ ctx.fillStyle=ocean;
+ ctx.fillRect(0,0,size,size);
+ ctx.globalCompositeOperation='screen';
+ for(let i=0;i<52;i++){
+  const a=(i*137.5+globeState.yaw*2)*Math.PI/180;
+  const rr=radius*(.18+((i*47)%100)/130);
+  const x=center+Math.cos(a)*rr*.8;
+  const y=center+Math.sin(a*1.7)*rr*.64;
+  ctx.fillStyle=i%5===0?'rgba(230,198,111,.34)':'rgba(255,255,255,.14)';
+  ctx.beginPath();
+  ctx.arc(x,y,i%5===0?1.6:.9,0,Math.PI*2);
+  ctx.fill();
+ }
+ ctx.globalCompositeOperation='source-over';
+ for(let ring=.24;ring<=.86;ring+=.155){
+  ctx.beginPath();
+  ctx.arc(center,center,radius*ring,0,Math.PI*2);
+  ctx.strokeStyle='rgba(255,255,255,.055)';
+  ctx.lineWidth=1;
+  ctx.stroke();
+ }
+ for(let lat=-60;lat<=60;lat+=20){
+  const pts=[];for(let lng=-180;lng<=180;lng+=4)pts.push([lat,lng]);
+  drawGlobeLine(ctx,size,pts,'rgba(255,255,255,.18)',1);
+ }
+ for(let lng=-180;lng<180;lng+=20){
+  const pts=[];for(let lat=-78;lat<=78;lat+=3)pts.push([lat,lng]);
+  drawGlobeLine(ctx,size,pts,'rgba(255,255,255,.14)',1);
+ }
+ if(!drawGeoWorld(ctx,size))drawFallbackLand(ctx,size);
+ const routes=[
+  [[35.6762,139.6503],[22.3193,114.1694],[31.2304,121.4737]],
+  [[48.8566,2.3522],[40.7128,-74.006],[35.6762,139.6503]],
+  [[48.8566,2.3522],[22.3193,114.1694]],
+  [[40.7128,-74.006],[31.2304,121.4737]]
+ ];
+ routes.forEach(route=>{
+  const pts=[];
+  for(let i=0;i<route.length-1;i++){
+   const [aLat,aLng]=route[i];
+   const [bLat,bLng]=route[i+1];
+   for(let t=0;t<=1;t+=.045){
+    const lift=Math.sin(t*Math.PI)*14;
+    pts.push([aLat+(bLat-aLat)*t+lift*.12,aLng+(bLng-aLng)*t]);
+   }
+  }
+  drawGlobeLine(ctx,size,pts,'rgba(238,203,120,.34)',1.4);
+ });
+ globeCities().forEach(({lat,lng})=>{
+  const p=projectGlobePoint(lat,lng,size);
+  if(!p.visible)return;
+  ctx.beginPath();
+  ctx.arc(p.x,p.y,4.5,0,Math.PI*2);
+  ctx.fillStyle='rgba(231,184,72,.95)';
+  ctx.shadowColor='rgba(231,184,72,.8)';
+  ctx.shadowBlur=14;
+  ctx.fill();
+  ctx.shadowBlur=0;
+  ctx.beginPath();
+  ctx.arc(p.x,p.y,10,0,Math.PI*2);
+  ctx.strokeStyle='rgba(255,255,255,.28)';
+  ctx.lineWidth=1;
+  ctx.stroke();
+ });
+ const glow=ctx.createRadialGradient(center-radius*.38,center-radius*.45,0,center-radius*.38,center-radius*.45,radius*.75);
+ glow.addColorStop(0,'rgba(255,255,255,.42)');
+ glow.addColorStop(1,'rgba(255,255,255,0)');
+ ctx.fillStyle=glow;
+ ctx.fillRect(0,0,size,size);
+ ctx.restore();
+ ctx.beginPath();
+ ctx.arc(center,center,radius,0,Math.PI*2);
+ ctx.strokeStyle='rgba(238,206,126,.46)';
+ ctx.lineWidth=1.2;
+ ctx.stroke();
+ ctx.beginPath();
+ ctx.arc(center,center,radius+5,0,Math.PI*2);
+ ctx.strokeStyle='rgba(255,255,255,.18)';
+ ctx.lineWidth=6;
+ ctx.stroke();
+ const shade=ctx.createRadialGradient(center-radius*.18,center-radius*.28,radius*.1,center,center,radius*1.08);
+ shade.addColorStop(.62,'rgba(0,0,0,0)');
+ shade.addColorStop(1,'rgba(0,0,0,.34)');
+ ctx.beginPath();
+ ctx.arc(center,center,radius,0,Math.PI*2);
+ ctx.fillStyle=shade;
+ ctx.fill();
+ updateGlobePins(size);
+}
+function updateGlobePins(size){
+ const pinLayer=$('globePins');
+ if(!pinLayer)return;
+ globeCities().forEach(({config,lat,lng})=>{
+  const pin=pinLayer.querySelector(`[data-city="${CSS.escape(config.labelZh)}"]`);
+  if(!pin)return;
+  const p=projectGlobePoint(lat,lng,size);
+  pin.style.setProperty('--x',`${(p.x/size)*100}%`);
+  pin.style.setProperty('--y',`${(p.y/size)*100}%`);
+  pin.style.setProperty('--scale',String(Math.max(.82,Math.min(1.12,.9+p.z*.16))));
+  pin.style.setProperty('--opacity',String(p.visible?Math.max(.38,Math.min(1,.55+p.z*.45)):0));
+  pin.classList.toggle('is-hidden',!p.visible);
+ });
+}
+function installGlobeInteraction(){
+ const globe=$('cityGlobe');
+ if(!globe||globe.dataset.ready)return;
+ globe.dataset.ready='true';
+ const dragStart=e=>{
+  if(e.target.closest?.('.globe-pin'))return;
+  globeState.dragging=true;
+  globeState.moved=false;
+  globeState.lastX=e.clientX;
+  globeState.lastY=e.clientY;
+  globe.classList.add('dragging');
+  globe.setPointerCapture?.(e.pointerId);
+ };
+ const dragMove=e=>{
+  if(!globeState.dragging)return;
+  const dx=e.clientX-globeState.lastX;
+  const dy=e.clientY-globeState.lastY;
+  if(Math.abs(dx)+Math.abs(dy)>2)globeState.moved=true;
+  globeState.yaw-=dx*.45;
+  globeState.pitch=Math.max(-45,Math.min(45,globeState.pitch+dy*.35));
+  globeState.lastX=e.clientX;
+  globeState.lastY=e.clientY;
+  requestGlobeDraw();
+ };
+ const dragEnd=e=>{
+  globeState.dragging=false;
+  globe.classList.remove('dragging');
+  globe.releasePointerCapture?.(e.pointerId);
+ };
+ globe.addEventListener('pointerdown',dragStart);
+ globe.addEventListener('pointermove',dragMove);
+ globe.addEventListener('pointerup',dragEnd);
+ globe.addEventListener('pointercancel',dragEnd);
+ window.addEventListener('resize',requestGlobeDraw);
+ startGlobeAnimation();
+}
+function startGlobeAnimation(){
+ if(globeState.animating)return;
+ globeState.animating=true;
+ const tick=()=>{
+  if(!document.getElementById('cityGlobe')){globeState.animating=false;return;}
+  if(!globeState.dragging){
+   globeState.yaw=(globeState.yaw+.035)%360;
+   requestGlobeDraw();
+  }
+  requestAnimationFrame(tick);
+ };
+ requestAnimationFrame(tick);
+}
+function requestGlobeDraw(){
+ if(globeState.raf)return;
+ globeState.raf=requestAnimationFrame(()=>{
+  globeState.raf=0;
+  drawCityGlobe();
+ });
+}
+function renderCityGlobe(){
+ const globe=document.getElementById('cityGlobe');
+ const pinLayer=document.getElementById('globePins');
+ const list=document.getElementById('globeCityList');
+ if(!globe||!pinLayer||!list)return;
+ const cityItems=globeCities();
+ pinLayer.innerHTML=cityItems.map(({config,count})=>{
+  const label=state.lang==='en'?config.labelEn:config.labelZh;
+  return `<button class="globe-pin" type="button" data-city="${esc(config.labelZh)}"><span>${esc(label)}</span><small>${count}</small></button>`;
+ }).join('');
+ list.innerHTML=[`<button type="button" data-city="">${esc(t('global'))}</button>`,...cityItems.map(({config,count})=>{
+  const label=state.lang==='en'?config.labelEn:config.labelZh;
+  return `<button type="button" data-city="${esc(config.labelZh)}">${esc(label)} · ${count}</button>`;
+ })].join('');
+ pinLayer.querySelectorAll('[data-city]').forEach(btn=>btn.addEventListener('click',()=>selectGlobeCity(btn.dataset.city)));
+ list.querySelectorAll('[data-city]').forEach(btn=>btn.addEventListener('click',()=>selectGlobeCity(btn.dataset.city)));
+ installGlobeInteraction();
+ loadWorldGeo();
+ requestGlobeDraw();
+ updateCityGlobeActive();
+}
+function selectGlobeCity(value){
+ setCity(value);
+ document.querySelector('.controls')?.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function updateCityGlobeActive(){
+ const selected=els.city?.value||'';
+ document.querySelectorAll('.globe-pin,.globe-city-list [data-city]').forEach(btn=>btn.classList.toggle('active',btn.dataset.city===selected));
+}
 function selectedCityItems(){
  const current=els.city?.value||'';
  return current?state.data.filter(x=>cityLabel(x)===current):state.data;
@@ -348,6 +736,7 @@ function updateCityButton(){
  const label=cityDisplay(els.city?.value||'');
  if(els.cityButton)els.cityButton.textContent=label;
  els.cityMenu?.querySelectorAll('[data-city]').forEach(btn=>btn.classList.toggle('active',btn.dataset.city===(els.city?.value||'')));
+ updateCityGlobeActive();
 }
 function rebuildCityControls(){
  const globalLabel=esc(t('global'));
@@ -485,6 +874,13 @@ function updateMembershipButtons(){
    ? `${state.lang==='en'?'Premium active':'Premium 已开通'}｜${state.membership.plan||'Premium'}｜${state.lang==='en'?'Renews':'下次续费'}：${state.membership.renewal||'-'}`
    : `${state.membership.message||'会员状态未确认'}。`;
  }
+ els.checkoutButtons.forEach(btn=>{
+  btn.hidden=premium;
+  btn.disabled=premium;
+ });
+ if(els.manageSubscriptionButton){
+  els.manageSubscriptionButton.hidden=!premium&&state.user==='guest';
+ }
 }
 function setMembership(next){
  state.membership={...state.membership,...next};
@@ -571,11 +967,9 @@ function handleCheckoutReturn(){
 async function startCheckout(plan){
  try{
   const email=requireEmail();
-  if(stripePaymentLinks[plan]){
-   const checkoutUrl=new URL(stripePaymentLinks[plan]);
-   checkoutUrl.searchParams.set('locked_prefilled_email',email);
-   checkoutUrl.searchParams.set('locale',state.lang==='en'?'en':'zh');
-   location.href=checkoutUrl.href;
+  const membership=await checkMembershipStatus();
+  if(membership?.active||isPremium()){
+   alert(state.lang==='en'?'You already have an active subscription. Please manage it from My page.':'当前邮箱已经有有效订阅，请在“我的星宴”里管理订阅。');
    return;
   }
   const data=await apiPost('/api/stripe/create-checkout-session',{plan,email});
@@ -939,7 +1333,7 @@ function showMapItem(item,pin){
 }
 function updateCompare(){}
 function previewKey(item){
- return `${item.city||cityLabel(item)||'global'}::${item.stars||0}`;
+ return item.city||cityLabel(item)||'global';
 }
 function freePreviewItems(items){
  const seen=new Map();
@@ -947,7 +1341,7 @@ function freePreviewItems(items){
   const key=previewKey(item);
   const count=seen.get(key)||0;
   seen.set(key,count+1);
-  return count<FREE_PREVIEW_PER_CITY_STAR;
+  return count<FREE_PREVIEW_PER_CITY;
  });
 }
 function scheduleSearchUsage(query){
@@ -980,13 +1374,13 @@ function updateAccessNotice(){
   return;
  }
  els.accessNotice.hidden=false;
- els.accessNotice.innerHTML=`<div><strong>${state.lang==='en'?'Free preview':'免费预览'}</strong><span>${state.lang==='en'?`Showing 3 restaurants per city and star level. Searches left: ${remaining}.`:`每个城市、每个星级可预览 3 家餐厅。剩余搜索次数：${remaining} 次。`}${locked?` ${state.lang==='en'?`${locked} more restaurants are locked.`:`还有 ${locked} 家已锁定。`}`:''}</span></div><button type="button" data-open-membership>${state.lang==='en'?'Upgrade':'开通会员'}</button>`;
+ els.accessNotice.innerHTML=`<div><strong>${state.lang==='en'?'Free preview':'免费预览'}</strong><span>${state.lang==='en'?`Showing 3 restaurants per city. Searches left: ${remaining}.`:`每个城市可预览 3 家餐厅。剩余搜索次数：${remaining} 次。`}${locked?` ${state.lang==='en'?`${locked} more restaurants are locked.`:`还有 ${locked} 家已锁定。`}`:''}</span></div><button type="button" data-open-membership>${state.lang==='en'?'Upgrade':'开通会员'}</button>`;
  els.accessNotice.querySelector('[data-open-membership]')?.addEventListener('click',openMembershipModal);
 }
 function makeLimitCard(hiddenCount){
  const article=document.createElement('article');
  article.className='card limit-card';
- article.innerHTML=`<div><p class="eyebrow">${state.lang==='en'?'PREMIUM':'MEMBERSHIP'}</p><h2>${state.lang==='en'?'Unlock full restaurant access':'开通会员，查看全部餐厅'}</h2><p>${state.lang==='en'?`${hiddenCount} matching restaurants are hidden. Free preview shows 3 restaurants per city and star level.`:`当前筛选结果还有 ${hiddenCount} 家餐厅仅会员可看。免费模式每个城市、每个星级可预览 3 家。`}</p></div><button class="reserve" type="button">${state.lang==='en'?'Upgrade':'会员订阅'}</button>`;
+ article.innerHTML=`<div><p class="eyebrow">${state.lang==='en'?'PREMIUM':'MEMBERSHIP'}</p><h2>${state.lang==='en'?'Unlock full restaurant access':'开通会员，查看全部餐厅'}</h2><p>${state.lang==='en'?`${hiddenCount} matching restaurants are hidden. Free preview shows 3 restaurants per city.`:`当前筛选结果还有 ${hiddenCount} 家餐厅仅会员可看。免费模式每个城市可预览 3 家。`}</p></div><button class="reserve" type="button">${state.lang==='en'?'Upgrade':'会员订阅'}</button>`;
  article.querySelector('button')?.addEventListener('click',openMembershipModal);
  return article;
 }
@@ -1182,6 +1576,7 @@ async function init(){
  state.data=sortRestaurants(data);
  state.filtered=[...state.data];
  updateStats(selectedCityItems());
+ renderCityGlobe();
  addOptions(els.cuisine,new Set(state.data.map(x=>x.cuisineZh).filter(Boolean)));
  els.lastUpdated.textContent=state.data.map(x=>x.sync?.lastChecked).filter(Boolean).sort().at(-1)||'2026-08-02';
  updateCityButton();
