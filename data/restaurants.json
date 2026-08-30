@@ -86507,5 +86507,2183 @@
     },
     "lastChecked": "2026-08-26",
     "dataStatus": "verified"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "West Lake",
+    "address": "杭州市西湖区玉泉路11号（杭州植物园内）",
+    "phone": "+86 571 8707 9088",
+    "difficulty": 5,
+    "booking": "高需求二星餐厅；公开资料显示需提前规划，建议通过电话、官方邮箱或酒店礼宾确认席位。",
+    "lunch": [
+      {
+        "name": "午餐 / 杭州菜季节菜单",
+        "price": "¥700 起 / 人",
+        "cny": 700,
+        "details": [
+          "携程公开人均 ¥718；本地媒体公开午市简餐约 ¥700 起。",
+          "推荐方向：手剥龙井虾仁、杭州翡翠斩鱼圆、香雪酒醉膏蟹。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Trip.com / Sina public dining guide。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / 杭州菜 tasting menu",
+        "price": "¥1,000-1,500 / 人",
+        "cny": 1000,
+        "details": [
+          "公开资料显示晚市套餐多在 ¥1,000-1,500 区间。",
+          "米其林描述其精修西湖醋鱼、龙井虾仁、黄酒红烧肉等杭州菜。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Sina / MICHELIN / Foodle public references。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Foodle public diner note / Tatler high-end dining profile",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "携程公开设施显示有宝宝椅、宴会厅和免费停车；儿童同行仍建议预约时说明人数、座椅和菜单需求。",
+      "verified": true,
+      "publicInfoStatus": "public listing partly explicit",
+      "source": "Trip.com public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 5,
+      "difficultyLabel": "很难",
+      "bookingRule": "Tatler / Tabelog 公开电话与邮箱；热门日期建议至少提前数周确认，具体放位规则公开来源未明确。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official email",
+        "phone"
+      ],
+      "waitlist": "需预约确认",
+      "cancelSlotLikelihood": "低",
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": true,
+      "overseasBooking": "建议通过酒店礼宾或邮件确认",
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 700,
+      "dinnerFrom": 1000,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Trip.com avg spend + Sina public dining guide"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "official": "https://www.ruyuanhangzhou.com/",
+      "reservation": "mailto:yuquan11@ruyuanhangzhou.com",
+      "localListing": "https://www.tatlerasia.com/dining/ru-yuan"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "黄龙体育中心",
+          "walkMinutes": 25,
+          "lines": [
+            "地铁 3号线 / 10号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate; garden location, taxi recommended",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "携程",
+      "localScore": "4.9/5",
+      "localUrl": "https://gs.ctrip.com/html5/you/foods/fooddetail/14/144301678.html",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Trip.com public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "10000-20000",
+        "20000-30000"
+      ],
+      "lunchPriceTiers": [
+        "10000-20000"
+      ],
+      "dinnerPriceTiers": [
+        "20000-30000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "public booking references",
+      "lastChecked": "2026-08-30",
+      "notes": "公开预约/评论资料未显示单人友好；高需求二星餐厅建议按 2 人以上或礼宾确认。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-ru-yuan",
+    "name": "Ru Yuan",
+    "nameEn": "Ru Yuan",
+    "nameZh": "如院",
+    "stars": 2,
+    "cuisine": "Zhejiang",
+    "cuisineZh": "浙江菜",
+    "areaZh": "西湖"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "West Lake",
+    "address": "杭州市西湖区八盘岭路1号紫萱度假村内",
+    "phone": "+86 571 8797 5858",
+    "difficulty": 4,
+    "booking": "位于紫萱度假村内，午晚餐开放；建议提前电话或通过酒店/礼宾确认。",
+    "lunch": [
+      {
+        "name": "午餐 / 江南创意菜 à la carte",
+        "price": "¥300-600 / 人",
+        "cny": 600,
+        "details": [
+          "Wanderlog 公开访店记录给出 ¥300-600 区间。",
+          "菜品样例：云腿野菜石榴包、鱼子酱松板肉、新宋嫂鱼柳羹。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Wanderlog / Relais & Châteaux。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / 江南创意菜",
+        "price": "¥700-1,080 / 人",
+        "cny": 700,
+        "details": [
+          "城市惠公开人均约 ¥700；公开评论提到 tasting menu ¥1,080/人另计服务费。",
+          "米其林 2026 晋升二星，菜单强调浙江风土和时令。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Cityhui / Wanderlog / MICHELIN。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Pearl / Wanderlog public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "本地公开资料显示支持宝宝椅、包厢、宴会厅；儿童菜单和包间低消需预约确认。",
+      "verified": true,
+      "publicInfoStatus": "public listing partly explicit",
+      "source": "Zaoseo / Cityhui public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 4,
+      "difficultyLabel": "较难",
+      "bookingRule": "Relais & Châteaux 页面显示 lunch and dinner；包间、宴会和会议服务需提前预约。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official hotel page",
+        "phone"
+      ],
+      "waitlist": "需预约确认",
+      "cancelSlotLikelihood": "中",
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": true,
+      "overseasBooking": "可电话或通过酒店礼宾",
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 600,
+      "dinnerFrom": 700,
+      "serviceCharge": "部分菜单公开记录显示另计服务费，需预约确认",
+      "verified": true,
+      "source": "Cityhui / Wanderlog public price references"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "official": "https://www.relaischateaux.com/us/restaurant/jiexianglou-chinese-restaurant/",
+      "reservation": "tel:+8657187975858",
+      "localListing": "https://www.laliste.com/places/jiexianglou-at-seven-villas-hangzhou-hang-zhou-shi-cn"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "水澄桥",
+          "walkMinutes": 30,
+          "lines": [
+            "地铁 4号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate; hillside resort location, taxi recommended",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "城市惠",
+      "localScore": "4.5/5",
+      "localUrl": "https://www.cityhui.com/shop/18859.html",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Cityhui public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "10000-20000"
+      ],
+      "lunchPriceTiers": [
+        "10000-20000"
+      ],
+      "dinnerPriceTiers": [
+        "10000-20000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "Relais & Châteaux / Pearl public listing",
+      "lastChecked": "2026-08-30",
+      "notes": "度假村中餐厅以桌餐/包间为主，公开资料未显示单人友好座席。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-jie-xiang-lou",
+    "name": "Jie Xiang Lou",
+    "nameEn": "Jie Xiang Lou",
+    "nameZh": "解香楼",
+    "stars": 2,
+    "cuisine": "Zhejiang",
+    "cuisineZh": "浙江菜",
+    "areaZh": "西湖"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "Shangcheng",
+    "address": "杭州市上城区清泰街224号",
+    "phone": "+86 571 8781 0887",
+    "difficulty": 4,
+    "booking": "六张主桌和一间 10 人包房；Tripadvisor 公开页显示接受预订，建议提前确认。",
+    "lunch": [
+      {
+        "name": "Lunch Set",
+        "price": "¥988 / 人",
+        "cny": 988,
+        "details": [
+          "官网公开 Lunch Set ¥988。",
+          "米其林描述其午晚餐均为单一 tasting menu 结构。"
+        ],
+        "note": "官网价格；实际菜单季节调整。 来源：Ambré Ciel official site / MICHELIN。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "Spring Set",
+        "price": "¥1,688 / 人",
+        "cny": 1688,
+        "details": [
+          "官网公开 Spring Set ¥1,688。",
+          "代表方向：王蟹、龙虾、和牛、鱼子酱等当代法餐元素。"
+        ],
+        "note": "官网价格；实际菜单季节调整。 来源：Ambré Ciel official site。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Pearl public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "Tripadvisor 公开资料显示有 private dining、reservations、parking、wheelchair access；儿童同行未见年龄限制，需预约确认。",
+      "verified": true,
+      "publicInfoStatus": "public listing partly explicit",
+      "source": "Tripadvisor public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 988,
+      "dinnerFrom": 1688,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Ambré Ciel official site"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "official": "https://www.ambreciel.cn/cn/index.html",
+      "reservation": "tel:+8657187810887",
+      "localListing": "https://www.tripadvisor.com/Restaurant_Review-g298559-d28022093-Reviews-Ambre_Ciel_French_Restaurant-Hangzhou_Zhejiang.html"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "古荡",
+          "walkMinutes": 12,
+          "lines": [
+            "地铁 3号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "Tripadvisor",
+      "localScore": "5.0/5",
+      "localUrl": "https://www.tripadvisor.com/Restaurant_Review-g298559-d28022093-Reviews-Ambre_Ciel_French_Restaurant-Hangzhou_Zhejiang.html",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Tripadvisor public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "10000-20000",
+        "30000-40000"
+      ],
+      "lunchPriceTiers": [
+        "10000-20000"
+      ],
+      "dinnerPriceTiers": [
+        "30000-40000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "MICHELIN / Tripadvisor public listing",
+      "lastChecked": "2026-08-30",
+      "notes": "六桌 tasting-menu 餐厅，公开资料未显示单人预约友好。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-ambre-ciel",
+    "name": "Ambré Ciel",
+    "nameEn": "Ambré Ciel",
+    "nameZh": "珀",
+    "stars": 1,
+    "cuisine": "French",
+    "cuisineZh": "法餐",
+    "areaZh": "上城"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "West Lake",
+    "address": "杭州市西湖区满觉陇路2-1号",
+    "phone": "+86 571 8797 7677",
+    "difficulty": 4,
+    "booking": "西湖边小体量高端餐厅；建议提前数周电话或礼宾确认。",
+    "lunch": [
+      {
+        "name": "午餐 / 江浙菜",
+        "price": "¥600 / 人均",
+        "cny": 600,
+        "details": [
+          "品牌100公开人均 ¥600；Trip.com 公开评分 4.7/5。",
+          "Trip.com 推荐菜包括私房宫廷御香鸭、虎跑泉水牛肉、青石板话梅小排。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：CNPP100 / Trip.com。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / 江浙菜",
+        "price": "¥600 / 人均",
+        "cny": 600,
+        "details": [
+          "营业时间覆盖晚餐；公开资料显示普通创意菜和多人套餐。",
+          "素食套餐价格公开参考为 ¥269/¥469/¥699。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：CNPP100 / Trip.com。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Pearl public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "Trip.com 公开设施显示儿童餐椅、露天座位、景观座位；儿童同行建议预约时确认座椅和包间。",
+      "verified": true,
+      "publicInfoStatus": "public listing partly explicit",
+      "source": "Trip.com public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 600,
+      "dinnerFrom": 600,
+      "serviceCharge": "公开资料显示可能加收服务费，需预约确认",
+      "verified": true,
+      "source": "CNPP100 / Trip.com public listing"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "reservation": "tel:+8657187977677",
+      "localListing": "https://www.cityhui.com/shop/18860.html",
+      "ctrip": "https://tw.trip.com/restaurant/china/hangzhou/detail/guiyu-restaurant-11292015/",
+      "dianping": "https://maps.apple.com/place?auid=1117323449084228&lsp=57879"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "定安路",
+          "walkMinutes": 18,
+          "lines": [
+            "地铁 1号线"
+          ]
+        },
+        {
+          "name": "吴山广场",
+          "walkMinutes": 20,
+          "lines": [
+            "地铁 7号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "携程",
+      "localScore": "4.7/5",
+      "localUrl": "https://tw.trip.com/restaurant/china/hangzhou/detail/guiyu-restaurant-11292015/",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Trip.com public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "10000-20000"
+      ],
+      "lunchPriceTiers": [
+        "10000-20000"
+      ],
+      "dinnerPriceTiers": [
+        "10000-20000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "Trip.com / Pearl public listing",
+      "lastChecked": "2026-08-30",
+      "notes": "餐厅以桌餐和多人套餐为主，公开资料未显示单人友好。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-guiyu-xihu",
+    "name": "Guiyu (Xihu)",
+    "nameEn": "Guiyu (Xihu)",
+    "nameZh": "桂语山房（西湖）",
+    "stars": 1,
+    "cuisine": "Zhejiang",
+    "cuisineZh": "浙江菜",
+    "areaZh": "西湖"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "West Lake",
+    "address": "杭州市西湖区西湖街道法云弄22号安缦法云 EX4 楼",
+    "phone": "+86 571 8732 9999",
+    "difficulty": 4,
+    "booking": "安缦法云内餐厅，靠近灵隐寺；建议通过酒店或电话预约。",
+    "lunch": [
+      {
+        "name": "午餐 / 江浙菜",
+        "price": "¥549 / 人均",
+        "cny": 549,
+        "details": [
+          "Apple Maps / 大众点评公开人均 ¥549。",
+          "推荐菜方向：臭豆腐炒虾仁、熟醉蟹、油爆虾、西湖醋鱼。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Apple Maps / Dianping public listing。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / 江浙菜",
+        "price": "¥549 / 人均",
+        "cny": 549,
+        "details": [
+          "安缦法云内餐厅，米其林描述主打精致江浙菜。",
+          "具体季节菜单和包间需求需预约确认。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Apple Maps / MICHELIN / Aman references。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Amanfayun luxury resort dining context / MICHELIN profile",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "安缦度假村内餐厅，公开资料未见年龄限制；儿童同行、儿童椅和包间需预约确认。",
+      "verified": true,
+      "publicInfoStatus": "public source not restrictive",
+      "source": "Aman / Apple Maps public references",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 549,
+      "dinnerFrom": 549,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Apple Maps / Dianping public listing"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "official": "https://www.aman.com/resorts/amanfayun/dining",
+      "reservation": "tel:+8657187329999",
+      "localListing": "https://www.viamichelin.com/maps/restaurants/poi/hangzhou-_-04765db9"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "黄龙体育中心",
+          "walkMinutes": 45,
+          "lines": [
+            "地铁 3号线 / 10号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate; Lingyin/Amanfayun area, taxi recommended",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "大众点评",
+      "localScore": "4.6/5",
+      "localUrl": "https://maps.apple.com/place?auid=1117323449086014&lsp=57879",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Apple Maps / Dianping public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "10000-20000"
+      ],
+      "lunchPriceTiers": [
+        "10000-20000"
+      ],
+      "dinnerPriceTiers": [
+        "10000-20000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "Aman / Apple Maps public references",
+      "lastChecked": "2026-08-30",
+      "notes": "度假村江浙菜餐厅，以桌餐为主，公开资料未显示单人友好。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-hangzhou-house",
+    "name": "Hangzhou House",
+    "nameEn": "Hangzhou House",
+    "nameZh": "兰轩",
+    "stars": 1,
+    "cuisine": "Zhejiang",
+    "cuisineZh": "浙江菜",
+    "areaZh": "西湖"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "West Lake",
+    "address": "杭州市西湖区灵隐路5号杭州西子湖四季酒店1层",
+    "phone": "+86 571 8113 5188",
+    "difficulty": 3,
+    "booking": "四季酒店内中餐厅；工作日相对可订，周末点心和包厢建议提前预约。",
+    "lunch": [
+      {
+        "name": "午餐 / 江浙菜与点心",
+        "price": "¥400-650 / 人",
+        "cny": 400,
+        "details": [
+          "四季官网公开午餐 11:30-14:00。",
+          "本地公开评测提示午市因点心可将人均拉低至约 ¥400；品牌100公开人均 ¥650。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Four Seasons official site / Foodie Guild / CNPP100。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / 时令江浙菜",
+        "price": "¥650-800+ / 人",
+        "cny": 650,
+        "details": [
+          "四季官网公开晚餐 17:30-21:00。",
+          "官方推荐菜包括鲍鱼红烧肉、鸡油花雕蒸三门蟹、金沙脆皮鸡。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Four Seasons official site / CNPP100。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Four Seasons official luxury hotel restaurant profile / Pearl public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": true,
+      "advanceNoticeRequired": true,
+      "notes": "Tripadvisor 公开功能显示有儿童椅、可预订、私人包厢和无障碍通道；儿童同行建议提前说明。",
+      "verified": true,
+      "publicInfoStatus": "public listing partly explicit",
+      "source": "Tripadvisor public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 400,
+      "dinnerFrom": 650,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Four Seasons official site / local public price references"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "official": "https://www.fourseasons.com/hangzhou/dining/restaurants/jin_sha/",
+      "reservation": "tel:+8657181135188",
+      "localListing": "https://press.fourseasons.com/hangzhou/hotel-news/2026/michelin-starred-jin-sha-restaurant/"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "黄龙体育中心",
+          "walkMinutes": 30,
+          "lines": [
+            "地铁 3号线 / 10号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate; West Lake hotel location, taxi recommended",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "Tripadvisor",
+      "localScore": "4.6/5",
+      "localUrl": "https://cn.tripadvisor.com/Restaurant_Review-g298559-d2091009-Reviews-Jin_Sha_Restaurant-Hangzhou_Zhejiang.html",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Tripadvisor public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "under-10000",
+        "10000-20000"
+      ],
+      "lunchPriceTiers": [
+        "under-10000"
+      ],
+      "dinnerPriceTiers": [
+        "10000-20000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "Four Seasons / Tripadvisor public listing",
+      "lastChecked": "2026-08-30",
+      "notes": "酒店中餐厅可单点，但公开资料未标注 solo dining；单人用餐建议电话确认。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-jin-sha",
+    "name": "Jin Sha",
+    "nameEn": "Jin Sha",
+    "nameZh": "金沙厅",
+    "stars": 1,
+    "cuisine": "Zhejiang",
+    "cuisineZh": "浙江菜",
+    "areaZh": "西湖"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "Xihu",
+    "address": "杭州市西湖区之江路85-3号溪中溪度假酒店内",
+    "phone": "+86 571 8676 7979",
+    "difficulty": 4,
+    "booking": "Olivier Elzer 官方页显示 12:00-23:00；米其林描述以季节 tasting menu 为主，建议预约确认。",
+    "lunch": [
+      {
+        "name": "午餐 / 当代法餐",
+        "price": "¥1,601 / 人均参考",
+        "cny": 1601,
+        "details": [
+          "公开餐饮媒体给出人均约 ¥1,601；官网公开营业时间 12:00-23:00。",
+          "实际是否提供独立午餐套餐需预约确认。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Olivier Elzer official site / Lookvin public guide。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / 季节 tasting menu",
+        "price": "¥1,919 / 人均参考",
+        "cny": 1919,
+        "details": [
+          "公开外国人订餐指南给出 Xipan 19 人均约 ¥1,919。",
+          "米其林描述其提供两款季节 tasting menu，Olivier Elzer 团队署名。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：MICHELIN / DolphinUnion / Olivier Elzer official site。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Vallie Hotel / Pearl fine-dining context",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "酒店餐厅公开资料未见年龄限制；tasting menu 与山谷位置较正式，儿童同行需预约确认。",
+      "verified": true,
+      "publicInfoStatus": "public source not restrictive",
+      "source": "Olivier Elzer official site / Trip.com public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 1601,
+      "dinnerFrom": 1919,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Olivier Elzer official site + public avg spend references"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "official": "https://www.olivierelzer.com/leclat19",
+      "reservation": "tel:+8657186767979",
+      "localListing": "https://www.viamichelin.com/maps/restaurants/poi/hangzhou-_-a7b187eb"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "水澄桥",
+          "walkMinutes": 28,
+          "lines": [
+            "地铁 4号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate; south West Lake valley location, taxi recommended",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "携程",
+      "localScore": "5.0/5",
+      "localUrl": "https://www.trip.com/restaurant/china/hangzhou/detail/lclat-19-78105661/",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Trip.com public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "30000-40000"
+      ],
+      "lunchPriceTiers": [
+        "30000-40000"
+      ],
+      "dinnerPriceTiers": [
+        "30000-40000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "MICHELIN / Olivier Elzer official site",
+      "lastChecked": "2026-08-30",
+      "notes": "季节 tasting menu 餐厅，公开资料未显示单人预约友好。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-leclat-19",
+    "name": "L'éclat 19",
+    "nameEn": "L'éclat 19",
+    "nameZh": "雷克拉法餐",
+    "stars": 1,
+    "cuisine": "French Contemporary",
+    "cuisineZh": "当代法餐",
+    "areaZh": "西湖"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "West Lake",
+    "address": "杭州市西湖区龙井路399号",
+    "phone": "+86 571 8788 8777",
+    "difficulty": 4,
+    "booking": "仅约八间包房的园林餐厅；建议电话预约并确认包间、菜单和最低消费。",
+    "lunch": [
+      {
+        "name": "午餐 / 江浙私房菜",
+        "price": "¥650 / 人均",
+        "cny": 650,
+        "details": [
+          "携程公开人均 ¥650，营业时间 10:00-14:30。",
+          "推荐菜包括冬虫夏草老鸭汤、遗园蟹斗、自磨豆浆、红烧肉。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Trip.com / ViaMichelin。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / 江浙私房菜",
+        "price": "¥650-720 / 人均",
+        "cny": 650,
+        "details": [
+          "携程公开人均 ¥650；大众点评移动页显示 ¥720/人。",
+          "米其林描述其约八间包房，位于龙井路园林内。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Trip.com / Dianping / MICHELIN。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "MICHELIN garden private-room profile / public dining context",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "携程公开设施显示有宝宝椅、10人以上大桌、宴会厅、露天位；儿童同行和包房需预约确认。",
+      "verified": true,
+      "publicInfoStatus": "public listing partly explicit",
+      "source": "Trip.com public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 650,
+      "dinnerFrom": 650,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Trip.com / Dianping public listing"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "reservation": "tel:+8657187888777",
+      "localListing": "https://www.viamichelin.com/maps/restaurants/poi/hangzhou-_-0e5a4c0b",
+      "ctrip": "https://gs.ctrip.com/html5/you/foods/fooddetail/14/444421.html",
+      "dianping": "https://m.dianping.com/shop/537600"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "黄龙体育中心",
+          "walkMinutes": 50,
+          "lines": [
+            "地铁 3号线 / 10号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate; Longjing scenic area, taxi recommended",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "携程",
+      "localScore": "4.7/5",
+      "localUrl": "https://gs.ctrip.com/html5/you/foods/fooddetail/14/444421.html",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Trip.com public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "10000-20000"
+      ],
+      "lunchPriceTiers": [
+        "10000-20000"
+      ],
+      "dinnerPriceTiers": [
+        "10000-20000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "ViaMichelin / Trip.com public listing",
+      "lastChecked": "2026-08-30",
+      "notes": "米其林描述餐厅仅约八间包房，公开资料未显示单人友好。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-longjing-manor",
+    "name": "Longjing Manor",
+    "nameEn": "Longjing Manor",
+    "nameZh": "龙井草堂",
+    "stars": 1,
+    "cuisine": "Zhejiang",
+    "cuisineZh": "浙江菜",
+    "areaZh": "西湖"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "Xiaoshan",
+    "address": "杭州市萧山区越王路2077号湘湖逍遥庄园安和隐世度假村",
+    "phone": "+86 175 5729 2077",
+    "difficulty": 4,
+    "booking": "湘湖度假区内餐厅，米其林描述提供两款 set menu；建议提前确认席位和酒水搭配。",
+    "lunch": [
+      {
+        "name": "午餐 / set menu",
+        "price": "¥1,553 / 人均参考",
+        "cny": 1553,
+        "details": [
+          "携程公开人均 ¥1,553；米其林描述两款 set menu。",
+          "代表食材包括海胆、蓝龙虾、松叶蟹、M8 澳洲和牛西冷等。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Trip.com / MICHELIN。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / set menu",
+        "price": "¥1,553 / 人均参考",
+        "cny": 1553,
+        "details": [
+          "携程公开人均 ¥1,553；米其林描述以中国食材制作现代法餐。",
+          "湘湖湖景和白色开放厨房是核心体验。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Trip.com / MICHELIN。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Pearl public listing / resort fine-dining context",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "携程公开评论显示适合生日、约会和重要聚餐；儿童年龄限制未见公开说明，需预约确认。",
+      "verified": true,
+      "publicInfoStatus": "public source not restrictive",
+      "source": "Trip.com public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 1553,
+      "dinnerFrom": 1553,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Trip.com public listing / MICHELIN profile"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "reservation": "tel:+8617557292077",
+      "localListing": "https://guide.michelin.com/tw/en/zhe-jiang/hangzhou_1027184/restaurant/sense-1216520",
+      "ctrip": "https://you.ctrip.com/food/14/149935947.html",
+      "dianping": "https://maps.apple.com/place?auid=1118692349573486&lsp=57879"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "湘湖",
+          "walkMinutes": 35,
+          "lines": [
+            "地铁 1号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate; resort location, taxi recommended",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "携程",
+      "localScore": "4.6/5",
+      "localUrl": "https://you.ctrip.com/food/14/149935947.html",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Trip.com public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "30000-40000"
+      ],
+      "lunchPriceTiers": [
+        "30000-40000"
+      ],
+      "dinnerPriceTiers": [
+        "30000-40000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "MICHELIN / Trip.com public listing",
+      "lastChecked": "2026-08-30",
+      "notes": "度假区 set-menu 餐厅，公开资料未显示单人友好。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-sense",
+    "name": "Sense",
+    "nameEn": "Sense",
+    "nameZh": "Sense",
+    "stars": 1,
+    "cuisine": "Innovative",
+    "cuisineZh": "创新料理",
+    "areaZh": "萧山"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "Gongshu",
+    "address": "杭州市拱墅区中山北路493号杭州中心四季酒店8层",
+    "phone": "+86 571 8681 8888",
+    "difficulty": 3,
+    "booking": "四季杭州中心官方页提供在线预订和电话；晚餐分 17:00 与 19:30 两个时段。",
+    "lunch": [
+      {
+        "name": "午餐 / 宁波菜",
+        "price": "¥626 / 人均",
+        "cny": 626,
+        "details": [
+          "四季官网公开午餐 11:30-14:00；携程公开人均 ¥626。",
+          "推荐菜包括大红袍脆皮大皇鸽腿、宁式十八斩、糟骨头豚肉蒸白鲳。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Four Seasons official site / Trip.com。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / 宁波菜",
+        "price": "¥626-1,000 / 人均",
+        "cny": 626,
+        "details": [
+          "四季官网公开晚餐两轮：17:00-19:00、19:30-21:30。",
+          "节庆双人 set dinner 曾公开 ¥2,188/两人，可作高峰/套餐参考。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Four Seasons official site / Trip.com / Four Seasons press。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Four Seasons official restaurant profile",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "四季官网 FAQ 显示可尽可能满足饮食限制和过敏；私人包厢最大 18 人，儿童同行建议提前告知。",
+      "verified": true,
+      "publicInfoStatus": "official source partly explicit",
+      "source": "Four Seasons official site",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 626,
+      "dinnerFrom": 626,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Four Seasons official site / Trip.com public listing"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "official": "https://www.fourseasons.com/hangzhoucentre/dining/restaurants/song/",
+      "reservation": "https://www.fourseasons.com/hangzhoucentre/dining/restaurants/song/",
+      "localListing": "https://www.fourseasons.com/hangzhoucentre/dining/restaurants/song/"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "武林广场",
+          "walkMinutes": 5,
+          "lines": [
+            "地铁 1号线 / 3号线"
+          ]
+        },
+        {
+          "name": "凤起路",
+          "walkMinutes": 10,
+          "lines": [
+            "地铁 1号线 / 2号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "携程",
+      "localScore": "4.7/5",
+      "localUrl": "https://you.ctrip.com/food/14/148899449.html",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Trip.com public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "10000-20000"
+      ],
+      "lunchPriceTiers": [
+        "10000-20000"
+      ],
+      "dinnerPriceTiers": [
+        "10000-20000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "Trip.com public listing",
+      "lastChecked": "2026-08-30",
+      "notes": "公开评论提示更适合 2-4 人，6 人以上普通桌较不合适；单人用餐需预约确认。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-song",
+    "name": "Song",
+    "nameEn": "Song",
+    "nameZh": "颂",
+    "stars": 1,
+    "cuisine": "Ningbo",
+    "cuisineZh": "宁波菜",
+    "areaZh": "拱墅"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "Binjiang",
+    "address": "杭州市滨江区滨盛路2077号潮上中南银座A座3层304-305室",
+    "phone": "+86 177 9983 6669",
+    "difficulty": 4,
+    "booking": "Trip.com / Apple Maps 公开信息显示需预约，部分菜品需提前预订。",
+    "lunch": [],
+    "dinner": [
+      {
+        "name": "晚餐 / 定制菜单或 à la carte",
+        "price": "¥896-1,088 / 人",
+        "cny": 896,
+        "details": [
+          "Apple Maps / 大众点评公开人均 ¥896。",
+          "公开评论提到定制式菜单 ¥1,088/位，也可单点；部分菜需提前微信预订。"
+        ],
+        "note": "公开参考价；定制菜单、单点和酒水以预约确认为准。 来源：Apple Maps / Dianping public listing。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Apple Maps / Trip.com fine-dining profile",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": null,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "公开资料未见年龄限制；部分菜品需提前预订，儿童同行和不饮酒安排需预约确认。",
+      "verified": true,
+      "publicInfoStatus": "public source not restrictive",
+      "source": "Apple Maps / Trip.com public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": null,
+      "dinnerFrom": 896,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Apple Maps / Dianping public listing"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源未显示午餐服务。"
+    },
+    "links": {
+      "reservation": "tel:+8617799836669",
+      "localListing": "https://www.trip.com/restaurant/china/hangzhou/detail/wild-yeast-109658796/",
+      "dianping": "https://maps.apple.com/place?auid=1118684671565101&lsp=57879"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "江汉路",
+          "walkMinutes": 18,
+          "lines": [
+            "地铁 6号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "携程 / 大众点评",
+      "localScore": "4.8/5",
+      "localUrl": "https://www.trip.com/restaurant/china/hangzhou/detail/wild-yeast-109658796/",
+      "ctripScore": "4.7/5",
+      "ctripUrl": "https://www.trip.com/restaurant/china/hangzhou/detail/wild-yeast-109658796/",
+      "dianpingScore": "4.8/5",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Trip.com and Apple Maps / Dianping public listing"
+    },
+    "filters": {
+      "lunchAvailable": false,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "10000-20000"
+      ],
+      "lunchPriceTiers": [],
+      "dinnerPriceTiers": [
+        "10000-20000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "Apple Maps / Trip.com public listing",
+      "lastChecked": "2026-08-30",
+      "notes": "晚餐为主的当代中餐，公开资料未显示单人友好。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-wild-yeast",
+    "name": "Wild Yeast",
+    "nameEn": "Wild Yeast",
+    "nameZh": "暗香",
+    "stars": 1,
+    "cuisine": "Chinese Contemporary",
+    "cuisineZh": "当代中餐",
+    "areaZh": "滨江"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "West Lake",
+    "address": "杭州市西湖区天目山路西溪国家湿地公园大众休憩村5号",
+    "phone": "+86 571 8709 7077",
+    "difficulty": 4,
+    "booking": "西湖花圃内高需求台州菜餐厅；建议提前 3-4 周或通过礼宾确认热门时段。",
+    "lunch": [
+      {
+        "name": "午餐 / 台州菜",
+        "price": "¥815 / 人均",
+        "cny": 815,
+        "details": [
+          "百度地图公开人均 ¥815，午餐 11:30-13:30。",
+          "推荐菜包括脆皮妙龄鸽、沙蒜烧豆面、荣记花胶黄鱼羹。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Baidu Maps public listing。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / 台州菜",
+        "price": "¥815 / 人均",
+        "cny": 815,
+        "details": [
+          "百度地图公开晚餐 17:30-20:30。",
+          "公开点评提到热门包房需提前较久预约并可能需订金。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Baidu Maps / public review。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Pearl public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "新荣记为桌餐/包房型餐厅；公开资料未见年龄限制，儿童同行、包房和海鲜预点需预约确认。",
+      "verified": true,
+      "publicInfoStatus": "public source not restrictive",
+      "source": "Baidu Maps / Xin Rong Ji official brand site",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 815,
+      "dinnerFrom": 815,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Baidu Maps public listing"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "official": "https://www.xinrongji.cc/",
+      "reservation": "tel:+8657187097077",
+      "localListing": "https://joinpearl.co/restaurants/hangzhou/xin-rong-ji"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "黄龙体育中心",
+          "walkMinutes": 28,
+          "lines": [
+            "地铁 3号线 / 10号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate; West Lake garden location, taxi recommended",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "百度地图",
+      "localScore": "5.0/5",
+      "localUrl": "https://www.baidu.com/sf?pd=poi&title=%E6%96%B0%E8%8D%A3%E8%AE%B0%28%E8%A5%BF%E6%BA%AA%E6%B9%BF%E5%9C%B0%E5%BA%97%29",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Baidu Maps public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "10000-20000"
+      ],
+      "lunchPriceTiers": [
+        "10000-20000"
+      ],
+      "dinnerPriceTiers": [
+        "10000-20000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "Baidu Maps / Pearl public listing",
+      "lastChecked": "2026-08-30",
+      "notes": "台州海鲜和包房桌餐为主，公开资料未显示单人友好。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-xin-rong-ji",
+    "name": "Xin Rong Ji",
+    "nameEn": "Xin Rong Ji",
+    "nameZh": "新荣记",
+    "stars": 1,
+    "cuisine": "Taizhou",
+    "cuisineZh": "台州菜",
+    "areaZh": "西湖"
+  },
+  {
+    "country": "China",
+    "city": "Hangzhou",
+    "area": "Gongshu",
+    "address": "杭州市拱墅区武林路梅鹤堂临街临安里2号",
+    "phone": "+86 180 5716 2771",
+    "difficulty": 4,
+    "booking": "成都玉芝兰杭州店，固定菜单式精致川菜；建议提前 3-4 周确认热门时段。",
+    "lunch": [
+      {
+        "name": "午餐 / 川菜 tasting menu",
+        "price": "¥888 / 人",
+        "cny": 888,
+        "details": [
+          "本地公开报道显示杭州玉芝兰推出 ¥888/位、¥1,288/位两种套餐。",
+          "Apple Maps / 大众点评公开午餐 11:30-14:00。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Hangzhou local report / Apple Maps。"
+      }
+    ],
+    "dinner": [
+      {
+        "name": "晚餐 / 川菜 tasting menu",
+        "price": "¥1,288 / 人",
+        "cny": 1288,
+        "details": [
+          "本地公开报道显示春夏菜单约 13 道，含熊猫攒盒、大刀金丝面等。",
+          "Apple Maps / 大众点评公开人均 ¥1,065。"
+        ],
+        "note": "公开参考价；菜单、时令菜和服务费以餐厅/预约页确认为准。 来源：Hangzhou local report / Apple Maps。"
+      }
+    ],
+    "pairings": [],
+    "dressCode": {
+      "level": "Smart casual",
+      "required": true,
+      "notes": [
+        "公开平台/酒店语境标注或符合高端星级餐厅 smart casual 场景。",
+        "建议避免拖鞋、背心、短裤等过度休闲装；包厢、宴请或节庆菜单需提前确认。"
+      ],
+      "verified": true,
+      "source": "Pearl public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "childPolicy": {
+      "diningRoomAllowed": true,
+      "privateRoomAllowed": true,
+      "minimumAge": null,
+      "babyAllowed": null,
+      "strollerAllowed": null,
+      "advanceNoticeRequired": true,
+      "notes": "Apple Maps / 大众点评公开设施显示有宝宝椅、大桌、包厢、停车；儿童同行仍需预约确认套餐适配。",
+      "verified": true,
+      "publicInfoStatus": "public listing partly explicit",
+      "source": "Apple Maps / Dianping public listing",
+      "lastChecked": "2026-08-30"
+    },
+    "reservation": {
+      "difficulty": 3,
+      "difficultyLabel": "建议提前预约",
+      "bookingRule": "第一版已收录星级名单；具体放位日期、渠道、取消政策待逐店核验。",
+      "releaseTime": null,
+      "releaseWindow": null,
+      "platforms": [
+        "official pending"
+      ],
+      "waitlist": null,
+      "cancelSlotLikelihood": null,
+      "advanceDaysLunch": null,
+      "advanceDaysDinner": null,
+      "conciergeRecommended": null,
+      "overseasBooking": null,
+      "verified": true
+    },
+    "budget": {
+      "lunchFrom": 888,
+      "dinnerFrom": 1288,
+      "serviceCharge": "需预约确认",
+      "verified": true,
+      "source": "Hangzhou local report / Apple Maps public listing; address conflicts with older Pearl/En Primeur listing, confirm before booking"
+    },
+    "policies": {
+      "photo": "需预约确认",
+      "perfume": "建议避免浓烈香水；具体规则需预约确认",
+      "cancellation": "需预约确认",
+      "languageSupport": [],
+      "paymentMethods": [
+        "信用卡 / 移动支付以现场为准"
+      ],
+      "lunchStatus": "公开来源显示午餐服务或午餐参考价；实际席位需预约确认。"
+    },
+    "links": {
+      "reservation": "tel:+8618057162771",
+      "localListing": "https://web-cshd.hbjt.com.cn/article/draft/share/361739?hbId=JrDYzkl4zqy3&id=361739&scene=1",
+      "dianping": "https://maps.apple.com/place?auid=1118731302107872&lsp=57879"
+    },
+    "sync": {
+      "lastChecked": "2026-08-30",
+      "lastUpdated": "2026-08-30",
+      "source": "MICHELIN 2026 release + official hotel/restaurant pages + Trip.com/Dianping/Apple Maps/Pearl public listings",
+      "changeSummary": "杭州数据与其他城市精确度对齐：补充公开参考价、营业餐期、菜单样例、评分、着装和儿童政策。",
+      "autoCheckEnabled": false
+    },
+    "transport": {
+      "stations": [
+        {
+          "name": "龙翔桥",
+          "walkMinutes": 4,
+          "lines": [
+            "地铁 1号线"
+          ]
+        },
+        {
+          "name": "凤起路",
+          "walkMinutes": 12,
+          "lines": [
+            "地铁 1号线 / 2号线"
+          ]
+        }
+      ],
+      "verified": true,
+      "source": "public map estimate",
+      "lastChecked": "2026-08-30"
+    },
+    "ratings": {
+      "localPlatform": "大众点评",
+      "localScore": "4.2/5",
+      "localUrl": "https://maps.apple.com/place?auid=1118731302107872&lsp=57879",
+      "publicInfoStatus": "public score found",
+      "lastChecked": "2026-08-30",
+      "source": "Apple Maps / Dianping public listing"
+    },
+    "filters": {
+      "lunchAvailable": true,
+      "dinnerAvailable": true,
+      "priceTiers": [
+        "10000-20000",
+        "20000-30000"
+      ],
+      "lunchPriceTiers": [
+        "10000-20000"
+      ],
+      "dinnerPriceTiers": [
+        "20000-30000"
+      ],
+      "dressCategory": "required",
+      "childCategory": "yes",
+      "soloDiningAvailable": false
+    },
+    "heroImage": "",
+    "imageSourceStatus": "city-fallback",
+    "imageSource": "杭州城市级高级占位封面",
+    "imageSourceUrl": "",
+    "imageCheckedAt": "2026-08-30",
+    "soloDining": {
+      "available": false,
+      "minGuests": null,
+      "source": "Hangzhou local report / Apple Maps public listing",
+      "lastChecked": "2026-08-30",
+      "notes": "tasting menu 餐厅，公开资料未显示单人友好；公开来源存在平海路旧址与武林路梅鹤堂新址差异，预约前确认地址与电话。"
+    },
+    "tableManners": [
+      "杭州高端中餐/法餐普遍建议按正式餐厅礼仪用餐。",
+      "香水、迟到、拍摄、儿童同行等规则以餐厅官网或预约页为准。"
+    ],
+    "id": "hangzhou-yu-zhi-lan",
+    "name": "Yu Zhi Lan",
+    "nameEn": "Yu Zhi Lan",
+    "nameZh": "玉芝兰",
+    "stars": 1,
+    "cuisine": "Sichuan",
+    "cuisineZh": "川菜",
+    "areaZh": "拱墅"
   }
 ]

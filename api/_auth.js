@@ -73,9 +73,13 @@ function verifyOtp(email, code) {
   return createSessionToken(normalized);
 }
 
+function emailDeliveryConfigured() {
+  return Boolean(process.env.RESEND_API_KEY && process.env.AUTH_EMAIL_FROM);
+}
+
 async function sendOtpEmail(email, code) {
-  if (!process.env.RESEND_API_KEY || !process.env.AUTH_EMAIL_FROM) {
-    return { delivered: false, testCode: code, reason: 'email_delivery_not_configured' };
+  if (!emailDeliveryConfigured()) {
+    return { delivered: false, reason: 'email_delivery_not_configured' };
   }
   const response = await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -96,9 +100,10 @@ async function sendOtpEmail(email, code) {
 
 export {
   createOtp,
+  createSessionToken,
+  emailDeliveryConfigured,
   sendOtpEmail,
   verifyOtp,
-  createSessionToken,
   verifySessionToken,
   sessionFromRequest
 };

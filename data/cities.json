@@ -4,8 +4,8 @@
     "labelZh": "全球",
     "labelEn": "Global",
     "michelinYear": 2026,
-    "heroTextZh": "收录东京、香港、上海、巴黎与纽约 2026/2025 全部星级米其林餐厅。",
-    "heroTextEn": "A Michelin starred restaurant database for Tokyo, Hong Kong, Shanghai, Paris and New York."
+    "heroTextZh": "收录东京、香港、上海、巴黎、纽约与杭州 2026/2025 全部星级米其林餐厅。",
+    "heroTextEn": "A Michelin starred restaurant database for Tokyo, Hong Kong, Shanghai, Paris, New York and Hangzhou."
   },
   "cities": [
     {
@@ -511,6 +511,90 @@
         "Greenpoint",
         "Prospect Heights",
         "Hudson Valley"
+      ]
+    },
+    {
+      "id": "hangzhou",
+      "dataCity": "Hangzhou",
+      "labelZh": "杭州",
+      "labelEn": "Hangzhou",
+      "countryZh": "中国",
+      "countryEn": "China",
+      "coordinates": {
+        "lat": 30.2741,
+        "lng": 120.1551
+      },
+      "michelinYear": 2026,
+      "currency": "CNY",
+      "currencySymbol": "¥",
+      "ratingPlatforms": [
+        {
+          "key": "dianpingScore",
+          "label": "大众点评",
+          "urlKey": "dianpingUrl"
+        },
+        {
+          "key": "ctripScore",
+          "label": "携程",
+          "urlKey": "ctripUrl"
+        },
+        {
+          "key": "localScore",
+          "label": "本地评分",
+          "urlKey": "localUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "¥500 以下",
+          "labelEn": "Under ¥500",
+          "min": 0,
+          "max": 500
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "¥500~1,000",
+          "labelEn": "¥500-1,000",
+          "min": 500,
+          "max": 1000
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "¥1,000~1,500",
+          "labelEn": "¥1,000-1,500",
+          "min": 1000,
+          "max": 1500
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "¥1,500~2,000",
+          "labelEn": "¥1,500-2,000",
+          "min": 1500,
+          "max": 2000
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "¥2,000~2,500",
+          "labelEn": "¥2,000-2,500",
+          "min": 2000,
+          "max": 2500
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "¥2,500 以上",
+          "labelEn": "¥2,500+",
+          "min": 2500,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "西湖",
+        "上城",
+        "拱墅",
+        "滨江",
+        "萧山",
+        "余杭"
       ]
     }
   ],

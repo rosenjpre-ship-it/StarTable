@@ -169,6 +169,7 @@ function priceHtml(item,price){
 function budgetHtml(item){
  const b=item.budget;
  if(!b||b.verified===false)return '需预约确认';
+ if(b.publicPriceStatus==='tier estimate only')return '需预约确认';
  const currency=currencyForItem(item);
  const lunch=b.lunchFrom!=null?cnyEstimate(Number(b.lunchFrom),currency):null;
  const dinner=b.dinnerFrom!=null?cnyEstimate(Number(b.dinnerFrom),currency):null;
@@ -268,12 +269,25 @@ function links(item){
 function linkLabel(key,url){
  if(key==='official')return isOfficialUrl(url)?'官网':'公开入口';
  if(key==='reservation')return isOfficialUrl(url)?'预约':'预约入口';
- if(key==='localListing'||key==='dianping')return '大众点评';
+ if(key==='localListing')return listingLabel(url);
+ if(key==='dianping')return '大众点评';
  if(key==='openrice')return 'OpenRice';
  if(key==='ctrip')return '携程';
  if(key==='tabelog')return 'Tabelog';
  if(key==='instagram')return 'Instagram';
  return key;
+}
+function listingLabel(url){
+ const value=String(url||'').toLowerCase();
+ if(value.includes('guide.michelin.com'))return '米其林';
+ if(value.includes('viamichelin.com'))return 'ViaMichelin';
+ if(value.includes('joinpearl.co'))return 'Pearl';
+ if(value.includes('laliste.com'))return 'La Liste';
+ if(value.includes('cityhui.com'))return '城市惠';
+ if(value.includes('trip.com')||value.includes('ctrip.com'))return '携程';
+ if(value.includes('tripadvisor.'))return 'Tripadvisor';
+ if(value.includes('maps.apple.com'))return '大众点评';
+ return '公开资料';
 }
 function isTokyo(item){
  return String(item.city||'').toLowerCase().includes('tokyo');

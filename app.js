@@ -14,7 +14,7 @@ const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&
 const dict={
  zh:{
   global:'全球',tokyo:'东京',hongkong:'香港',shanghai:'上海',membership:'会员订阅',dark:'深色模式',light:'浅色模式',
-  hero1:'收录东京、香港、上海、巴黎与纽约全部星级米其林餐厅。',hero2:'按城市、地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与评分筛选。',
+  hero1:'收录东京、香港、上海、巴黎、纽约与杭州全部星级米其林餐厅。',hero2:'按城市、地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与评分筛选。',
   total:'2026 星级餐厅合计',three:'2026 三星',two:'2026 二星',one:'2026 一星',search:'搜索餐厅名称（中文 / 日文 / 英文）',
   collapse:'收起筛选',expand:'展开筛选',allStars:'全部星级',threeStar:'三星',twoStar:'二星',oneStar:'一星',allCuisine:'全部菜系',allArea:'全部地区',
   chooseCity:'选择城市后筛选地区',chooseCityRail:'选择城市后显示地区',allPrice:'全部价格',dress:'着装要求',children:'儿童政策',
@@ -24,12 +24,12 @@ const dict={
   globalDone:'全球已摘星',memberTitle:'星宴年会员',memberDesc:'通过 Stripe 安全订阅，解锁完整餐厅数据库与高阶筛选。',
   yearly:'年费',browse:'餐厅浏览',all:'全部',searches:'搜索次数',unlimited:'不限',fullData:'完整资料',advanced:'高级筛选',
   fullDataText:'查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。',advancedText:'免费模式每个城市可预览 3 家；会员解除浏览和 5 次搜索限制。',
-  mypageText:'按全球、东京、香港、上海、巴黎、纽约管理已摘星、想摘星和收藏餐厅。',stripeSoon:'Stripe 支付即将接入',
+  mypageText:'按全球、东京、香港、上海、巴黎、纽约、杭州管理已摘星、想摘星和收藏餐厅。',stripeSoon:'Stripe 支付即将接入',
   stripeAlert:'Stripe 支付链接接入后，这里会跳转到官方 Checkout 页面。',loadFail:'数据加载失败，请确认已部署到 GitHub Pages。'
  },
  en:{
   global:'Global',tokyo:'Tokyo',hongkong:'Hong Kong',shanghai:'Shanghai',membership:'Membership',dark:'Dark mode',light:'Light mode',
-  hero1:'A Michelin starred restaurant database for Tokyo, Hong Kong, Shanghai, Paris and New York.',hero2:'Filter by city, area, stars, cuisine, Lunch / Dinner, price, dress code, child policy and ratings.',
+  hero1:'A Michelin starred restaurant database for Tokyo, Hong Kong, Shanghai, Paris, New York and Hangzhou.',hero2:'Filter by city, area, stars, cuisine, Lunch / Dinner, price, dress code, child policy and ratings.',
   total:'2026 starred restaurants',three:'2026 three stars',two:'2026 two stars',one:'2026 one star',search:'Search restaurant name (Chinese / Japanese / English)',
   collapse:'Hide filters',expand:'Show filters',allStars:'All stars',threeStar:'Three stars',twoStar:'Two stars',oneStar:'One star',allCuisine:'All cuisines',allArea:'All areas',
   chooseCity:'Select a city to filter areas',chooseCityRail:'Select a city to show areas',allPrice:'All prices',dress:'Dress code',children:'Child policy',
@@ -39,7 +39,7 @@ const dict={
   globalDone:'Global visited',memberTitle:'StarTable Membership',memberDesc:'Subscribe securely with Stripe to unlock the full restaurant database and advanced filters.',
   yearly:'Annual fee',browse:'Restaurant access',all:'All',searches:'Searches',unlimited:'Unlimited',fullData:'Full data',advanced:'Advanced filters',
   fullDataText:'View full restaurant details, reservation links, access, dining rules and course information.',advancedText:'Free preview includes 3 restaurants per city; Premium removes browsing and 5-search limits.',
-  mypageText:'Manage visited, wish list and saved restaurants by Global, Tokyo, Hong Kong, Shanghai, Paris and New York.',stripeSoon:'Stripe payment coming soon',
+  mypageText:'Manage visited, wish list and saved restaurants by Global, Tokyo, Hong Kong, Shanghai, Paris, New York and Hangzhou.',stripeSoon:'Stripe payment coming soon',
   stripeAlert:'After the Stripe payment link is connected, this button will open the official Checkout page.',loadFail:'Data failed to load. Please confirm the site is deployed on GitHub Pages.'
  }
 };
@@ -244,6 +244,7 @@ function localBudgetAmount(item,value){
 function budgetHtml(item){
  const b=item.budget;
  if(!b||b.verified===false)return '需预约确认';
+ if(b.publicPriceStatus==='tier estimate only')return '需预约确认';
  const currency=currencyForItem(item);
  const lunch=b.lunchFrom!=null?cnyEstimate(Number(b.lunchFrom),currency):null;
  const dinner=b.dinnerFrom!=null?cnyEstimate(Number(b.dinnerFrom),currency):null;
@@ -911,7 +912,13 @@ async function requestLoginCode(){
   if(location.protocol==='file:')throw new Error('验证码登录需要在 Vercel 线上环境测试。');
   els.loginStatus.textContent='正在发送验证码...';
   const data=await apiPost('/api/auth/request-code',{email});
-  els.loginStatus.textContent=data.testCode?`测试验证码：${data.testCode}`:'验证码已发送，请检查邮箱。';
+  if(data.directLogin&&data.token){
+   localStorage.setItem('stSessionToken',data.token);
+   setUser(data.email||email);
+   els.loginStatus.textContent='已使用邮箱登录。';
+   return;
+  }
+  els.loginStatus.textContent='验证码已发送，请检查邮箱。';
   els.loginCode?.focus();
  }catch(error){
   els.loginStatus.textContent=error.message;
@@ -1126,12 +1133,25 @@ function tabContent(item,tab){
 function linkLabel(key,url){
  if(key==='official')return isOfficialUrl(url)?'官网':'公开入口';
  if(key==='reservation')return isOfficialUrl(url)?'预约':'预约入口';
- if(key==='localListing'||key==='dianping')return '大众点评';
+ if(key==='localListing')return listingLabel(url);
+ if(key==='dianping')return '大众点评';
  if(key==='openrice')return 'OpenRice';
  if(key==='ctrip')return '携程';
  if(key==='tabelog')return 'Tabelog';
  if(key==='instagram')return 'Instagram';
  return key;
+}
+function listingLabel(url){
+ const value=String(url||'').toLowerCase();
+ if(value.includes('guide.michelin.com'))return '米其林';
+ if(value.includes('viamichelin.com'))return 'ViaMichelin';
+ if(value.includes('joinpearl.co'))return 'Pearl';
+ if(value.includes('laliste.com'))return 'La Liste';
+ if(value.includes('cityhui.com'))return '城市惠';
+ if(value.includes('trip.com')||value.includes('ctrip.com'))return '携程';
+ if(value.includes('tripadvisor.'))return 'Tripadvisor';
+ if(value.includes('maps.apple.com'))return '大众点评';
+ return '公开资料';
 }
 function fullDetail(item){
  const linkEntries=Object.entries(item.links||{}).filter(([k,v])=>['official','reservation','localListing','tabelog','openrice','dianping','ctrip','instagram'].includes(k)&&v);
