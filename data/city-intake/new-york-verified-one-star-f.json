@@ -1,0 +1,1389 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-one-star-batch-f",
+  "checkedAt": "2026-08-15",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Shmoné",
+      "nameEn": "Shmoné",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Resy / Michelin Guide",
+        "sourceUrl": "https://www.shmonenyc.com/",
+        "changeSummary": "纽约一星第六批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-shmone",
+      "name": "Shmoné",
+      "cuisine": "Mediterranean, Israeli",
+      "cuisineZh": "现代地中海 / 以色列料理",
+      "area": "Greenwich Village",
+      "areaZh": "格林威治村",
+      "address": "61 W 8th Street, New York, NY 10011",
+      "phone": "+1 646 438 9815",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Daily Changing À la Carte / Prix-Fixe for Groups",
+          "price": "$80-$160 / 人参考",
+          "details": [
+            "菜单每日变化，开餐前才最终确定",
+            "6 人以上为预付 prix-fixe，公开价格 $140 / 人，不含饮品、税和小费",
+            "Shmoné Wine next door 仅 walk-in"
+          ],
+          "note": "官网 FAQ 公开菜单变化、预约和 6 人以上 prix-fixe 价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 80,
+        "serviceCharge": "tax and gratuity not included",
+        "verified": true,
+        "source": "Shmoné official website / Resy"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "Resy/官网预约；最多 6 人在线预约；不强制预约但强烈建议，walk-in 少量。6 人以上预付 prix-fixe。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Walk-in"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Casual / smart casual reference",
+        "required": false,
+        "notes": [
+          "官网未明确 Dress Code；格林威治村现代餐厅 clean casual / smart casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；可接待多人活动，但儿童同行需根据每日菜单确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "walk-in/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "菜单每日变化，不要依赖固定菜名。",
+          "6 人以上为预付 prix-fixe。",
+          "Shmoné Wine 不接受预约，只能 walk-in。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "W 4 St-Wash Sq",
+            "walkMinutes": 4,
+            "lines": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "M"
+            ]
+          },
+          {
+            "name": "8 St-NYU",
+            "walkMinutes": 4,
+            "lines": [
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "Astor Pl",
+            "walkMinutes": 6,
+            "lines": [
+              "6"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.shmonenyc.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/shmone",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/shmone"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A/B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Resy / Michelin Guide",
+      "syncSourceUrl": "https://www.shmonenyc.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Shota Omakase",
+      "nameEn": "Shota Omakase",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Resy / Michelin Guide",
+        "sourceUrl": "https://shotaomakase.com/faq/",
+        "changeSummary": "纽约一星第六批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-shota-omakase",
+      "name": "Shota Omakase",
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "Williamsburg",
+      "areaZh": "威廉斯堡",
+      "address": "50 S 3rd Street, Brooklyn, NY 11249",
+      "phone": "+1 929 989 6979",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Modern Edomae Omakase Dinner",
+          "price": "$195 / 人",
+          "details": [
+            "4 otsumami、miso soup、11 pieces nigiri、1 hand roll、tamago",
+            "16-seat / 8-seat white oak counter",
+            "Tue-Sun 18:00 和 20:30 两轮，约 1 小时 45 分钟"
+          ],
+          "note": "官网 FAQ 公开菜单、价格和时间。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 195,
+        "serviceCharge": "beverages, tax and gratuity excluded",
+        "verified": true,
+        "source": "Shota Omakase official FAQ"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "Resy/官网预约；提前 30 天 10:00 开放，最多 4 人；少于 72 小时取消收费。",
+        "releaseTime": "10:00 ET",
+        "releaseWindow": "提前 30 天",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Email"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual / no perfume reference",
+        "required": true,
+        "notes": [
+          "官网 FAQ 引用 TABLEALL 规则：至少 business casual，避免凉鞋、短裤、男士无袖上衣；不要喷香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "official FAQ / TABLEALL policy reference"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": false,
+        "privateRoomAllowed": null,
+        "minimumAge": 16,
+        "notes": "官网 FAQ 引用 TABLEALL：多数餐厅允许 16 岁以上儿童，可个别询问。",
+        "verified": true,
+        "publicInfoStatus": "official FAQ / TABLEALL policy reference"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "不要喷香水。",
+          "business casual，避免短裤、凉鞋、无袖。",
+          "寿司上桌后尽快食用，跟随师傅节奏。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Marcy Av",
+            "walkMinutes": 7,
+            "lines": [
+              "J",
+              "M",
+              "Z"
+            ]
+          },
+          {
+            "name": "Bedford Av",
+            "walkMinutes": 13,
+            "lines": [
+              "L"
+            ]
+          },
+          {
+            "name": "Metropolitan Av",
+            "walkMinutes": 15,
+            "lines": [
+              "G"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "no",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://shotaomakase.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/shota-omakase",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/brooklyn/restaurant/shota-omakase"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Resy / Michelin Guide",
+      "syncSourceUrl": "https://shotaomakase.com/faq/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Sushi Nakazawa",
+      "nameEn": "Sushi Nakazawa",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://www.sushinakazawa.com/new-york/reservation",
+        "changeSummary": "纽约一星第六批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-sushi-nakazawa",
+      "name": "Sushi Nakazawa",
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "West Village",
+      "areaZh": "西村",
+      "address": "23 Commerce Street, New York, NY 10014",
+      "phone": "+1 212 924 2212",
+      "lunch": [
+        {
+          "name": "Omakase Lunch",
+          "price": "$180-$230 / 人参考",
+          "details": [
+            "约 20 pieces nigiri omakase",
+            "Lunch 仅 Sushi Counter / Lounge Counter",
+            "11:30-14:00"
+          ],
+          "note": "官网公开 lunch/dinner 预约规则；价格按当前公开菜单参考。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Omakase Dinner",
+          "price": "$180-$230 / 人参考",
+          "details": [
+            "Sushi Counter / Lounge Counter / Dining Room",
+            "Dining Room 约 7 道形式呈现同一 omakase",
+            "counter/lounges 由 chef 直接服务"
+          ],
+          "note": "官网公开区域和预约规则；价格上线前需复核当前菜单。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 180,
+        "dinnerFrom": 180,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Sushi Nakazawa official reservation page / current public menu references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网在线预约；提前 14 天，每天 12:00 ET 放位。Lunch 只限 counter/lounge；dinner 各区域可选。",
+        "releaseTime": "12:00 ET",
+        "releaseWindow": "提前 14 天",
+        "platforms": [
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual reference",
+        "required": true,
+        "notes": [
+          "公开预订平台常标注 business casual；寿司 counter 避免香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄限制；寿司 counter 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "Lunch 和 Dinner 可预约区域不同。",
+          "避免强烈香水。",
+          "counter 席位热门，14 天窗口中午准点看位。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Christopher St-Sheridan Sq",
+            "walkMinutes": 3,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "W 4 St-Wash Sq",
+            "walkMinutes": 8,
+            "lines": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "M"
+            ]
+          },
+          {
+            "name": "14 St",
+            "walkMinutes": 9,
+            "lines": [
+              "1",
+              "2",
+              "3"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.sushinakazawa.com/new-york/",
+        "reservation": "https://www.sushinakazawa.com/new-york/reservation",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/sushi-nakazawa"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide",
+      "syncSourceUrl": "https://www.sushinakazawa.com/new-york/reservation"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Tempura Matsui",
+      "nameEn": "Tempura Matsui",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://www.tempuramatsui.com/reservation/",
+        "changeSummary": "纽约一星第六批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-tempura-matsui",
+      "name": "Tempura Matsui",
+      "cuisine": "Tempura, Japanese",
+      "cuisineZh": "天妇罗 / 日本料理",
+      "area": "Murray Hill",
+      "areaZh": "Murray Hill",
+      "address": "222 E 39th Street, New York, NY 10016",
+      "phone": "+1 212 986 8885",
+      "lunch": [
+        {
+          "name": "Lunch Omakase",
+          "price": "$168 / 人",
+          "details": [
+            "Friday & Saturday 12:00",
+            "季节天妇罗 set menu",
+            "信用卡担保，24 小时内取消/No-show 收 $168 / 人"
+          ],
+          "note": "官网预约页公开价格和时间。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dinner Omakase",
+          "price": "$295 / 人",
+          "details": [
+            "Tue-Sat 17:30 / 20:00 两轮，偶尔 Sunday dinner",
+            "多道天妇罗 course menu，含 sashimi；约 2.5 小时",
+            "24 小时内取消/No-show 收 $295 / 人"
+          ],
+          "note": "官网预约页公开价格、时间和取消政策。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 168,
+        "dinnerFrom": 295,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Tempura Matsui official reservation/menu pages"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网预约；需信用卡担保。午餐仅周五/周六中午，晚餐 Tue-Sat 两轮。",
+        "releaseTime": null,
+        "releaseWindow": "按官网日历",
+        "platforms": [
+          "Official",
+          "Phone",
+          "Email"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未明确 Dress Code；天妇罗 counter 建议 smart casual，避免强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；course menu 且不可替换菜单，儿童同行需确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "官网明确不能提供 vegetarian tempura option，面衣含 dashi 和蛋，晚餐含 sashimi。",
+          "天妇罗需趁热食用，跟随服务节奏。",
+          "避免强烈香水。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Grand Central-42 St",
+            "walkMinutes": 7,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "7",
+              "S",
+              "Metro-North"
+            ]
+          },
+          {
+            "name": "33 St",
+            "walkMinutes": 8,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "42 St-Bryant Park",
+            "walkMinutes": 12,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [
+          "10000-20000"
+        ],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.tempuramatsui.com/",
+        "reservation": "https://www.tempuramatsui.com/reservation/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/tempura-matsui"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A",
+        "policy": "A/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide",
+      "syncSourceUrl": "https://www.tempuramatsui.com/reservation/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "The Four Horsemen",
+      "nameEn": "The Four Horsemen",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Resy / Michelin Guide",
+        "sourceUrl": "https://www.fourhorsemenbk.com/",
+        "changeSummary": "纽约一星第六批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-the-four-horsemen",
+      "name": "The Four Horsemen",
+      "cuisine": "Contemporary, Wine Bar",
+      "cuisineZh": "现代料理 / 自然酒餐厅",
+      "area": "Williamsburg",
+      "areaZh": "威廉斯堡",
+      "address": "295 Grand Street, Brooklyn, NY 11211",
+      "phone": "+1 718 599 4900",
+      "lunch": [
+        {
+          "name": "Lunch / Brunch À la Carte",
+          "price": "$60-$120 / 人参考",
+          "details": [
+            "自然酒餐厅，午餐/周末餐期以官网当前日历为准",
+            "小盘、海鲜、蔬菜和主菜分享",
+            "酒单是体验核心"
+          ],
+          "note": "官网/公开菜单参考，价格需上线前复核。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dinner À la Carte",
+          "price": "$90-$180 / 人参考",
+          "details": [
+            "seasonal small plates and larger dishes",
+            "natural wine pairing by the bottle/glass",
+            "适合分享点菜"
+          ],
+          "note": "以官网当前菜单为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 60,
+        "dinnerFrom": 90,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "The Four Horsemen official/public menu references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Resy/官网预约；Williamsburg 超热门，建议提前看位并接受非黄金时段。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Walk-in"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Casual / smart casual reference",
+        "required": false,
+        "notes": [
+          "自然酒餐厅氛围轻松，clean casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；酒吧属性较强，儿童同行建议非深夜时段并提前确认。",
+        "verified": true,
+        "publicInfoStatus": "restaurant norm / not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "酒单是核心，预算会因酒水差异很大。",
+          "分享型小盘，按人数请服务员建议菜量。",
+          "热门餐厅，需要接受候补或 walk-in。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Bedford Av",
+            "walkMinutes": 7,
+            "lines": [
+              "L"
+            ]
+          },
+          {
+            "name": "Metropolitan Av",
+            "walkMinutes": 8,
+            "lines": [
+              "G"
+            ]
+          },
+          {
+            "name": "Marcy Av",
+            "walkMinutes": 11,
+            "lines": [
+              "J",
+              "M",
+              "Z"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.fourhorsemenbk.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/the-four-horsemen",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/brooklyn/restaurant/the-four-horsemen"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Resy / Michelin Guide",
+      "syncSourceUrl": "https://www.fourhorsemenbk.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Torien",
+      "nameEn": "Torien",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://torien-nyc.com/info/",
+        "changeSummary": "纽约一星第六批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-torien",
+      "name": "Torien",
+      "cuisine": "Yakitori, Japanese",
+      "cuisineZh": "烧鸟 / 日本料理",
+      "area": "NoHo",
+      "areaZh": "NoHo",
+      "address": "292 Elizabeth Street, New York, NY 10012",
+      "phone": "+1 646 484 5884",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Yakitori Omakase",
+          "price": "$185 / 人参考",
+          "details": [
+            "13 道鸡肉各部位和时令蔬菜",
+            "使用纪州备长炭",
+            "取消政策按 $185 / 人收取"
+          ],
+          "note": "官网 info 页公开 13 courses、取消费和过敏限制；价格按取消费与公开预约参考。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 185,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Torien official info page / reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；5 人以上需邮件；24 小时取消政策 $185 / 人。",
+        "releaseTime": null,
+        "releaseWindow": "按预约平台日历",
+        "platforms": [
+          "Official",
+          "Reservation platform",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / no fragrance reference",
+        "required": true,
+        "notes": [
+          "官网未明确细则；烧鸟 counter 建议 smart casual，避免强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；counter omakase 儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "鸡内脏和各部位为核心，不能吃内脏需提前确认。",
+          "不能接待 soy 和 sesame allergy。",
+          "烤串上桌趁热食用，跟随服务节奏。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Bleecker St",
+            "walkMinutes": 4,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "Broadway-Lafayette St",
+            "walkMinutes": 5,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M"
+            ]
+          },
+          {
+            "name": "Prince St",
+            "walkMinutes": 7,
+            "lines": [
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://torien-nyc.com/",
+        "reservation": "https://torien-nyc.com/reservations/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/torien"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "A/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide",
+      "syncSourceUrl": "https://torien-nyc.com/info/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Torrisi",
+      "nameEn": "Torrisi",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Resy / Michelin Guide / public hotel listing",
+        "sourceUrl": "https://torrisinyc.com/",
+        "changeSummary": "纽约一星第六批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-torrisi",
+      "name": "Torrisi",
+      "cuisine": "Italian-American",
+      "cuisineZh": "意大利美式料理",
+      "area": "Nolita",
+      "areaZh": "Nolita",
+      "address": "275 Mulberry Street, New York, NY 10012",
+      "phone": "+1 212 254 3000",
+      "lunch": [
+        {
+          "name": "Lunch À la Carte",
+          "price": "$90-$180 / 人参考",
+          "details": [
+            "Wed-Sat 11:30-14:00",
+            "意大利料理与纽约餐饮历史结合",
+            "经典菜和每日 specials"
+          ],
+          "note": "官网公开 lunch 时间与菜单入口；价格按当前菜单参考。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dinner À la Carte",
+          "price": "$140-$260 / 人参考",
+          "details": [
+            "Mon-Sat 17:00-23:00",
+            "à la carte menu，另有 nightly specials",
+            "wine/cocktail 另计"
+          ],
+          "note": "官网公开菜单、儿童政策、着装和预约规则。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 90,
+        "dinnerFrom": 140,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Torrisi official website"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Resy/Dorsia/官网预约；dining room 提前 30 天开放，最多 6 人；bar counter first come first served。",
+        "releaseTime": null,
+        "releaseWindow": "提前 30 天",
+        "platforms": [
+          "Resy",
+          "Dorsia",
+          "Official",
+          "Email",
+          "Walk-in bar"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Dress for the occasion; no athletic wear",
+        "required": true,
+        "notes": [
+          "官网明确鼓励 dress for the occasion，运动服不允许，餐厅保留拒绝入内权利。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": false,
+        "privateRoomAllowed": null,
+        "minimumAge": 3,
+        "notes": "官网明确 adult-only dining experience，不接待 3 岁以下儿童；无婴儿车、高脚椅、儿童菜单。",
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar counter walk-in / Resy pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "不要穿运动服。",
+          "3 岁以下儿童不可入内，且无儿童设施。",
+          "餐厅很热门，需使用官方/授权平台，避免非授权黄牛渠道。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Spring St",
+            "walkMinutes": 4,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "Prince St",
+            "walkMinutes": 6,
+            "lines": [
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "Canal St",
+            "walkMinutes": 8,
+            "lines": [
+              "6",
+              "J",
+              "N",
+              "Q",
+              "R",
+              "W",
+              "Z"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "no",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://torrisinyc.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/torrisi",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/torrisi"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A/B",
+        "reservation": "A",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Resy / Michelin Guide / public hotel listing",
+      "syncSourceUrl": "https://torrisinyc.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Tsukimi",
+      "nameEn": "Tsukimi",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / OpenTable / public map listing / Michelin Guide",
+        "sourceUrl": "https://www.tsukimi.nyc/",
+        "changeSummary": "纽约一星第六批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-tsukimi",
+      "name": "Tsukimi",
+      "cuisine": "Japanese, Kaiseki",
+      "cuisineZh": "怀石 / 日本料理",
+      "area": "East Village",
+      "areaZh": "东村",
+      "address": "228 E 10th Street, New York, NY 10003",
+      "phone": "+1 646 820 2313",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Chef’s Seasonal Tasting Menu",
+          "price": "$250 / 人",
+          "details": [
+            "12-seat counter modern kaiseki",
+            "Wed-Thu 18:30；Fri-Sun 17:30 / 20:15",
+            "预付，不可退款；可 72 小时前改期"
+          ],
+          "note": "官网与 OpenTable 公开价格、餐期和规则。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 250,
+        "serviceCharge": "prepaid; taxes and gratuity not included",
+        "verified": true,
+        "source": "Tsukimi official website / OpenTable"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Tock/OpenTable/官网预约；每月 1 日 15:00 ET 开放次月；最大 4 人；reservation only。",
+        "releaseTime": "每月 1 日 15:00 ET",
+        "releaseWindow": "开放次月",
+        "platforms": [
+          "Tock",
+          "OpenTable",
+          "Official",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Dress up encouraged / business casual reference",
+        "required": true,
+        "notes": [
+          "官网 FAQ：无正式 dress code，但鼓励 dress up；请勿穿短裤、T-shirt、运动服或 sweatpants。OpenTable 标注 business casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published / public reservation platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": false,
+        "privateRoomAllowed": null,
+        "minimumAge": 10,
+        "notes": "官网 FAQ 明确 10 岁及以上可入内；10 岁以下和婴儿不可入内，无儿童菜单，儿童同成人菜单。",
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable experience shows 1-4 people"
+      },
+      "tableManners": {
+        "notes": [
+          "不能接待 vegan、vegetarian、gluten-free、fish/shellfish/allium/soy/dairy/egg 等限制。",
+          "预付且不可退款。",
+          "晚到可能错过菜式，因为全场同步出菜。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "1 Av",
+            "walkMinutes": 6,
+            "lines": [
+              "L"
+            ]
+          },
+          {
+            "name": "Astor Pl",
+            "walkMinutes": 9,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "8 St-NYU",
+            "walkMinutes": 11,
+            "lines": [
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "no",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.tsukimi.nyc/",
+        "reservation": "https://www.opentable.com/r/tsukimi-new-york",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/tsukimi"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "A/B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / OpenTable / public map listing / Michelin Guide",
+      "syncSourceUrl": "https://www.tsukimi.nyc/"
+    }
+  ]
+}

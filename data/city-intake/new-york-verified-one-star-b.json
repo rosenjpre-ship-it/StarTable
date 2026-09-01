@@ -1,0 +1,1319 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-one-star-batch-b",
+  "checkedAt": "2026-08-15",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-crown-shy",
+      "name": "Crown Shy",
+      "nameZh": "Crown Shy",
+      "nameEn": "Crown Shy",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Contemporary American",
+      "cuisineZh": "现代美国料理",
+      "area": "Financial District",
+      "areaZh": "金融区",
+      "address": "70 Pine Street, Ground Floor, New York, NY 10005",
+      "phone": "+1 212 517 1932",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "À la carte Dinner",
+          "price": "$90-$180 / 人参考",
+          "details": [
+            "现代美国料理 à la carte",
+            "菜单含海鲜、肉类、蔬菜和甜品，随季节变化",
+            "酒单和鸡尾酒是体验重点"
+          ],
+          "note": "官网公开菜单与酒单，预算按当期菜单区间估算。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 90,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Crown Shy official menu / public dining references"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "Resy/官网预约；金融区热门晚餐，建议提前 1-3 周。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": false,
+        "notes": [
+          "官网未明确 Dress Code；金融区现代餐厅 clean casual / smart casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；正式晚餐环境，儿童同行建议预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "点菜制为主，建议请服务员按人数搭配菜量。",
+          "金融区晚餐氛围偏正式但不僵硬。",
+          "如需登高层餐厅 Saga，注意 Crown Shy 与 Saga 是不同入口体验。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Wall St",
+            "walkMinutes": 3,
+            "lines": [
+              "2",
+              "3"
+            ]
+          },
+          {
+            "name": "Broad St",
+            "walkMinutes": 4,
+            "lines": [
+              "J",
+              "Z"
+            ]
+          },
+          {
+            "name": "Fulton St",
+            "walkMinutes": 6,
+            "lines": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "A",
+              "C",
+              "J",
+              "Z"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.crownshy.nyc/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/crown-shy",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/crown-shy"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A/B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / Resy",
+        "sourceUrl": "https://www.crownshy.nyc/",
+        "changeSummary": "纽约一星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-daniel",
+      "name": "Daniel",
+      "nameZh": "Daniel",
+      "nameEn": "Daniel",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "French",
+      "cuisineZh": "法餐",
+      "area": "Upper East Side",
+      "areaZh": "上东区",
+      "address": "60 E 65th Street, New York, NY 10065",
+      "phone": "+1 212 288 0033",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Prix-Fixe / Tasting Menu",
+          "price": "$275-$345 / 人参考",
+          "details": [
+            "经典高级法餐晚餐",
+            "官网菜单含 prix-fixe、tasting、vegetarian、dessert、lounge、bar",
+            "Tue-Sun 17:00-21:30"
+          ],
+          "note": "官网公开菜单类别和营业时间；价格以当期菜单为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 275,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Daniel official website / current public menu references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Resy 预约；官网 FAQ 明确预订提前 60 天开放，bar/lounge 可 walk-in。",
+        "releaseTime": null,
+        "releaseWindow": "提前 60 天",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Elegant / business attire",
+        "required": true,
+        "notes": [
+          "官网明确 strongly recommended elegant/business attire；不允许运动或休闲服，男士 dining room 不可短裤或凉鞋。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄限制；正式法餐 dining room 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "Resy/bar-lounge reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "着装需正式，避免运动装、短裤和凉鞋。",
+          "上东区正式法餐，过敏和忌口需提前说明。",
+          "Resy 60 天窗口，热门日期需早看。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Lexington Av-63 St",
+            "walkMinutes": 3,
+            "lines": [
+              "F",
+              "Q"
+            ]
+          },
+          {
+            "name": "68 St-Hunter College",
+            "walkMinutes": 7,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "59 St",
+            "walkMinutes": 8,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "N",
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000",
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000",
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.danielnyc.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/daniel",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/daniel"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / Resy",
+        "sourceUrl": "https://www.danielnyc.com/cuisine/our-menus",
+        "changeSummary": "纽约一星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-dirt-candy",
+      "name": "Dirt Candy",
+      "nameZh": "Dirt Candy",
+      "nameEn": "Dirt Candy",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Vegetarian",
+      "cuisineZh": "蔬食创意料理",
+      "area": "Lower East Side",
+      "areaZh": "下东城",
+      "address": "86 Allen Street, New York, NY 10002",
+      "phone": "+1 212 228 7732",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Five-Course Tasting Menu",
+          "price": "$118 / 人",
+          "details": [
+            "五道蔬食 tasting menu",
+            "夏季菜单示例含 fennel funnel cake 等季节蔬菜主题菜式",
+            "wine pairing $55；non-alcoholic pairing $45；价格含小费不含税"
+          ],
+          "note": "官网明确 $118 和 pairing 价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 118,
+        "serviceCharge": "tip included, tax not included",
+        "verified": true,
+        "source": "Dirt Candy official dinner menu / FAQ"
+      },
+      "reservation": {
+        "difficulty": 3,
+        "difficultyLabel": "中等",
+        "bookingRule": "官网/Resy 预约；需信用卡，24 小时内取消收 $50 / 人。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Casual / smart casual reference",
+        "required": false,
+        "notes": [
+          "官网未明确 Dress Code；创意蔬食餐厅 clean casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；蔬食菜单可 vegan，但晚餐不能 gluten-free，儿童同行需确认饮食限制。",
+        "verified": true,
+        "publicInfoStatus": "dietary policy officially published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "Resy/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "蔬食餐厅但不等于可处理所有饮食限制；gluten-free 晚餐无法接待。",
+          "价格含小费但不含税。",
+          "取消需提前 24 小时以上。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Delancey St-Essex St",
+            "walkMinutes": 4,
+            "lines": [
+              "F",
+              "M",
+              "J",
+              "Z"
+            ]
+          },
+          {
+            "name": "Grand St",
+            "walkMinutes": 7,
+            "lines": [
+              "B",
+              "D"
+            ]
+          },
+          {
+            "name": "Bowery",
+            "walkMinutes": 8,
+            "lines": [
+              "J",
+              "Z"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.dirtcandynyc.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/dirt-candy",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/dirt-candy"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A",
+        "policy": "A/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / Resy",
+        "sourceUrl": "https://www.dirtcandynyc.com/dinner-menu/",
+        "changeSummary": "纽约一星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-essential-by-christophe",
+      "name": "Essential by Christophe",
+      "nameZh": "Essential by Christophe",
+      "nameEn": "Essential by Christophe",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "French, Contemporary",
+      "cuisineZh": "现代法餐",
+      "area": "Upper West Side",
+      "areaZh": "上西区",
+      "address": "103 W 77th Street, New York, NY 10024",
+      "phone": "+1 646 559 0822",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Pre-Theatre / Discovery / Chef’s Tasting Menu",
+          "price": "$145-$285 / 人参考",
+          "details": [
+            "Pre-Theatre 三道菜单 $145",
+            "Discovery 与 Chef’s Tasting Menu 按当期菜单",
+            "pairing $40-$110+"
+          ],
+          "note": "官网和 OpenTable 公开菜单类别及 pre-theatre 价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 145,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Essential by Christophe official menu / OpenTable"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/OpenTable 预约；Pre-Theatre 常为 Mon-Thu 17:30 seating，特殊节日需提前。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/OpenTable 日历",
+        "platforms": [
+          "Official",
+          "OpenTable",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Formal attire recommended",
+        "required": true,
+        "notes": [
+          "OpenTable 公开标注 Formal attire recommended。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "OpenTable 信息显示家庭会在此庆祝，但更适合年龄较大的儿童/青少年；无儿童菜单，需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "public reservation platform"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "正式法餐，建议 dress up。",
+          "Pre-Theatre 需要控制时间，预约时确认开场时间。",
+          "tasting menu 过敏和忌口需提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "81 St-Museum of Natural History",
+            "walkMinutes": 4,
+            "lines": [
+              "B",
+              "C"
+            ]
+          },
+          {
+            "name": "79 St",
+            "walkMinutes": 6,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "72 St",
+            "walkMinutes": 10,
+            "lines": [
+              "1",
+              "2",
+              "3"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.essentialbychristophe.com/",
+        "reservation": "https://www.opentable.com/r/essential-by-christophe-new-york",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/essential-by-christophe"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A/B",
+        "reservation": "B",
+        "policy": "B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / OpenTable / Michelin Guide",
+        "sourceUrl": "https://www.essentialbychristophe.com/menus/",
+        "changeSummary": "纽约一星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-estela",
+      "name": "Estela",
+      "nameZh": "Estela",
+      "nameEn": "Estela",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Contemporary, Mediterranean",
+      "cuisineZh": "现代地中海料理",
+      "area": "NoHo",
+      "areaZh": "NoHo",
+      "address": "47 E Houston Street, New York, NY 10012",
+      "phone": "+1 212 219 7693",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "À la carte Dinner",
+          "price": "$90-$170 / 人参考",
+          "details": [
+            "现代小盘 à la carte",
+            "代表菜包括海鲜、生食、蔬菜、肉类小盘与甜品",
+            "酒水另计"
+          ],
+          "note": "官网/公开菜单参考，价格需上线前复核当期菜单。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 90,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Estela official/public menu references"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/Resy 预约；NoHo 热门小餐厅，建议提前 2-3 周。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Casual elegant reference",
+        "required": false,
+        "notes": [
+          "官网未明确 Dress Code；NoHo 现代餐厅 clean casual / smart casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；空间较紧凑，儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "小盘分享型，按人数请服务员建议点菜量。",
+          "热门餐厅座位紧凑，控制音量和随身物品。",
+          "生食/海鲜较多，过敏需提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Broadway-Lafayette St",
+            "walkMinutes": 3,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M"
+            ]
+          },
+          {
+            "name": "Bleecker St",
+            "walkMinutes": 4,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "Prince St",
+            "walkMinutes": 6,
+            "lines": [
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://estelanyc.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/estela",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/estela"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / Resy / public menu references",
+        "sourceUrl": "https://estelanyc.com/",
+        "changeSummary": "纽约一星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-family-meal-at-blue-hill",
+      "name": "Family Meal at Blue Hill",
+      "nameZh": "Family Meal at Blue Hill",
+      "nameEn": "Family Meal at Blue Hill",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Farm-to-table, Contemporary American",
+      "cuisineZh": "农场到餐桌 / 现代美国料理",
+      "area": "Greenwich Village",
+      "areaZh": "格林威治村",
+      "address": "75 Washington Place, New York, NY 10011",
+      "phone": "+1 212 539 1776",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Family Meal",
+          "price": "$145 / 人参考",
+          "details": [
+            "Blue Hill NYC 的 family-style seasonal menu",
+            "公开订餐/菜单参考显示 Family Meal $145，sans main $90，sans dessert $125",
+            "Kids Family Meal 公开参考 $75"
+          ],
+          "note": "公开 Toast/Blue Hill 订餐信息显示价格；正式预约页需上线前复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 145,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Blue Hill public ordering/menu reference / Michelin Guide"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/预约平台预约；Greenwich Village 小型目的地餐厅，建议提前。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台日历",
+        "platforms": [
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": false,
+        "notes": [
+          "官网未明确 Dress Code；farm-to-table dining 建议 clean casual / smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "公开菜单参考含 Kids Family Meal；儿童同行相对可行，但需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "public menu reference"
+      },
+      "soloDining": {
+        "available": false,
+        "minGuests": 2,
+        "verified": true,
+        "source": "family-style meal pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "Family Meal 偏共享式，适合 2 人以上。",
+          "菜单随农场和季节变化，不要期待固定菜名。",
+          "儿童餐公开参考存在，但仍需预约前确认。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "W 4 St-Wash Sq",
+            "walkMinutes": 3,
+            "lines": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "M"
+            ]
+          },
+          {
+            "name": "8 St-NYU",
+            "walkMinutes": 7,
+            "lines": [
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "Christopher St-Sheridan Sq",
+            "walkMinutes": 8,
+            "lines": [
+              "1"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": false
+      },
+      "links": {
+        "official": "https://www.bluehillfarm.com/dine/new-york",
+        "reservation": "https://www.bluehillfarm.com/dine/new-york",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/family-meal-at-blue-hill"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / public ordering reference",
+        "sourceUrl": "https://www.bluehillfarm.com/dine/new-york",
+        "changeSummary": "纽约一星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-francie",
+      "name": "Francie",
+      "nameZh": "Francie",
+      "nameEn": "Francie",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "American, French, Italian",
+      "cuisineZh": "美式 / 法意风格",
+      "area": "Williamsburg",
+      "areaZh": "威廉斯堡",
+      "address": "136 Broadway, Brooklyn, NY 11249",
+      "phone": "+1 718 218 7572",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "À la carte Dinner",
+          "price": "$100-$220 / 人参考",
+          "details": [
+            "欧洲风味 neighborhood brasserie",
+            "snacks、shellfish、handmade pasta、main courses",
+            "代表菜包括 Crown Roast of Rohan Duck for Two 和 Cheese Cart"
+          ],
+          "note": "官网公开餐厅介绍、营业时间和预约规则；预算按公开菜单/平台估算。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 100,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Francie official website / OpenTable"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/OpenTable/电话预约；官网明确最多提前 30 天开放。",
+        "releaseTime": null,
+        "releaseWindow": "提前 30 天",
+        "platforms": [
+          "Official",
+          "OpenTable",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / no strict code",
+        "required": false,
+        "notes": [
+          "官网说明 technically does not have a dress code，但希望客人 dress for success；OpenTable 标注 Smart Casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published / public reservation platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄限制；可私人包间，过敏复杂时较难调整。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published / allergy policy published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "官网明确请勿使用闪光灯、强光、电脑或未经许可拍摄员工。",
+          "30 天预约窗口，热门日期需提前。",
+          "空间为 brasserie 风格，但仍建议 smart casual。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Marcy Av",
+            "walkMinutes": 4,
+            "lines": [
+              "J",
+              "M",
+              "Z"
+            ]
+          },
+          {
+            "name": "Bedford Av",
+            "walkMinutes": 13,
+            "lines": [
+              "L"
+            ]
+          },
+          {
+            "name": "Metropolitan Av",
+            "walkMinutes": 15,
+            "lines": [
+              "G"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.franciebrooklyn.com/",
+        "reservation": "https://www.franciebrooklyn.com/reservations/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/brooklyn/restaurant/francie"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A",
+        "policy": "A/B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / OpenTable / Michelin Guide",
+        "sourceUrl": "https://www.franciebrooklyn.com/location/francie/",
+        "changeSummary": "纽约一星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-frevo",
+      "name": "Frevo",
+      "nameZh": "Frevo",
+      "nameEn": "Frevo",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Contemporary, French",
+      "cuisineZh": "现代法餐 / 艺术空间料理",
+      "area": "Greenwich Village",
+      "areaZh": "格林威治村",
+      "address": "48 W 8th Street, New York, NY 10011",
+      "phone": "+1 646 455 0804",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Sauce-Centered Tasting Menu",
+          "price": "$255 / 人参考",
+          "details": [
+            "16-seat C-shaped counter hidden behind gallery",
+            "菜单和展览约每四个月更换",
+            "菜式以法餐酱汁为核心，结合南美和亚洲影响"
+          ],
+          "note": "官方 FAQ 公开概念和 dress code；公开预约指南显示 tasting menu $255。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 255,
+        "serviceCharge": "deposit/prepaid items may be non-refundable; tax and gratuity may apply",
+        "verified": true,
+        "source": "Frevo official FAQ / Tock reservation guide"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Tock 预约；公开预约指南显示月度开放，counter 接受 1-6 人，角落桌 2-4 人。",
+        "releaseTime": "按 Tock 月度开放",
+        "releaseWindow": "按 Tock 当前日历",
+        "platforms": [
+          "Tock",
+          "Official",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Elegant casual",
+        "required": true,
+        "notes": [
+          "官网 FAQ 明确 elegant casual；无需夹克，但不允许短裤或夹脚拖。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；16 席 counter 和 tasting menu 儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "reservation guide notes counter accepts parties of 1-6"
+      },
+      "tableManners": {
+        "notes": [
+          "入口在画廊后方，预留寻找入口时间。",
+          "预付/订金可能不可退款，预约前确认政策。",
+          "48 小时前提交饮食限制；不能接待 vegan、lactose-free 或交叉污染高风险过敏。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "W 4 St-Wash Sq",
+            "walkMinutes": 4,
+            "lines": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "M"
+            ]
+          },
+          {
+            "name": "8 St-NYU",
+            "walkMinutes": 4,
+            "lines": [
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "Astor Pl",
+            "walkMinutes": 6,
+            "lines": [
+              "6"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://frevonyc.com/",
+        "reservation": "https://www.exploretock.com/frevo",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/frevo"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "A/B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Tock reservation guide / Michelin Guide",
+        "sourceUrl": "https://frevonyc.com/story/",
+        "changeSummary": "纽约一星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,1378 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-one-star-batch-c",
+  "checkedAt": "2026-08-15",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Gramercy Tavern",
+      "nameEn": "Gramercy Tavern",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://www.gramercytavern.com/gramercy-tavern-menu/",
+        "changeSummary": "纽约一星第三批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-gramercy-tavern",
+      "name": "Gramercy Tavern",
+      "cuisine": "Contemporary American",
+      "cuisineZh": "现代美国料理",
+      "area": "Flatiron / Gramercy",
+      "areaZh": "Flatiron / Gramercy",
+      "address": "42 E 20th Street, New York, NY 10003",
+      "phone": "+1 212 477 0777",
+      "lunch": [
+        {
+          "name": "Dining Room Lunch / À la carte or Optional Course Menu",
+          "price": "$78 / 人起参考",
+          "details": [
+            "Dining Room 午餐可选 à la carte 或多道菜单",
+            "官网样例显示三道午餐 $78，Restaurant Week 期间三道 $60",
+            "Tavern 区全天 à la carte，主菜约 $32-$39"
+          ],
+          "note": "官网公开午餐价格和菜单样例。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dining Room Seasonal Menu",
+          "price": "$175 / 人",
+          "details": [
+            "五道 seasonal menu",
+            "样例包括 fluke / heirloom tomatoes、gnocchi / ravioli、trout / bok choy、lamb / pork、dessert",
+            "wine pairing $115 / 人"
+          ],
+          "note": "官网 Dining Room 菜单公开价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 78,
+        "dinnerFrom": 175,
+        "serviceCharge": "menu prices do not include gratuity",
+        "verified": true,
+        "source": "Gramercy Tavern official menus"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/电话预约；官网明确提前 28 天开放，新日期中午 12:00 开放。",
+        "releaseTime": "12:00 ET",
+        "releaseWindow": "提前 28 天",
+        "platforms": [
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": false,
+        "notes": [
+          "官网未明确严格 Dress Code；Dining Room 建议 smart casual，Tavern 更轻松。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "官网未明确年龄限制；Union Square Hospitality Group 风格相对适合家庭正式用餐。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published / restaurant norm"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "Dining Room 和 Tavern 是不同体验，预约时需选对区域。",
+          "官网说明可处理 dietary restrictions，预约时提前写明。",
+          "Tavern 可以更随意，Dining Room 建议 smart casual。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "23 St",
+            "walkMinutes": 4,
+            "lines": [
+              "R",
+              "W",
+              "6"
+            ]
+          },
+          {
+            "name": "14 St-Union Sq",
+            "walkMinutes": 8,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "L",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "28 St",
+            "walkMinutes": 8,
+            "lines": [
+              "6"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [
+          "under-10000"
+        ],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.gramercytavern.com/",
+        "reservation": "https://www.gramercytavern.com/reservations/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/gramercy-tavern"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide",
+      "syncSourceUrl": "https://www.gramercytavern.com/gramercy-tavern-menu/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Huso",
+      "nameEn": "Huso",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Resy / Michelin Guide",
+        "sourceUrl": "https://husony.com/tasting-menu/",
+        "changeSummary": "纽约一星第三批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-huso",
+      "name": "Huso",
+      "cuisine": "Contemporary, Caviar",
+      "cuisineZh": "现代创意 / 鱼子酱料理",
+      "area": "Tribeca",
+      "areaZh": "翠贝卡",
+      "address": "323A Greenwich Street, New York, NY 10013",
+      "phone": "+1 917 891 1837",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "12-Course Tasting Menu",
+          "price": "$285 / 人",
+          "details": [
+            "Wednesday-Sunday 17:00-20:30 / 21:00",
+            "12 道菜单，Buddha Lo 主厨，夏季样例含 tomato、hamachi、lobster、turbot、duck、pork、chocolate caviar 等",
+            "standard wine pairing $225；premium $450；non-alcoholic $110"
+          ],
+          "note": "官网 tasting menu 公开价格、餐序和 pairing。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 285,
+        "serviceCharge": "beverages, tax and gratuity not included",
+        "verified": true,
+        "source": "Huso official tasting menu / Resy"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/Resy 预约；1-4 人主 dining room，5-8 人 Chef’s Table；公开预约指南显示主厅通常每月 1 日午夜开放次月。",
+        "releaseTime": "每月 1 日 00:00 ET 参考",
+        "releaseWindow": "开放次月 / Chef’s Table 30 天窗口",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual",
+        "required": true,
+        "notes": [
+          "Resy 与 Four Seasons 体验页标注 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform / partner hotel page"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄限制；完整 tasting menu 且不能接待多种饮食限制，儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published / dietary limitations published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "official reservations note parties of 1-4 in dining room"
+      },
+      "tableManners": {
+        "notes": [
+          "不能接待 dairy-free、vegetarian、vegan、no-sesame、no-seafood 等需求。",
+          "鱼子酱和海鲜元素多，过敏需提前确认。",
+          "取消少于 7 天可能收全额菜单费。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Chambers St",
+            "walkMinutes": 5,
+            "lines": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          {
+            "name": "Franklin St",
+            "walkMinutes": 6,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "World Trade Center",
+            "walkMinutes": 8,
+            "lines": [
+              "E"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://husony.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/huso-nyc",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/huso"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "A/B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Resy / Michelin Guide",
+      "syncSourceUrl": "https://husony.com/tasting-menu/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Icca",
+      "nameEn": "Icca",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "Tock / Michelin Guide / verified reservation guide",
+        "sourceUrl": "https://www.exploretock.com/icca/",
+        "changeSummary": "纽约一星第三批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-icca",
+      "name": "Icca",
+      "cuisine": "Japanese, Sushi",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "Tribeca / City Hall",
+      "areaZh": "翠贝卡 / 市政厅",
+      "address": "20 Warren Street, New York, NY 10007",
+      "phone": "+1 646 649 3415",
+      "lunch": [
+        {
+          "name": "Lunch Omakase",
+          "price": "$150 / 人参考",
+          "details": [
+            "Friday/Saturday lunch reference",
+            "较轻量寿司 omakase，由 sous chef 主导公开参考",
+            "Tock 预付制，体验需先选菜单再选时间"
+          ],
+          "note": "价格来自 2026 公开 Tock 预约指南；上线前需复核 Tock 当前页。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dinner Sushi Omakase",
+          "price": "$495 / 人参考",
+          "details": [
+            "Kazushige Suzuki 江户前寿司 counter",
+            "日本鱼货、otsumami、nigiri 和创意收尾菜式",
+            "Italian Kappo 非寿司菜单公开参考 $195"
+          ],
+          "note": "Tock FAQ 与预约指南公开价格和规则。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 150,
+        "dinnerFrom": 195,
+        "serviceCharge": "prepaid; tax and tip may apply",
+        "verified": true,
+        "source": "Icca Tock / reservation guide / Michelin Guide"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Tock 预约；约 30-date window，无固定公开 release time；更改/取消需 72 小时，4 人以上至少 1 周。",
+        "releaseTime": null,
+        "releaseWindow": "约 30 日窗口",
+        "platforms": [
+          "Tock",
+          "Official",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual",
+        "required": true,
+        "notes": [
+          "Tock FAQ 明确 smart casual；避免 costume/offensive attire。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "reservation platform FAQ"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": false,
+        "privateRoomAllowed": null,
+        "minimumAge": 12,
+        "notes": "Tock FAQ 明确接受 12 岁及以上，儿童与成人同价。",
+        "verified": true,
+        "publicInfoStatus": "reservation platform FAQ"
+      },
+      "soloDining": {
+        "available": false,
+        "minGuests": 2,
+        "verified": true,
+        "source": "Tock public booking pattern commonly starts at 2 guests"
+      },
+      "tableManners": {
+        "notes": [
+          "避免强烈香水，Tock FAQ 明确要求注意香水/古龙水。",
+          "迟到 15 分钟可能无法完整提供所有餐序。",
+          "不能接待 vegan、vegetarian、gluten-free、no rice、soy allergy 等多种限制。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Chambers St",
+            "walkMinutes": 2,
+            "lines": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          {
+            "name": "City Hall",
+            "walkMinutes": 4,
+            "lines": [
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "Brooklyn Bridge-City Hall",
+            "walkMinutes": 6,
+            "lines": [
+              "4",
+              "5",
+              "6"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000",
+          "40000-50000"
+        ],
+        "lunchPriceTiers": [
+          "10000-20000"
+        ],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "40000-50000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "no",
+        "soloDiningAvailable": false
+      },
+      "links": {
+        "official": "https://icca.nyc/",
+        "reservation": "https://www.exploretock.com/icca/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/icca"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "Tock / Michelin Guide / verified reservation guide",
+      "syncSourceUrl": "https://www.exploretock.com/icca/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Jeju Noodle Bar",
+      "nameEn": "Jeju Noodle Bar",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / OpenTable public listing",
+        "sourceUrl": "https://jejunoodlebar.com/",
+        "changeSummary": "纽约一星第三批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-jeju-noodle-bar",
+      "name": "Jeju Noodle Bar",
+      "cuisine": "Korean",
+      "cuisineZh": "韩国料理 / 拉面",
+      "area": "West Village",
+      "areaZh": "西村",
+      "address": "679 Greenwich Street, New York, NY 10014",
+      "phone": "+1 646 666 0947",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "À la carte Korean Ramyun & Plates",
+          "price": "$50-$120 / 人参考",
+          "details": [
+            "现代韩国 comfort food 与 ramyun",
+            "公开菜单参考含 Family Ramyun $23、Wagyu Ramyun $43、Amberjack $32、Rack of Lamb $150",
+            "Wed-Thu 17:00-22:00，Fri-Sun 15:00-22:00 / 官网现显示 Mon-Sun 晚间也可能开放"
+          ],
+          "note": "官网公开地址电话和营业时间；菜单价格用公开订单/平台参考。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 50,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "official website / Michelin Guide / OpenTable public menu references"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "以预约为主，取消/no-show 后可能 walk-in；热门晚餐建议提前看位。",
+        "releaseTime": null,
+        "releaseWindow": "按预约平台日历",
+        "platforms": [
+          "Official",
+          "Phone",
+          "Walk-in based on cancellations"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Casual dress",
+        "required": false,
+        "notes": [
+          "OpenTable 标注 Casual Dress。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；相对休闲，但空间和辣味/海鲜需提前考虑。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published / restaurant norm"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter/table dining pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "不是 tasting menu，点菜制更灵活。",
+          "热门但休闲，适合 solo 或小组。",
+          "部分菜式有辣味和海鲜，过敏需提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Christopher St-Sheridan Sq",
+            "walkMinutes": 3,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "W 4 St-Wash Sq",
+            "walkMinutes": 10,
+            "lines": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "M"
+            ]
+          },
+          {
+            "name": "14 St",
+            "walkMinutes": 10,
+            "lines": [
+              "A",
+              "C",
+              "E",
+              "L"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://jejunoodlebar.com/",
+        "reservation": "https://jejunoodlebar.com/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/jeju-noodle-bar"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "B/C",
+        "reservation": "B/C",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide / OpenTable public listing",
+      "syncSourceUrl": "https://jejunoodlebar.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Jōji",
+      "nameEn": "Jōji",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / Resy",
+        "sourceUrl": "https://www.jojiny.com/joji-reservations-faqs",
+        "changeSummary": "纽约一星第三批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-joji",
+      "name": "Jōji",
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "Midtown / One Vanderbilt",
+      "areaZh": "中城 / One Vanderbilt",
+      "address": "One Vanderbilt Avenue, New York, NY 10017",
+      "phone": "+1 212 597 9025",
+      "lunch": [
+        {
+          "name": "Omakase Lunch",
+          "price": "$325 / 人",
+          "details": [
+            "寿司 omakase lunch",
+            "不含 beverage、tax、gratuity",
+            "需从 Vanderbilt & E 43rd St 入口进入 One Vanderbilt 地下"
+          ],
+          "note": "官网 FAQ 公开价格。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Omakase Dinner",
+          "price": "$450 / 人",
+          "details": [
+            "寿司 omakase dinner",
+            "corkage $150 / 750ml；最多 4 瓶",
+            "部分饮食限制需 48 小时前确认，vegan/vegetarian 不可接待"
+          ],
+          "note": "官网 FAQ 公开价格和规则。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 325,
+        "dinnerFrom": 450,
+        "serviceCharge": "beverage, tax and gratuity not included",
+        "verified": true,
+        "source": "Jōji official FAQ"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Resy/官网预约；最多 4 人线上预约，提前 14 天开放，需信用卡；48 小时内取消收费。",
+        "releaseTime": null,
+        "releaseWindow": "提前 14 天",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Email",
+          "Phone"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual",
+        "required": true,
+        "notes": [
+          "官网 FAQ 明确 recommended business casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄；寿司 omakase 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": false,
+        "minGuests": 2,
+        "verified": true,
+        "source": "public Resy widget defaults from 2 guests"
+      },
+      "tableManners": {
+        "notes": [
+          "One Vanderbilt 入口特殊，预留找路时间。",
+          "Business casual；避免强烈香水。",
+          "vegan/vegetarian 不可接待，其他限制至少 48 小时前确认。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Grand Central-42 St",
+            "walkMinutes": 1,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "7",
+              "S",
+              "Metro-North"
+            ]
+          },
+          {
+            "name": "5 Av",
+            "walkMinutes": 5,
+            "lines": [
+              "7"
+            ]
+          },
+          {
+            "name": "42 St-Bryant Park",
+            "walkMinutes": 6,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000",
+          "40000-50000"
+        ],
+        "lunchPriceTiers": [
+          "30000-40000"
+        ],
+        "dinnerPriceTiers": [
+          "40000-50000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": false
+      },
+      "links": {
+        "official": "https://jojiny.com/",
+        "reservation": "https://www.jojiny.com/joji-reservations-faqs",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/joji"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A",
+        "policy": "A/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide / Resy",
+      "syncSourceUrl": "https://www.jojiny.com/joji-reservations-faqs"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Jua",
+      "nameEn": "Jua",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / Resy guide",
+        "sourceUrl": "https://juanyc.com/menu",
+        "changeSummary": "纽约一星第三批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-jua",
+      "name": "Jua",
+      "cuisine": "Korean, Contemporary",
+      "cuisineZh": "现代韩餐",
+      "area": "Flatiron",
+      "areaZh": "Flatiron",
+      "address": "36 E 22nd Street, New York, NY 10010",
+      "phone": "+1 646 590 1598",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Seven-Course Tasting Menu",
+          "price": "$150 / 人",
+          "details": [
+            "七道韩式 wood-fired tasting menu",
+            "2026 菜单示例：Caviar Kim、Mulhoe、Jook、Branzino、Tenderloin & Chan、Strawberry、Goguma Juak",
+            "Uni Kim +$32；wine pairing $110；non-alcoholic $85"
+          ],
+          "note": "官网菜单公开价格和餐序。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 150,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Jua official menu"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "Resy/官网预约；提前 3 周开放，午夜 release；两轮 18:00 / 20:30，2 小时时限。",
+        "releaseTime": "00:00 ET",
+        "releaseWindow": "提前 3 周",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Email",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual",
+        "required": true,
+        "notes": [
+          "官网 reservation 页明确 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄；菜单不能接待 vegan/vegetarian/dairy-free/no seafood/no sesame/no allium/gluten-free。",
+        "verified": true,
+        "publicInfoStatus": "dietary limitations officially published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "public reservation guide notes Resy handles 1-4 guests"
+      },
+      "tableManners": {
+        "notes": [
+          "两小时用餐限制，迟到 15 分钟可能让位。",
+          "无法接待多种饮食限制，预约前确认。",
+          "wood-fired 韩餐，海鲜、芝麻、葱蒜类元素较多。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "23 St",
+            "walkMinutes": 3,
+            "lines": [
+              "R",
+              "W",
+              "6"
+            ]
+          },
+          {
+            "name": "14 St-Union Sq",
+            "walkMinutes": 9,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "L",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "28 St",
+            "walkMinutes": 9,
+            "lines": [
+              "6"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://juanyc.com/",
+        "reservation": "https://juanyc.com/reservation",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/jua"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide / Resy guide",
+      "syncSourceUrl": "https://juanyc.com/menu"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Kochi",
+      "nameEn": "Kochi",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / OpenTable / Michelin Guide",
+        "sourceUrl": "https://www.kochinyc.com/menu/",
+        "changeSummary": "纽约一星第三批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-kochi",
+      "name": "Kochi",
+      "cuisine": "Korean, Contemporary",
+      "cuisineZh": "现代韩餐 / 串料理",
+      "area": "Hell's Kitchen",
+      "areaZh": "Hell's Kitchen",
+      "address": "652 Tenth Avenue, New York, NY 10036",
+      "phone": "+1 646 478 7308",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Chef’s Signature / 8-Course Tasting Menu",
+          "price": "$145 / 人",
+          "details": [
+            "8 道韩式 skewers/tasting menu",
+            "官网样例含 squid、fluke、halibut、octopus、duck、tuna bibimbap、dessert",
+            "beverage pairing $110；部分 caviar / A5 / uni / langoustine supplement"
+          ],
+          "note": "官网菜单公开价格与菜式。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 145,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Kochi official menu / OpenTable"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/OpenTable 预约；counter/dining room/outdoor 均为 1-5 人 8-course menu。",
+        "releaseTime": null,
+        "releaseWindow": "按 OpenTable 日历",
+        "platforms": [
+          "Official",
+          "OpenTable",
+          "Phone",
+          "Email"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未明确 Dress Code；一星 tasting menu 建议 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；不能接待 vegan、celiac、allium、sesame、soy、gluten、alcohol 等多种限制，儿童同行需确认。",
+        "verified": true,
+        "publicInfoStatus": "dietary limitations officially published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable experiences show 1-5 guests"
+      },
+      "tableManners": {
+        "notes": [
+          "部分菜式需用手食用，按服务说明即可。",
+          "饮食限制范围明确，预约前确认。",
+          "counter 可一人预约，适合 solo dining。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "50 St",
+            "walkMinutes": 8,
+            "lines": [
+              "C",
+              "E"
+            ]
+          },
+          {
+            "name": "50 St",
+            "walkMinutes": 10,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "Port Authority Bus Terminal",
+            "walkMinutes": 12,
+            "lines": [
+              "A",
+              "C",
+              "E"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.kochinyc.com/",
+        "reservation": "https://www.opentable.com/r/kochi-new-york",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/kochi"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "B",
+        "policy": "A/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / OpenTable / Michelin Guide",
+      "syncSourceUrl": "https://www.kochinyc.com/menu/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Kosaka",
+      "nameEn": "Kosaka",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://www.kosakanyc.com/menu/",
+        "changeSummary": "纽约一星第三批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-kosaka",
+      "name": "Kosaka",
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "Greenwich Village",
+      "areaZh": "格林威治村",
+      "address": "220 W 13th Street, New York, NY 10011",
+      "phone": "+1 212 727 1709",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Omakase",
+          "price": "$270-$295 / 人",
+          "details": [
+            "Table omakase $270；bar omakase $295",
+            "seasonal otsumami、sashimi、daily selected sushi course、soup、dessert",
+            "传统江户前寿司风格"
+          ],
+          "note": "官网菜单公开价格和结构。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 270,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Kosaka official menu"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/预约平台预约；寿司吧台座位有限，建议提前 2-3 周。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台日历",
+        "platforms": [
+          "Official",
+          "Phone",
+          "Email"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / no fragrance reference",
+        "required": true,
+        "notes": [
+          "官网未明确 Dress Code；高端寿司建议 smart casual，避免强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；寿司 omakase 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "sushi counter/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "避免强烈香水。",
+          "握寿司上桌后尽快食用，跟随师傅节奏。",
+          "吧台与 table omakase 价格不同，预约时确认座位类型。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "14 St",
+            "walkMinutes": 3,
+            "lines": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          {
+            "name": "Christopher St-Sheridan Sq",
+            "walkMinutes": 7,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "8 Av",
+            "walkMinutes": 8,
+            "lines": [
+              "L"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.kosakanyc.com/",
+        "reservation": "https://www.kosakanyc.com/reservation/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/kosaka"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide",
+      "syncSourceUrl": "https://www.kosakanyc.com/menu/"
+    }
+  ]
+}

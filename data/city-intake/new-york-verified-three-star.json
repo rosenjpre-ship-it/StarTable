@@ -1,0 +1,729 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-three-star-batch",
+  "checkedAt": "2026-08-14",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "id": "new-york-eleven-madison-park",
+      "city": "New York",
+      "country": "United States",
+      "name": "Eleven Madison Park",
+      "nameZh": "Eleven Madison Park",
+      "nameEn": "Eleven Madison Park",
+      "nameJa": "",
+      "stars": 3,
+      "cuisine": "Contemporary / Vegan",
+      "cuisineZh": "现代创意 / 植物料理",
+      "area": "Flatiron District",
+      "areaZh": "Flatiron / 麦迪逊广场",
+      "address": "11 Madison Avenue, New York, NY 10010",
+      "phone": "+1 212 889 0905",
+      "lunch": [
+        {
+          "name": "Full Tasting Menu / Weekend Lunch",
+          "price": "$385 / 人",
+          "details": [
+            "7-8 道完整 tasting menu",
+            "菜单随季节变化，餐厅不长期公开固定菜名",
+            "周五至周日午餐时段可预约，具体以 Resy 日历为准"
+          ],
+          "note": "官网 FAQ 公开 Full Tasting Menu 价格和餐期；菜单会按季节变动。"
+        },
+        {
+          "name": "Bar Tasting Menu",
+          "price": "$225 / 人",
+          "details": [
+            "4-5 道 lounge / bar tasting experience",
+            "约 2 小时，适合更轻量体验",
+            "部分吧台席位可预约或 walk-in"
+          ],
+          "note": "官网 FAQ 公开 Bar Tasting Menu 价格。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Full Tasting Menu",
+          "price": "$385 / 人",
+          "details": [
+            "7-8 道季节 tasting menu",
+            "以 Magic Farms 与季节食材为核心",
+            "可按当前菜单选择植物料理或部分动物性食材路径"
+          ],
+          "note": "官网 FAQ 公开价格与体验长度；实际菜单以餐厅当期确认为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 225,
+        "dinnerFrom": 385,
+        "serviceCharge": "gratuity not included",
+        "verified": true,
+        "source": "Eleven Madison Park official FAQ"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Resy 预约；官网 FAQ 说明每月 1 日开放次月预约，并建议售罄后加入 Resy waitlist。",
+        "releaseTime": "每月 1 日",
+        "releaseWindow": "开放次月",
+        "platforms": ["Resy", "Official"],
+        "waitlist": "Resy waitlist",
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "No dress code",
+        "required": false,
+        "notes": ["官网 FAQ 明确无 Dress Code；许多客人仍会为特殊场合正式着装。"],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网 FAQ 未明确儿童年龄限制，儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "Resy / official FAQ bar and tasting reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "预约为高需求体验，建议提前准备过敏、忌口、人数和付款信息。",
+          "餐厅虽无 Dress Code，但三星 dining room 建议 smart casual 以上。",
+          "菜单季节变化，不要预期固定菜名；以当日团队说明为准。",
+          "避免强烈香水和闪光灯，尊重邻桌与服务节奏。"
+        ]
+      },
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "transport": {
+        "stations": [
+          { "name": "23 St", "walkMinutes": 4, "lines": ["R", "W"] },
+          { "name": "28 St", "walkMinutes": 8, "lines": ["6"] },
+          { "name": "Union Square", "walkMinutes": 12, "lines": ["4", "5", "6", "L", "N", "Q", "R", "W"] }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": ["20000-30000", "30000-40000"],
+        "lunchPriceTiers": ["20000-30000"],
+        "dinnerPriceTiers": ["30000-40000"],
+        "dressCategory": "none",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.elevenmadisonpark.com/",
+        "reservation": "https://www.elevenmadisonpark.com/reservations",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/eleven-madison-park"
+      },
+      "heroImage": "",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://www.elevenmadisonpark.com/faq",
+        "changeSummary": "纽约三星首批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "id": "new-york-jungsik",
+      "city": "New York",
+      "country": "United States",
+      "name": "Jungsik",
+      "nameZh": "Jungsik",
+      "nameEn": "Jungsik",
+      "nameJa": "",
+      "stars": 3,
+      "cuisine": "Korean, Contemporary",
+      "cuisineZh": "现代韩餐",
+      "area": "Tribeca",
+      "areaZh": "翠贝卡",
+      "address": "2 Harrison Street, New York, NY 10013",
+      "phone": "+1 212 219 0900",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Signature Menu",
+          "price": "$335 / 人",
+          "details": [
+            "现代韩餐 tasting menu",
+            "官网公开菜式示例包括 Striped Jack、Octopus、Mandoo、Arctic Char、Yellowtail Kimbap、Galbi、Jungsik Garden 等",
+            "全桌需参与 Signature Menu"
+          ],
+          "note": "官网菜单公开 Signature Menu 价格和菜式结构。"
+        },
+        {
+          "name": "Bar Menu / Supplements",
+          "price": "单点 supplement 另计",
+          "details": [
+            "官网列有 sea urchin bibimbap、Banchan、Galbi 等补充菜式",
+            "Wine pairing 和 non-alcoholic pairing 另计",
+            "实际供应以当日菜单为准"
+          ],
+          "note": "官网菜单公开 pairing 和补充项价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 335,
+        "serviceCharge": null,
+        "verified": true,
+        "source": "Jungsik official menu"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；Michelin 显示晚餐 Tue-Sun 17:00-21:30，热门日期建议提前。",
+        "releaseTime": null,
+        "releaseWindow": "按预约平台开放日历",
+        "platforms": ["Official", "Reservation platform", "Phone"],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual / smart casual reference",
+        "required": true,
+        "notes": ["官网未在公开菜单页明确 Dress Code；第三方公开餐饮信息多标注 business casual，建议 smart casual。"],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；三星 tasting menu 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": null,
+        "minGuests": null,
+        "verified": false,
+        "source": "待预约平台确认"
+      },
+      "tableManners": {
+        "notes": [
+          "全桌 tasting menu 参与，预约时需提前说明过敏、忌口和特殊需求。",
+          "现代韩餐含多道小菜和发酵元素，按服务节奏食用即可。",
+          "建议 smart casual，避免过度休闲服装。",
+          "拍照避免影响邻桌和服务节奏。"
+        ]
+      },
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "transport": {
+        "stations": [
+          { "name": "Franklin St", "walkMinutes": 3, "lines": ["1"] },
+          { "name": "Chambers St", "walkMinutes": 6, "lines": ["1", "2", "3"] },
+          { "name": "Brooklyn Bridge-City Hall", "walkMinutes": 9, "lines": ["4", "5", "6"] }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": ["30000-40000"],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": ["30000-40000"],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": false
+      },
+      "links": {
+        "official": "https://www.jungsik.com/",
+        "reservation": "https://www.jungsik.com/reservation/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/jungsik-new-york"
+      },
+      "heroImage": "",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Michelin Guide / public dining platform",
+        "sourceUrl": "https://www.jungsik.com/menu/",
+        "changeSummary": "纽约三星首批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "id": "new-york-le-bernardin",
+      "city": "New York",
+      "country": "United States",
+      "name": "Le Bernardin",
+      "nameZh": "Le Bernardin",
+      "nameEn": "Le Bernardin",
+      "nameJa": "",
+      "stars": 3,
+      "cuisine": "Seafood, French",
+      "cuisineZh": "海鲜法餐",
+      "area": "Midtown",
+      "areaZh": "中城",
+      "address": "155 W 51st Street, New York, NY 10019",
+      "phone": "+1 212 554 1515",
+      "lunch": [
+        {
+          "name": "Lunch Prix Fixe",
+          "price": "$139 / 人",
+          "details": [
+            "3 道午餐 prix fixe",
+            "官网公开 almost raw、lightly cooked、甜品等海鲜主导选项",
+            "部分菜式有 caviar、Dover sole、filet mignon 等 supplement"
+          ],
+          "note": "官网菜单公开 Lunch Prix Fixe 价格。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dinner Prix Fixe",
+          "price": "$220 / 人",
+          "details": [
+            "4 道晚餐 prix fixe",
+            "以 Eric Ripert 的海鲜法餐为核心",
+            "部分高级食材 supplement 另计"
+          ],
+          "note": "官网菜单公开 Dinner Prix Fixe 价格。"
+        },
+        {
+          "name": "Chef's Tasting Menu",
+          "price": "$350 / 人",
+          "details": [
+            "多道 chef tasting menu",
+            "官网公开包含 Bluefin Tuna-Caviar、Uni、Langoustine、Turbot、Tilefish、Halibut 等餐序示例",
+            "wine pairing 另计"
+          ],
+          "note": "官网菜单公开 Chef's Tasting Menu 价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 139,
+        "dinnerFrom": 220,
+        "serviceCharge": null,
+        "verified": true,
+        "source": "Le Bernardin official menu and hours"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/电话预约；官网公开午餐 Mon-Fri 12:00-14:30，晚餐 Mon-Thu 17:00-22:30、Fri-Sat 17:00-23:00，周日休息。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约日历",
+        "platforms": ["Official", "Phone"],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual",
+        "required": true,
+        "notes": ["官网明确 business casual；夹克建议但非必须，不允许运动服、居家服、短裤、T-shirt、短袖、球鞋和拖鞋。"],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": false,
+        "privateRoomAllowed": null,
+        "minimumAge": 10,
+        "notes": "官网明确 10 岁以下儿童不可进入餐厅，且不提供婴儿车、高脚椅或儿童菜单。",
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "soloDining": {
+        "available": null,
+        "minGuests": null,
+        "verified": false,
+        "source": "待预约平台确认"
+      },
+      "tableManners": {
+        "notes": [
+          "Business casual 明确，避免运动鞋、短裤、T-shirt、拖鞋等。",
+          "海鲜 tasting 菜式节奏紧凑，过敏与不吃生食需预约前说明。",
+          "10 岁以下不可入内，家庭用餐需提前确认年龄与座位。",
+          "部分菜式 supplement 高，点单前确认额外费用。"
+        ]
+      },
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "transport": {
+        "stations": [
+          { "name": "50 St", "walkMinutes": 3, "lines": ["1"] },
+          { "name": "7 Av", "walkMinutes": 4, "lines": ["B", "D", "E"] },
+          { "name": "47-50 Sts Rockefeller Center", "walkMinutes": 6, "lines": ["B", "D", "F", "M"] }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": ["10000-20000", "20000-30000", "30000-40000"],
+        "lunchPriceTiers": ["10000-20000"],
+        "dinnerPriceTiers": ["20000-30000", "30000-40000"],
+        "dressCategory": "required",
+        "childCategory": "no",
+        "soloDiningAvailable": false
+      },
+      "links": {
+        "official": "https://www.le-bernardin.com/",
+        "reservation": "https://www.le-bernardin.com/reservations",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/le-bernardin"
+      },
+      "heroImage": "",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://www.le-bernardin.com/about",
+        "changeSummary": "纽约三星首批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "id": "new-york-per-se",
+      "city": "New York",
+      "country": "United States",
+      "name": "Per Se",
+      "nameZh": "Per Se",
+      "nameEn": "Per Se",
+      "nameJa": "",
+      "stars": 3,
+      "cuisine": "Contemporary, French-American",
+      "cuisineZh": "现代法美料理",
+      "area": "Columbus Circle",
+      "areaZh": "哥伦布圆环",
+      "address": "10 Columbus Circle, 4th Floor, New York, NY 10019",
+      "phone": "+1 212 823 9335",
+      "lunch": [
+        {
+          "name": "Chef's Tasting Menu / Vegetable Tasting Menu",
+          "price": "$425 / 人参考",
+          "details": [
+            "官网公开每日提供 9 道 Chef's Tasting Menu 与 9 道 Vegetable Tasting Menu",
+            "Tock FAQ 显示 Main Dining Room 接受 1-8 人预约",
+            "Forbes Travel Guide 与近期 NYC 预约资讯均显示 tasting menu 约 $425 / 人，具体以 Tock 当期为准",
+            "午餐时段以 Tock / 当日营业日历为准"
+          ],
+          "note": "官网公开菜单类型；价格参考近期公开预约/餐饮信息，最终以 Tock 当期结账页为准。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Chef's Tasting Menu / Vegetable Tasting Menu",
+          "price": "$425 / 人参考",
+          "details": [
+            "9 道 tasting menu",
+            "每日菜单变动，不重复使用单一食材",
+            "主餐厅 Chef's Tasting Menu / Vegetable Tasting Menu 公开参考价约 $425 / 人",
+            "经典 Keller 风格法美 tasting experience"
+          ],
+          "note": "官网公开每日菜单类型；公开平台显示通过 Tock 预约，价格以 Tock 当期为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 425,
+        "dinnerFrom": 425,
+        "serviceCharge": null,
+        "verified": true,
+        "source": "Thomas Keller official menu page / Tock FAQ / Forbes Travel Guide / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Tock 预约；Tock FAQ 显示每月 1 日开放次月预约，Main Dining Room 接受 1-8 人。",
+        "releaseTime": "每月 1 日",
+        "releaseWindow": "开放次月",
+        "platforms": ["Tock", "Official", "Phone"],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual",
+        "required": true,
+        "notes": ["Tock FAQ 标注 business casual；夹克非必须但建议，不允许居家服、运动衫、短袖衬衫、短裤、网球鞋和拖鞋。"],
+        "verified": true,
+        "publicInfoStatus": "reservation platform FAQ"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "公开 FAQ 未明确儿童年龄限制；儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "Tock FAQ Main Dining Room parties of 1-8"
+      },
+      "tableManners": {
+        "notes": [
+          "Tock 预约规则较严格，建议提前准备付款信息、日期、人数和过敏信息。",
+          "Business casual 明确，避免运动鞋、短裤和过度休闲服装。",
+          "菜单每日变化，价格和可选项目需以 Tock/餐厅当日菜单确认。",
+          "若想带酒，需提前确认 corkage 规则。"
+        ]
+      },
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "transport": {
+        "stations": [
+          { "name": "59 St-Columbus Circle", "walkMinutes": 2, "lines": ["1", "A", "B", "C", "D"] },
+          { "name": "57 St-7 Av", "walkMinutes": 6, "lines": ["N", "Q", "R", "W"] },
+          { "name": "66 St-Lincoln Center", "walkMinutes": 8, "lines": ["1"] }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": ["50000-plus"],
+        "lunchPriceTiers": ["50000-plus"],
+        "dinnerPriceTiers": ["50000-plus"],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://thomaskeller.com/new-york-new-york/per-se/",
+        "reservation": "https://www.exploretock.com/perse",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/per-se"
+      },
+      "heroImage": "",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A",
+        "reservation": "B",
+        "policy": "B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Tock FAQ / Michelin Guide",
+        "sourceUrl": "https://thomaskeller.com/new-york-new-york/per-se/todays-menus/",
+        "changeSummary": "纽约三星首批核验；Per Se 价格用近期公开参考价，仍需以上线时 Tock 当期页复核。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "id": "new-york-sushi-sho",
+      "city": "New York",
+      "country": "United States",
+      "name": "Sushi Sho",
+      "nameZh": "Sushi Sho",
+      "nameEn": "Sushi Sho",
+      "nameJa": "",
+      "stars": 3,
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "Midtown East",
+      "areaZh": "中城东",
+      "address": "3 E 41st Street, New York, NY 10017",
+      "phone": "+1 646 863 2023",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Omakase",
+          "price": "$450 / 人参考；官网最低消费 $190 起",
+          "details": [
+            "高级 omakase 公开参考价约 $450 / 人",
+            "官网预约信息显示每人最低消费 $190 起",
+            "16 item course / 多道寿司餐序参考",
+            "Chef's choice of assorted nigiri-based sushi",
+            "每晚 1 个 seating，吧台约 6 位"
+          ],
+          "note": "官网公开最低消费和席位规则；完整 omakase 价格参考公开预约/餐饮信息，最终以预约页为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 450,
+        "serviceCharge": "tax and administrative fee may apply",
+        "verified": true,
+        "source": "Sushi Sho official reservation page / Michelin Guide / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网线上预约；每晚仅 1 个 seating、约 6 个吧台席，预约需提前在线完成。",
+        "releaseTime": null,
+        "releaseWindow": "按官网预约日历",
+        "platforms": ["Official"],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "需预约确认",
+        "required": null,
+        "notes": ["官网预约页未明确 Dress Code；寿司吧台建议 smart casual，避免强烈香水。"],
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": false,
+        "privateRoomAllowed": null,
+        "minimumAge": 13,
+        "notes": "官网预约页明确 13 岁以下儿童不可入内。",
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "official online reservation pattern / sushi counter seating"
+      },
+      "tableManners": {
+        "notes": [
+          "仅 6 席左右的寿司吧台，必须准时到店；迟到超过规则时间可能取消预约。",
+          "避免强烈香水、香氛护手霜或烟味。",
+          "握寿司上桌后建议尽快食用，跟随师傅节奏。",
+          "13 岁以下不可入内，同行年龄需提前确认。"
+        ]
+      },
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "transport": {
+        "stations": [
+          { "name": "Grand Central-42 St", "walkMinutes": 4, "lines": ["4", "5", "6", "7", "S", "Metro-North"] },
+          { "name": "42 St-Bryant Park", "walkMinutes": 7, "lines": ["B", "D", "F", "M"] },
+          { "name": "5 Av", "walkMinutes": 7, "lines": ["7"] }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": ["10000-20000"],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": ["10000-20000"],
+        "dressCategory": "pending",
+        "childCategory": "no",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.sushi-sho.com/",
+        "reservation": "https://www.sushi-sho.com/reservations",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/sushi-sho-1213976"
+      },
+      "heroImage": "",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A",
+        "reservation": "A",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://www.sushi-sho.com/reservations",
+        "changeSummary": "纽约三星首批核验。",
+        "autoCheckEnabled": false
+      }
+    }
+  ]
+}

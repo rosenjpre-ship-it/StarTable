@@ -1,0 +1,688 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-two-star-batch-a",
+  "checkedAt": "2026-08-14",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-aquavit",
+      "name": "Aquavit",
+      "nameZh": "Aquavit",
+      "nameEn": "Aquavit",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Scandinavian",
+      "cuisineZh": "北欧料理",
+      "area": "Midtown East",
+      "areaZh": "中城东",
+      "address": "65 E 55th Street, New York, NY 10022",
+      "phone": "+1 212 307 7311",
+      "lunch": [
+        {
+          "name": "Dining Room Tasting Menu",
+          "price": "$195 / 人参考",
+          "details": [
+            "北欧料理 tasting menu，午餐与晚餐菜单结构需以当期预约页为准",
+            "公开预约/餐饮信息显示 Dining Room tasting menu 约 $195 起",
+            "更高阶 Chef’s Tasting Menu / pairing 另计"
+          ],
+          "note": "官网与预约平台菜单会随季节变化；价格以上线前复核为准。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dining Room Tasting Menu",
+          "price": "$195 / 人参考",
+          "details": [
+            "北欧风格现代 tasting menu",
+            "以鱼类、海鲜、根茎蔬菜、腌渍与发酵风味为核心",
+            "Chef’s Tasting Menu 公开参考价约 $305 / 人"
+          ],
+          "note": "以 Aquavit 官方菜单 / Tock 当前可预约内容为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 195,
+        "dinnerFrom": 195,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Aquavit official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/预约平台预约；高需求晚餐和节假日建议提前 3-4 周确认。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台开放日历",
+        "platforms": [
+          "Official",
+          "Tock",
+          "Phone"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网公开信息未稳定显示细则；二星 dining room 建议 smart casual，避免运动服和短裤。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄政策；儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": null,
+        "minGuests": null,
+        "verified": false,
+        "source": "待预约平台确认"
+      },
+      "tableManners": {
+        "notes": [
+          "北欧 tasting menu 菜式变化较快，过敏、忌口需预约时提前写清楚。",
+          "建议 smart casual，避免运动服、拖鞋和强烈香水。",
+          "pairing 与 supplement 费用需点单前确认。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Lexington Av-53 St",
+            "walkMinutes": 4,
+            "lines": [
+              "E",
+              "M"
+            ]
+          },
+          {
+            "name": "51 St",
+            "walkMinutes": 5,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "5 Av-53 St",
+            "walkMinutes": 7,
+            "lines": [
+              "E",
+              "M"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [
+          "10000-20000"
+        ],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": false
+      },
+      "links": {
+        "official": "https://www.aquavit.org/",
+        "reservation": "https://www.aquavit.org/reservations",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/aquavit"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Michelin Guide / current public reservation references",
+        "sourceUrl": "https://www.aquavit.org/",
+        "changeSummary": "纽约二星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-aska",
+      "name": "Aska",
+      "nameZh": "Aska",
+      "nameEn": "Aska",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Scandinavian, Contemporary",
+      "cuisineZh": "北欧创意料理",
+      "area": "Williamsburg",
+      "areaZh": "威廉斯堡",
+      "address": "47 S 5th Street, Brooklyn, NY 11249",
+      "phone": "+1 929 337 6792",
+      "lunch": [
+        {
+          "name": "Sunday Lunch Tasting Menu",
+          "price": "$375 / 人参考",
+          "details": [
+            "北欧美学 tasting menu",
+            "以纽约及周边季节食材、海鲜、野味与发酵风味为核心",
+            "Sunday lunch 是否开放需以预约日历为准"
+          ],
+          "note": "公开预约/餐饮信息显示 tasting menu 约 $375；餐期随预约日历。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Tasting Menu",
+          "price": "$375 / 人参考",
+          "details": [
+            "多道北欧创意 tasting menu",
+            "菜单高度季节化，不长期公开固定菜名",
+            "wine pairing / non-alcoholic pairing 另计"
+          ],
+          "note": "以 Aska 官方预约页当前菜单和价格为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 375,
+        "dinnerFrom": 375,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Aska official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；座位少、tasting menu 高需求，建议开放日历后尽早确认。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台开放日历",
+        "platforms": [
+          "Official",
+          "Tock"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未稳定公开细则；二星 tasting room 建议 smart casual，避免强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；tasting menu 时长较长，儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": null,
+        "minGuests": null,
+        "verified": false,
+        "source": "待预约平台确认"
+      },
+      "tableManners": {
+        "notes": [
+          "菜单以当季和发酵风味为核心，忌口需尽早告知。",
+          "用餐时长较长，需按预约时间准时到店。",
+          "空间较安静，拍照和交谈音量需克制。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Marcy Av",
+            "walkMinutes": 6,
+            "lines": [
+              "J",
+              "M",
+              "Z"
+            ]
+          },
+          {
+            "name": "Bedford Av",
+            "walkMinutes": 13,
+            "lines": [
+              "L"
+            ]
+          },
+          {
+            "name": "Metropolitan Av",
+            "walkMinutes": 15,
+            "lines": [
+              "G"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [
+          "30000-40000"
+        ],
+        "dinnerPriceTiers": [
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": false
+      },
+      "links": {
+        "official": "https://www.askanyc.com/",
+        "reservation": "https://www.exploretock.com/aska/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/aska"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Tock / Michelin Guide",
+        "sourceUrl": "https://www.askanyc.com/",
+        "changeSummary": "纽约二星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-atera",
+      "name": "Atera",
+      "nameZh": "Atera",
+      "nameEn": "Atera",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Contemporary",
+      "cuisineZh": "现代创意料理",
+      "area": "Tribeca",
+      "areaZh": "翠贝卡",
+      "address": "77 Worth Street, New York, NY 10013",
+      "phone": "+1 212 226 1444",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Tasting Menu",
+          "price": "$395 / 人参考",
+          "details": [
+            "现代创意 tasting menu",
+            "公开信息显示约 12-15 道餐序",
+            "菜单随季节变化，餐厅不长期公开固定菜名"
+          ],
+          "note": "以 Atera 官方预约页当前菜单和价格为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 395,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Atera official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；吧台式高需求 tasting counter，建议开放日历后尽早锁定。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台开放日历",
+        "platforms": [
+          "Official",
+          "Tock"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未稳定公开细则；建议 smart casual，避免运动服、短裤和强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；吧台 tasting menu 不适合低龄儿童，需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter seating reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "吧台式 tasting counter，准时和节奏感很重要。",
+          "避免强烈香水，以免影响开放式厨房和邻座体验。",
+          "过敏、忌口、饮酒需求需预约时提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Canal St",
+            "walkMinutes": 5,
+            "lines": [
+              "A",
+              "C",
+              "E",
+              "J",
+              "N",
+              "Q",
+              "R",
+              "W",
+              "Z",
+              "6"
+            ]
+          },
+          {
+            "name": "Chambers St",
+            "walkMinutes": 6,
+            "lines": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          {
+            "name": "Brooklyn Bridge-City Hall",
+            "walkMinutes": 8,
+            "lines": [
+              "4",
+              "5",
+              "6"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.ateranyc.com/",
+        "reservation": "https://www.exploretock.com/atera",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/atera"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Tock / Michelin Guide",
+        "sourceUrl": "https://www.ateranyc.com/",
+        "changeSummary": "纽约二星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-atomix",
+      "name": "Atomix",
+      "nameZh": "Atomix",
+      "nameEn": "Atomix",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Korean, Contemporary",
+      "cuisineZh": "现代韩餐",
+      "area": "NoMad",
+      "areaZh": "NoMad / 韩国城北侧",
+      "address": "104 E 30th Street, New York, NY 10016",
+      "phone": "+1 646 476 7217",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Chef’s Counter Tasting Menu",
+          "price": "$395 / 人参考",
+          "details": [
+            "韩式现代 fine dining tasting counter",
+            "以发酵、韩餐结构和纽约季节食材构成多道餐序",
+            "pairing / supplement 另计"
+          ],
+          "note": "以 Atomix 官方预约页当前菜单和价格为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 395,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "Atomix official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；Chef’s Counter 席位极少，通常需要按开放日历抢位或候补。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台开放日历",
+        "platforms": [
+          "Official",
+          "Tock"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未稳定公开细则；高端 counter dining 建议 smart casual，避免强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；Chef’s Counter tasting menu 不适合低龄儿童，需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter seating reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "Chef’s Counter 席位少，迟到会影响整场服务节奏。",
+          "避免强烈香水和过多闪光拍摄。",
+          "韩餐发酵、辣味和海鲜元素较多，忌口需提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "28 St",
+            "walkMinutes": 4,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "33 St",
+            "walkMinutes": 6,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "34 St-Herald Sq",
+            "walkMinutes": 10,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.atomixnyc.com/",
+        "reservation": "https://www.exploretock.com/atomix",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/atomix"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Tock / Michelin Guide",
+        "sourceUrl": "https://www.atomixnyc.com/",
+        "changeSummary": "纽约二星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    }
+  ]
+}

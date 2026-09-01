@@ -4,8 +4,8 @@
     "labelZh": "全球",
     "labelEn": "Global",
     "michelinYear": 2026,
-    "heroTextZh": "收录东京、香港、上海、巴黎、纽约与杭州 2026/2025 全部星级米其林餐厅。",
-    "heroTextEn": "A Michelin starred restaurant database for Tokyo, Hong Kong, Shanghai, Paris, New York and Hangzhou."
+    "heroTextZh": "收录东京、香港、上海、巴黎、纽约、杭州、伦敦、新加坡、首尔、京都与曼谷 2026/2025 全部星级米其林餐厅。",
+    "heroTextEn": "A Michelin starred restaurant database for Tokyo, Hong Kong, Shanghai, Paris, New York, Hangzhou, London, Singapore, Seoul, Kyoto and Bangkok."
   },
   "cities": [
     {
@@ -595,6 +595,433 @@
         "滨江",
         "萧山",
         "余杭"
+      ]
+    },
+    {
+      "id": "london",
+      "dataCity": "London",
+      "labelZh": "伦敦",
+      "labelEn": "London",
+      "countryZh": "英国",
+      "countryEn": "United Kingdom",
+      "coordinates": {
+        "lat": 51.5072,
+        "lng": -0.1276
+      },
+      "michelinYear": 2026,
+      "currency": "GBP",
+      "currencySymbol": "£",
+      "ratingPlatforms": [
+        {
+          "key": "localScore",
+          "label": "Google",
+          "urlKey": "localUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "£100 以下",
+          "labelEn": "Under £100",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "£100~200",
+          "labelEn": "£100-200",
+          "min": 100,
+          "max": 200
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "£200~300",
+          "labelEn": "£200-300",
+          "min": 200,
+          "max": 300
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "£300~400",
+          "labelEn": "£300-400",
+          "min": 300,
+          "max": 400
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "£400~500",
+          "labelEn": "£400-500",
+          "min": 400,
+          "max": 500
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "£500 以上",
+          "labelEn": "£500+",
+          "min": 500,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "Mayfair",
+        "Marylebone",
+        "St James",
+        "Belgravia",
+        "Chelsea",
+        "Knightsbridge",
+        "Notting Hill",
+        "Fitzrovia",
+        "Soho",
+        "Covent Garden",
+        "Clerkenwell",
+        "Shoreditch",
+        "City",
+        "Southwark",
+        "Borough",
+        "Bethnal Green",
+        "Camberwell",
+        "Fulham",
+        "Chiswick",
+        "Hammersmith",
+        "Petersham"
+      ]
+    },
+    {
+      "id": "singapore",
+      "dataCity": "Singapore",
+      "labelZh": "新加坡",
+      "labelEn": "Singapore",
+      "countryZh": "新加坡",
+      "countryEn": "Singapore",
+      "coordinates": {
+        "lat": 1.3521,
+        "lng": 103.8198
+      },
+      "michelinYear": 2026,
+      "currency": "SGD",
+      "currencySymbol": "S$",
+      "ratingPlatforms": [
+        {
+          "key": "localScore",
+          "label": "Google",
+          "urlKey": "localUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "S$100 以下",
+          "labelEn": "Under S$100",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "S$100~200",
+          "labelEn": "S$100-200",
+          "min": 100,
+          "max": 200
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "S$200~300",
+          "labelEn": "S$200-300",
+          "min": 200,
+          "max": 300
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "S$300~400",
+          "labelEn": "S$300-400",
+          "min": 300,
+          "max": 400
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "S$400~500",
+          "labelEn": "S$400-500",
+          "min": 400,
+          "max": 500
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "S$500 以上",
+          "labelEn": "S$500+",
+          "min": 500,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "Marina Bay",
+        "Civic District",
+        "Orchard",
+        "Tanglin",
+        "Tanjong Pagar",
+        "Telok Ayer",
+        "River Valley",
+        "Robertson Quay",
+        "Bugis",
+        "Dhoby Ghaut",
+        "Marina Centre",
+        "Dempsey Hill",
+        "Botanic Gardens",
+        "Kallang",
+        "Singapore River / Clarke Quay"
+      ]
+    },
+    {
+      "id": "seoul",
+      "dataCity": "Seoul",
+      "labelZh": "首尔",
+      "labelEn": "Seoul",
+      "countryZh": "韩国",
+      "countryEn": "South Korea",
+      "coordinates": {
+        "lat": 37.5665,
+        "lng": 126.978
+      },
+      "michelinYear": 2026,
+      "currency": "KRW",
+      "currencySymbol": "₩",
+      "ratingPlatforms": [
+        {
+          "key": "localScore",
+          "label": "Naver",
+          "urlKey": "localUrl"
+        },
+        {
+          "key": "localScore",
+          "label": "Google",
+          "urlKey": "localUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "₩100,000 以下",
+          "labelEn": "Under ₩100,000",
+          "min": 0,
+          "max": 100000
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "₩100,000~200,000",
+          "labelEn": "₩100,000-200,000",
+          "min": 100000,
+          "max": 200000
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "₩200,000~300,000",
+          "labelEn": "₩200,000-300,000",
+          "min": 200000,
+          "max": 300000
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "₩300,000~400,000",
+          "labelEn": "₩300,000-400,000",
+          "min": 300000,
+          "max": 400000
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "₩400,000~500,000",
+          "labelEn": "₩400,000-500,000",
+          "min": 400000,
+          "max": 500000
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "₩500,000 以上",
+          "labelEn": "₩500,000+",
+          "min": 500000,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "Gangnam",
+        "Cheongdam",
+        "Apgujeong",
+        "Sinsa",
+        "Hannam",
+        "Itaewon",
+        "Jung-gu",
+        "Jongno",
+        "Gwanghwamun",
+        "Yeouido",
+        "Seocho",
+        "Seongsu",
+        "Hongdae",
+        "Mapo",
+        "Seoul"
+      ]
+    },
+    {
+      "id": "kyoto",
+      "dataCity": "Kyoto",
+      "labelZh": "京都",
+      "labelEn": "Kyoto",
+      "countryZh": "日本",
+      "countryEn": "Japan",
+      "coordinates": {
+        "lat": 35.0116,
+        "lng": 135.7681
+      },
+      "michelinYear": 2026,
+      "currency": "JPY",
+      "currencySymbol": "¥",
+      "ratingPlatforms": [
+        {
+          "key": "tabelogScore",
+          "label": "Tabelog",
+          "urlKey": "tabelogUrl"
+        },
+        {
+          "key": "localScore",
+          "label": "Tabelog",
+          "urlKey": "localUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "1万日元以下",
+          "labelEn": "Under ¥10,000",
+          "min": 0,
+          "max": 10000
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "1~2万日元",
+          "labelEn": "¥10,000-20,000",
+          "min": 10000,
+          "max": 20000
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "2~3万日元",
+          "labelEn": "¥20,000-30,000",
+          "min": 20000,
+          "max": 30000
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "3~4万日元",
+          "labelEn": "¥30,000-40,000",
+          "min": 30000,
+          "max": 40000
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "4~5万日元",
+          "labelEn": "¥40,000-50,000",
+          "min": 40000,
+          "max": 50000
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "5万日元以上",
+          "labelEn": "¥50,000+",
+          "min": 50000,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "祇园",
+        "东山",
+        "高台寺",
+        "冈崎",
+        "下鸭",
+        "御所",
+        "中京",
+        "四条",
+        "河原町",
+        "室町",
+        "二条",
+        "北区",
+        "左京",
+        "岚山",
+        "京都"
+      ]
+    },
+    {
+      "id": "bangkok",
+      "dataCity": "Bangkok",
+      "labelZh": "曼谷",
+      "labelEn": "Bangkok",
+      "countryZh": "泰国",
+      "countryEn": "Thailand",
+      "coordinates": {
+        "lat": 13.7563,
+        "lng": 100.5018
+      },
+      "michelinYear": 2026,
+      "currency": "THB",
+      "currencySymbol": "฿",
+      "ratingPlatforms": [
+        {
+          "key": "localScore",
+          "label": "Google / Wongnai",
+          "urlKey": "localUrl"
+        }
+      ],
+      "priceTiers": [
+        {
+          "key": "under-10000",
+          "labelZh": "฿2,000 以下",
+          "labelEn": "Under ฿2,000",
+          "min": 0,
+          "max": 2000
+        },
+        {
+          "key": "10000-20000",
+          "labelZh": "฿2,000~4,000",
+          "labelEn": "฿2,000-4,000",
+          "min": 2000,
+          "max": 4000
+        },
+        {
+          "key": "20000-30000",
+          "labelZh": "฿4,000~6,000",
+          "labelEn": "฿4,000-6,000",
+          "min": 4000,
+          "max": 6000
+        },
+        {
+          "key": "30000-40000",
+          "labelZh": "฿6,000~8,000",
+          "labelEn": "฿6,000-8,000",
+          "min": 6000,
+          "max": 8000
+        },
+        {
+          "key": "40000-50000",
+          "labelZh": "฿8,000~10,000",
+          "labelEn": "฿8,000-10,000",
+          "min": 8000,
+          "max": 10000
+        },
+        {
+          "key": "50000-plus",
+          "labelZh": "฿10,000 以上",
+          "labelEn": "฿10,000+",
+          "min": 10000,
+          "max": null
+        }
+      ],
+      "areaOrder": [
+        "Sathon",
+        "Silom",
+        "Siam",
+        "Riverside",
+        "Sukhumvit",
+        "Thonglor",
+        "Phloen Chit",
+        "Pathum Wan",
+        "Phra Nakhon",
+        "Nonthaburi",
+        "Bangkok"
       ]
     }
   ],

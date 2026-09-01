@@ -7,6 +7,24 @@
     linear-gradient(124deg,#101713 0%,#1f342a 40%,#584624 72%,#171411 100%) !important;
 }
 
+/* Final globe alignment: match the main content width. */
+.globe-section.shell{
+  width:min(1240px,calc(100% - 44px))!important;
+}
+.globe-card{
+  width:100%!important;
+  max-width:none!important;
+  min-height:clamp(640px,58vw,760px)!important;
+}
+@media(max-width:700px){
+  .globe-section.shell{
+    width:calc(100% - 28px)!important;
+  }
+  .globe-card{
+    min-height:560px!important;
+  }
+}
+
 .globe-section{
   display:block;
   margin-top:34px;
@@ -79,7 +97,7 @@
   position:absolute;
   left:var(--x);
   top:var(--y);
-  transform:translate(-50%,-50%) scale(var(--scale,1));
+  transform:translate(calc(-50% + var(--dx,0px)),calc(-50% + var(--dy,0px))) scale(var(--scale,1));
   border:0;
   border-radius:999px;
   padding:8px 12px;
@@ -91,11 +109,16 @@
   box-shadow:0 12px 28px rgba(0,0,0,.26),inset 0 1px 1px rgba(255,255,255,.62);
   font:500 13px/1.1 "Songti SC","SimSun",serif;
   cursor:pointer;
-  z-index:3;
+  z-index:var(--z,3);
   white-space:nowrap;
   opacity:var(--opacity,1);
   pointer-events:auto;
   transition:opacity .18s ease, transform .18s ease, background .18s ease;
+}
+.globe-pin.is-dense{
+  padding:7px 10px;
+  gap:7px;
+  font-size:12px;
 }
 .globe-pin:before{
   content:"";
@@ -107,7 +130,7 @@
 }
 .globe-pin:hover,
 .globe-pin.active{
-  transform:translate(-50%,-50%) scale(calc(var(--scale,1) * 1.08));
+  transform:translate(calc(-50% + var(--dx,0px)),calc(-50% + var(--dy,0px))) scale(calc(var(--scale,1) * 1.08));
   background:linear-gradient(135deg,rgba(255,235,164,.98),rgba(207,151,39,.95));
 }
 .globe-pin.is-hidden{

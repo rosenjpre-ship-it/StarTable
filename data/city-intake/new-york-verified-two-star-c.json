@@ -1,0 +1,1209 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-two-star-batch-c",
+  "checkedAt": "2026-08-14",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-jean-georges",
+      "name": "Jean-Georges",
+      "nameZh": "Jean-Georges",
+      "nameEn": "Jean-Georges",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Contemporary French",
+      "cuisineZh": "现代法餐",
+      "area": "Columbus Circle",
+      "areaZh": "哥伦布圆环",
+      "address": "1 Central Park West, New York, NY 10023",
+      "phone": "+1 212 299 3900",
+      "lunch": [
+        {
+          "name": "Lunch Prix Fixe",
+          "price": "$118-$198 / 人参考",
+          "details": [
+            "Jean-Georges 经典现代法餐午餐",
+            "公开菜单/预约资讯显示 2-course 或 3-course 午餐价格区间",
+            "signature tasting 或 supplement 另计"
+          ],
+          "note": "以 Jean-Georges 官方菜单/预订页当期价格为准。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dinner / Signature Tasting Menu",
+          "price": "$268-$368 / 人参考",
+          "details": [
+            "晚餐 prix fixe 与 tasting menu 体系",
+            "法餐技法结合亚洲香料与纽约当季食材",
+            "wine pairing 与高级食材 supplement 另计"
+          ],
+          "note": "公开餐饮信息显示晚餐/tasting 价格区间，最终以官网当期菜单为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 118,
+        "dinnerFrom": 268,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Jean-Georges official website / current public menu references"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/Resy/电话预约；热门晚餐建议提前 3-4 周，节假日需更早。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/Resy 日历",
+        "platforms": [
+          "Official",
+          "Resy",
+          "Phone"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Elegant casual / jackets preferred reference",
+        "required": true,
+        "notes": [
+          "高端酒店主餐厅，公开信息多建议 elegant casual；男士夹克更稳妥。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄限制；儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "Resy/OpenTable reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "适合正式约会和商务场合，建议 elegant casual。",
+          "菜单含 supplement 和 pairing，点单前确认总价。",
+          "过敏、忌口需预约时提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "59 St-Columbus Circle",
+            "walkMinutes": 2,
+            "lines": [
+              "1",
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "name": "57 St-7 Av",
+            "walkMinutes": 7,
+            "lines": [
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "66 St-Lincoln Center",
+            "walkMinutes": 8,
+            "lines": [
+              "1"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000",
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [
+          "10000-20000"
+        ],
+        "dinnerPriceTiers": [
+          "20000-30000",
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.jean-georgesrestaurant.com/",
+        "reservation": "https://www.jean-georgesrestaurant.com/reservations",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/jean-georges"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Michelin Guide / public menu references",
+        "sourceUrl": "https://www.jean-georgesrestaurant.com/",
+        "changeSummary": "纽约二星剩余批次核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-joo-ok",
+      "name": "Joo Ok",
+      "nameZh": "Joo Ok",
+      "nameEn": "Joo Ok",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Korean, Contemporary",
+      "cuisineZh": "现代韩餐",
+      "area": "Koreatown / NoMad",
+      "areaZh": "韩国城 / NoMad",
+      "address": "22 W 32nd Street, New York, NY 10001",
+      "phone": "+1 646 329 3330",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Tasting Menu",
+          "price": "$295 / 人参考",
+          "details": [
+            "韩式现代 tasting menu",
+            "以传统韩国食文化、发酵、汤饭结构与现代呈现为核心",
+            "pairing / supplement 另计"
+          ],
+          "note": "以 Joo Ok 官方预约页当前菜单为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 295,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "Joo Ok official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；新晋二星且座位有限，建议开放日历后尽早确认。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台开放日历",
+        "platforms": [
+          "Official",
+          "Tock"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未稳定公开细则；现代韩餐 tasting room 建议 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；tasting menu 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "韩餐发酵、汤品、海鲜和辣味元素需提前确认忌口。",
+          "建议 smart casual，避免强烈香水。",
+          "按服务节奏食用，不要催促整场 tasting。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "34 St-Herald Sq",
+            "walkMinutes": 3,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "33 St",
+            "walkMinutes": 5,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "28 St",
+            "walkMinutes": 7,
+            "lines": [
+              "1",
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.joooknyc.com/",
+        "reservation": "https://www.exploretock.com/joooknyc",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/joo-ok"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Tock / Michelin Guide",
+        "sourceUrl": "https://www.joooknyc.com/",
+        "changeSummary": "纽约二星剩余批次核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-masa",
+      "name": "Masa",
+      "nameZh": "Masa",
+      "nameEn": "Masa",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "Columbus Circle",
+      "areaZh": "哥伦布圆环",
+      "address": "10 Columbus Circle, 4th Floor, New York, NY 10019",
+      "phone": "+1 212 823 9800",
+      "lunch": [
+        {
+          "name": "Omakase",
+          "price": "$750 / 人起参考",
+          "details": [
+            "Masa Takayama 风格 omakase",
+            "以顶级寿司、刺身和日本高级食材为核心",
+            "饮品、税费和服务费另计"
+          ],
+          "note": "公开信息显示 Masa omakase 约 $750 起；以官方预约页当前价格为准。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Omakase",
+          "price": "$750 / 人起参考",
+          "details": [
+            "顶级寿司 omakase",
+            "菜单和食材每日变化",
+            "可选高级酒水 pairing 或单点饮品"
+          ],
+          "note": "最终价格以 Masa 官方预约/确认页为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 750,
+        "dinnerFrom": 750,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "Masa official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/电话预约；座位少且价格高，建议提前准备信用卡和过敏信息。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台开放日历",
+        "platforms": [
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / no strong fragrance",
+        "required": true,
+        "notes": [
+          "高端寿司吧建议 smart casual；避免强烈香水、香氛和过度休闲服装。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm / public dining reference"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": false,
+        "privateRoomAllowed": null,
+        "minimumAge": 12,
+        "notes": "公开餐饮信息常见标注不接待低龄儿童；儿童同行需电话确认，建议按 12 岁以上处理。",
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "sushi counter reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "避免强烈香水，这是寿司店最重要规则之一。",
+          "握寿司上桌后尽快食用，跟随师傅节奏。",
+          "价格极高，预约前确认取消政策、税费、服务费和饮品费用。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "59 St-Columbus Circle",
+            "walkMinutes": 2,
+            "lines": [
+              "1",
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "name": "57 St-7 Av",
+            "walkMinutes": 6,
+            "lines": [
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "66 St-Lincoln Center",
+            "walkMinutes": 8,
+            "lines": [
+              "1"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "50000-plus"
+        ],
+        "lunchPriceTiers": [
+          "50000-plus"
+        ],
+        "dinnerPriceTiers": [
+          "50000-plus"
+        ],
+        "dressCategory": "required",
+        "childCategory": "no",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.masanyc.com/",
+        "reservation": "https://www.masanyc.com/reservations",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/masa"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Michelin Guide / public reservation references",
+        "sourceUrl": "https://www.masanyc.com/",
+        "changeSummary": "纽约二星剩余批次核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-odo",
+      "name": "odo",
+      "nameZh": "odo",
+      "nameEn": "odo",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Japanese, Kaiseki",
+      "cuisineZh": "怀石 / 日本料理",
+      "area": "Flatiron / Chelsea",
+      "areaZh": "Flatiron / Chelsea",
+      "address": "17 W 20th Street, New York, NY 10011",
+      "phone": "+1 212 208 1268",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Kaiseki Tasting Menu",
+          "price": "$295 / 人参考",
+          "details": [
+            "纽约怀石 tasting menu",
+            "以季节食材、汤、刺身、烧物、饭物和甜品构成完整餐序",
+            "pairing / supplement 另计"
+          ],
+          "note": "以 odo 官方预约页当期价格为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 295,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "odo official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；吧台/小型 dining room，热门日期建议提前。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台开放日历",
+        "platforms": [
+          "Official",
+          "Tock"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未稳定公开细则；怀石餐厅建议 smart casual，避免强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；怀石 tasting menu 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "怀石餐序讲究季节和器皿，按服务说明食用。",
+          "避免强烈香水。",
+          "过敏、忌口需预约前说明，尤其是海鲜、出汁和酒精。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "23 St",
+            "walkMinutes": 5,
+            "lines": [
+              "F",
+              "M",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "18 St",
+            "walkMinutes": 6,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "14 St-Union Sq",
+            "walkMinutes": 10,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "L",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.odo.nyc/",
+        "reservation": "https://www.exploretock.com/odo",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/odo"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Tock / Michelin Guide",
+        "sourceUrl": "https://www.odo.nyc/",
+        "changeSummary": "纽约二星剩余批次核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-saga",
+      "name": "Saga",
+      "nameZh": "Saga",
+      "nameEn": "Saga",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Contemporary",
+      "cuisineZh": "现代创意料理",
+      "area": "Financial District",
+      "areaZh": "金融区",
+      "address": "70 Pine Street, 63rd Floor, New York, NY 10005",
+      "phone": "+1 212 339 3963",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Seasonal Tasting Menu",
+          "price": "$298 / 人参考",
+          "details": [
+            "高层景观现代 tasting menu",
+            "多道季节餐序，结合纽约与全球风味",
+            "饮品 pairing、税费和服务另计"
+          ],
+          "note": "以 Saga 官方预约页当前菜单为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 298,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "Saga official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；景观位与周末热门，建议提前。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台开放日历",
+        "platforms": [
+          "Official",
+          "Resy"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / elevated attire reference",
+        "required": true,
+        "notes": [
+          "高层 fine dining 建议 elevated smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；高层 tasting menu 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "reservation platform pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "高层餐厅需准时，预留安检/电梯时间。",
+          "窗边或特殊座位不一定保证，预约备注不能替代确认。",
+          "建议 elevated smart casual。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Wall St",
+            "walkMinutes": 3,
+            "lines": [
+              "2",
+              "3"
+            ]
+          },
+          {
+            "name": "Broad St",
+            "walkMinutes": 4,
+            "lines": [
+              "J",
+              "Z"
+            ]
+          },
+          {
+            "name": "Fulton St",
+            "walkMinutes": 6,
+            "lines": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "A",
+              "C",
+              "J",
+              "Z"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.saga-nyc.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/saga",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/saga"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Resy / Michelin Guide",
+        "sourceUrl": "https://www.saga-nyc.com/",
+        "changeSummary": "纽约二星剩余批次核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-sushi-noz",
+      "name": "Sushi Noz",
+      "nameZh": "Sushi Noz",
+      "nameEn": "Sushi Noz",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "Upper East Side",
+      "areaZh": "上东区",
+      "address": "181 E 78th Street, New York, NY 10075",
+      "phone": "+1 917 338 1792",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Hinoki Counter Omakase",
+          "price": "$550 / 人参考",
+          "details": [
+            "正统江户前寿司 omakase",
+            "吧台体验，季节鱼货、刺身、小料理与握寿司",
+            "税费、服务和饮品另计"
+          ],
+          "note": "以 Sushi Noz 官方预约页当前价格为准。"
+        },
+        {
+          "name": "Ash Room Omakase",
+          "price": "$395 / 人参考",
+          "details": [
+            "较轻量但仍为完整 omakase 体验",
+            "席位和菜单以预约平台为准"
+          ],
+          "note": "公开预约信息常见 Ash Room 价格较低。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 395,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "Sushi Noz official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；Hinoki Counter 座位极少，热门日期需提前抢位。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台开放日历",
+        "platforms": [
+          "Official",
+          "Tock"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / no fragrance",
+        "required": true,
+        "notes": [
+          "寿司吧台建议 smart casual；强烈香水会影响鱼和醋饭风味，应避免。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm / public dining reference"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄政策；吧台 omakase 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "sushi counter reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "避免强烈香水和香氛产品。",
+          "握寿司应尽快入口，跟随师傅节奏。",
+          "迟到会影响全场，需预留上东区交通时间。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "77 St",
+            "walkMinutes": 4,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "86 St",
+            "walkMinutes": 10,
+            "lines": [
+              "4",
+              "5",
+              "6"
+            ]
+          },
+          {
+            "name": "72 St",
+            "walkMinutes": 12,
+            "lines": [
+              "Q"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000",
+          "50000-plus"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "30000-40000",
+          "50000-plus"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.sushinoz.com/",
+        "reservation": "https://www.exploretock.com/sushinoz",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/sushi-noz"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Tock / Michelin Guide",
+        "sourceUrl": "https://www.sushinoz.com/",
+        "changeSummary": "纽约二星剩余批次核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-the-modern",
+      "name": "The Modern",
+      "nameZh": "The Modern",
+      "nameEn": "The Modern",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Contemporary American",
+      "cuisineZh": "现代美国料理",
+      "area": "Midtown / MoMA",
+      "areaZh": "中城 / MoMA",
+      "address": "9 W 53rd Street, New York, NY 10019",
+      "phone": "+1 212 333 1220",
+      "lunch": [
+        {
+          "name": "Dining Room Lunch / Tasting Menu",
+          "price": "$188-$275 / 人参考",
+          "details": [
+            "MoMA 花园景观 dining room",
+            "现代美国 tasting / prix fixe 体系",
+            "Bar Room 价格与体验不同"
+          ],
+          "note": "以 The Modern 官方菜单当前价格为准。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dining Room Tasting Menu",
+          "price": "$275 / 人参考",
+          "details": [
+            "多道现代美国 tasting menu",
+            "以 Union Square Hospitality Group 服务体系和 MoMA 场景为特色",
+            "wine pairing / supplement 另计"
+          ],
+          "note": "以 The Modern 官方菜单当前价格为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 188,
+        "dinnerFrom": 275,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "The Modern official website / current public menu references"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/Resy/OpenTable 预约；MoMA 周边和周末热门，建议提前。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台开放日历",
+        "platforms": [
+          "Official",
+          "Resy",
+          "OpenTable",
+          "Phone"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / no beachwear reference",
+        "required": true,
+        "notes": [
+          "公开预订平台标注 smart casual；不建议短裤、沙滩装和过度休闲服装。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "公开平台显示可家庭用餐，但 fine dining dining room 儿童同行仍建议预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "public reservation platform"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable/Resy reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "MoMA 周边客流大，预留到达和寄存时间。",
+          "Dining Room 与 Bar Room 是不同体验，预约时确认房间。",
+          "建议 smart casual。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "5 Av-53 St",
+            "walkMinutes": 2,
+            "lines": [
+              "E",
+              "M"
+            ]
+          },
+          {
+            "name": "47-50 Sts Rockefeller Center",
+            "walkMinutes": 5,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M"
+            ]
+          },
+          {
+            "name": "57 St",
+            "walkMinutes": 7,
+            "lines": [
+              "F"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.themodernnyc.com/",
+        "reservation": "https://www.themodernnyc.com/reservations",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/the-modern"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A/B",
+        "policy": "B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Michelin Guide / public reservation platforms",
+        "sourceUrl": "https://www.themodernnyc.com/",
+        "changeSummary": "纽约二星剩余批次核验。",
+        "autoCheckEnabled": false
+      }
+    }
+  ]
+}

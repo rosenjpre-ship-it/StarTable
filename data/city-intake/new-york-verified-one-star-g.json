@@ -1,0 +1,672 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-one-star-batch-g",
+  "checkedAt": "2026-08-15",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Tuome",
+      "nameEn": "Tuome",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "Michelin Guide / OpenTable / official website",
+        "sourceUrl": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/tuome",
+        "changeSummary": "纽约一星最后批次核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-tuome",
+      "name": "Tuome",
+      "cuisine": "Contemporary, Asian Contemporary",
+      "cuisineZh": "现代美式 / 亚洲灵感料理",
+      "area": "East Village",
+      "areaZh": "东村",
+      "address": "536 E 5th Street, New York, NY 10009",
+      "phone": "+1 646 833 7811",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Dinner À la Carte",
+          "price": "$65-$120 / 人参考",
+          "details": [
+            "亚洲灵感 contemporary à la carte，适合分享点菜",
+            "菜单示例包括 octopus with pork XO、snow crab noodle、wagyu beef、fried bun dessert",
+            "Tue-Thu 18:00-21:00；Fri-Sat 17:00-21:30 左右"
+          ],
+          "note": "Michelin 与 OpenTable 公开地址、电话、营业时间和菜单参考；官网当前可用性较弱，上线前需复核菜单。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 65,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Michelin Guide / OpenTable public listing"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/电话确认；OpenTable 显示不在其网络内，建议直接通过餐厅官网或电话确认可订日期。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/电话确认",
+        "platforms": [
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual",
+        "required": true,
+        "notes": [
+          "OpenTable 公开资料标注 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "公开资料未列儿童年龄限制；à la carte 形式相对友好，儿童同行仍建议提前电话确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/counter/table dining pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "适合分享点菜，按人数请服务员建议菜量。",
+          "招牌菜和菜单会变化，不要依赖固定菜名。",
+          "预约渠道不稳定时优先电话确认。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "2 Av",
+            "walkMinutes": 8,
+            "lines": [
+              "F"
+            ]
+          },
+          {
+            "name": "Delancey St-Essex St",
+            "walkMinutes": 11,
+            "lines": [
+              "F",
+              "J",
+              "M",
+              "Z"
+            ]
+          },
+          {
+            "name": "Astor Pl",
+            "walkMinutes": 14,
+            "lines": [
+              "6"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "http://tuomenyc.com/",
+        "reservation": "http://tuomenyc.com/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/tuome"
+      },
+      "sourceQuality": {
+        "basicInfo": "B",
+        "course": "B",
+        "reservation": "B/C",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "Michelin Guide / OpenTable / official website",
+      "syncSourceUrl": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/tuome"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Yamada",
+      "nameEn": "Yamada",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Resy / Michelin Guide",
+        "sourceUrl": "https://www.yamadanewyork.com/",
+        "changeSummary": "纽约一星最后批次核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-yamada",
+      "name": "Yamada",
+      "cuisine": "Japanese, Kaiseki",
+      "cuisineZh": "怀石 / 日本料理",
+      "area": "Chinatown",
+      "areaZh": "唐人街",
+      "address": "16 Elizabeth Street, New York, NY 10013",
+      "phone": "+1 646 429 8759",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Seasonal Kaiseki Tasting Menu",
+          "price": "$330 / 人",
+          "details": [
+            "10-course kaiseki tasting menu",
+            "Tue-Sat 17:30 / 20:30 两轮，约 2 小时",
+            "以 shun、chowa、ikigai 为核心，最后含茶道元素"
+          ],
+          "note": "官网公开菜单价格、时间、取消规则和 dress code。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 330,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Yamada official website"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/Resy 预约；10-seat counter，Tue-Sat 两轮。取消、调整或改期需至少 48 小时前处理。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy/官网日历",
+        "platforms": [
+          "Official",
+          "Resy",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual; no shorts, flip-flops or caps",
+        "required": true,
+        "notes": [
+          "官网明确 smart casual，并要求避免短裤、拖鞋和帽子。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄限制；10-seat counter kaiseki，儿童同行需预约前邮件确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "怀石餐序安静精细，避免迟到和强烈香水。",
+          "smart casual，不穿短裤、拖鞋、帽子。",
+          "食材按季节变化，忌口需预约前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Canal St",
+            "walkMinutes": 3,
+            "lines": [
+              "6",
+              "J",
+              "N",
+              "Q",
+              "R",
+              "W",
+              "Z"
+            ]
+          },
+          {
+            "name": "Grand St",
+            "walkMinutes": 6,
+            "lines": [
+              "B",
+              "D"
+            ]
+          },
+          {
+            "name": "Bowery",
+            "walkMinutes": 7,
+            "lines": [
+              "J",
+              "Z"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.yamadanewyork.com/",
+        "reservation": "https://www.yamadanewyork.com/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/yamada"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "A/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Resy / Michelin Guide",
+      "syncSourceUrl": "https://www.yamadanewyork.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "YingTao",
+      "nameEn": "YingTao",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / OpenTable / Michelin Guide",
+        "sourceUrl": "https://www.yingtaonyc.com/",
+        "changeSummary": "纽约一星最后批次核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-yingtao",
+      "name": "YingTao",
+      "cuisine": "Chinese, Contemporary",
+      "cuisineZh": "现代中餐",
+      "area": "Hell's Kitchen",
+      "areaZh": "Hell's Kitchen",
+      "address": "805 9th Avenue, New York, NY 10019",
+      "phone": "+1 845 236 6577",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Chinese Tasting Menu",
+          "price": "$150 / 人参考",
+          "details": [
+            "现代中餐 tasting menu，公开资料显示 7-9 道，菜单按季节变化",
+            "菜式示例包括 Hamachi、Lo Mai Gai、Wontons、Black Cod、Plum Duck、Nian Gao",
+            "Tue-Thu/Sun 17:00-20:30；Fri-Sat 17:00-21:30"
+          ],
+          "note": "官网公开地址、电话和营业时间；OpenTable 公开菜单示例和 $150 tasting menu 参考。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 150,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "YingTao official website / OpenTable public menu"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/OpenTable 预约；餐厅电话 Tue-Sun 14:00-17:00 接听，紧急修改建议短信或邮件。",
+        "releaseTime": null,
+        "releaseWindow": "按 OpenTable/官网日历",
+        "platforms": [
+          "Official",
+          "OpenTable",
+          "Phone",
+          "Email"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual",
+        "required": true,
+        "notes": [
+          "OpenTable 公开资料标注 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄限制；tasting menu 形式，儿童同行需提前确认是否可同菜单。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "现代中餐 tasting menu，过敏和不吃食材需提前说明。",
+          "电话只在下午指定时段接听。",
+          "有中餐元素但不是传统点菜制，需按 tasting menu 节奏用餐。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "50 St",
+            "walkMinutes": 5,
+            "lines": [
+              "C",
+              "E"
+            ]
+          },
+          {
+            "name": "59 St-Columbus Circle",
+            "walkMinutes": 9,
+            "lines": [
+              "1",
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "name": "57 St-7 Av",
+            "walkMinutes": 11,
+            "lines": [
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.yingtaonyc.com/",
+        "reservation": "https://www.opentable.com/r/yingtao-new-york-city",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/yingtao"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / OpenTable / Michelin Guide",
+      "syncSourceUrl": "https://www.yingtaonyc.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Yoshino",
+      "nameEn": "Yoshino",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Tock / Michelin Guide / professional dining references",
+        "sourceUrl": "https://www.yoshinonewyork.com/contact",
+        "changeSummary": "纽约一星最后批次核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-yoshino",
+      "name": "Yoshino",
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "NoHo",
+      "areaZh": "NoHo",
+      "address": "342 Bowery, New York, NY 10012",
+      "phone": "+1 917 444 1988",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Prepaid Sushi Omakase",
+          "price": "$648 / 人含税费服务参考",
+          "details": [
+            "约 20 道：约 7 道 appetizer、7 件 nigiri、soup、hand roll、tamago、dessert",
+            "Tock 预付制，通常 17:30 / 20:30 两轮",
+            "公开资料显示 $500 menu，结账后含服务费和税约 $648"
+          ],
+          "note": "官网公开电话、Tock 放位规则、dress code、儿童政策和不可接待限制；价格按 Tock/专业餐厅平台公开资料参考。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 648,
+        "serviceCharge": "prepaid; service/tax included or added at checkout depending on Tock display",
+        "verified": true,
+        "source": "Yoshino official website / Tock / professional dining references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Tock 预付预约；每日 12:00 ET 滚动开放 30 天后的新日期。满位时加入 waitlist 并注明 17:30 或 20:30。",
+        "releaseTime": "12:00 ET",
+        "releaseWindow": "提前 30 天滚动开放",
+        "platforms": [
+          "Tock",
+          "Official",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart business; no casual hats",
+        "required": true,
+        "notes": [
+          "官网明确 Smart Business，No Casual Hats。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": false,
+        "privateRoomAllowed": null,
+        "minimumAge": 16,
+        "notes": "官网明确 Child Policy: 16 or older。",
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "Tock / reservation rule references"
+      },
+      "tableManners": {
+        "notes": [
+          "不可接待 vegetarian、gluten free、no-rice requests 或 soy allergies。",
+          "Smart Business，不戴休闲帽。",
+          "高端寿司 counter，避免香水，寿司上桌后尽快食用。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Bleecker St",
+            "walkMinutes": 4,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "Broadway-Lafayette St",
+            "walkMinutes": 5,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M"
+            ]
+          },
+          {
+            "name": "Bowery",
+            "walkMinutes": 8,
+            "lines": [
+              "J",
+              "Z"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "50000-plus"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "50000-plus"
+        ],
+        "dressCategory": "required",
+        "childCategory": "no",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.yoshinonewyork.com/",
+        "reservation": "https://www.exploretock.com/yoshinonewyork/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/yoshino"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Tock / Michelin Guide / professional dining references",
+      "syncSourceUrl": "https://www.yoshinonewyork.com/contact"
+    }
+  ]
+}

@@ -81,6 +81,77 @@ function reasonFor(item, query, cityConfig) {
   return reasons.join('，') || '综合星级、地点、菜系与筛选条件推荐。';
 }
 
+function firstMeal(meals) {
+  const meal = Array.isArray(meals) ? meals[0] : null;
+  if (!meal) return '';
+  return [meal.name, meal.price, ...(meal.details || []).slice(0, 2)].filter(Boolean).join('；');
+}
+
+function summarizeRestaurant(item, cityConfig) {
+  return {
+    id: item.id,
+    nameZh: item.nameZh,
+    nameEn: item.nameEn,
+    city: item.city,
+    areaZh: item.areaZh,
+    cuisineZh: item.cuisineZh,
+    stars: item.stars,
+    address: item.address,
+    phone: item.phone,
+    lunch: firstMeal(item.lunch),
+    dinner: firstMeal(item.dinner),
+    budget: item.budget || {},
+    reservation: item.reservation || {},
+    dressCode: item.dressCode || {},
+    childPolicy: item.childPolicy || {},
+    soloDining: item.soloDining || {},
+    localRating: localRating(item, cityConfig),
+    links: item.links || {}
+  };
+}
+
+function geminiText(payload) {
+  return payload?.candidates?.[0]?.content?.parts?.map(part => part.text || '').join('').trim() || '';
+}
+
+async function askGemini({ message, query, matches, cityConfig }) {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) return null;
+  const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
+  const sourceData = matches.map(item => summarizeRestaurant(item, cityConfig));
+  const prompt = [
+    '你是 StarTable / 星宴的星助理，负责基于已核验数据库推荐米其林星级餐厅。',
+    '只能使用下面 JSON 数据中的事实，不要编造官网、价格、政策、评分、地址或电话。',
+    '如果字段写着“需预约确认”或“公开来源未明确”，必须保留这种不确定性。',
+    '用简洁中文回答，最多 5 句话。先给选择建议，再说明每家适合什么人。不要输出 Markdown 表格。',
+    '',
+    `用户问题：${message}`,
+    `解析条件：${JSON.stringify(query)}`,
+    `候选餐厅：${JSON.stringify(sourceData)}`
+  ].join('\n');
+  const response = await fetch(endpoint, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-goog-api-key': apiKey
+    },
+    body: JSON.stringify({
+      contents: [{ role: 'user', parts: [{ text: prompt }] }],
+      generationConfig: {
+        temperature: 0.2,
+        topP: 0.8,
+        maxOutputTokens: 700
+      }
+    })
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    throw new Error(payload?.error?.message || 'Gemini request failed');
+  }
+  return geminiText(payload);
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
@@ -98,10 +169,11 @@ export default async function handler(req, res) {
     const cityConfig = await loadCityConfig();
     const query = parseIntent(body.message, cityConfig);
     const restaurants = await loadRestaurants();
-    const matches = restaurants
+    const matchedItems = restaurants
       .filter(item => baseMatches(item, query))
       .sort((a, b) => recommendationScore(b, query, cityConfig) - recommendationScore(a, query, cityConfig))
-      .slice(0, 3)
+      .slice(0, 3);
+    const matches = matchedItems
       .map(item => ({
         id: item.id,
         nameZh: item.nameZh,
@@ -112,11 +184,27 @@ export default async function handler(req, res) {
         stars: item.stars,
         reason: reasonFor(item, query, cityConfig)
       }));
+    let answer = '';
+    let provider = 'local';
+    let assistantNotice = '';
+    if (process.env.GEMINI_API_KEY && matches.length) {
+      try {
+        answer = await askGemini({ message: body.message, query, matches: matchedItems, cityConfig });
+        provider = answer ? 'gemini' : 'local';
+      } catch (error) {
+        console.error('gemini assistant failed', error);
+        assistantNotice = 'Gemini 暂时不可用，已切回 StarTable 本地推荐。';
+      }
+    } else if (!process.env.GEMINI_API_KEY) {
+      assistantNotice = '当前未配置 GEMINI_API_KEY，星助理使用 StarTable 本地推荐。';
+    }
 
     return sendJson(res, 200, {
       query,
+      provider,
+      answer,
       recommendations: matches,
-      note: matches.length ? '基于当前 StarTable 数据筛选推荐。' : '当前数据中没有完全匹配条件的餐厅，请放宽地点、菜系或政策条件。'
+      note: assistantNotice || (matches.length ? '基于当前 StarTable 数据筛选推荐。' : '当前数据中没有完全匹配条件的餐厅，请放宽地点、菜系或政策条件。')
     });
   } catch (error) {
     console.error('assistant api failed', error);

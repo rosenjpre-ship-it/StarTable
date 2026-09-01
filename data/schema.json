@@ -1,10 +1,10 @@
 {
   "name": "StarTable Tokyo, Hong Kong, Shanghai, Paris and New York Michelin starred restaurants",
-  "recordCount": 488,
+  "recordCount": 501,
   "breakdown": {
     "threeStar": 34,
-    "twoStar": 86,
-    "oneStar": 368
+    "twoStar": 88,
+    "oneStar": 379
   },
   "scope": "东京、香港、上海、巴黎与纽约星级米其林餐厅",
   "cityConfig": "data/cities.json",

@@ -1,0 +1,1362 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-one-star-batch-a",
+  "checkedAt": "2026-08-15",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-63-clinton",
+      "name": "63 Clinton",
+      "nameZh": "63 Clinton",
+      "nameEn": "63 Clinton",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Contemporary American",
+      "cuisineZh": "现代美国料理",
+      "area": "Lower East Side",
+      "areaZh": "下东城",
+      "address": "63 Clinton Street, New York, NY 10002",
+      "phone": "+1 917 663 6223",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Seasonal Tasting Menu",
+          "price": "$130 / 人",
+          "details": [
+            "夏季菜单示例含 shrimp & ika ceviche、breakfast taco、bread & butter、tomato tortilla soup、beef three ways、Basque cheesecake、choco taco",
+            "caviar handroll supplement $55",
+            "Tue-Sat 18:00-23:00"
+          ],
+          "note": "官网公开 2026 夏季 tasting menu 与价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 130,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "63 Clinton official website"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网通过 Resy 预约；热门晚餐建议提前，官网明确 via Resy。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Resy",
+          "Official"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未明确 Dress Code；一星 tasting menu 建议 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄政策；不能适配 vegan、egg allergy、coconut allergy、soybean allergy 等，儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published / dietary policy published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "Resy reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "官网明确部分过敏和饮食限制无法接待，预约前必须确认。",
+          "菜单含固定餐序和 supplement，点单前确认额外费用。",
+          "建议 smart casual，准时到店。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Delancey St-Essex St",
+            "walkMinutes": 4,
+            "lines": [
+              "F",
+              "M",
+              "J",
+              "Z"
+            ]
+          },
+          {
+            "name": "East Broadway",
+            "walkMinutes": 8,
+            "lines": [
+              "F"
+            ]
+          },
+          {
+            "name": "Grand St",
+            "walkMinutes": 10,
+            "lines": [
+              "B",
+              "D"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.63clinton.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/63-clinton",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/63-clinton"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A",
+        "policy": "A/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / Resy",
+        "sourceUrl": "https://www.63clinton.com/",
+        "changeSummary": "纽约一星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-bar-miller",
+      "name": "Bar Miller",
+      "nameZh": "Bar Miller",
+      "nameEn": "Bar Miller",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "East Village",
+      "areaZh": "东村",
+      "address": "620 E 6th Street, New York, NY 10009",
+      "phone": "+1 201 304 7937",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Sushi Bar Tasting Menu",
+          "price": "$250 / 人",
+          "details": [
+            "15 courses including dessert",
+            "6:00PM 与 8:30PM 两轮 seating",
+            "pairing $125，corkage $95 / bottle"
+          ],
+          "note": "官网 FAQ 与 OpenTable 均公开 tasting menu 价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 250,
+        "serviceCharge": "tax and 20% gratuity added",
+        "verified": true,
+        "source": "Bar Miller official FAQ / OpenTable"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "OpenTable/官网预约；8 席左右寿司吧，Wed-Sat 18:00-23:00，取消少于 72 小时不可退款。",
+        "releaseTime": null,
+        "releaseWindow": "按 OpenTable 日历",
+        "platforms": [
+          "OpenTable",
+          "Official",
+          "Email"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual",
+        "required": true,
+        "notes": [
+          "OpenTable 标注 Business Casual。寿司吧避免强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄政策；8 席寿司吧儿童同行需提前邮件确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable explicitly notes solo diners accommodated by email"
+      },
+      "tableManners": {
+        "notes": [
+          "避免强烈香水，跟随寿司吧节奏。",
+          "严重 shellfish/soy allergy 无法接待，需提前邮件确认。",
+          "取消政策严格，72 小时内不可退款。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "1 Av",
+            "walkMinutes": 8,
+            "lines": [
+              "L"
+            ]
+          },
+          {
+            "name": "Astor Pl",
+            "walkMinutes": 14,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "2 Av",
+            "walkMinutes": 14,
+            "lines": [
+              "F"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.barmiller.com/",
+        "reservation": "https://www.opentable.com/r/bar-miller-new-york",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/bar-miller"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "A/B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / OpenTable / Michelin Guide",
+        "sourceUrl": "https://www.barmiller.com/faqs",
+        "changeSummary": "纽约一星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-bom",
+      "name": "bōm",
+      "nameZh": "bōm",
+      "nameEn": "bōm",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Korean, Steakhouse",
+      "cuisineZh": "现代韩餐 / 牛排料理",
+      "area": "Flatiron",
+      "areaZh": "Flatiron",
+      "address": "17 W 19th Street, New York, NY 10011",
+      "phone": "+1 212 256 1368",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Progressive Korean Tasting Menu",
+          "price": "$325 / 人参考",
+          "details": [
+            "主厨吧台韩式 progressive tasting menu",
+            "内置烤炉结合韩餐与 steakhouse 体验",
+            "Tue-Sat 17:30/20:30；Sun 17:00/20:00"
+          ],
+          "note": "官网公开餐厅概念、餐期和需预付；价格以 OpenTable 当前体验页为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 325,
+        "serviceCharge": "prepaid menu; tax and service may apply",
+        "verified": true,
+        "source": "bōm official website / OpenTable current public references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "OpenTable 预约；1-6 人，两轮 seating，需预付完整 dinner menu 价格。",
+        "releaseTime": null,
+        "releaseWindow": "按 OpenTable 日历",
+        "platforms": [
+          "OpenTable",
+          "Official"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未明确 Dress Code；主厨吧台和烤肉 tasting 建议 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": false,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网明确无法适配任何 dietary restrictions or allergies；儿童同行尤其需提前确认，默认不建议低龄儿童。",
+        "verified": true,
+        "publicInfoStatus": "dietary limitation officially published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "official reservation text says party size 1-6 guests"
+      },
+      "tableManners": {
+        "notes": [
+          "官网明确无法适配任何过敏或忌口，预约前必须确认。",
+          "预付制，取消政策需在 OpenTable 下单前看清楚。",
+          "主厨吧台两轮 seating，必须准时。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "23 St",
+            "walkMinutes": 5,
+            "lines": [
+              "F",
+              "M",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "18 St",
+            "walkMinutes": 6,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "14 St-Union Sq",
+            "walkMinutes": 10,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "L",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "no",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.bom-nyc.com/",
+        "reservation": "https://www.opentable.com/r/bom-new-york",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/bom"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / OpenTable / Michelin Guide",
+        "sourceUrl": "https://www.bom-nyc.com/",
+        "changeSummary": "纽约一星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-bridges",
+      "name": "Bridges",
+      "nameZh": "Bridges",
+      "nameEn": "Bridges",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "French-Basque, Contemporary",
+      "cuisineZh": "法式巴斯克 / 现代料理",
+      "area": "Chinatown",
+      "areaZh": "唐人街",
+      "address": "9 Chatham Square, New York, NY 10038",
+      "phone": "+1 646 726 4490",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "À la carte Dinner",
+          "price": "$90-$160 / 人参考",
+          "details": [
+            "菜单频繁变化，以法式与巴斯克灵感为核心",
+            "公开样例菜式约 $22-$53，如 Comté tart、trout、roasted chicken 等",
+            "bar walk-in 与餐桌预约规则不同"
+          ],
+          "note": "官网菜单为样例且频繁变化；预算按公开菜单估算。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 90,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Bridges official menu / Eater NY / reservation guide"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "Resy 预约；公开预约指南显示 21-day Resy window、12:00 PM Eastern drop；bar 可 walk-in。",
+        "releaseTime": "12:00 ET",
+        "releaseWindow": "约 21 日窗口",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Walk-in bar"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": false,
+        "notes": [
+          "官网未明确 Dress Code；餐厅氛围现代，smart casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar walk-in / Resy pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "菜单是 à la carte，不要按 tasting menu 期待。",
+          "Resy 中午开放，热门晚餐需及时看位。",
+          "唐人街周边交通繁忙，预留到达时间。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "East Broadway",
+            "walkMinutes": 6,
+            "lines": [
+              "F"
+            ]
+          },
+          {
+            "name": "Canal St",
+            "walkMinutes": 8,
+            "lines": [
+              "J",
+              "N",
+              "Q",
+              "R",
+              "W",
+              "Z",
+              "6"
+            ]
+          },
+          {
+            "name": "Brooklyn Bridge-City Hall",
+            "walkMinutes": 9,
+            "lines": [
+              "4",
+              "5",
+              "6"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.bridges-nyc.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/bridges",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/bridges"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A/B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / Eater NY / reservation guide",
+        "sourceUrl": "https://www.bridges-nyc.com/menu",
+        "changeSummary": "纽约一星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-cafe-boulud",
+      "name": "Café Boulud",
+      "nameZh": "Café Boulud",
+      "nameEn": "Café Boulud",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "French",
+      "cuisineZh": "法餐",
+      "area": "Upper East Side",
+      "areaZh": "上东区",
+      "address": "100 E 63rd Street, New York, NY 10065",
+      "phone": "+1 212 772 2600",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "À la carte / Seasonal French Dinner",
+          "price": "$120-$220 / 人参考",
+          "details": [
+            "Daniel Boulud 体系经典法餐",
+            "菜单由 La Tradition、La Saison、Le Potager、Le Voyage 四个灵感构成",
+            "Mon-Thu 17:00-21:00；Fri-Sat 17:00-21:30"
+          ],
+          "note": "官网公开菜单框架、地址、电话和晚餐时段；预算按公开菜单/同级餐厅估算。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 120,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Café Boulud official website / current public menu references"
+      },
+      "reservation": {
+        "difficulty": 3,
+        "difficultyLabel": "中等",
+        "bookingRule": "官网/OpenTable 预约；上东区晚餐热门，建议提前 1-2 周。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/OpenTable 日历",
+        "platforms": [
+          "Official",
+          "OpenTable",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual reference",
+        "required": true,
+        "notes": [
+          "Daniel Boulud 体系上东区餐厅建议 business casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确年龄限制；相对适合正式家庭用餐，但儿童同行仍建议预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "restaurant norm / not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "上东区经典法餐氛围，建议 business casual。",
+          "点菜制为主，确认 supplement 和酒水价格。",
+          "适合商务/家庭正式用餐。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Lexington Av-63 St",
+            "walkMinutes": 4,
+            "lines": [
+              "F",
+              "Q"
+            ]
+          },
+          {
+            "name": "59 St",
+            "walkMinutes": 6,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "N",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "68 St-Hunter College",
+            "walkMinutes": 9,
+            "lines": [
+              "6"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://cafeboulud.com/nyc/",
+        "reservation": "https://cafeboulud.com/nyc/reservations/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/cafe-boulud"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / public menu references",
+        "sourceUrl": "https://cafeboulud.com/nyc/our-menu/",
+        "changeSummary": "纽约一星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-casa-mono",
+      "name": "Casa Mono",
+      "nameZh": "Casa Mono",
+      "nameEn": "Casa Mono",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Spanish",
+      "cuisineZh": "西班牙料理",
+      "area": "Union Square / Gramercy",
+      "areaZh": "联合广场 / Gramercy",
+      "address": "52 Irving Place, New York, NY 10003",
+      "phone": "+1 212 253 2773",
+      "lunch": [
+        {
+          "name": "À la carte Lunch",
+          "price": "$70-$140 / 人参考",
+          "details": [
+            "西班牙小盘与葡萄酒餐厅",
+            "Casa Mono 与 Bar Jamón 相邻",
+            "菜单按当季调整"
+          ],
+          "note": "官网公开地址、电话和预约入口；价格按公开菜单/同级餐厅估算。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "À la carte Dinner",
+          "price": "$90-$160 / 人参考",
+          "details": [
+            "西班牙小盘、海鲜、内脏与炭烤菜式",
+            "适合多人分享，也可 solo 点少量菜",
+            "酒单为体验重点之一"
+          ],
+          "note": "以 Casa Mono 官方菜单当前价格为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 70,
+        "dinnerFrom": 90,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Casa Mono official website / current public menu references"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/OpenTable 预约；Union Square 周边热门，小餐厅建议提前。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/OpenTable 日历",
+        "platforms": [
+          "Official",
+          "OpenTable",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Casual elegant reference",
+        "required": false,
+        "notes": [
+          "氛围较轻松，clean casual / smart casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；空间较紧凑，儿童同行建议预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "小盘分享型餐厅，点菜量可请服务员建议。",
+          "座位紧凑，控制音量和随身物品。",
+          "对内脏、生食、海鲜过敏需提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "14 St-Union Sq",
+            "walkMinutes": 4,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "L",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "3 Av",
+            "walkMinutes": 8,
+            "lines": [
+              "L"
+            ]
+          },
+          {
+            "name": "23 St",
+            "walkMinutes": 9,
+            "lines": [
+              "6",
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.casamononyc.com/",
+        "reservation": "https://www.casamononyc.com/reservations/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/casa-mono"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / public menu references",
+        "sourceUrl": "https://www.casamononyc.com/",
+        "changeSummary": "纽约一星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-corima",
+      "name": "Corima",
+      "nameZh": "Corima",
+      "nameEn": "Corima",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Mexican, Contemporary",
+      "cuisineZh": "现代墨西哥料理",
+      "area": "Lower East Side / Chinatown",
+      "areaZh": "下东城 / 唐人街",
+      "address": "3 Allen Street, New York, NY 10002",
+      "phone": "+1 646 609 2322",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Tasting Menu",
+          "price": "$140 / 人",
+          "details": [
+            "约 10-13 道 progressive Mexican tasting menu",
+            "以 Northern Mexican cuisine、农贸市场食材和 Tarahumara 文化为核心",
+            "spirit pairing $90"
+          ],
+          "note": "官网公开 tasting menu 价格和菜式结构。"
+        },
+        {
+          "name": "À la carte Dinner",
+          "price": "$80-$160 / 人参考",
+          "details": [
+            "可与 tasting menu 并行选择",
+            "样例菜式约 $9-$62，包括 tortilla、tlayuda、aguachile、duck enmoladas、turbot、squab 等"
+          ],
+          "note": "官网公开 2026 样例菜单，菜式随季节变动。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 80,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Corima official website"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/Resy 预约；Tue-Sat 17:30-22:00，tasting menu 需提前确认饮食限制。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Official",
+          "Resy",
+          "Email"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": false,
+        "notes": [
+          "官网未明确 Dress Code；现代墨西哥一星餐厅 clean casual / smart casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；tasting menu 且过敏限制较多，儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "Resy/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "官网说明多数过敏/饮食限制可能无法接待，必须提前邮件确认。",
+          "tasting menu 和 à la carte 是不同体验，预约或点单时确认。",
+          "菜式可能有辣味、海鲜、昆虫/chapulines 等元素，需提前确认。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "East Broadway",
+            "walkMinutes": 5,
+            "lines": [
+              "F"
+            ]
+          },
+          {
+            "name": "Grand St",
+            "walkMinutes": 6,
+            "lines": [
+              "B",
+              "D"
+            ]
+          },
+          {
+            "name": "Delancey St-Essex St",
+            "walkMinutes": 8,
+            "lines": [
+              "F",
+              "M",
+              "J",
+              "Z"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.corimanyc.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/corima",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/corima"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "A/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / Resy",
+        "sourceUrl": "https://www.corimanyc.com/",
+        "changeSummary": "纽约一星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "id": "new-york-cote",
+      "name": "Cote",
+      "nameZh": "Cote",
+      "nameEn": "Cote",
+      "nameJa": "",
+      "stars": 1,
+      "cuisine": "Korean Steakhouse",
+      "cuisineZh": "韩式牛排馆",
+      "area": "Flatiron",
+      "areaZh": "Flatiron",
+      "address": "16 W 22nd Street, New York, NY 10010",
+      "phone": "+1 212 401 7986",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Butcher’s Feast",
+          "price": "$82 / 人",
+          "details": [
+            "USDA Prime 与 American Wagyu 四款牛肉",
+            "含 banchan、scallion salad、egg soufflé、two stews with rice、soft serve",
+            "可加 Japanese A5 Wagyu +$32 / 人"
+          ],
+          "note": "官网 NYC dinner menu 公开价格。"
+        },
+        {
+          "name": "Steak Omakase",
+          "price": "$225 / 人",
+          "details": [
+            "The Grand Tour",
+            "wine pairing $110 / 人",
+            "另有 caviar、A5 Wagyu 和干式熟成追加项"
+          ],
+          "note": "官网公开 Steak Omakase 价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 82,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "COTE official NYC dinner menu"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "Resy 或电话预约；官网说明 2-6 人标准预约，7 人以上需联系 events；晚餐 7 天开放。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Phone",
+          "Email"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未明确 Dress Code；米其林韩式牛排馆建议 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；烤肉桌和晚间氛围，儿童同行建议提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": false,
+        "minGuests": 2,
+        "verified": true,
+        "source": "official FAQ states standard reservations for parties of 2-6"
+      },
+      "tableManners": {
+        "notes": [
+          "标准预约 2-6 人，solo dining 不适合作为默认推荐。",
+          "需全员到齐后入座；迟到可能导致缩短用餐时间。",
+          "烤肉由团队服务，按说明等待熟度，不要自行过度翻动。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "23 St",
+            "walkMinutes": 3,
+            "lines": [
+              "F",
+              "M",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "23 St",
+            "walkMinutes": 5,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "14 St-Union Sq",
+            "walkMinutes": 10,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "L",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "yes",
+        "soloDiningAvailable": false
+      },
+      "links": {
+        "official": "https://www.cotekoreansteakhouse.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/cote-nyc",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/cote"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A",
+        "policy": "A/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / Resy",
+        "sourceUrl": "https://www.cotekoreansteakhouse.com/nycdinnermenu",
+        "changeSummary": "纽约一星第一批核验。",
+        "autoCheckEnabled": false
+      }
+    }
+  ]
+}

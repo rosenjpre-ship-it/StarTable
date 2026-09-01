@@ -5,7 +5,7 @@ const state={data:[],filtered:[],cityConfig:null,serverMeta:null,meal:'all',solo
 const $=id=>document.getElementById(id);
 const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),city:$('cityFilter'),cityButton:$('cityButton'),cityMenu:$('cityMenu'),langButtons:[...document.querySelectorAll('[data-lang]')],star:$('starFilter'),cuisine:$('cuisineFilter'),area:$('areaFilter'),mealButtons:[...document.querySelectorAll('.meal-btn[data-meal]')],soloButton:document.querySelector('[data-filter="solo"]'),price:$('priceFilter'),dress:$('dressFilter'),child:$('childFilter'),visible:$('visibleCount'),total:$('totalRestaurants'),three:$('threeStarCount'),two:$('twoStarCount'),one:$('oneStarCount'),lastUpdated:$('lastUpdated'),reset:$('resetButton'),accessNotice:$('accessNotice'),accountPanel:$('accountPanel'),areaRail:$('areaRail'),empty:$('empty'),theme:$('themeButton'),loginButton:$('loginButton'),membershipButton:$('membershipButton'),membershipModal:$('membershipModal'),membershipClose:$('membershipClose'),checkoutButtons:[...document.querySelectorAll('[data-checkout-plan]')],manageSubscriptionButton:$('manageSubscriptionButton'),membershipStatus:$('membershipStatus'),assistantButton:$('assistantButton'),assistantPanel:$('assistantPanel'),assistantClose:$('assistantClose'),assistantMessages:$('assistantMessages'),assistantInput:$('assistantInput'),assistantSend:$('assistantSend'),loginModal:$('loginModal'),loginClose:$('loginClose'),loginName:$('loginName'),loginCode:$('loginCode'),loginCodeSend:$('loginCodeSend'),loginStatus:$('loginStatus'),loginSubmit:$('loginSubmit'),controls:document.querySelector('.controls'),filterBody:$('filterBody'),toggleFilters:$('toggleFiltersButton'),mobileFilter:$('mobileFilterButton'),modal:$('detailModal'),modalContent:$('modalContent'),modalClose:$('modalClose')};
 let searchUsageTimer=null;
-const cnyFallbackRates={JPY:.049,HKD:.92,EUR:8.35,USD:7.2,CNY:1};
+const cnyFallbackRates={JPY:.049,HKD:.92,EUR:8.35,USD:7.2,GBP:9.2,CNY:1};
 let cnyRates={...cnyFallbackRates};
 const FREE_PREVIEW_PER_CITY=3;
 let globeState={yaw:54,pitch:-10,dragging:false,lastX:0,lastY:0,moved:false,raf:0,animating:false,world:null,worldLoading:false};
@@ -14,7 +14,7 @@ const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&
 const dict={
  zh:{
   global:'全球',tokyo:'东京',hongkong:'香港',shanghai:'上海',membership:'会员订阅',dark:'深色模式',light:'浅色模式',
-  hero1:'收录东京、香港、上海、巴黎、纽约与杭州全部星级米其林餐厅。',hero2:'按城市、地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与评分筛选。',
+  hero1:'收录东京、香港、上海、巴黎、纽约、杭州与伦敦全部星级米其林餐厅。',hero2:'按城市、地点、星级、菜系、Lunch / Dinner、价格、Dress Code、儿童政策与评分筛选。',
   total:'2026 星级餐厅合计',three:'2026 三星',two:'2026 二星',one:'2026 一星',search:'搜索餐厅名称（中文 / 日文 / 英文）',
   collapse:'收起筛选',expand:'展开筛选',allStars:'全部星级',threeStar:'三星',twoStar:'二星',oneStar:'一星',allCuisine:'全部菜系',allArea:'全部地区',
   chooseCity:'选择城市后筛选地区',chooseCityRail:'选择城市后显示地区',allPrice:'全部价格',dress:'着装要求',children:'儿童政策',
@@ -24,12 +24,12 @@ const dict={
   globalDone:'全球已摘星',memberTitle:'星宴年会员',memberDesc:'通过 Stripe 安全订阅，解锁完整餐厅数据库与高阶筛选。',
   yearly:'年费',browse:'餐厅浏览',all:'全部',searches:'搜索次数',unlimited:'不限',fullData:'完整资料',advanced:'高级筛选',
   fullDataText:'查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。',advancedText:'免费模式每个城市可预览 3 家；会员解除浏览和 5 次搜索限制。',
-  mypageText:'按全球、东京、香港、上海、巴黎、纽约、杭州管理已摘星、想摘星和收藏餐厅。',stripeSoon:'Stripe 支付即将接入',
+  mypageText:'按全球、东京、香港、上海、巴黎、纽约、杭州、伦敦管理已摘星、想摘星和收藏餐厅。',stripeSoon:'Stripe 支付即将接入',
   stripeAlert:'Stripe 支付链接接入后，这里会跳转到官方 Checkout 页面。',loadFail:'数据加载失败，请确认已部署到 GitHub Pages。'
  },
  en:{
   global:'Global',tokyo:'Tokyo',hongkong:'Hong Kong',shanghai:'Shanghai',membership:'Membership',dark:'Dark mode',light:'Light mode',
-  hero1:'A Michelin starred restaurant database for Tokyo, Hong Kong, Shanghai, Paris, New York and Hangzhou.',hero2:'Filter by city, area, stars, cuisine, Lunch / Dinner, price, dress code, child policy and ratings.',
+  hero1:'A Michelin starred restaurant database for Tokyo, Hong Kong, Shanghai, Paris, New York, Hangzhou and London.',hero2:'Filter by city, area, stars, cuisine, Lunch / Dinner, price, dress code, child policy and ratings.',
   total:'2026 starred restaurants',three:'2026 three stars',two:'2026 two stars',one:'2026 one star',search:'Search restaurant name (Chinese / Japanese / English)',
   collapse:'Hide filters',expand:'Show filters',allStars:'All stars',threeStar:'Three stars',twoStar:'Two stars',oneStar:'One star',allCuisine:'All cuisines',allArea:'All areas',
   chooseCity:'Select a city to filter areas',chooseCityRail:'Select a city to show areas',allPrice:'All prices',dress:'Dress code',children:'Child policy',
@@ -39,7 +39,7 @@ const dict={
   globalDone:'Global visited',memberTitle:'StarTable Membership',memberDesc:'Subscribe securely with Stripe to unlock the full restaurant database and advanced filters.',
   yearly:'Annual fee',browse:'Restaurant access',all:'All',searches:'Searches',unlimited:'Unlimited',fullData:'Full data',advanced:'Advanced filters',
   fullDataText:'View full restaurant details, reservation links, access, dining rules and course information.',advancedText:'Free preview includes 3 restaurants per city; Premium removes browsing and 5-search limits.',
-  mypageText:'Manage visited, wish list and saved restaurants by Global, Tokyo, Hong Kong, Shanghai, Paris, New York and Hangzhou.',stripeSoon:'Stripe payment coming soon',
+  mypageText:'Manage visited, wish list and saved restaurants by Global, Tokyo, Hong Kong, Shanghai, Paris, New York, Hangzhou and London.',stripeSoon:'Stripe payment coming soon',
   stripeAlert:'After the Stripe payment link is connected, this button will open the official Checkout page.',loadFail:'Data failed to load. Please confirm the site is deployed on GitHub Pages.'
  }
 };
@@ -618,8 +618,32 @@ function updateGlobePins(size){
   pin.style.setProperty('--y',`${(p.y/size)*100}%`);
   pin.style.setProperty('--scale',String(Math.max(.82,Math.min(1.12,.9+p.z*.16))));
   pin.style.setProperty('--opacity',String(p.visible?Math.max(.38,Math.min(1,.55+p.z*.45)):0));
+  const offset=globePinOffset(config.id,size);
+  pin.style.setProperty('--dx',`${offset.x}px`);
+  pin.style.setProperty('--dy',`${offset.y}px`);
+  pin.style.setProperty('--z',String(offset.z));
+  pin.classList.toggle('is-dense',offset.dense);
   pin.classList.toggle('is-hidden',!p.visible);
  });
+}
+function globePinOffset(cityId,size){
+ const compact=size<560;
+ const base=compact?.72:1;
+ const offsets={
+  tokyo:{x:86,y:-48,dense:true},
+  kyoto:{x:-78,y:-58,dense:true},
+  seoul:{x:-104,y:-22,dense:true},
+  shanghai:{x:-108,y:20,dense:true},
+  hangzhou:{x:-76,y:58,dense:true},
+  'hong-kong':{x:-108,y:98,dense:true},
+  bangkok:{x:36,y:122,dense:true,z:6},
+  singapore:{x:82,y:78,dense:true},
+  london:{x:-86,y:-30,dense:true,z:7},
+  paris:{x:82,y:28,dense:true,z:6},
+  'new-york':{x:-58,y:18,dense:true,z:5}
+ };
+ const item=offsets[cityId]||{x:0,y:0,dense:false,z:3};
+ return {x:Math.round(item.x*base),y:Math.round(item.y*base),dense:item.dense,z:item.z||3};
 }
 function installGlobeInteraction(){
  const globe=$('cityGlobe');
@@ -1418,8 +1442,9 @@ function ensureAssistantIntro(){
 }
 function formatAssistantResult(data){
  const items=Array.isArray(data.recommendations)?data.recommendations:[];
- if(!items.length)return `<p>${esc(data.note||'当前没有完全匹配的餐厅，请放宽条件。')}</p>`;
- return `<p>${esc(data.note||'基于当前 StarTable 数据推荐。')}</p><div class="assistant-rec-list">${items.map(item=>`<a href="${restaurantDetailUrl(item)}"><strong>${esc(item.nameZh||item.nameEn||item.id)} ${stars(item.stars)}</strong><span>${esc([cityLabel(item),item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</span><small>${esc(item.reason||'综合匹配推荐。')}</small></a>`).join('')}</div>`;
+ const answer=data.answer?`<p>${esc(data.answer).replace(/\n/g,'<br>')}</p>`:'';
+ if(!items.length)return `${answer}<p>${esc(data.note||'当前没有完全匹配的餐厅，请放宽条件。')}</p>`;
+ return `${answer}<p>${esc(data.note||'基于当前 StarTable 数据推荐。')}</p><div class="assistant-rec-list">${items.map(item=>`<a href="${restaurantDetailUrl(item)}"><strong>${esc(item.nameZh||item.nameEn||item.id)} ${stars(item.stars)}</strong><span>${esc([cityLabel(item),item.areaZh,item.cuisineZh].filter(Boolean).join(' ｜ '))}</span><small>${esc(item.reason||'综合匹配推荐。')}</small></a>`).join('')}</div>`;
 }
 function parseAssistantIntent(message){
  const text=String(message||'').toLowerCase();

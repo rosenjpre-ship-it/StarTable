@@ -1,0 +1,1349 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-one-star-batch-e",
+  "checkedAt": "2026-08-15",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Nōksu",
+      "nameEn": "Nōksu",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / public reservation references",
+        "sourceUrl": "https://www.noksunyc.com/",
+        "changeSummary": "纽约一星第五批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-noksu",
+      "name": "Nōksu",
+      "cuisine": "Korean, Contemporary",
+      "cuisineZh": "现代韩餐",
+      "area": "Herald Square",
+      "areaZh": "Herald Square / 韩国城",
+      "address": "49 W 32nd Street, New York, NY 10001",
+      "phone": "+1 212 971 9045",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Counter Tasting Menu",
+          "price": "$225 / 人参考",
+          "details": [
+            "地铁站内入口的现代韩餐 counter tasting menu",
+            "多道韩式/现代餐序，菜单按季节变化",
+            "pairing、税费和服务另计"
+          ],
+          "note": "公开预约/餐饮信息显示 tasting menu 约 $225；上线前需按当前预约页复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 225,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "Nōksu official/reservation references / Michelin Guide"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "预约平台/官网预约；座位少、counter experience，热门日期建议提前抢位。",
+        "releaseTime": null,
+        "releaseWindow": "按预约平台日历",
+        "platforms": [
+          "Official",
+          "Reservation platform"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未稳定公开细则；高端 counter tasting 建议 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；counter tasting 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter seating pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "入口隐蔽，预留找入口时间。",
+          "counter 席位少，迟到会影响整场体验。",
+          "韩餐发酵、海鲜和辣味元素需提前确认忌口。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "34 St-Herald Sq",
+            "walkMinutes": 1,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "33 St",
+            "walkMinutes": 5,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "Penn Station",
+            "walkMinutes": 7,
+            "lines": [
+              "1",
+              "2",
+              "3",
+              "A",
+              "C",
+              "E",
+              "LIRR",
+              "NJ Transit"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.noksunyc.com/",
+        "reservation": "https://www.noksunyc.com/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/noksu"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide / public reservation references",
+      "syncSourceUrl": "https://www.noksunyc.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Noz 17",
+      "nameEn": "Noz 17",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / public reservation references",
+        "sourceUrl": "https://www.noz17.com/",
+        "changeSummary": "纽约一星第五批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-noz-17",
+      "name": "Noz 17",
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "Chelsea",
+      "areaZh": "Chelsea",
+      "address": "458 W 17th Street, New York, NY 10011",
+      "phone": "+1 917 268 7268",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Omakase",
+          "price": "$495 / 人参考",
+          "details": [
+            "高端江户前寿司 omakase",
+            "约 7 席 counter，菜单随鱼货变化",
+            "tax, service, beverages 另计"
+          ],
+          "note": "公开预约信息显示 Noz 17 omakase 约 $495；上线前需按当前预约页复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 495,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "Noz 17 official/reservation references / Michelin Guide"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；席位极少，热门日期需要提前抢位。",
+        "releaseTime": null,
+        "releaseWindow": "按预约平台日历",
+        "platforms": [
+          "Official",
+          "Tock/Reservation platform"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / no fragrance reference",
+        "required": true,
+        "notes": [
+          "寿司吧台建议 smart casual，避免强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；高端寿司 counter 不建议低龄儿童，需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "sushi counter reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "避免香水和强烈气味。",
+          "握寿司上桌后尽快食用。",
+          "取消政策和预付款需预约前确认。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "14 St-8 Av",
+            "walkMinutes": 6,
+            "lines": [
+              "A",
+              "C",
+              "E",
+              "L"
+            ]
+          },
+          {
+            "name": "18 St",
+            "walkMinutes": 8,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "23 St",
+            "walkMinutes": 12,
+            "lines": [
+              "C",
+              "E"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "40000-50000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "40000-50000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.noz17.com/",
+        "reservation": "https://www.noz17.com/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/noz-17"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide / public reservation references",
+      "syncSourceUrl": "https://www.noz17.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Oiji Mi",
+      "nameEn": "Oiji Mi",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Resy / Michelin Guide",
+        "sourceUrl": "https://www.oijimi.com/",
+        "changeSummary": "纽约一星第五批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-oiji-mi",
+      "name": "Oiji Mi",
+      "cuisine": "Korean, Contemporary",
+      "cuisineZh": "现代韩餐",
+      "area": "Flatiron",
+      "areaZh": "Flatiron",
+      "address": "17 W 19th Street, New York, NY 10011",
+      "phone": "+1 212 256 1259",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Five-Course Prix Fixe",
+          "price": "$145 / 人",
+          "details": [
+            "五道现代韩餐 prix fixe",
+            "菜式示例含 oiji bowl、hwe、jjim、galbi、dessert 等韩餐元素",
+            "wine/non-alcoholic pairing 另计"
+          ],
+          "note": "官网/公开菜单显示五道 $145。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 145,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Oiji Mi official menu / Michelin Guide"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/Resy 预约；同楼 bōm，热门晚餐需提前。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Official",
+          "Resy",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual reference",
+        "required": true,
+        "notes": [
+          "公开预订平台常标注 business casual；建议 smart/business casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform / restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；prix fixe 形式儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "五道 prix fixe，过敏和忌口需提前说明。",
+          "现代韩餐含海鲜、发酵、辣味和牛肉元素。",
+          "建议 smart/business casual。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "23 St",
+            "walkMinutes": 5,
+            "lines": [
+              "F",
+              "M",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "18 St",
+            "walkMinutes": 6,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "14 St-Union Sq",
+            "walkMinutes": 10,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "L",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.oijimi.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/oiji-mi",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/oiji-mi"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A/B",
+        "reservation": "B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Resy / Michelin Guide",
+      "syncSourceUrl": "https://www.oijimi.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Oxomoco",
+      "nameEn": "Oxomoco",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Resy / Michelin Guide",
+        "sourceUrl": "https://www.oxomoconyc.com/",
+        "changeSummary": "纽约一星第五批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-oxomoco",
+      "name": "Oxomoco",
+      "cuisine": "Mexican",
+      "cuisineZh": "墨西哥料理",
+      "area": "Greenpoint",
+      "areaZh": "Greenpoint",
+      "address": "128 Greenpoint Avenue, Brooklyn, NY 11222",
+      "phone": "+1 646 688 4180",
+      "lunch": [
+        {
+          "name": "Brunch / Lunch À la Carte",
+          "price": "$45-$90 / 人参考",
+          "details": [
+            "木火墨西哥料理，tacos、tostadas、ceviche、grilled mains",
+            "brunch/lunch 餐期以官网当前营业时间为准",
+            "鸡尾酒和 mezcal 是体验重点"
+          ],
+          "note": "官网公开菜单/预约，预算按公开菜单区间。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dinner À la Carte",
+          "price": "$70-$130 / 人参考",
+          "details": [
+            "wood-fired Mexican à la carte",
+            "适合分享，菜式随季节和菜单更新",
+            "饮品另计"
+          ],
+          "note": "以官网当前菜单为准。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 45,
+        "dinnerFrom": 70,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Oxomoco official website / public menu references"
+      },
+      "reservation": {
+        "difficulty": 3,
+        "difficultyLabel": "中等",
+        "bookingRule": "官网/Resy 预约；Greenpoint 热门餐厅，周末 brunch 和晚餐建议提前。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Official",
+          "Resy",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Casual / smart casual reference",
+        "required": false,
+        "notes": [
+          "氛围较轻松，clean casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；相对休闲，可家庭用餐但需考虑辣味/酒吧氛围。",
+        "verified": true,
+        "publicInfoStatus": "restaurant norm / not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "分享型点菜，按人数请服务员建议菜量。",
+          "部分菜式有辣味、海鲜、玉米和乳制品，过敏需提前说明。",
+          "周末 brunch 很热门，建议预约。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Greenpoint Av",
+            "walkMinutes": 2,
+            "lines": [
+              "G"
+            ]
+          },
+          {
+            "name": "Nassau Av",
+            "walkMinutes": 10,
+            "lines": [
+              "G"
+            ]
+          },
+          {
+            "name": "Vernon Blvd-Jackson Av",
+            "walkMinutes": 18,
+            "lines": [
+              "7 + walking/ferry option"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [
+          "under-10000"
+        ],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.oxomoconyc.com/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/oxomoco",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/brooklyn/restaurant/oxomoco"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A/B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Resy / Michelin Guide",
+      "syncSourceUrl": "https://www.oxomoconyc.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Restaurant Yuu",
+      "nameEn": "Restaurant Yuu",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Tock / Michelin Guide",
+        "sourceUrl": "https://www.yuunewyork.com/",
+        "changeSummary": "纽约一星第五批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-restaurant-yuu",
+      "name": "Restaurant Yuu",
+      "cuisine": "French, Japanese influence",
+      "cuisineZh": "法餐 / 日式影响",
+      "area": "Greenpoint",
+      "areaZh": "Greenpoint",
+      "address": "55 Nassau Avenue, Brooklyn, NY 11222",
+      "phone": "+1 917 909 1865",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Chef’s Tasting Menu",
+          "price": "$315 / 人参考",
+          "details": [
+            "法餐技法结合日式审美的 counter tasting menu",
+            "开放式厨房，菜单随季节变化",
+            "pairing、税费和服务另计"
+          ],
+          "note": "公开预约/餐饮信息显示 tasting menu 约 $315；上线前需按当前预约页复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 315,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "Restaurant Yuu official/reservation references / Michelin Guide"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/Tock 预约；Greenpoint 高需求 counter dining，建议开放日历后尽早锁定。",
+        "releaseTime": null,
+        "releaseWindow": "按 Tock 日历",
+        "platforms": [
+          "Official",
+          "Tock"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未稳定公开细则；高端 counter dining 建议 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；长时间 counter tasting 儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter seating reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "counter dining 需准时，迟到会影响全场餐序。",
+          "法餐 sauce 和日式食材较多，过敏需提前说明。",
+          "避免强烈香水。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Nassau Av",
+            "walkMinutes": 4,
+            "lines": [
+              "G"
+            ]
+          },
+          {
+            "name": "Greenpoint Av",
+            "walkMinutes": 7,
+            "lines": [
+              "G"
+            ]
+          },
+          {
+            "name": "Bedford Av",
+            "walkMinutes": 18,
+            "lines": [
+              "L"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.yuunewyork.com/",
+        "reservation": "https://www.exploretock.com/restaurantryuu",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/brooklyn/restaurant/restaurant-yuu"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Tock / Michelin Guide",
+      "syncSourceUrl": "https://www.yuunewyork.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Rezdôra",
+      "nameEn": "Rezdôra",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Resy / Michelin Guide",
+        "sourceUrl": "https://www.rezdora.nyc/",
+        "changeSummary": "纽约一星第五批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-rezdora",
+      "name": "Rezdôra",
+      "cuisine": "Italian, Emilian",
+      "cuisineZh": "意大利料理 / 艾米利亚风格",
+      "area": "Flatiron",
+      "areaZh": "Flatiron",
+      "address": "27 E 20th Street, New York, NY 10003",
+      "phone": "+1 646 692 9090",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Pasta Tasting / À la Carte",
+          "price": "$95-$170 / 人参考",
+          "details": [
+            "Emilia-Romagna pasta-focused menu",
+            "signature pasta tasting 和 à la carte 可选",
+            "Lambrusco/Italian wine pairing 另计"
+          ],
+          "note": "官网/公开菜单参考，价格以上线前菜单复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 95,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Rezdôra official website / public menu references"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "Resy/官网预约；Flatiron 热门意餐，晚餐建议提前。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": false,
+        "notes": [
+          "官网未明确 Dress Code；smart casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；意面餐厅相对可家庭用餐，儿童同行仍建议确认。",
+        "verified": true,
+        "publicInfoStatus": "restaurant norm / not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "pasta tasting 与 à la carte 是不同体验，预约/点单时确认。",
+          "座位紧凑，控制音量与随身物品。",
+          "乳制品、蛋、gluten 过敏需提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "23 St",
+            "walkMinutes": 4,
+            "lines": [
+              "R",
+              "W",
+              "6"
+            ]
+          },
+          {
+            "name": "14 St-Union Sq",
+            "walkMinutes": 8,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "L",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "28 St",
+            "walkMinutes": 8,
+            "lines": [
+              "6"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.rezdora.nyc/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/rezdora",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/rezdora"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Resy / Michelin Guide",
+      "syncSourceUrl": "https://www.rezdora.nyc/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Semma",
+      "nameEn": "Semma",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Resy / Michelin Guide",
+        "sourceUrl": "https://www.semma.nyc/",
+        "changeSummary": "纽约一星第五批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-semma",
+      "name": "Semma",
+      "cuisine": "Indian, South Indian",
+      "cuisineZh": "南印度料理",
+      "area": "Greenwich Village",
+      "areaZh": "格林威治村",
+      "address": "60 Greenwich Avenue, New York, NY 10011",
+      "phone": "+1 212 373 8900",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "À la carte South Indian Dinner",
+          "price": "$80-$150 / 人参考",
+          "details": [
+            "南印度 regional cooking，dosa、seafood、meat curry、rice dishes 等",
+            "部分菜式辛香料强，适合分享",
+            "酒水另计"
+          ],
+          "note": "官网/公开菜单参考，价格以上线前菜单复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 80,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Semma official website / public menu references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Resy/官网预约；纽约热门印度一星，晚餐位非常紧张，需持续看候补。",
+        "releaseTime": null,
+        "releaseWindow": "按 Resy 日历",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Casual / smart casual reference",
+        "required": false,
+        "notes": [
+          "官网未明确 Dress Code；clean casual / smart casual 即可。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；辣味和香料较强，儿童同行需根据口味确认。",
+        "verified": true,
+        "publicInfoStatus": "restaurant norm / not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "辣味和香料强，不能吃辣需提前询问。",
+          "适合分享点菜，按人数请服务员建议。",
+          "热门程度高，需接受候补和非黄金时段。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "14 St",
+            "walkMinutes": 4,
+            "lines": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          {
+            "name": "8 Av",
+            "walkMinutes": 6,
+            "lines": [
+              "L"
+            ]
+          },
+          {
+            "name": "W 4 St-Wash Sq",
+            "walkMinutes": 8,
+            "lines": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "M"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dressCategory": "none",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.semma.nyc/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/semma",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/semma"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Resy / Michelin Guide",
+      "syncSourceUrl": "https://www.semma.nyc/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Shion 69 Leonard Street",
+      "nameEn": "Shion 69 Leonard Street",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / public reservation references",
+        "sourceUrl": "https://www.shion69leonardstreet.com/",
+        "changeSummary": "纽约一星第五批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-shion-69-leonard-street",
+      "name": "Shion 69 Leonard Street",
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "Tribeca",
+      "areaZh": "翠贝卡",
+      "address": "69 Leonard Street, New York, NY 10013",
+      "phone": "+1 212 404 4600",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Omakase",
+          "price": "$480 / 人参考",
+          "details": [
+            "高端江户前寿司 omakase",
+            "counter dining，季节鱼货和小料理",
+            "税费、服务和饮品另计"
+          ],
+          "note": "公开预约/餐饮信息显示 omakase 约 $480；上线前需按当前预约页复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 480,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "Shion 69 Leonard Street official/reservation references / Michelin Guide"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；寿司 counter 席位少，需提前抢位。",
+        "releaseTime": null,
+        "releaseWindow": "按预约平台日历",
+        "platforms": [
+          "Official",
+          "Tock/Reservation platform",
+          "Phone"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / no fragrance reference",
+        "required": true,
+        "notes": [
+          "高端寿司吧建议 smart casual，避免强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；寿司 omakase 儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "sushi counter reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "避免强烈香水和烟味。",
+          "握寿司上桌后尽快食用。",
+          "高价预订需确认取消政策和附加费用。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Chambers St",
+            "walkMinutes": 5,
+            "lines": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          {
+            "name": "Franklin St",
+            "walkMinutes": 5,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "Canal St",
+            "walkMinutes": 8,
+            "lines": [
+              "A",
+              "C",
+              "E",
+              "1"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "40000-50000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "40000-50000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.shion69leonardstreet.com/",
+        "reservation": "https://www.shion69leonardstreet.com/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/shion-69-leonard-street"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide / public reservation references",
+      "syncSourceUrl": "https://www.shion69leonardstreet.com/"
+    }
+  ]
+}

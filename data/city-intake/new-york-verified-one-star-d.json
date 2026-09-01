@@ -1,0 +1,1355 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-one-star-batch-d",
+  "checkedAt": "2026-08-15",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "L’Abeille",
+      "nameEn": "L’Abeille",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / OpenTable / Michelin Guide",
+        "sourceUrl": "https://www.labeille.nyc/info",
+        "changeSummary": "纽约一星第四批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-labeille",
+      "name": "L’Abeille",
+      "cuisine": "French, Japanese influence",
+      "cuisineZh": "法餐 / 日式影响",
+      "area": "Tribeca",
+      "areaZh": "翠贝卡",
+      "address": "412 Greenwich Street, New York, NY 10013",
+      "phone": "+1 212 542 3898",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Menu Signature / Menu Petite Abeille / À la Carte",
+          "price": "$145-$245 / 人参考",
+          "details": [
+            "法日风格 fine dining",
+            "官网菜单包括 signature tasting、petite tasting 和 à la carte",
+            "Tue-Thu 17:30-22:00；Fri-Sat 17:00-23:00"
+          ],
+          "note": "官网公开餐期、地址和菜单类别；OpenTable 评论提到七道 prix fixe。价格需以上线前菜单复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 145,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "L’Abeille official website / OpenTable public listing"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/OpenTable 预约；迟到超过 15 分钟可能影响完整体验，24 小时内取消 $75 / 人。",
+        "releaseTime": null,
+        "releaseWindow": "按 OpenTable 日历",
+        "platforms": [
+          "Official",
+          "OpenTable",
+          "Phone",
+          "Email"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual",
+        "required": true,
+        "notes": [
+          "官网明确 smart casual；不可穿背心、夹脚拖、短裤、运动裤。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄限制；可 private event，儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "Smart casual 明确，不要穿短裤、运动裤、背心、拖鞋。",
+          "迟到超过 15 分钟可能无法完整体验。",
+          "法日风格 tasting，过敏和忌口需提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Canal St",
+            "walkMinutes": 5,
+            "lines": [
+              "A",
+              "C",
+              "E",
+              "1"
+            ]
+          },
+          {
+            "name": "Franklin St",
+            "walkMinutes": 8,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "Chambers St",
+            "walkMinutes": 10,
+            "lines": [
+              "1",
+              "2",
+              "3"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.labeille.nyc/",
+        "reservation": "https://www.opentable.com/r/labeille-new-york",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/l-abeille"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A/B",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / OpenTable / Michelin Guide",
+      "syncSourceUrl": "https://www.labeille.nyc/info"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "La Bastide by Andrea Calstier",
+      "nameEn": "La Bastide by Andrea Calstier",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://www.labastidebyac.com/la-bastide_2",
+        "changeSummary": "纽约一星第四批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-la-bastide-by-andrea-calstier",
+      "name": "La Bastide by Andrea Calstier",
+      "cuisine": "French, Contemporary",
+      "cuisineZh": "现代法餐 / 普罗旺斯风格",
+      "area": "North Salem",
+      "areaZh": "North Salem / Westchester",
+      "address": "721 Titicus Road, North Salem, NY 10560",
+      "phone": "+1 914 485 1518",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Fine Dining Tasting Menu",
+          "price": "$175-$250 / 人参考",
+          "details": [
+            "Hudson Valley 目的地型 tasting menu",
+            "周日 17:00 有 four-course 体验",
+            "Thu-Sun 17:00-20:00"
+          ],
+          "note": "官网公开 tasting menu / four course 菜单类别、地址和营业时间；价格需按预约页复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 175,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "La Bastide official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网预约；Westchester 目的地餐厅，建议提前并规划往返交通。",
+        "releaseTime": null,
+        "releaseWindow": "按官网日历",
+        "platforms": [
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / elegant reference",
+        "required": true,
+        "notes": [
+          "官网未明确细则；fine dining tasting menu 建议 smart casual 或更正式。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；长时间 tasting menu 和远郊交通，儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": null,
+        "minGuests": null,
+        "verified": false,
+        "source": "待预约平台确认"
+      },
+      "tableManners": {
+        "notes": [
+          "目的地型餐厅，需预留从纽约市区往返时间。",
+          "菜单强调 Hudson Valley terroir 与季节性，不要期待固定菜名。",
+          "建议 smart casual 或更正式。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Goldens Bridge Station",
+            "walkMinutes": 15,
+            "lines": [
+              "Metro-North Harlem Line + taxi/rideshare 约 15 分钟"
+            ]
+          },
+          {
+            "name": "Grand Central Terminal",
+            "walkMinutes": 75,
+            "lines": [
+              "Metro-North Harlem Line 至 Goldens Bridge 后换乘车"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based Westchester transit planning reference",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": false
+      },
+      "links": {
+        "official": "https://www.labastidebyac.com/",
+        "reservation": "https://www.labastidebyac.com/la-bastide_2",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/north-salem/restaurant/la-bastide-by-andrea-calstier"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide",
+      "syncSourceUrl": "https://www.labastidebyac.com/la-bastide_2"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Le Coucou",
+      "nameEn": "Le Coucou",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / OpenTable / Michelin Guide",
+        "sourceUrl": "https://lecoucou.com/",
+        "changeSummary": "纽约一星第四批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-le-coucou",
+      "name": "Le Coucou",
+      "cuisine": "French",
+      "cuisineZh": "法餐",
+      "area": "SoHo",
+      "areaZh": "SoHo",
+      "address": "138 Lafayette Street, New York, NY 10013",
+      "phone": "+1 212 271 4252",
+      "lunch": [
+        {
+          "name": "Lunch Prix Fixe",
+          "price": "$79-$150 / 人",
+          "details": [
+            "2 courses $79；3 courses $125；A Very Coucou Lunch $150",
+            "菜式示例：consommé, poireaux vinaigrette, tuna, lobster avocado, pike quenelle, Dover sole, duck, beef 等",
+            "不含税和小费"
+          ],
+          "note": "官网菜单公开午餐价格。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "À la carte / A Very Coucou Dinner",
+          "price": "$120-$220 / 人参考",
+          "details": [
+            "A Very Coucou Dinner $220；wine accompaniment $145/$345；non-alcoholic pairing $115",
+            "à la carte 菜式约 $20-$98，多种 supplement",
+            "可处理多数 dietary requirements"
+          ],
+          "note": "官网菜单公开价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 79,
+        "dinnerFrom": 120,
+        "serviceCharge": "tax and gratuity not included",
+        "verified": true,
+        "source": "Le Coucou official menu / OpenTable"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "OpenTable/官网预约；1-6 人线上预约，7 人以上需邮件联系。",
+        "releaseTime": null,
+        "releaseWindow": "按 OpenTable 日历",
+        "platforms": [
+          "OpenTable",
+          "Official",
+          "Email",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual",
+        "required": true,
+        "notes": [
+          "OpenTable 公开标注 Smart Casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童限制；法餐 dining room，儿童同行建议预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "午餐和晚餐都有 prix fixe / à la carte，不同餐期价格差异大。",
+          "Smart casual，适合正式约会或商务。",
+          "可处理多数饮食需求，但仍需预约时提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Canal St",
+            "walkMinutes": 3,
+            "lines": [
+              "6",
+              "J",
+              "N",
+              "Q",
+              "R",
+              "W",
+              "Z"
+            ]
+          },
+          {
+            "name": "Spring St",
+            "walkMinutes": 5,
+            "lines": [
+              "6"
+            ]
+          },
+          {
+            "name": "Prince St",
+            "walkMinutes": 7,
+            "lines": [
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "under-10000",
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [
+          "under-10000",
+          "10000-20000"
+        ],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://lecoucou.com/",
+        "reservation": "https://www.opentable.com/r/le-coucou-new-york",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/le-coucou"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "A",
+        "reservation": "B",
+        "policy": "B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / OpenTable / Michelin Guide",
+      "syncSourceUrl": "https://lecoucou.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Le Pavillon",
+      "nameEn": "Le Pavillon",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://www.lepavillonnyc.com/",
+        "changeSummary": "纽约一星第四批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-le-pavillon",
+      "name": "Le Pavillon",
+      "cuisine": "French, Seafood",
+      "cuisineZh": "法餐 / 海鲜与蔬菜",
+      "area": "Midtown / One Vanderbilt",
+      "areaZh": "中城 / One Vanderbilt",
+      "address": "One Vanderbilt Avenue, New York, NY 10017",
+      "phone": "+1 212 662 1000",
+      "lunch": [
+        {
+          "name": "Lunch",
+          "price": "$145-$215 / 人参考",
+          "details": [
+            "Mon-Fri 11:30-14:00",
+            "Daniel Boulud 的海鲜与蔬菜主导现代法餐",
+            "bar & lounge 午餐也开放"
+          ],
+          "note": "官网公开餐期与菜单入口；价格需按当期菜单复核。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Dinner / Seasonal Menu",
+          "price": "$195-$285 / 人参考",
+          "details": [
+            "Mon-Sat 17:00-21:30",
+            "海鲜、蔬菜、法餐 sauce 与东北部农渔食材",
+            "private dining 可接待活动"
+          ],
+          "note": "官网公开餐期、地址、电话、预约和风格；价格需按当期菜单复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 145,
+        "dinnerFrom": 195,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Le Pavillon official website / current public menu references"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "Resy/官网预约；官网 FAQ 明确提前 60 天开放，bar 可 walk-in。",
+        "releaseTime": null,
+        "releaseWindow": "提前 60 天",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Phone"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual",
+        "required": true,
+        "notes": [
+          "官网 FAQ 明确 strongly recommended business casual；不允许运动/休闲服，男士 dining room 不可短裤或凉鞋。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": true,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "官网明确不能容纳婴儿车；儿童同行可但需提前确认座位与年龄。",
+        "verified": true,
+        "publicInfoStatus": "officially published stroller limitation"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "bar/table reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "One Vanderbilt 入口需注意，预留找入口时间。",
+          "Business casual 明确，男士不要短裤或凉鞋。",
+          "婴儿车不可进入餐厅，家庭用餐需提前确认。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Grand Central-42 St",
+            "walkMinutes": 1,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "7",
+              "S",
+              "Metro-North"
+            ]
+          },
+          {
+            "name": "5 Av",
+            "walkMinutes": 5,
+            "lines": [
+              "7"
+            ]
+          },
+          {
+            "name": "42 St-Bryant Park",
+            "walkMinutes": 6,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "yes",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.lepavillonnyc.com/",
+        "reservation": "https://www.lepavillonnyc.com/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/le-pavillon"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "A",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide",
+      "syncSourceUrl": "https://www.lepavillonnyc.com/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Mari",
+      "nameEn": "Mari",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide",
+        "sourceUrl": "https://marinyc.com/our-menu/",
+        "changeSummary": "纽约一星第四批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-mari",
+      "name": "Mari",
+      "cuisine": "Korean",
+      "cuisineZh": "韩式手卷 tasting menu",
+      "area": "Hell's Kitchen",
+      "areaZh": "Hell's Kitchen",
+      "address": "679 Ninth Avenue, New York, NY 10036",
+      "phone": "+1 646 649 3545",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Mari Tasting Menu",
+          "price": "$145 / 人",
+          "details": [
+            "韩式 handroll tasting menu",
+            "官网菜式示例含 Egg and Caviar, morel, fluke, beltfish, ora king, scallop, spicy tuna, branzino, zabuton wagyu, razor clam jjambbong, desserts",
+            "wine pairing $110"
+          ],
+          "note": "官网菜单公开价格和菜式。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 145,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Mari official menu"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/预约平台预约；Hell’s Kitchen counter dining，热门日期建议提前。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台日历",
+        "platforms": [
+          "Official",
+          "Phone",
+          "Email"
+        ],
+        "conciergeRecommended": false,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未明确 Dress Code；counter tasting 建议 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；counter tasting 儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "counter reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "手卷类餐序需上桌后尽快食用。",
+          "counter 用餐跟随厨师节奏。",
+          "海鲜、乳制品、蛋和生食较多，过敏需提前说明。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "50 St",
+            "walkMinutes": 6,
+            "lines": [
+              "C",
+              "E"
+            ]
+          },
+          {
+            "name": "50 St",
+            "walkMinutes": 8,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "59 St-Columbus Circle",
+            "walkMinutes": 11,
+            "lines": [
+              "1",
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "10000-20000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://marinyc.com/",
+        "reservation": "https://marinyc.com/reservation/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/mari"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide",
+      "syncSourceUrl": "https://marinyc.com/our-menu/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Meju",
+      "nameEn": "Meju",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / verified reservation guide",
+        "sourceUrl": "https://mejunyc.com/about/",
+        "changeSummary": "纽约一星第四批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-meju",
+      "name": "Meju",
+      "cuisine": "Korean, Fermentation",
+      "cuisineZh": "韩国发酵料理",
+      "area": "Long Island City",
+      "areaZh": "长岛市",
+      "address": "5-28 49th Avenue, Long Island City, NY 11101",
+      "phone": "+1 718 806 1636",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Korean Fermentation Dinner",
+          "price": "$235 / 人",
+          "details": [
+            "传统韩国发酵 tasting menu",
+            "以 doenjang、gochujang、ganjang、ssamjang、jeotgal、kimchi、sikhye 等发酵体系构成",
+            "Korean & Natural Wine Pairing $145；non-alcoholic pairing $85；20% service charge"
+          ],
+          "note": "官网 About 页公开价格和政策。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 235,
+        "serviceCharge": "20% service charge; not gratuity",
+        "verified": true,
+        "source": "Meju official website / verified reservation guide"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "SevenRooms/官网预约；公开预约指南显示每月 1 日 9:00 ET 开放次月 1-4 人座位。",
+        "releaseTime": "每月 1 日 09:00 ET 参考",
+        "releaseWindow": "开放次月",
+        "platforms": [
+          "SevenRooms",
+          "Official",
+          "DoorDash reference"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未明确 Dress Code；发酵 tasting counter 建议 smart casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；三小时 fermentation tasting，不适合低龄儿童，需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "verified reservation guide notes 1-4 guests"
+      },
+      "tableManners": {
+        "notes": [
+          "需要 72 小时提前通知饮食限制。",
+          "无法接待严重 gluten/celiac；海鲜发酵限制 vegan。",
+          "服务费 20% 不是小费，结账时需理解费用结构。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Vernon Blvd-Jackson Av",
+            "walkMinutes": 4,
+            "lines": [
+              "7"
+            ]
+          },
+          {
+            "name": "Hunters Point Av",
+            "walkMinutes": 8,
+            "lines": [
+              "7"
+            ]
+          },
+          {
+            "name": "Long Island City",
+            "walkMinutes": 10,
+            "lines": [
+              "LIRR"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "20000-30000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "20000-30000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://mejunyc.com/",
+        "reservation": "https://mejunyc.com/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/long-island-city/restaurant/meju"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "A/B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide / verified reservation guide",
+      "syncSourceUrl": "https://mejunyc.com/about/"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Muku",
+      "nameEn": "Muku",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / OpenTable / Michelin Guide",
+        "sourceUrl": "https://www.restaurantmuku.nyc/menu",
+        "changeSummary": "纽约一星第四批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-muku",
+      "name": "Muku",
+      "cuisine": "Japanese, Kaiseki",
+      "cuisineZh": "怀石 / 日本料理",
+      "area": "Tribeca",
+      "areaZh": "翠贝卡",
+      "address": "412 Greenwich Street, New York, NY 10013",
+      "phone": "+1 212 542 3896",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Muku Experience",
+          "price": "$325 / 人",
+          "details": [
+            "10-12 道 goho / kaiseki style menu",
+            "sakizuke、owan、otsukuri、mushimono、yakimono、agemono、rice course、Yamagata soba、mizugashi",
+            "Tue-Sat 17:30 & 20:30；1-4 人预付体验"
+          ],
+          "note": "官网与 OpenTable 公开价格、餐序和时间。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 325,
+        "serviceCharge": "prepaid; tax and gratuity may apply",
+        "verified": true,
+        "source": "Muku official website / OpenTable"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "OpenTable/官网预约；每晚 17:30 与 20:30 两轮，1-4 人预付，4 人以上需邮件。",
+        "releaseTime": null,
+        "releaseWindow": "按 OpenTable 日历",
+        "platforms": [
+          "OpenTable",
+          "Official",
+          "Email",
+          "Phone"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual",
+        "required": true,
+        "notes": [
+          "官网明确 smart casual；不可穿背心、夹脚拖、短裤、运动裤。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄政策；怀石 tasting 儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable experiences for 1-4 guests"
+      },
+      "tableManners": {
+        "notes": [
+          "Smart casual 明确，不穿短裤、运动裤、背心或拖鞋。",
+          "怀石餐序按服务说明食用。",
+          "corkage $175，最多 2 瓶且需邮件确认。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Canal St",
+            "walkMinutes": 5,
+            "lines": [
+              "A",
+              "C",
+              "E",
+              "1"
+            ]
+          },
+          {
+            "name": "Franklin St",
+            "walkMinutes": 8,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "Chambers St",
+            "walkMinutes": 10,
+            "lines": [
+              "1",
+              "2",
+              "3"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.restaurantmuku.nyc/",
+        "reservation": "https://www.opentable.com/r/muku-new-york",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/muku"
+      },
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "B",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / OpenTable / Michelin Guide",
+      "syncSourceUrl": "https://www.restaurantmuku.nyc/menu"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-15",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-15"
+      },
+      "nameZh": "Noda",
+      "nameEn": "Noda",
+      "nameJa": "",
+      "stars": 1,
+      "heroImage": "",
+      "sync": {
+        "lastChecked": "2026-08-15",
+        "lastUpdated": "2026-08-15",
+        "source": "official website / Michelin Guide / current public reservation references",
+        "sourceUrl": "https://www.noda.nyc/",
+        "changeSummary": "纽约一星第四批核验。",
+        "autoCheckEnabled": false
+      },
+      "id": "new-york-noda",
+      "name": "Noda",
+      "cuisine": "Sushi, Japanese",
+      "cuisineZh": "寿司 / 日本料理",
+      "area": "Flatiron",
+      "areaZh": "Flatiron",
+      "address": "37 W 20th Street, New York, NY 10011",
+      "phone": "+1 212 432 4188",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Omakase",
+          "price": "$495 / 人参考",
+          "details": [
+            "高端寿司 omakase",
+            "counter dining，菜单随季节和鱼货变化",
+            "饮品、税费、服务另计"
+          ],
+          "note": "官网公开地址和预约入口；价格按近期公开预约/餐饮信息参考，需以上线前预约页复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 495,
+        "serviceCharge": "tax and service/gratuity may apply",
+        "verified": true,
+        "source": "Noda official website / current public reservation references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网/预约平台预约；小型寿司吧，热门日期需提前抢位；private events 邮件联系。",
+        "releaseTime": null,
+        "releaseWindow": "按官网/预约平台日历",
+        "platforms": [
+          "Official",
+          "Tock/Reservation platform",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / no fragrance reference",
+        "required": true,
+        "notes": [
+          "官网未明确细则；高端寿司吧建议 smart casual，避免强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": true,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄政策；寿司 omakase 儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "sushi counter reservation pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "避免强烈香水。",
+          "握寿司上桌后尽快食用。",
+          "价格高且取消政策可能严格，预约前确认。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "23 St",
+            "walkMinutes": 4,
+            "lines": [
+              "F",
+              "M",
+              "R",
+              "W"
+            ]
+          },
+          {
+            "name": "18 St",
+            "walkMinutes": 5,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "14 St-Union Sq",
+            "walkMinutes": 10,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "L",
+              "N",
+              "Q",
+              "R",
+              "W"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-15"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "40000-50000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "40000-50000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.noda.nyc/",
+        "reservation": "https://www.noda.nyc/",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/noda"
+      },
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "syncSource": "official website / Michelin Guide / current public reservation references",
+      "syncSourceUrl": "https://www.noda.nyc/"
+    }
+  ]
+}

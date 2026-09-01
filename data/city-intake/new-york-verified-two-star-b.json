@@ -1,0 +1,704 @@
+{
+  "cityId": "new-york",
+  "dataCity": "New York",
+  "labelZh": "纽约",
+  "labelEn": "New York",
+  "status": "verified-two-star-batch-b",
+  "checkedAt": "2026-08-14",
+  "sourcePolicy": "A=official restaurant/hotel/reservation page; B=Michelin or major reservation/local platform; C=public dining platform/media reference",
+  "restaurants": [
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-blue-hill-at-stone-barns",
+      "name": "Blue Hill at Stone Barns",
+      "nameZh": "Blue Hill at Stone Barns",
+      "nameEn": "Blue Hill at Stone Barns",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Farm-to-table, Contemporary American",
+      "cuisineZh": "农场到餐桌 / 现代美国料理",
+      "area": "Pocantico Hills",
+      "areaZh": "Pocantico Hills / 哈德逊谷",
+      "address": "630 Bedford Road, Pocantico Hills, NY 10591",
+      "phone": "+1 914 366 9600",
+      "lunch": [
+        {
+          "name": "Main Dining Room Experience / Sunday Lunch",
+          "price": "$398-$458 / 人参考",
+          "details": [
+            "农场体验型 tasting menu，菜单随当日农场收获变化",
+            "公开信息显示 tasting menu 从约 $398 起，Tock 近期主餐厅体验约 $458 / 人",
+            "餐前/餐中可能结合 Stone Barns 农场动线，实际以预约项目为准"
+          ],
+          "note": "Blue Hill 不提供固定菜单；价格和餐期以 Tock 当前体验页为准。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "Main Dining Room Experience",
+          "price": "$398-$458 / 人参考",
+          "details": [
+            "多道农场主题 tasting menu",
+            "以 Stone Barns 与区域农场的蔬菜、谷物、乳制品和肉类为核心",
+            "饮品、税费和行政费另计"
+          ],
+          "note": "公开 Tock/50 Best 等信息显示价格区间；上线前需按 Tock 当前页复核。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 398,
+        "dinnerFrom": 398,
+        "serviceCharge": "tax, beverages and administrative fee may apply",
+        "verified": true,
+        "source": "Blue Hill official/Tock public page / 50 Best Discovery / current public dining references"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Tock 预约；Stone Barns 公开访问信息要求 dining experiences 需提前预约，Tock 显示按批次开放新日期。",
+        "releaseTime": "按 Tock 公告时间",
+        "releaseWindow": "按 Tock 当前开放日历",
+        "platforms": [
+          "Tock",
+          "Official email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual / elegant attire reference",
+        "required": true,
+        "notes": [
+          "第三方高端餐厅信息标注 smart casual；历史公开信息显示 elegant attire，建议正式休闲，不穿短裤。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "third-party public dining platform / historical restaurant policy reference"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄限制；农场体验与长时间 tasting menu 儿童同行需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": false,
+        "minGuests": 2,
+        "verified": true,
+        "source": "Tock public search pattern commonly starts at 2 guests"
+      },
+      "tableManners": {
+        "notes": [
+          "这是目的地型农场体验，需预留从曼哈顿往返交通时间。",
+          "菜单无固定菜名，重点是当日农场收获和团队说明。",
+          "建议 smart casual 或更正式，户外/农场动线需兼顾舒适鞋履。",
+          "饮品、行政费和税费通常另计，结账前确认总价。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Tarrytown Station",
+            "walkMinutes": 10,
+            "lines": [
+              "Metro-North Hudson Line + taxi/rideshare 约 10 分钟"
+            ]
+          },
+          {
+            "name": "Grand Central Terminal",
+            "walkMinutes": 50,
+            "lines": [
+              "Metro-North Hudson Line 至 Tarrytown 后换乘车"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "Stone Barns visitor information / transit planning reference",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000",
+          "40000-50000"
+        ],
+        "lunchPriceTiers": [
+          "30000-40000",
+          "40000-50000"
+        ],
+        "dinnerPriceTiers": [
+          "30000-40000",
+          "40000-50000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": false
+      },
+      "links": {
+        "official": "https://www.bluehillfarm.com/",
+        "reservation": "https://www.exploretock.com/bluehillatstonebarns",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/pocantico-hills/restaurant/blue-hill-at-stone-barns"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A/B",
+        "course": "B",
+        "reservation": "B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Tock / Michelin Guide / 50 Best Discovery",
+        "sourceUrl": "https://www.exploretock.com/bluehillatstonebarns",
+        "changeSummary": "纽约二星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-cesar",
+      "name": "César",
+      "nameZh": "César",
+      "nameEn": "César",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Contemporary, Seafood",
+      "cuisineZh": "现代海鲜料理",
+      "area": "Hudson Square",
+      "areaZh": "Hudson Square / Soho 西侧",
+      "address": "333 Hudson Street, New York, NY 10013",
+      "phone": "+1 212 220 5152",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Chef’s Tasting Menu",
+          "price": "$368 / 人",
+          "details": [
+            "12-15 道海鲜主导 tasting menu",
+            "可选 Chef’s Counter、Dining Room 或 Salon",
+            "César Ramirez 风格，强调高精度海鲜、酱汁和当季高级食材"
+          ],
+          "note": "Resy 预约规则参考显示当前 tasting menu $368 / 人；官网公开空间和订位方式。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 368,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "César official website / Michelin Guide / verified reservation guide"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "Resy 预约；公开预约指南显示每月 1 日中午 12:00 ET 开放次月座位，counter 1-4 人、dining room 2-4 人、Salon 2-5 人。",
+        "releaseTime": "每月 1 日 12:00 ET",
+        "releaseWindow": "开放次月",
+        "platforms": [
+          "Resy",
+          "Official",
+          "Phone",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual reference",
+        "required": true,
+        "notes": [
+          "官网未明确 Dress Code；二星海鲜 tasting menu 建议 smart casual，避免运动服和强烈香水。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "restaurant norm / third-party reservation reference"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；tasting menu 且不可适配部分饮食限制，儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "official counter accommodates parties of 1-4"
+      },
+      "tableManners": {
+        "notes": [
+          "菜单海鲜占比高，不能接受无海鲜需求；过敏需预约前确认。",
+          "Resy 开放时间明确，热门日期需要准点抢位。",
+          "Chef’s Counter 可一人预约，适合 solo dining。",
+          "避免强烈香水，尊重开放厨房节奏。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "Houston St",
+            "walkMinutes": 4,
+            "lines": [
+              "1"
+            ]
+          },
+          {
+            "name": "Spring St",
+            "walkMinutes": 8,
+            "lines": [
+              "C",
+              "E"
+            ]
+          },
+          {
+            "name": "Canal St",
+            "walkMinutes": 10,
+            "lines": [
+              "1",
+              "A",
+              "C",
+              "E"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.cesar.restaurant/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/cesar",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/cesar"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "B",
+        "reservation": "A/B",
+        "policy": "B/C",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Michelin Guide / verified reservation guide",
+        "sourceUrl": "https://www.cesar.restaurant/",
+        "changeSummary": "纽约二星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-chefs-table-at-brooklyn-fare",
+      "name": "Chef's Table at Brooklyn Fare",
+      "nameZh": "Chef's Table at Brooklyn Fare",
+      "nameEn": "Chef's Table at Brooklyn Fare",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "French / Japanese, Seafood",
+      "cuisineZh": "法日融合 / 海鲜料理",
+      "area": "Hell's Kitchen",
+      "areaZh": "Hell's Kitchen / 哈德逊广场东侧",
+      "address": "431 W 37th Street, New York, NY 10018",
+      "phone": "+1 718 243 0050",
+      "lunch": [],
+      "dinner": [
+        {
+          "name": "Tasting Menu",
+          "price": "$385 / 人",
+          "details": [
+            "12 道以上 seafood-focused tasting menu",
+            "20-seat counter 或 dining room booth，开放式厨房视角",
+            "non-alcoholic pairing $185；wine/service/tax 另计"
+          ],
+          "note": "官网明确 tasting menu $385，服务和 wine 不含。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": null,
+        "dinnerFrom": 385,
+        "serviceCharge": "tax, service and wine not included",
+        "verified": true,
+        "source": "Chef's Table at Brooklyn Fare official website"
+      },
+      "reservation": {
+        "difficulty": 5,
+        "difficultyLabel": "极难",
+        "bookingRule": "官网说明可电话、邮件或 Resy 预约；Tue-Sat 5:00/5:30/8:30/8:45PM，公开预约指南显示 Resy 约 45 日窗口。",
+        "releaseTime": "按 Resy 日历",
+        "releaseWindow": "约 45 日窗口参考",
+        "platforms": [
+          "Resy",
+          "Phone",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Smart casual",
+        "required": true,
+        "notes": [
+          "官网明确 smart casual；OpenTable 等第三方曾标注 jacket required，建议偏正式。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "officially published"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童年龄限制；菜单 seafood-focused 且饮食限制严格，儿童同行需提前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "Resy / counter seating pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "菜单海鲜为主，官网明确不能适配 vegan、vegetarian、celiac、kosher、无海鲜等需求。",
+          "过敏和忌口至少提前 48 小时通知；到店后可能无法调整。",
+          "smart casual，偏正式更稳妥。",
+          "counter 用餐需准时，迟到会影响整场服务。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "34 St-Hudson Yards",
+            "walkMinutes": 7,
+            "lines": [
+              "7"
+            ]
+          },
+          {
+            "name": "34 St-Penn Station",
+            "walkMinutes": 9,
+            "lines": [
+              "A",
+              "C",
+              "E"
+            ]
+          },
+          {
+            "name": "Times Sq-42 St",
+            "walkMinutes": 13,
+            "lines": [
+              "1",
+              "2",
+              "3",
+              "7",
+              "N",
+              "Q",
+              "R",
+              "W",
+              "S"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": false,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [],
+        "dinnerPriceTiers": [
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.brooklynfare.com/chefs-table/",
+        "reservation": "https://resy.com/cities/new-york-ny/venues/chefs-table-at-brooklyn-fare",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/chef-s-table-at-brooklyn-fare"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A",
+        "reservation": "A/B",
+        "policy": "A",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / Michelin Guide / Resy reservation guide",
+        "sourceUrl": "https://www.brooklynfare.com/chefs-table/",
+        "changeSummary": "纽约二星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "imageSource": "city-fallback",
+      "imageSourceUrl": "",
+      "imageSourceStatus": "stable-placeholder",
+      "imageCheckedAt": "2026-08-14",
+      "ratings": {
+        "localPlatform": "Stable public score not shown",
+        "localScore": "",
+        "localUrl": "",
+        "publicInfoStatus": "stable public score not found",
+        "verified": true,
+        "source": "city rating strategy",
+        "lastChecked": "2026-08-14"
+      },
+      "id": "new-york-gabriel-kreuther",
+      "name": "Gabriel Kreuther",
+      "nameZh": "Gabriel Kreuther",
+      "nameEn": "Gabriel Kreuther",
+      "nameJa": "",
+      "stars": 2,
+      "cuisine": "Contemporary French, Alsatian",
+      "cuisineZh": "现代法餐 / 阿尔萨斯风格",
+      "area": "Bryant Park",
+      "areaZh": "布莱恩特公园 / 中城",
+      "address": "41 W 42nd Street, New York, NY 10036",
+      "phone": "+1 212 257 5826",
+      "lunch": [
+        {
+          "name": "Lunch Menu",
+          "price": "$165-$265 / 人参考",
+          "details": [
+            "官网显示午餐 Wednesday-Friday 12:00-2:00PM",
+            "公开菜单参考：3-course / 4-course / Chef’s Tasting Menu",
+            "菜式含 tarte flambée、foie gras、seafood、Alsatian-inspired entrée 与甜品"
+          ],
+          "note": "官网菜单页公开 dinner 价格；午餐价格需按当期菜单复核，第三方菜单参考显示 $165/$195/$265。"
+        }
+      ],
+      "dinner": [
+        {
+          "name": "3-Course / 4-Course / Chef’s Tasting Menu",
+          "price": "$200 / $235 / $325",
+          "details": [
+            "3 courses：First, Entrée, Dessert",
+            "4 courses：First, Mid-Course, Entrée, Dessert",
+            "Chef’s Tasting Menu 为 Gabriel Kreuther 经典菜式精选"
+          ],
+          "note": "官网菜单明确晚餐价格。"
+        },
+        {
+          "name": "Pre-Theater Dinner",
+          "price": "$155 / 人",
+          "details": [
+            "Mon-Thu 4:45-5:45PM",
+            "适合看剧前较短用餐",
+            "部分高级食材 supplement 另计"
+          ],
+          "note": "官网 Pre-Theater 菜单公开价格。"
+        }
+      ],
+      "budget": {
+        "lunchFrom": 165,
+        "dinnerFrom": 155,
+        "serviceCharge": "tax and gratuity may apply",
+        "verified": true,
+        "source": "Gabriel Kreuther official menu / OpenTable public listing"
+      },
+      "reservation": {
+        "difficulty": 4,
+        "difficultyLabel": "较难",
+        "bookingRule": "官网/Resy/OpenTable 预约；OpenTable 显示 main dining room 通常提前 4 周开放，Kitchen Table 需邮件或电话。",
+        "releaseTime": null,
+        "releaseWindow": "约 4 周参考",
+        "platforms": [
+          "Official",
+          "Resy",
+          "OpenTable",
+          "Phone",
+          "Email"
+        ],
+        "conciergeRecommended": true,
+        "verified": true
+      },
+      "dressCode": {
+        "level": "Business casual",
+        "required": true,
+        "notes": [
+          "OpenTable 公开标注 Business Casual；主餐厅建议 smart/business casual。"
+        ],
+        "verified": true,
+        "publicInfoStatus": "public reservation platform"
+      },
+      "childPolicy": {
+        "diningRoomAllowed": null,
+        "privateRoomAllowed": null,
+        "minimumAge": null,
+        "notes": "官网未明确儿童政策；儿童同行或 Kitchen Table 需预约前确认。",
+        "verified": true,
+        "publicInfoStatus": "not explicitly published"
+      },
+      "soloDining": {
+        "available": true,
+        "minGuests": 1,
+        "verified": true,
+        "source": "OpenTable reservation flow pattern"
+      },
+      "tableManners": {
+        "notes": [
+          "Business casual，适合剧院前后或正式商务晚餐。",
+          "部分 caviar、lobster、wagyu 等菜式有 supplement，点单前确认。",
+          "Kitchen Table 需邮件/电话预约，最多约 10 人。"
+        ]
+      },
+      "transport": {
+        "stations": [
+          {
+            "name": "42 St-Bryant Park",
+            "walkMinutes": 2,
+            "lines": [
+              "B",
+              "D",
+              "F",
+              "M",
+              "7"
+            ]
+          },
+          {
+            "name": "5 Av",
+            "walkMinutes": 3,
+            "lines": [
+              "7"
+            ]
+          },
+          {
+            "name": "Grand Central-42 St",
+            "walkMinutes": 7,
+            "lines": [
+              "4",
+              "5",
+              "6",
+              "7",
+              "S",
+              "Metro-North"
+            ]
+          }
+        ],
+        "verified": true,
+        "source": "address-based NYC transit cross-check",
+        "lastChecked": "2026-08-14"
+      },
+      "filters": {
+        "lunchAvailable": true,
+        "dinnerAvailable": true,
+        "priceTiers": [
+          "10000-20000",
+          "20000-30000",
+          "30000-40000"
+        ],
+        "lunchPriceTiers": [
+          "10000-20000",
+          "20000-30000"
+        ],
+        "dinnerPriceTiers": [
+          "10000-20000",
+          "20000-30000",
+          "30000-40000"
+        ],
+        "dressCategory": "required",
+        "childCategory": "pending",
+        "soloDiningAvailable": true
+      },
+      "links": {
+        "official": "https://www.gknyc.com/",
+        "reservation": "https://www.gknyc.com/reservations",
+        "localListing": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/gabriel-kreuther"
+      },
+      "heroImage": "",
+      "sourceQuality": {
+        "basicInfo": "A",
+        "course": "A/B",
+        "reservation": "B",
+        "policy": "B",
+        "rating": "stable public score not found",
+        "image": "city fallback"
+      },
+      "sync": {
+        "lastChecked": "2026-08-14",
+        "lastUpdated": "2026-08-14",
+        "source": "official website / OpenTable / Michelin Guide",
+        "sourceUrl": "https://www.gknyc.com/menu",
+        "changeSummary": "纽约二星第二批核验。",
+        "autoCheckEnabled": false
+      }
+    }
+  ]
+}
