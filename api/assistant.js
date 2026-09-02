@@ -114,11 +114,15 @@ function geminiText(payload) {
   return payload?.candidates?.[0]?.content?.parts?.map(part => part.text || '').join('').trim() || '';
 }
 
+function geminiApiKey() {
+  return String(process.env.GEMINI_API_KEY || '').trim();
+}
+
 async function askGemini({ message, query, matches, cityConfig }) {
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = geminiApiKey();
   if (!apiKey) return null;
-  const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
+  const model = String(process.env.GEMINI_MODEL || 'gemini-2.5-flash').trim();
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
   const sourceData = matches.map(item => summarizeRestaurant(item, cityConfig));
   const prompt = [
     '你是 StarTable / 星宴的星助理，负责基于已核验数据库推荐米其林星级餐厅。',
@@ -133,8 +137,7 @@ async function askGemini({ message, query, matches, cityConfig }) {
   const response = await fetch(endpoint, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
-      'x-goog-api-key': apiKey
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       contents: [{ role: 'user', parts: [{ text: prompt }] }],
@@ -187,7 +190,8 @@ export default async function handler(req, res) {
     let answer = '';
     let provider = 'local';
     let assistantNotice = '';
-    if (process.env.GEMINI_API_KEY && matches.length) {
+    const hasGeminiApiKey = Boolean(geminiApiKey());
+    if (hasGeminiApiKey && matches.length) {
       try {
         answer = await askGemini({ message: body.message, query, matches: matchedItems, cityConfig });
         provider = answer ? 'gemini' : 'local';
@@ -195,7 +199,7 @@ export default async function handler(req, res) {
         console.error('gemini assistant failed', error);
         assistantNotice = 'Gemini 暂时不可用，已切回 StarTable 本地推荐。';
       }
-    } else if (!process.env.GEMINI_API_KEY) {
+    } else if (!hasGeminiApiKey) {
       assistantNotice = '当前未配置 GEMINI_API_KEY，星助理使用 StarTable 本地推荐。';
     }
 
