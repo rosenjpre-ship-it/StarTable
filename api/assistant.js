@@ -118,11 +118,18 @@ function geminiApiKey() {
   return String(process.env.GEMINI_API_KEY || '').trim();
 }
 
+function geminiModels() {
+  const configured = String(process.env.GEMINI_MODEL || '').trim();
+  return [...new Set([
+    configured,
+    'gemini-2.0-flash',
+    'gemini-1.5-flash'
+  ].filter(Boolean))];
+}
+
 async function askGemini({ message, query, matches, cityConfig }) {
   const apiKey = geminiApiKey();
   if (!apiKey) return null;
-  const model = String(process.env.GEMINI_MODEL || 'gemini-2.5-flash').trim();
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
   const sourceData = matches.map(item => summarizeRestaurant(item, cityConfig));
   const prompt = [
     '你是 StarTable / 星宴的星助理，负责基于已核验数据库推荐米其林星级餐厅。',
@@ -134,25 +141,34 @@ async function askGemini({ message, query, matches, cityConfig }) {
     `解析条件：${JSON.stringify(query)}`,
     `候选餐厅：${JSON.stringify(sourceData)}`
   ].join('\n');
-  const response = await fetch(endpoint, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      contents: [{ role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.2,
-        topP: 0.8,
-        maxOutputTokens: 700
-      }
-    })
-  });
-  const payload = await response.json().catch(() => ({}));
-  if (!response.ok) {
-    throw new Error(payload?.error?.message || 'Gemini request failed');
+  let lastError = null;
+  for (const model of geminiModels()) {
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-goog-api-key': apiKey
+      },
+      body: JSON.stringify({
+        contents: [{ role: 'user', parts: [{ text: prompt }] }],
+        generationConfig: {
+          temperature: 0.2,
+          topP: 0.8,
+          maxOutputTokens: 700
+        }
+      })
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (response.ok) {
+      const text = geminiText(payload);
+      if (text) return text;
+      lastError = new Error(`Gemini ${model} returned empty text`);
+      continue;
+    }
+    lastError = new Error(`Gemini ${model} failed: ${payload?.error?.message || response.status}`);
   }
-  return geminiText(payload);
+  throw lastError || new Error('Gemini request failed');
 }
 
 export default async function handler(req, res) {
