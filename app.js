@@ -9,6 +9,10 @@ const readDailyCount=name=>{
 const writeDailyCount=(name,count)=>localStorage.setItem(prefKey(name),JSON.stringify({date:todayKey(),count}));
 const FREE_ASSISTANT_DAILY_LIMIT=2;
 const FREE_SEARCH_LIMIT=5;
+const STRIPE_PAYMENT_LINKS={
+ monthly:'https://buy.stripe.com/fZu4gsd9n3yAgyB4MW3wQ02',
+ yearly:'https://buy.stripe.com/28EcMY7P32uw4PT4MW3wQ03'
+};
 const state={data:[],filtered:[],cityConfig:null,serverMeta:null,meal:'all',solo:false,user:activeUser,sessionToken:localStorage.getItem('stSessionToken')||'',lang:localStorage.getItem('stLang')||'zh',compareExpanded:true,accountExpanded:false,accountCity:'',searchCount:Number(localStorage.getItem(prefKey('searchCount'))||'0'),assistantCount:readDailyCount('assistantCount'),lastCountedSearch:localStorage.getItem(prefKey('lastSearch'))||'',membership:{status:'unknown',message:'会员状态未确认',plan:'-',renewal:'-'},favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}'),compare:new Set(JSON.parse(localStorage.getItem(prefKey('compare'))||'[]'))};
 const $=id=>document.getElementById(id);
 const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),city:$('cityFilter'),cityButton:$('cityButton'),cityMenu:$('cityMenu'),langButtons:[...document.querySelectorAll('[data-lang]')],star:$('starFilter'),cuisine:$('cuisineFilter'),area:$('areaFilter'),mealButtons:[...document.querySelectorAll('.meal-btn[data-meal]')],soloButton:document.querySelector('[data-filter="solo"]'),price:$('priceFilter'),dress:$('dressFilter'),child:$('childFilter'),visible:$('visibleCount'),total:$('totalRestaurants'),three:$('threeStarCount'),two:$('twoStarCount'),one:$('oneStarCount'),lastUpdated:$('lastUpdated'),reset:$('resetButton'),accessNotice:$('accessNotice'),accountPanel:$('accountPanel'),areaRail:$('areaRail'),empty:$('empty'),theme:$('themeButton'),loginButton:$('loginButton'),membershipButton:$('membershipButton'),membershipModal:$('membershipModal'),membershipClose:$('membershipClose'),checkoutButtons:[...document.querySelectorAll('[data-checkout-plan]')],manageSubscriptionButton:$('manageSubscriptionButton'),membershipStatus:$('membershipStatus'),assistantButton:$('assistantButton'),assistantPanel:$('assistantPanel'),assistantClose:$('assistantClose'),assistantMessages:$('assistantMessages'),assistantInput:$('assistantInput'),assistantSend:$('assistantSend'),loginModal:$('loginModal'),loginClose:$('loginClose'),loginName:$('loginName'),loginCode:$('loginCode'),loginCodeSend:$('loginCodeSend'),loginStatus:$('loginStatus'),loginSubmit:$('loginSubmit'),controls:document.querySelector('.controls'),filterBody:$('filterBody'),toggleFilters:$('toggleFiltersButton'),mobileFilter:$('mobileFilterButton'),modal:$('detailModal'),modalContent:$('modalContent'),modalClose:$('modalClose')};
@@ -1009,6 +1013,11 @@ async function startCheckout(plan){
   const membership=await checkMembershipStatus();
   if(membership?.active||isPremium()){
    alert(state.lang==='en'?'You already have an active subscription. Please manage it from My page.':'当前邮箱已经有有效订阅，请在“我的星宴”里管理订阅。');
+   return;
+  }
+  const paymentLink=STRIPE_PAYMENT_LINKS[plan];
+  if(paymentLink){
+   location.href=paymentLink;
    return;
   }
   const data=await apiPost('/api/stripe/create-checkout-session',{plan,email});

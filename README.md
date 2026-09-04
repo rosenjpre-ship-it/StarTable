@@ -105,9 +105,16 @@
 - Webhook：把 Stripe 订阅事件写入数据库，避免每次页面打开都实时查 Stripe
 
 ## Stripe 订阅
-Stripe 后端接口需要部署到支持 Node API Routes 的环境，例如 Vercel。只上传到 GitHub Pages 时，前端可以显示会员入口，但不能完成真实 Checkout。
+当前会员按钮优先使用 Stripe 正式 Payment Links：
+- Monthly $14.99：`https://buy.stripe.com/fZu4gsd9n3yAgyB4MW3wQ02`
+- Yearly $129：`https://buy.stripe.com/28EcMY7P32uw4PT4MW3wQ03`
 
-Checkout 测试必需环境变量：
+Payment Link 完成页：
+- `https://mystartable.com/index.html?checkout=success`
+
+Stripe 后端接口仍保留为可升级方案，部署到支持 Node API Routes 的环境（例如 Vercel）后可用。只上传到 GitHub Pages 时，前端可以显示会员入口，但不能使用后端 Checkout Session。
+
+后端 Checkout Session 模式必需环境变量：
 - `STRIPE_SECRET_KEY`：Stripe test/live secret key
 - `SITE_URL`：正式站点地址
 - `STRIPE_MONTHLY_PRICE_ID`：StarTable Premium Monthly 的 Price ID
