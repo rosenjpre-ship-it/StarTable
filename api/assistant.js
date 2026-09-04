@@ -122,8 +122,10 @@ function geminiModels() {
   const configured = String(process.env.GEMINI_MODEL || '').trim();
   return [...new Set([
     configured,
-    'gemini-2.0-flash',
-    'gemini-1.5-flash'
+    'gemini-3.5-flash',
+    'gemini-3.1-flash-lite',
+    'gemini-2.5-flash-lite',
+    'gemini-2.5-flash'
   ].filter(Boolean))];
 }
 
@@ -164,9 +166,11 @@ async function askGemini({ message, query, matches, cityConfig }) {
       const text = geminiText(payload);
       if (text) return text;
       lastError = new Error(`Gemini ${model} returned empty text`);
+      console.error('gemini assistant empty response', { model });
       continue;
     }
     lastError = new Error(`Gemini ${model} failed: ${payload?.error?.message || response.status}`);
+    console.error('gemini assistant model failed', { model, status: response.status, message: payload?.error?.message || 'unknown error' });
   }
   throw lastError || new Error('Gemini request failed');
 }
