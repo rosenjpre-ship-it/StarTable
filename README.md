@@ -29,7 +29,7 @@
 - 区域快捷浏览
 - My page 的已摘星 / 想摘星 / 收藏列表
 - 邮箱验证码登录基础版
-- 非会员 20 家预览、5 次搜索/星助理请求提示
+- 非会员每城市每星级 3 家预览、星助理每日 2 次提示
 - 会员状态在 My Page 与会员入口中展示
 - 餐厅详情弹窗
 - 字段来源状态、最后更新时间与免责声明
@@ -46,13 +46,13 @@
 
 - `data/cities.json`：城市配置表，控制城市显示、当地评分平台、货币、价格区间与地区排序
 - `data/restaurant-template.json`：新增城市/餐厅录入模板
-- `GET /api/restaurants`：餐厅列表，可按 city、stars、cuisine、area、meal、price、dress、child、solo 筛选；非会员返回前 20 家预览
+- `GET /api/restaurants`：餐厅列表，可按 city、stars、cuisine、area、meal、price、dress、child、solo 筛选；非会员每城市每星级返回 3 家预览
 - `GET /api/restaurants?id=...`：单个餐厅详情；非会员仅开放预览范围内餐厅完整详情
 - `POST /api/auth/request-code`：发送邮箱验证码；未配置邮件服务时返回 `testCode` 供测试
 - `POST /api/auth/verify-code`：验证邮箱验证码并返回 session token
 - `GET /api/me`：读取当前邮箱与订阅状态
 - `GET/POST /api/favorites`：收藏/已摘星/想摘星接口占位，当前前端仍使用浏览器本地存储
-- `POST /api/assistant`：基于当前餐厅数据的规则推荐 API；非会员超过 5 次后返回会员提示
+- `POST /api/assistant`：基于当前餐厅数据的规则推荐 API；非会员每日超过 2 次后返回会员提示
 
 前端加载策略：
 - Vercel/线上环境：优先读取 `/api/restaurants`
