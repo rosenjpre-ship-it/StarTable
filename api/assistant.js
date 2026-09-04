@@ -144,6 +144,7 @@ async function askGemini({ message, query, matches, cityConfig }) {
     `候选餐厅：${JSON.stringify(sourceData)}`
   ].join('\n');
   let lastError = null;
+  const attempts = [];
   for (const model of geminiModels()) {
     const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
     const response = await fetch(endpoint, {
@@ -164,15 +165,20 @@ async function askGemini({ message, query, matches, cityConfig }) {
     const payload = await response.json().catch(() => ({}));
     if (response.ok) {
       const text = geminiText(payload);
-      if (text) return text;
+      attempts.push({ model, status: response.status, ok: true, empty: !text });
+      if (text) return { text, model, attempts };
       lastError = new Error(`Gemini ${model} returned empty text`);
       console.error('gemini assistant empty response', { model });
       continue;
     }
-    lastError = new Error(`Gemini ${model} failed: ${payload?.error?.message || response.status}`);
-    console.error('gemini assistant model failed', { model, status: response.status, message: payload?.error?.message || 'unknown error' });
+    const message = payload?.error?.message || String(response.status);
+    attempts.push({ model, status: response.status, ok: false, message });
+    lastError = new Error(`Gemini ${model} failed: ${message}`);
+    console.error('gemini assistant model failed', { model, status: response.status, message });
   }
-  throw lastError || new Error('Gemini request failed');
+  const error = lastError || new Error('Gemini request failed');
+  error.geminiAttempts = attempts;
+  throw error;
 }
 
 export default async function handler(req, res) {
@@ -210,17 +216,29 @@ export default async function handler(req, res) {
     let answer = '';
     let provider = 'local';
     let assistantNotice = '';
+    let debug = null;
     const hasGeminiApiKey = Boolean(geminiApiKey());
     if (hasGeminiApiKey && matches.length) {
       try {
-        answer = await askGemini({ message: body.message, query, matches: matchedItems, cityConfig });
+        const geminiResult = await askGemini({ message: body.message, query, matches: matchedItems, cityConfig });
+        answer = geminiResult?.text || '';
         provider = answer ? 'gemini' : 'local';
       } catch (error) {
         console.error('gemini assistant failed', error);
         assistantNotice = 'Gemini 暂时不可用，已切回 StarTable 本地推荐。';
+        if (body.debug === true) {
+          debug = {
+            geminiKeyConfigured: true,
+            attemptedModels: error.geminiAttempts || [],
+            message: error.message
+          };
+        }
       }
     } else if (!hasGeminiApiKey) {
       assistantNotice = '当前未配置 GEMINI_API_KEY，星助理使用 StarTable 本地推荐。';
+      if (body.debug === true) {
+        debug = { geminiKeyConfigured: false, attemptedModels: [] };
+      }
     }
 
     return sendJson(res, 200, {
@@ -228,7 +246,8 @@ export default async function handler(req, res) {
       provider,
       answer,
       recommendations: matches,
-      note: assistantNotice || (matches.length ? '基于当前 StarTable 数据筛选推荐。' : '当前数据中没有完全匹配条件的餐厅，请放宽地点、菜系或政策条件。')
+      note: assistantNotice || (matches.length ? '基于当前 StarTable 数据筛选推荐。' : '当前数据中没有完全匹配条件的餐厅，请放宽地点、菜系或政策条件。'),
+      ...(debug ? { debug } : {})
     });
   } catch (error) {
     console.error('assistant api failed', error);
