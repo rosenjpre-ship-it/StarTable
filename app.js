@@ -1,7 +1,15 @@
 
 const activeUser=localStorage.getItem('stUser')||'guest';
 const prefKey=name=>`st:${activeUser}:${name}`;
-const state={data:[],filtered:[],cityConfig:null,serverMeta:null,meal:'all',solo:false,user:activeUser,sessionToken:localStorage.getItem('stSessionToken')||'',lang:localStorage.getItem('stLang')||'zh',compareExpanded:true,accountExpanded:false,accountCity:'',searchCount:Number(localStorage.getItem(prefKey('searchCount'))||'0'),lastCountedSearch:localStorage.getItem(prefKey('lastSearch'))||'',membership:{status:'unknown',message:'会员状态未确认',plan:'-',renewal:'-'},favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}'),compare:new Set(JSON.parse(localStorage.getItem(prefKey('compare'))||'[]'))};
+const todayKey=()=>new Date().toISOString().slice(0,10);
+const readDailyCount=name=>{
+ const value=JSON.parse(localStorage.getItem(prefKey(name))||'null');
+ return value?.date===todayKey()?Number(value.count||0):0;
+};
+const writeDailyCount=(name,count)=>localStorage.setItem(prefKey(name),JSON.stringify({date:todayKey(),count}));
+const FREE_ASSISTANT_DAILY_LIMIT=2;
+const FREE_SEARCH_LIMIT=5;
+const state={data:[],filtered:[],cityConfig:null,serverMeta:null,meal:'all',solo:false,user:activeUser,sessionToken:localStorage.getItem('stSessionToken')||'',lang:localStorage.getItem('stLang')||'zh',compareExpanded:true,accountExpanded:false,accountCity:'',searchCount:Number(localStorage.getItem(prefKey('searchCount'))||'0'),assistantCount:readDailyCount('assistantCount'),lastCountedSearch:localStorage.getItem(prefKey('lastSearch'))||'',membership:{status:'unknown',message:'会员状态未确认',plan:'-',renewal:'-'},favorites:new Set(JSON.parse(localStorage.getItem(prefKey('favorites'))||'[]')),marks:JSON.parse(localStorage.getItem(prefKey('marks'))||'{}'),compare:new Set(JSON.parse(localStorage.getItem(prefKey('compare'))||'[]'))};
 const $=id=>document.getElementById(id);
 const els={grid:$('grid'),template:$('cardTemplate'),search:$('searchInput'),city:$('cityFilter'),cityButton:$('cityButton'),cityMenu:$('cityMenu'),langButtons:[...document.querySelectorAll('[data-lang]')],star:$('starFilter'),cuisine:$('cuisineFilter'),area:$('areaFilter'),mealButtons:[...document.querySelectorAll('.meal-btn[data-meal]')],soloButton:document.querySelector('[data-filter="solo"]'),price:$('priceFilter'),dress:$('dressFilter'),child:$('childFilter'),visible:$('visibleCount'),total:$('totalRestaurants'),three:$('threeStarCount'),two:$('twoStarCount'),one:$('oneStarCount'),lastUpdated:$('lastUpdated'),reset:$('resetButton'),accessNotice:$('accessNotice'),accountPanel:$('accountPanel'),areaRail:$('areaRail'),empty:$('empty'),theme:$('themeButton'),loginButton:$('loginButton'),membershipButton:$('membershipButton'),membershipModal:$('membershipModal'),membershipClose:$('membershipClose'),checkoutButtons:[...document.querySelectorAll('[data-checkout-plan]')],manageSubscriptionButton:$('manageSubscriptionButton'),membershipStatus:$('membershipStatus'),assistantButton:$('assistantButton'),assistantPanel:$('assistantPanel'),assistantClose:$('assistantClose'),assistantMessages:$('assistantMessages'),assistantInput:$('assistantInput'),assistantSend:$('assistantSend'),loginModal:$('loginModal'),loginClose:$('loginClose'),loginName:$('loginName'),loginCode:$('loginCode'),loginCodeSend:$('loginCodeSend'),loginStatus:$('loginStatus'),loginSubmit:$('loginSubmit'),controls:document.querySelector('.controls'),filterBody:$('filterBody'),toggleFilters:$('toggleFiltersButton'),mobileFilter:$('mobileFilterButton'),modal:$('detailModal'),modalContent:$('modalContent'),modalClose:$('modalClose')};
 let searchUsageTimer=null;
@@ -23,7 +31,7 @@ const dict={
   want:'想摘星',done:'已摘星',favorite:'收藏',favorited:'已收藏',none:'暂无餐厅。',back:'返回餐厅列表',logout:'退出登录',
   globalDone:'全球已摘星',memberTitle:'星宴年会员',memberDesc:'通过 Stripe 安全订阅，解锁完整餐厅数据库与高阶筛选。',
   yearly:'年费',browse:'餐厅浏览',all:'全部',searches:'搜索次数',unlimited:'不限',fullData:'完整资料',advanced:'高级筛选',
-  fullDataText:'查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。',advancedText:'免费模式每个城市可预览 3 家；会员解除浏览和 5 次搜索限制。',
+  fullDataText:'查看完整餐厅信息、预约入口、交通、用餐规则与 course 信息。',advancedText:'免费模式每个城市可预览 3 家；星助理每日 2 次。会员解除浏览和星助理限制。',
   mypageText:'按全球、东京、香港、上海、巴黎、纽约、杭州、伦敦管理已摘星、想摘星和收藏餐厅。',stripeSoon:'Stripe 支付即将接入',
   stripeAlert:'Stripe 支付链接接入后，这里会跳转到官方 Checkout 页面。',loadFail:'数据加载失败，请确认已部署到 GitHub Pages。'
  },
@@ -38,7 +46,7 @@ const dict={
   want:'Want to visit',done:'Visited',favorite:'Save',favorited:'Saved',none:'No restaurants yet.',back:'Back to list',logout:'Log out',
   globalDone:'Global visited',memberTitle:'StarTable Membership',memberDesc:'Subscribe securely with Stripe to unlock the full restaurant database and advanced filters.',
   yearly:'Annual fee',browse:'Restaurant access',all:'All',searches:'Searches',unlimited:'Unlimited',fullData:'Full data',advanced:'Advanced filters',
-  fullDataText:'View full restaurant details, reservation links, access, dining rules and course information.',advancedText:'Free preview includes 3 restaurants per city; Premium removes browsing and 5-search limits.',
+  fullDataText:'View full restaurant details, reservation links, access, dining rules and course information.',advancedText:'Free preview includes 3 restaurants per city and 2 assistant requests per day. Premium removes browsing and assistant limits.',
   mypageText:'Manage visited, wish list and saved restaurants by Global, Tokyo, Hong Kong, Shanghai, Paris, New York, Hangzhou and London.',stripeSoon:'Stripe payment coming soon',
   stripeAlert:'After the Stripe payment link is connected, this button will open the official Checkout page.',loadFail:'Data failed to load. Please confirm the site is deployed on GitHub Pages.'
  }
@@ -1394,9 +1402,7 @@ function scheduleSearchUsage(query){
  searchUsageTimer=setTimeout(()=>{
   const current=els.search?.value.trim()||'';
   if(!current||current===state.lastCountedSearch)return;
-  state.searchCount+=1;
   state.lastCountedSearch=current;
-  localStorage.setItem(prefKey('searchCount'),String(state.searchCount));
   localStorage.setItem(prefKey('lastSearch'),current);
   updateAccessNotice();
  },650);
@@ -1408,17 +1414,17 @@ function updateAccessNotice(){
   els.accessNotice.innerHTML='';
   return;
  }
- const remaining=Math.max(0,5-state.searchCount);
+ const remaining=Math.max(0,FREE_ASSISTANT_DAILY_LIMIT-state.assistantCount);
  const hidden=Math.max(0,state.filtered.length-freePreviewItems(state.filtered).length);
  const serverLocked=Number(state.serverMeta?.locked||0);
  const locked=Math.max(hidden,serverLocked);
- if(!locked&&state.searchCount<4){
+ if(!locked){
   els.accessNotice.hidden=true;
   els.accessNotice.innerHTML='';
   return;
  }
  els.accessNotice.hidden=false;
- els.accessNotice.innerHTML=`<div><strong>${state.lang==='en'?'Free preview':'免费预览'}</strong><span>${state.lang==='en'?`Showing 3 restaurants per city. Searches left: ${remaining}.`:`每个城市可预览 3 家餐厅。剩余搜索次数：${remaining} 次。`}${locked?` ${state.lang==='en'?`${locked} more restaurants are locked.`:`还有 ${locked} 家已锁定。`}`:''}</span></div><button type="button" data-open-membership>${state.lang==='en'?'Upgrade':'开通会员'}</button>`;
+ els.accessNotice.innerHTML=`<div><strong>${state.lang==='en'?'Free preview':'免费预览'}</strong><span>${state.lang==='en'?`Showing 3 restaurants per city. Star Assistant requests left today: ${remaining}. ${locked} more restaurants are locked.`:`每个城市可预览 3 家餐厅。星助理今日剩余：${remaining} 次。还有 ${locked} 家已锁定。`}</span></div><button type="button" data-open-membership>${state.lang==='en'?'Upgrade':'开通会员'}</button>`;
  els.accessNotice.querySelector('[data-open-membership]')?.addEventListener('click',openMembershipModal);
 }
 function makeLimitCard(hiddenCount){
@@ -1438,7 +1444,7 @@ function assistantAdd(role,html){
 }
 function ensureAssistantIntro(){
  if(!els.assistantMessages||els.assistantMessages.children.length)return;
- assistantAdd('assistant',`<p>${state.lang==='en'?'Tell me your city, area, cuisine, meal, dress code or child policy. I will recommend 1-3 restaurants from StarTable data.':'告诉我城市、地区、菜系、餐期、着装或儿童政策，星助理会基于当前数据库推荐 1-3 家。'}</p>`);
+ assistantAdd('assistant',`<p>${state.lang==='en'?'Tell me your city, area, cuisine, meal, dress code or child policy. I will recommend 1-3 restaurants from StarTable data. Free users get 2 assistant requests per day.':'告诉我城市、地区、菜系、餐期、着装或儿童政策，星助理会基于当前数据库推荐 1-3 家。非会员每天可用 2 次。'}</p>`);
 }
 function formatAssistantResult(data){
  const items=Array.isArray(data.recommendations)?data.recommendations:[];
@@ -1533,14 +1539,14 @@ async function sendAssistantMessage(){
  assistantAdd('user',`<p>${esc(text)}</p>`);
  els.assistantInput.value='';
  if(!isPremium()){
-  state.searchCount+=1;
-  localStorage.setItem(prefKey('searchCount'),String(state.searchCount));
-  updateAccessNotice();
-  if(state.searchCount>5){
-   assistantAdd('assistant',`<p>${state.lang==='en'?'Free preview includes 5 assistant/search requests. Please upgrade to continue.':'免费预览包含 5 次搜索/星助理请求。继续使用请开通会员。'}</p><button type="button" data-open-membership>${state.lang==='en'?'Upgrade':'会员订阅'}</button>`);
+  if(state.assistantCount>=FREE_ASSISTANT_DAILY_LIMIT){
+   assistantAdd('assistant',`<p>${state.lang==='en'?'Free users get 2 Star Assistant requests per day. Please upgrade to continue today.':'非会员每天可使用星助理 2 次。今日次数已用完，继续使用请开通会员。'}</p><button type="button" data-open-membership>${state.lang==='en'?'Upgrade':'会员订阅'}</button>`);
    els.assistantMessages.querySelector('[data-open-membership]:last-child')?.addEventListener('click',openMembershipModal);
    return;
   }
+  state.assistantCount+=1;
+  writeDailyCount('assistantCount',state.assistantCount);
+  updateAccessNotice();
  }
  if(location.protocol==='file:'){
   assistantAdd('assistant',formatAssistantResult(localAssistantResult(text)));
@@ -1548,7 +1554,7 @@ async function sendAssistantMessage(){
  }
  assistantAdd('assistant loading',`<p>${state.lang==='en'?'Searching StarTable data...':'正在查询 StarTable 数据...'}</p>`);
  try{
-  const res=await fetch('/api/assistant',{method:'POST',headers:authHeaders({'Content-Type':'application/json'}),body:JSON.stringify({message:text,email:currentEmail(),searchCount:state.searchCount})});
+  const res=await fetch('/api/assistant',{method:'POST',headers:authHeaders({'Content-Type':'application/json'}),body:JSON.stringify({message:text,email:currentEmail(),searchCount:state.assistantCount})});
  const data=await res.json();
  const loading=els.assistantMessages.querySelector('.assistant-message.loading:last-child');
  if(loading)loading.remove();

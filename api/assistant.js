@@ -3,6 +3,8 @@ import { readJson, sendJson } from './_http.js';
 import { sessionFromRequest } from './_auth.js';
 import { activeSubscriptionForEmail } from './_subscription.js';
 
+const FREE_ASSISTANT_DAILY_LIMIT = 2;
+
 function parseIntent(message, cityConfig) {
   const text = String(message || '').toLowerCase();
   const query = {};
@@ -147,6 +149,8 @@ async function askGemini({ message, query, matches, cityConfig }) {
     '你是 StarTable / 星宴的星助理，负责基于已核验数据库推荐米其林星级餐厅。',
     '只能使用下面 JSON 数据中的事实，不要编造官网、价格、政策、评分、地址或电话。',
     '如果字段写着“需预约确认”或“公开来源未明确”，必须保留这种不确定性。',
+    '推荐数量必须与候选餐厅 JSON 数量一致，不要说“三家”却只点名两家。',
+    '餐厅名称、星级、地区、菜系必须严格以候选餐厅 JSON 为准。',
     '用简洁中文回答，最多 5 句话。先给选择建议，再说明每家适合什么人。不要输出 Markdown 表格。',
     '',
     `用户问题：${message}`,
@@ -202,8 +206,8 @@ export default async function handler(req, res) {
     const url = new URL(req.url, `https://${req.headers.host}`);
     const session = sessionFromRequest(req, url);
     const subscription = await activeSubscriptionForEmail(session?.email || body.email).catch(() => ({ active: false }));
-    if (!subscription.active && Number(body.searchCount || 0) > 5) {
-      return sendJson(res, 402, { error: 'Premium membership is required after 5 free assistant requests.', recommendations: [] });
+    if (!subscription.active && Number(body.searchCount || 0) > FREE_ASSISTANT_DAILY_LIMIT) {
+      return sendJson(res, 402, { error: 'Premium membership is required after 2 free assistant requests per day.', recommendations: [] });
     }
     const cityConfig = await loadCityConfig();
     const query = parseIntent(body.message, cityConfig);
