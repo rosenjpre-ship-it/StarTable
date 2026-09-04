@@ -26,6 +26,9 @@ function parseIntent(message, cityConfig) {
   if (/法餐|法式|french/.test(text)) query.cuisineKeyword = '法';
   if (/寿司|sushi/.test(text)) query.cuisineKeyword = '寿司';
   if (/中餐|粤菜|chinese|cantonese/.test(text)) query.cuisineKeyword = /粤菜|cantonese/.test(text) ? '粤菜' : '中';
+  if (/三星|三.?星|3.?star|three.?star/.test(text)) query.stars = 3;
+  if (/二星|两星|兩星|2.?star|two.?star/.test(text)) query.stars = 2;
+  if (/一星|1.?star|one.?star/.test(text)) query.stars = 1;
   if (/lunch|午餐/.test(text)) query.meal = 'lunch';
   if (/dinner|晚餐/.test(text)) query.meal = 'dinner';
   if (/没有着装|无着装|no dress|no dress code/.test(text)) query.dress = 'none';
@@ -49,12 +52,19 @@ function localRating(item, cityConfig) {
 
 function baseMatches(item, query) {
   if (query.city && cityLabel(item) !== query.city) return false;
+  if (query.stars && item.stars !== query.stars) return false;
   if (query.meal === 'lunch' && item.filters?.lunchAvailable !== true) return false;
   if (query.meal === 'dinner' && item.filters?.dinnerAvailable !== true) return false;
   if (query.dress && item.filters?.dressCategory !== query.dress) return false;
   if (query.child === 'yes' && item.filters?.childCategory !== 'yes') return false;
   if (query.solo === 'true' && item.filters?.soloDiningAvailable !== true) return false;
   return true;
+}
+
+function exactTextMatches(item, query) {
+  const areaText = [item.areaZh, item.area, item.address, ...(item.transport?.stations || []).map(station => station.name)].filter(Boolean).join(' ');
+  const cuisineText = [item.cuisineZh, item.cuisine].filter(Boolean).join(' ');
+  return (!query.area || areaText.includes(query.area)) && (!query.cuisineKeyword || cuisineText.includes(query.cuisineKeyword));
 }
 
 function recommendationScore(item, query, cityConfig) {
@@ -198,8 +208,12 @@ export default async function handler(req, res) {
     const cityConfig = await loadCityConfig();
     const query = parseIntent(body.message, cityConfig);
     const restaurants = await loadRestaurants();
-    const matchedItems = restaurants
-      .filter(item => baseMatches(item, query))
+    let pool = restaurants.filter(item => baseMatches(item, query));
+    if (query.area || query.cuisineKeyword) {
+      const exactPool = pool.filter(item => exactTextMatches(item, query));
+      if (exactPool.length) pool = exactPool;
+    }
+    const matchedItems = pool
       .sort((a, b) => recommendationScore(b, query, cityConfig) - recommendationScore(a, query, cityConfig))
       .slice(0, 3);
     const matches = matchedItems
